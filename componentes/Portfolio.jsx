@@ -1,10 +1,10 @@
 
-import proyecto1 from '../assets/images/REDES.jpeg';
-import proyecto2 from '../assets/images/PHP.jpeg';
-import proyecto3 from '../assets/images/base_de_datos.jpeg';
-import proyecto4 from '../assets/images/analisis_de_sistema.jpeg';
-import proyecto5 from '../assets/images/p5.jpg';
-import proyecto6 from '../assets/images/DIAGRAMA UML.jpeg';
+import proyecto1 from '../assets/images/datacenter.webp';
+import proyecto2 from '../assets/images/php.png';
+import proyecto3 from '../assets/images/basededatos.jpg';
+import proyecto4 from '../assets/images/business-cloud-computing-1080x675.jpg';
+import proyecto5 from '../assets/images/responsive-web.webp';
+import proyecto6 from '../assets/images/api_pic.jpg';
 
 function Portfolio() {
   return (
@@ -89,8 +89,8 @@ function Portfolio() {
             <div className="hover-galeria">
               <img src={proyecto6} alt="hover"  style={{ height: '255px' }} />
               <div className="overlay">
-                        <h3>Diagramas</h3>
-                        <p>UML</p>
+                        <h3>API</h3>
+                        <p>Desarrollo de API</p>
                     </div>
             </div>
           </div>

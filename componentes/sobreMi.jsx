@@ -1,11 +1,29 @@
-import Intereses from "./intereses";
+import Intereses from "./intereses";  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload ,faUser} from '@fortawesome/free-solid-svg-icons';
+
 
 function SobreMi() {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '../public/-curriculum-vitae-VICTOR.pdf'; // Ruta del archivo
+    link.download = 'Victor_Camacaro_CV.pdf'; // Nombre del archivo descargado
+    link.click(); // Simula el clic para iniciar la descarga
+  };
+
+  const redirigir= ()=>{
+    window.location.href = "/aboutMe"
+  }
+
   return (
     <section id="sobremi" className="sobremi">
       <div className="contenido-seccion">
         <h2>Sobre mi</h2>
         <p><span>Hola, soy Victor Camacaro</span> Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.</p>
+        <button  onClick={redirigir}>
+				Conoce mi historia <FontAwesomeIcon icon={faUser} />
+				<span class="overlay"></span>
+			</button>
         <div className="fila">
           <div className="col">
             <h3>Datos Personales</h3>
@@ -24,8 +42,8 @@ function SobreMi() {
             </div>
           </div>
         </div>
-        <button>
-          Descargar CV <i className="fa-solid fa-download"></i>
+        <button onClick={handleDownload}>
+          Descargar CV <FontAwesomeIcon icon={faDownload} />
           <span className="overlay"></span>
         </button>
       </div>
