@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 //import '@fortawesome/fontawesome-free/css/all.min.css';
 import AOS from 'aos';
 import gsap from 'gsap';
+import './aboutme.css'
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +12,7 @@ const Aboutme = () => {
     const [currentImageIndex2, setCurrentImageIndex2] = useState(0);
 
     const images = [
-        '../assets/inages/1721324524513.jpg',
+        '../assets/images/business-cloud-computing-1080x675.jpg',
         '../assets/images/ingvictor.jpg',
         '../assets/images/victor1.jpg',
         '../assets/images/logo.png',
@@ -20,18 +21,18 @@ const Aboutme = () => {
 
     const images1 = [
         '../assets/images/ingvictor.jpg',
-        '../assets/images/1721324524513.jpg',
+        '../assets/images/business-cloud-computing-1080x675.jpg',
         '../assets/images/nasa.jpg',
         '../assets/images/logo.png',
-        '..assets/images/victor1.jpg'
+        '../assets/images/victor.jpg'
     ];
 
     const images2 = [
-        'images/nasa.jpg',
-        'images/1721324524513.jpg',
-        'images/victor1.jpg',
-        'images/ingvictor.jpg',
-        'images/logo.png',
+        'assets/images/nasa.jpg',
+        'assets/images/business-cloud-computing-1080x675.jpg',
+        '/aseets/images/victor1.jpg',
+        'assets/images/ingvictor.jpg',
+        'assets/images/logo.png',
     ];
 
     useEffect(() => {
@@ -110,19 +111,7 @@ const Aboutme = () => {
                 </div>
             </section>
 
-            <footer style={{ borderTop: '2px solid #41f1b6' }}>
-                <a href="#inicio" className="arriba">
-                    <i className="fa-solid fa-angle-up"></i>
-                </a>
-                <div className="redes">
-                    <a href="https:// m.facebook.com/100000134262241"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://mobile.twitter.com/victorcamacar19"><i className="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://github.com/victorcamacaro253"><i className="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/victor-camacaro-3634641a5"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/victorcamacaro1999/"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@VictorCamacaro253"><i className="fa-brands fa-youtube"></i></a>
-                </div>
-            </footer>
+
         </div>
     );
 };
