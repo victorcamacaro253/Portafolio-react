@@ -143,14 +143,17 @@ html{
 /* seccion inicio */
 
 .inicio{
-    background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
     url(../assets/images/fondo.jpg);
     background-size: cover;
-    width: 1270px;
-    height:100vh;
+    width: 100%; /* Cambiado a 100% */
+    height: auto; /* Cambiado a auto */
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la pantalla */
     color: var(--color);
     display: flex;
     align-items: center;
+    justify-content: center; /* Centra el contenido */
+    padding: 20px; /* Agrega un poco de padding */
 }
 
 .inicio .contenido-banner{
@@ -178,7 +181,7 @@ html{
 .inicio .contenido-banner h1{
     color: var(--color);
     margin-top: 40px;
-    font-size: 42px;
+    font-size: 22px;
     font-family: 'Righteous';
 
 }
@@ -393,11 +396,6 @@ html{
     font-size: 14px;
 }
 
-.skills .animated-text{
-    color: var(--color);
-    font-family: 'Righteous';
-
-}
 
 /* estas clases se agregan con javascript */
 
