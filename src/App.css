@@ -175,7 +175,7 @@ html{
     border-radius: 100%;
 }
 
-.inicion .contenido-banner h1{
+.inicio .contenido-banner h1{
     color: var(--color);
     margin-top: 40px;
     font-size: 42px;
@@ -393,6 +393,11 @@ html{
     font-size: 14px;
 }
 
+.skills .animated-text{
+    color: var(--color);
+    font-family: 'Righteous';
+
+}
 
 /* estas clases se agregan con javascript */
 
