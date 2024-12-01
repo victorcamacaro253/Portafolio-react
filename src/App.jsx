@@ -1,29 +1,25 @@
-import Header from '../componentes/header';
-import Inicio from '../componentes/inicio';
-import SobreMi from '../componentes/sobreMi';
-import Skills from '../componentes/skills';
-import Curriculum from '../componentes/Curriculum';
-import Portfolio from '../componentes/Portfolio';
-import Contacto from '../componentes/Contacto';
-import Footer from '../componentes/Footer';
-import './App.css';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './index.jsx';
+import Header from './componentes/header.jsx';
+import Footer from './componentes/Footer.jsx';
+import Aboutme from './aboutMe.jsx';
 
 
 function App() {
+
   return (
-    <div className="App">
-      <Header />
-      <Inicio />
-      <SobreMi />
-      <Skills />
-      <Curriculum />
-      <Portfolio />
-      <Contacto />
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/aboutMe" element={<Aboutme />} />
+       
+
+      </Routes>
       <Footer />
-    </div>
-  );
+
+    </Router>
+  )
 }
 
 export default App;
