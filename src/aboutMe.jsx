@@ -5,8 +5,13 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import gsap from 'gsap';
 import './aboutme.css'
-import proyecto1 from '../assets/images/datacenter.webp';
-
+import imagen from '../assets/images/victor.jpg';
+import imagen2 from '../assets/images/business-cloud-computing-1080x675.jpg';
+import imagen3 from '../assets/images/ingvictor.jpg'
+import imagen4 from '../assets/images/victor1.jpg'
+import imagen5 from '../assets/images/logo.png'
+import imagen6 from '../assets/images/system.jpg'
+import imagen7 from '../assets/images/nasa.jpg'
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,27 +19,27 @@ const Aboutme = () => {
     const [currentImageIndex2, setCurrentImageIndex2] = useState(0);
 
     const images = [
-        '../assets/images/business-cloud-computing-1080x675.jpg',
-        '../assets/images/ingvictor.jpg',
-        '../assets/images/victor1.jpg',
-        '../assets/images/logo.png',
-        '../assets/images/system.jpg'
+        imagen2,
+        imagen3,
+        imagen4,
+        imagen5,
+        imagen6
     ];
 
     const images1 = [
-        '../assets/images/ingvictor.jpg',
-        '../assets/images/business-cloud-computing-1080x675.jpg',
-        '../assets/images/nasa.jpg',
-        '../assets/images/logo.png',
-        '../assets/images/victor.jpg'
+        imagen3,
+        imagen2,
+        imagen7,
+        imagen5,
+        imagen
     ];
 
     const images2 = [
-        '../assets/images/nasa.jpg',
-        '../assets/images/business-cloud-computing-1080x675.jpg',
-        '../aseets/images/victor1.jpg',
-        '../assets/images/ingvictor.jpg',
-        '../assets/images/logo.png',
+        imagen7,
+        imagen2,
+        imagen4,
+        imagen3,
+        imagen5,
     ];
 
     useEffect(() => {
@@ -68,7 +73,7 @@ const Aboutme = () => {
                     <h2>Conoce mi Historia</h2>
                     <div className="row align-items-center" data-aos="zoom-in">
                         <div className="col-lg-6 text-center mb-4">
-                            <img src={proyecto1} className="img-fluid" style={{ maxHeight: '400px', borderRadius: '10px', border: '4px solid #41f1b6' }} alt="Victor camacaro" />
+                            <img src={imagen} className="img-fluid" style={{ maxHeight: '400px', borderRadius: '10px', border: '4px solid #41f1b6' }} alt="Victor camacaro" />
                         </div>
                         <div className="col-lg-6" style={{ borderLeft: '2px solid #41f1b6', paddingBottom: '10px' }}>
                             <p className="animated-text">
