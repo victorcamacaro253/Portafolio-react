@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import gsap from 'gsap';
 import './aboutme.css'
+import proyecto1 from '../assets/images/datacenter.webp';
+
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,11 +30,11 @@ const Aboutme = () => {
     ];
 
     const images2 = [
-        'assets/images/nasa.jpg',
-        'assets/images/business-cloud-computing-1080x675.jpg',
-        '/aseets/images/victor1.jpg',
-        'assets/images/ingvictor.jpg',
-        'assets/images/logo.png',
+        '../assets/images/nasa.jpg',
+        '../assets/images/business-cloud-computing-1080x675.jpg',
+        '../aseets/images/victor1.jpg',
+        '../assets/images/ingvictor.jpg',
+        '../assets/images/logo.png',
     ];
 
     useEffect(() => {
@@ -66,7 +68,7 @@ const Aboutme = () => {
                     <h2>Conoce mi Historia</h2>
                     <div className="row align-items-center" data-aos="zoom-in">
                         <div className="col-lg-6 text-center mb-4">
-                            <img src="../assets/images/victor.jpg" className="img-fluid" style={{ maxHeight: '400px', borderRadius: '10px', border: '4px solid #41f1b6' }} alt="Victor camacaro" />
+                            <img src={proyecto1} className="img-fluid" style={{ maxHeight: '400px', borderRadius: '10px', border: '4px solid #41f1b6' }} alt="Victor camacaro" />
                         </div>
                         <div className="col-lg-6" style={{ borderLeft: '2px solid #41f1b6', paddingBottom: '10px' }}>
                             <p className="animated-text">
