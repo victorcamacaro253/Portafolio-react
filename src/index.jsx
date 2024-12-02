@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from './componentes/header';  // Asegúrate de que la ruta es correcta
+//import Header from './componentes/header';  // Asegúrate de que la ruta es correcta
 import Inicio from './componentes/inicio';
 import SobreMi from './componentes/sobreMi';
 import Skills from './componentes/skills';
 import Curriculum from './componentes/Curriculum';
 import Portfolio from './componentes/Portfolio';
 import Contacto from './componentes/Contacto';
-import Footer from './componentes/Footer';
+//import Footer from './componentes/Footer';
+import texts from './data/texts.json';
 import './App.css';
 
 
