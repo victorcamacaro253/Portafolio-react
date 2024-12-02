@@ -20,7 +20,7 @@ const Intereses = () => {
         <div className="contenedor-intereses">
             {intereses.map((interes, index) => (
                 <div className="interes" key={index}>
-                    <FontAwesomeIcon icon={interes.icono} />
+                    <FontAwesomeIcon icon={interes.icono} size='3x' />
                     <span>{interes.texto}</span>
                 </div>
             ))}
