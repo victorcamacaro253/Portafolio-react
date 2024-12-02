@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon,faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,9 +7,17 @@ function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('darkTheme') === 'true';
+    setDarkTheme(savedTheme);
+    document.body.classList.toggle('dark-theme-variables', savedTheme);
+}, []);
+
   const toggleTheme = () => {
-    setDarkTheme(!darkTheme);
-    document.body.classList.toggle('dark-theme-variables');
+    const newTheme = !darkTheme;
+    setDarkTheme(newTheme);
+    document.body.classList.toggle('dark-theme-variables',newTheme);
+    localStorage.setItem('darkTheme',newTheme)
   };
 
   const toggleMenu = () => {
