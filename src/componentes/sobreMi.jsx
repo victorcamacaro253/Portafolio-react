@@ -1,9 +1,15 @@
+import React,{useContext} from 'react';
 import Intereses from "./intereses";  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload ,faUser} from '@fortawesome/free-solid-svg-icons';
+import { LanguageContext } from '../contexts/languageContext';
 
 
 function SobreMi() {
+  const { language,texts } = useContext(LanguageContext);
+  const { title,span,presentation,aboutme,PersonalData,birthdateWord,phoneWord,phoneNumber,email,addressWord,address,positionWord,position,interests,download } = texts.sobreMi[0][language] || texts.sobreMi[0]['es']; // Fallback a español si no se encuentra el idioma
+
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '../public/-curriculum-vitae-VICTOR.pdf'; // Ruta del archivo
@@ -18,32 +24,32 @@ function SobreMi() {
   return (
     <section id="sobremi" className="sobremi">
       <div className="contenido-seccion">
-        <h2>Sobre mi</h2>
-        <p><span>Hola, soy Victor Camacaro</span> Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.</p>
+        <h2>{title}</h2>
+        <p><span>{span}</span> {presentation}</p>
         <button  onClick={redirigir}>
-				Conoce mi historia <FontAwesomeIcon icon={faUser} />
+				{aboutme} <FontAwesomeIcon icon={faUser} />
 				<span class="overlay"></span>
 			</button>
         <div className="fila">
           <div className="col">
-            <h3>Datos Personales</h3>
+            <h3>{PersonalData}</h3>
             <ul>
-              <li><strong>Cumpleaños</strong> 30-03-1999</li>
-              <li><strong>Telefono</strong> +58 426-2553540</li>
-              <li><strong>Email</strong> victorcamacaro253@gmail.com</li>
-              <li><strong>Direccion</strong> Barquisimeto, Venezuela</li>
-              <li><strong>Cargo</strong> <span>FREELANCER</span></li>
+              <li><strong>{birthdateWord}</strong> 30-03-1999</li>
+              <li><strong>{phoneWord}</strong>{phoneNumber}</li>
+              <li><strong>Email</strong>{email}</li>
+              <li><strong>{addressWord}</strong> {address}</li>
+              <li><strong>{positionWord}</strong> <span>{position}</span></li>
             </ul>
           </div>
           <div className="col">
-            <h3>Intereses</h3>
+            <h3>{interests}</h3>
             <div className="contenedor-intereses">
               <Intereses/>
             </div>
           </div>
         </div>
         <button onClick={handleDownload}>
-          Descargar CV <FontAwesomeIcon icon={faDownload} />
+          {download} <FontAwesomeIcon icon={faDownload} />
           <span className="overlay"></span>
         </button>
       </div>

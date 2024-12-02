@@ -38,7 +38,6 @@ function Header() {
             <li><a href="#curriculum" onClick={seleccionar}>CURRICULUM</a></li>
             <li><a href="#portfolio" onClick={seleccionar}>PORTFOLIO</a></li>
             <li><a href="#contacto" onClick={seleccionar}>CONTACTO</a></li>
-            <li><a href="index-ingles.html">EN INGLES</a></li>
           </ul>
         </nav>
         <div className="nav-responsive" onClick={toggleMenu}>

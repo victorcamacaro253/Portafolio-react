@@ -1,10 +1,13 @@
-
-
+import { useContext } from "react";
+import { LanguageContext } from '../contexts/languageContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
+  const { language,texts } = useContext(LanguageContext);
+  const { copyright } = texts.footer[0][language] || texts.footer[0]['es']; // Fallback a español si no se encuentra el idioma
+
   return (
     <footer>
       <a href="#inicio" className="arriba">
@@ -30,7 +33,7 @@ function Footer() {
       </div>
 
       <div className="contenedor-footer">
-        <p>&copy; 2023 Victor Camacaro. Todos los derechos reservados.</p>
+        <p>{copyright}</p>
       </div>
     </footer>
   );
