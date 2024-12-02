@@ -1,5 +1,7 @@
 // LanguageContext.js
 import React, { createContext, useEffect, useState } from 'react';
+import texts from '../data/texts.json';
+
 
 export const LanguageContext = createContext();
 
@@ -35,8 +37,13 @@ const LanguageProvider = ({ children }) => {
         getUserLanguage();
     }, []);
 
+    const value = {
+        language,
+        texts, // Agrega los textos aquí
+    };
+
     return (
-        <LanguageContext.Provider value={{ language }}>
+        <LanguageContext.Provider value={value}>
             {children}
         </LanguageContext.Provider>
     );
