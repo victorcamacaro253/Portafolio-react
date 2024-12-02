@@ -26,7 +26,9 @@
     padding: 0;
 }
 
-
+#root{
+    width: 100%;
+}
 
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
