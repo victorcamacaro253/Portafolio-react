@@ -150,6 +150,39 @@
 
     ],
 
+    "Portfolio":[
+    {
+        "es":{
+        "network":"Redes",
+        "networkP":"Interconexion de Redes",
+        "backDev":"Desarrollo Backend",
+        "backDevP":"Desarrollo de Aplicaciones Backend",
+        "database":"Base de Datos",
+        "databaseP":"SQL & NoSQL",
+        "analysis":"Analisis de sistema",
+        "analysisP":"Desarrollo de Sistema",
+        "webDev":"Desarrollo Web",
+        "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
+        "API":"API",
+        "APIP":"Desarrollo de API"
+        },
+        "en":{
+            "network":"Networks",
+            "networkP":"Network Interconnection",
+            "backDev":"Backend development",
+            "backDevP":"Backend Application Development",
+            "database":"Database",
+            "databaseP":"SQL & NoSQL",
+            "analysis":"System Analysis",
+            "analysisP":"System development",
+            "webDev":"Web Development",
+            "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
+            "API":"API",
+            "APIP":"API Development"
+        }
+    }
+    ],
+
     "contact":[
         {
             "es":{
