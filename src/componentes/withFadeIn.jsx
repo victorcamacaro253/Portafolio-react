@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const withFadeIn = (WrappedComponent, duration = '0.5s') => {
+const withFadeIn = (WrappedComponent, duration = '0.1s',shouldFadeIn = true) => {
     return (props) => {
-      const [isVisible, setIsVisible] = useState(false);
+      const [isVisible, setIsVisible] = useState(shouldFadeIn ? false : true);
       const ref = useRef(null);
   
       useEffect(() => {
@@ -24,7 +24,7 @@ const withFadeIn = (WrappedComponent, duration = '0.5s') => {
             observer.unobserve(ref.current);
           }
         };
-      }, []);
+      }, [shouldFadeIn]);
   
       return (
         <div
