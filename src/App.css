@@ -161,10 +161,11 @@ html{
 .inicio .contenido-banner{
     padding: 20px;
     background-color: var(--color-background-1);
-    max-width: 350px;
+    width: 1000px;
     margin: auto;
     text-align: center;
     border-radius: 40px; 
+    display: flex;
 }
 
 .inicio .contenido-banner img{
@@ -175,7 +176,7 @@ html{
     margin-top: 10px;
     border:10px solid #1CB698;
     display: block;
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 100%;
 }
@@ -183,6 +184,7 @@ html{
 .inicio .contenido-banner h1{
     color: var(--color);
     margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 22px;
     font-family: 'Righteous';
 
@@ -194,6 +196,11 @@ html{
     color: var(--color);
 }
 
+.inicio .contenido-banner .redes{
+    display: flex;
+    flex-direction: column;
+}
+
 .inicio .contenido-banner .redes a{
     color: var(--color);
     display: inline-block;
@@ -203,12 +210,29 @@ html{
     width: 45px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 10px 5px;
     font-size: 20px;
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #1cb698;
+}
+
+.inicio .contenido-banner .redes a p {
+    margin-top: -42px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    white-space: nowrap;
+}
+
+.inicio .contenedor-img{
+    width: 30%;
+}
+
+.inicio .contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
 }
 
 .sobremi{
@@ -879,7 +903,15 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+
+
+    .inicio .contenido-banner .redes a p {
+        display: none;
+    }
+
 }
+
+
 
 @media screen and (max-width: 700px){
     .sobremi .fila{
@@ -923,4 +955,48 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+    .inicio .contenido-banner{
+        display: block;
+        padding: 20px;
+        background-color: var(--color-background-1);
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px; 
+    
+    }
+    
+.inicio .contenido-banner .redes {
+   display: block;
+}
+
+    .inicio .contenido-banner .redes a p {
+        display: none;
+    }
+    
+    .inicio .contenido-banner img{
+        display: block; 
+        height: 250px;
+        /*----------------------*/
+        margin-top: 10px;
+        border:10px solid #1CB698;
+        display: block;
+        width: 80%;
+        margin: auto;
+        border-radius: 100%;
+    
+    }
+
+.inicio .contenedor-texto{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.inicio .contenedor-img{
+    width: 100%;
+}
+
+    
 }
