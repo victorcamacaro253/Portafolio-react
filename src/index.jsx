@@ -8,7 +8,7 @@ import Contacto from './componentes/Contacto';
 import withFadeIn from './componentes/withFadeIn'; // Import the HOC
 import './App.css';
 
-const FadeInInicio = withFadeIn(Inicio, '0.0s'); // Carga más rápido (0.3 segundos)
+const FadeInInicio = withFadeIn(Inicio, '0s',false); // Carga más rápido (0.3 segundos)
 const FadeInSobreMi = withFadeIn(SobreMi, '2.5s');
 const FadeInSkills = withFadeIn(Skills, '2.5s');
 const FadeInCurriculum = withFadeIn(Curriculum, '2.5s');
