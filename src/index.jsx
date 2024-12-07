@@ -1,25 +1,29 @@
 import React from 'react';
-//import Header from './componentes/header';  // Asegúrate de que la ruta es correcta
 import Inicio from './componentes/inicio';
 import SobreMi from './componentes/sobreMi';
 import Skills from './componentes/skills';
 import Curriculum from './componentes/Curriculum';
 import Portfolio from './componentes/Portfolio';
 import Contacto from './componentes/Contacto';
-//import Footer from './componentes/Footer';
-import texts from './data/texts.json';
+import withFadeIn from './componentes/withFadeIn'; // Import the HOC
 import './App.css';
 
+const FadeInInicio = withFadeIn(Inicio, '0.0s'); // Carga más rápido (0.3 segundos)
+const FadeInSobreMi = withFadeIn(SobreMi, '2.5s');
+const FadeInSkills = withFadeIn(Skills, '2.5s');
+const FadeInCurriculum = withFadeIn(Curriculum, '2.5s');
+const FadeInPortfolio = withFadeIn(Portfolio, '2.5s');
+const FadeInContacto = withFadeIn(Contacto, '2.5s');
 
-function  Index() {
+function Index() {
   return (
     <div className="App">
-      <Inicio />
-      <SobreMi />
-      <Skills />
-      <Curriculum />
-      <Portfolio />
-      <Contacto />
+      <FadeInInicio />
+      <FadeInSobreMi />
+      <FadeInSkills />
+      <FadeInCurriculum />
+      <FadeInPortfolio />
+      <FadeInContacto />
     </div>
   );
 }

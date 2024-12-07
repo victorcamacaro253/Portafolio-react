@@ -35,7 +35,9 @@ html{
     scroll-behavior: smooth;
 }
 
-
+.App{
+background-color: #292a2e;
+}
 
 
 
@@ -165,9 +167,29 @@ html{
     margin: auto;
     text-align: center;
     border-radius: 40px; 
+    border: 4px solid var(--color-1);
     display: flex;
+    animation: fadeIn 2s ease-in-out; /* Duración de 1 segundo */
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    to {
+        opacity: 1; /* Termina completamente opaco */
+    }
+}
+
+/* fadeIn.css */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.1s ease; /* Duración por defecto */
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
 .inicio .contenido-banner img{
     /*  fuera del tutorial*/
     height: 250px;
