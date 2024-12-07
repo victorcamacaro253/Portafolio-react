@@ -32,10 +32,15 @@ function Header() {
     <div className="contenedor-header">
       <header>
         <div className="logo">
-          <a href="#">Victor</a>
+          <a href="/">Victor</a>
           <div className="theme-toggler" onClick={toggleTheme}>
-          <FontAwesomeIcon icon={faSun} className={!darkTheme ? 'active' : ''} />
+            <span>
+            <FontAwesomeIcon icon={faSun} className={!darkTheme ? 'active' : ''} />
+            </span>
+            <span>
             <FontAwesomeIcon icon={faMoon} className={darkTheme ? 'active' : ''} />
+            </span>
+        
           </div>
         </div>
         <nav id="nav" className={menuVisible ? 'responsive' : ''}>
