@@ -18,6 +18,9 @@ const Projects = () => {
   // Check if cards exist and are an array
   const projectCards = Array.isArray(projects.cards) ? projects.cards : [];
 
+  // Asignar solo las imágenes a una variable
+  const projectImages = projectCards.map(card => card.image);
+
   return (
     <section className='projects'>
       <h1>{projects.title}</h1>
@@ -46,11 +49,8 @@ const Projects = () => {
           }}
         >
           {projectCards.map((card, index) => {
-            // Ensure the card has the expected structure
-            const project = card; // No need for fallback here since we are directly accessing the card
-
             // Log the project data to check its structure
-            console.log('Project Data:', project);
+            console.log('Project Data:', card);
 
             return (
               <SwiperSlide key={index}>
@@ -58,16 +58,16 @@ const Projects = () => {
                   <div className="image-content">
                     <span className="overlay"></span>
                     <div className="card-image">
-                      <img src={project.image} alt={project.title} className="card-img" />
+                      <img src={projectImages[index]} alt={card.title} className="card-img" />
                     </div>
                   </div>
                   <div className="card-content">
-                    <h2 className="name">{project.title}</h2>
-                    <p className="description">{project.description}</p>
+                    <h2 className="name">{card.title}</h2>
+                    <p className="description">{card.description}</p>
                   </div>
                   <div className="card-footerl">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button className="button">{project.button}</button>
+                    <a href={card.link} target="_blank" rel="noopener noreferrer">
+                      <button className="button">{card.button}</button>
                     </a>
                   </div>
                 </div>
