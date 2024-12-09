@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode,  faDatabase, faCloud,faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import { faDocker,faJs, faReact,faNode,faPhp,faCloudflare,faAws,faWindows,faGoogle } from '@fortawesome/free-brands-svg-icons';

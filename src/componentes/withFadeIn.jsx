@@ -38,4 +38,3 @@ const withFadeIn = (WrappedComponent, duration = '0.1s',shouldFadeIn = true) => 
     };
   };
 
-export default withFadeIn;
