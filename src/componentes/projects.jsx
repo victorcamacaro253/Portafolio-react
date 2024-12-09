@@ -20,6 +20,7 @@ const Projects = () => {
 
   // Asignar solo las imágenes a una variable
   const projectImages = projectCards.map(card => card.image);
+  console.log(projectImages)
 
   return (
     <section className='projects'>
