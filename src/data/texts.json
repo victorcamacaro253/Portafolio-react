@@ -1,0 +1,301 @@
+{
+    "footer":[
+     {
+        "es":{
+            "copyright":"© 2023 Victor Camacaro. Todos los derechos reservados."
+
+        },
+        "en":{
+            "copyright":"© 2023 Victor Camacaro. All rights reserved."
+        }
+     }
+    ],
+    "inicio":[
+        {
+            "es":{
+                "carreer": "Ingeniero de Sistemas-Desarrollador de Software"
+            },
+            "en":{
+                "carreer": "Systems Engineer-Software Developer"
+            }
+        }
+    ],
+    "sobreMi":[
+        {
+            "es":{
+                "title": "Sobre mi",
+                "span": "Hola, Soy Victor Camacaro",
+                "presentation": "Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.",
+                "aboutme":"Conoce mi historia",
+                "PersonalData":"Datos Personales",
+                "birthdateWord": "Cumpleaños",
+                "birthdate":"30-03-1999",
+                "phoneWord":"Telefono",
+                "phoneNumber": "+58 4262553540",
+                "email":"victorcamacaro253@gmail.com",
+                "addressWord": "Direccion",
+                "address": "Barquisimeto, Venezuela",
+                "positionWord": "Cargo",
+                "position": "FREELANCER",
+                "interests":"Intereses",
+                "download":"Descargar CV"
+            },
+            "en":{
+                "title": "About me",
+                "span": "Hello, I'm Victor Camacaro",
+                "presentation": "a Systems Engineer with knowledge in Full Stack development, which enables me to manage projects in a comprehensive manner, covering both front-end and back-end. My solid academic background, complemented by practical experience, has provided me with key technical and analytical skills to offer innovative solutions in the technology sector. Committed to excellence, I strive to stay up-to-date and at the forefront in software development, as well as in the areas of networks, systems and technical support.",
+                "aboutme":"Know my story",
+                "PersonalData":"Personal Data",
+                "birthdateWord": "Birthdate",
+                "birthdate":"30-03-1999",
+                "phoneWord":"Phone",
+                "phoneNumber": "+58 4262553540",
+                "email":"victorcamacaro253@gmail.com",
+                "addressWord": "Address",
+                "address": "Barquisimeto, Venezuela",
+                "positionWord": "Position",
+                "position": "FREELANCER",
+                "interests":"Interests",
+                "download":"Download CV"
+            }
+        }
+    ],
+
+    "skills":[
+        {
+            "es":{
+                "skills":"Habilidades",
+                "techSkills": "Habilidades Tenicas",
+                "profskills":"Habilidades Profesionales",
+                "communication": "Comunicacion",
+                "teamWork":"Trabajo en equipo",
+                "problemSolving": "Resolucion de problemas",
+                "creativity" : "Creatividad",
+                "Dedication": "Dedicacion"
+            },
+            "en":{
+                "skills":"Skills",
+                "techSkills": "Technical Skills",
+                "profskills":"Professional Skills",
+                "communication": "Communication",
+                "teamWork":"Team Work",
+                "problemSolving":"Problem Solving",
+                "creativity" : "Creativity",
+                "Dedication": "Dedication"
+            }
+        }
+    ],
+
+    "projects": [
+        {
+          "es": {
+            "title": "Mis Proyectos",
+            "cards": [
+              {
+                "title": "API REST con Express y MYSQL",
+                "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
+                "image": "../../assets/images/api.png",
+                "button":"Ver mas",
+                "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
+              },
+              {
+                "title": "API REST Integrado con Supabase",
+                "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
+                "image": "../../assets/images/api2.png",
+                 "button":"Ver mas",
+                 "link":"https://github.com/victorcamacaro253/api_supabase"
+              },
+              {
+                "title": "Oauth2.0 App ",
+                "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
+                "image": "../../assets/images/graphoauth2.0.png",
+                 "button":"Ver mas",
+                 "link":"https://github.com/victorcamacaro253/api_OAth2.0"
+              },
+              {
+                "title": "App de Pago con Stripe y  Paypal",
+                "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.", 
+                "image": "../../assets/images/payment.png",
+                "button":"Ver mas",
+                "link":"https://github.com/victorcamacaro253/scanToPay"
+              }
+            ]
+          },
+          "en": {
+            "title": "My Projects",
+            "cards": [
+              {
+                "title": "REST API with Express and MYSQL",
+                "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
+                "image": "../../assets/images/api.png",
+                 "button":"See more",
+                 "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
+              },
+              {
+                "title": "REST API Integrated with Supabase",
+                "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
+                "image": "../../assets/images/api2.png",
+                "button":"See more",
+                "link":"https://github.com/victorcamacaro253/api_supabase"
+              },
+              {
+                "title": "Oauth2.0 App ",
+                "description": "Application to handle user authentication via OAuth 2.0. It uses Passport.js to simplify integration with identity providers like Google and GitHub.",
+                "image": "../../assets/images/graphoauth2.0.png",
+                "button":"See more",
+                "link":"https://github.com/victorcamacaro253/api_OAth2.0"
+              },
+              {
+                "title": "Payment App with Stripe and Paypal",
+                "description": "Developed in React and express to process payments with Stripe and PayPal.",
+                "image": "../../assets/images/payment.png",
+                "button":"See more",
+                "link":"https://github.com/victorcamacaro253/scanToPay"
+              }
+            ]
+          }
+        }
+      ],
+
+    "curriculum":[
+        {
+            "es":{
+                "title": "Curriculum",
+                "education":"Educacion",
+                "experience":"Experiencia",
+                "projects":"Proyectos",
+                "certifications":"Certificaciones",
+                "languages":"Idiomas",
+                "carreer":"Ingenieria de Sistemas",
+                "university":"Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
+                "carreerDescription":"La ingenieria de sistemas es un campo interdisciplinario de la ingenieria que permite estudiar y comprender la realidad,con el proposito de implementar u optimiar sistemas complejos.",
+                "schoolDegree":"Bachiller en Ciencias",
+                "school":"Colegio Nuestra Señora del Rosario",
+                "schoolDegreeDescription":"El bachillerato en ciencias es una formación académica que se centra en las ciencias básicas, como la química, la física, la biología y las matemáticas. Se diferencia del bachillerato en ciencias de la salud, que se enfoca en ese campo específico.",
+                "frontDev":"Desarrollador Frontend",
+                "htmlCssJavascript":"HTML,CSS & JAVASCRIPT",
+                "htmlCssJavascriptYear":"2020 - Actualmente",
+                "frontDevDescription":"El front-end developer o desarrollador front-end se ha convertido en un perfil clave dentro del sector IT. Su principal función es la de traducir el diseño visual de una web a código HTML, CSS y JavaScript.Hablar de front-end developer es hablar de uno de los perfiles laborales más demandados a día de hoy que, además, tiene grandes perspectivas de futuro.Un desarrollador front-end es el programador que se encarga de que una web sea atractiva para el usuario y, al mismo tiempo, funcione correctamente.",
+                "systemDev":"Desarrollador de Sistemas",
+                "systemDevYear":"2020 - Actualmente",
+                "analysis":"Analisis & Diseño de sistemas",
+                "analysisDescription":"El análisis y diseño de sistemas es una disciplina dentro de la ingeniería de software y la informática que se enfoca en estudiar, entender y crear soluciones para satisfacer las necesidades de los usuarios a través del desarrollo de sistemas informáticos. Este proceso implica dos etapas clave: análisis y diseño, las cuales son fundamentales para construir software eficiente, efectivo y alineado con los objetivos del negocio.",
+                "BackDev":"Desarrollador Backend",
+                "nodejs":"Node JS",
+                "BackDevYear":"2020 - Present",
+                "backDevDescription":"El desarrollo backend se refiere a la parte del desarrollo de software que se encarga de la creación, implementación y gestión de los sistemas, bases de datos y servicios que operan en el servidor, y que son esenciales para el funcionamiento de aplicaciones web y móviles. Es el \"lado oculto\" o \"detrás de las cámaras\" de las aplicaciones, ya que los usuarios no interactúan directamente con el backend, pero depende de él para que el sistema funcione correctamente."
+
+
+
+            },
+            "en": {
+             "title": "Curriculum",
+             "education":"Education",
+             "experience":"Experience",
+             "projects":"Proyects",
+            "carreer":"Systems Engineering",
+            "university":"Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
+            "carreerDescription":"Systems engineering is an interdisciplinary field of engineering that allows the study and understanding reality, with the purpose of implementing or optimizing complex systems.",
+            "schoolDegree":"Bachelor of Science",
+            "school":"Colegio Nuestra Señora del Rosario",
+            "schoolDegreeDescription":"The Bachelor of Science is an academic training that focuses on basic sciences, such as chemistry, physics, biology and mathematics. It differs from the Bachelor of Health Sciences, which focuses on that specific field.",
+            "frontDev":"Frontend Developer",
+            "htmlCssJavascript":"HTML,CSS & JAVASCRIPT",
+            "htmlCssJavascriptYear":"2020 - Present",
+            "frontDevDescription":"The front-end developer has become a key profile within the IT sector. Their main function is to translate the visual design of a website into HTML, CSS and JavaScript code. Talking about a front-end developer is talking about one of the most in-demand job profiles today, which also has great prospects for the future. A front-end developer is the programmer who is responsible for making a website attractive to the user and, at the same time, functioning correctly.",
+            "systemDev":"Systems Developer",
+            "systemDevYear":"2020 - Present",
+            "analysis":"Analysis & Design of systems",
+            "analysisDescription":"Systems analysis and design is a discipline within software engineering and computer science that focuses on studying, understanding, and creating solutions to meet user needs through the development of computer systems. This process involves two key stages: analysis and design, which are essential to building efficient, effective software that is aligned with business objectives.",
+            "BackDev":"Backend Developer",
+            "nodejs":"Node JS",
+            "BackDevYear":"2020 - Present",
+            "backDevDescription":"Backend development refers to the part of software development that deals with the creation, implementation, and management of the systems, databases, and services that operate on the server, and that are essential for the functioning of web and mobile applications. It is the \"hidden side\" or \"behind the scenes\" of applications, since users do not directly interact with the backend, but depend on it for the system to function properly."
+
+            
+
+
+
+            }
+        }
+
+    ],
+
+    "Portfolio":[
+    {
+        "es":{
+        "network":"Redes",
+        "networkP":"Interconexion de Redes",
+        "backDev":"Desarrollo Backend",
+        "backDevP":"Desarrollo de Aplicaciones Backend",
+        "database":"Base de Datos",
+        "databaseP":"SQL & NoSQL",
+        "analysis":"Analisis de sistema",
+        "analysisP":"Desarrollo de Sistema",
+        "webDev":"Desarrollo Web",
+        "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
+        "API":"API",
+        "APIP":"Desarrollo de API"
+        },
+        "en":{
+            "network":"Networks",
+            "networkP":"Network Interconnection",
+            "backDev":"Backend development",
+            "backDevP":"Backend Application Development",
+            "database":"Database",
+            "databaseP":"SQL & NoSQL",
+            "analysis":"System Analysis",
+            "analysisP":"System development",
+            "webDev":"Web Development",
+            "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
+            "API":"API",
+            "APIP":"API Development"
+        }
+    }
+    ],
+
+    "contact":[
+        {
+            "es":{
+           "title":"Contacto",
+           "description":"Si deseas contactarme no dudes en hacerlo por cualquiera de los siguientes medios.",
+           "message":"Enviar Mensaje",
+           "name":"Tu nombre",
+           "phoneNumber":"Numero de Telefono",
+           "email":"Correo Electronico",
+           "subject":"Tema",
+           "message2":"Mensaje"
+            },
+            "en": {
+                "title": "Contact",
+                "description":"If you wish to contact me, please do not hesitate to do so by any of the following means.",
+                "message":"Send",
+                "name":"Your name",
+                "phoneNumber":"Phone number",
+                "email":"Email",
+                "subject":"Subject",
+                "message2":"Message"
+            }
+        }
+    ],
+    
+    "aboutme":[
+        {
+            "es":{
+                "title": "Conoce mi Historia",
+                "paragraph1": "Nací en Carora, estado Lara, Venezuela, el 30 de marzo de 1999, hijo de Ana Álvarez, una dedicada profesora, y Víctor Camacaro, también profesor.Llegué al mundo en el hospital Dr. Pastor Oropeza a las 11:30 p.m., en el seno de una familia humilde, de bajos recursos, pero llena de amor.Aunque no tuvimos lujos, las ganas de superación de mi madre fueron el motor que nos impulsó a mejorar poco a poco nuestra situación económica.",
+                "paragrapgh2": "Mis primeros años estuvieron marcados por el amor y el esfuerzo de mi madre, quien trabajaba arduamente para asegurarse de que no me faltara lo esencial.Vivíamos en una casa prestada, hasta que, con mucho sacrificio, logramos adquirir nuestro propio hogar. En ese momento, la casa no era más que un rancho, pero ese mismo año nació mi hermana, Roxana Camacaro,         y con trabajo, dedicación y esfuerzo, fuimos transformando poco a poco ese rancho en un verdadero hogar.",
+                "paragraph3" : " Esta historia me recuerda una frase de Nelson Mandela: \"Siempre parece imposible hasta que se hace\". Nuestra vida ha sido un reflejo de esa verdad, demostrando que con determinación y esfuerzo, se puede construir algo grande a partir de lo más humilde.",
+                "title2":"Mi primeros años"
+            },
+            "en":{
+                "title": "Get to Know My Story",
+                "paragraph1":"I was born in Carora, Lara state, Venezuela, on March 30, 1999, son of Ana Álvarez, a dedicated teacher, and Víctor Camacaro, also a teacher. I came into the world at the Dr. Pastor Oropeza Hospital at 11:30 p.m., into a humble family,with few resources, but full of love. Although we did not have luxuries,my mother's desire to excel was the driving force that drove us to gradually improve our economic situation.",
+               "paragraph2":"My early years were marked by the love and effort of my mother, who worked hard to make sure I never lacked the essentials.We lived in a borrowed house until, with much sacrifice, we managed to acquire our own home. At that time, the house was nothing more than a shack, but that same year my sister, Roxana Camacaro, was born, and with work, dedication and effort, we gradually transformed that shack into a real home.",
+               "paragraph3": "This story reminds me of a quote from Nelson Mandela:  \"It always seems impossible until it is done.\" Our life has been a reflection of that truth, proving that with determination and effort, something great can be built from the most humble things.",
+               "title2":"My first years"
+              
+            }
+        }
+    ]
+}

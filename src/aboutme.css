@@ -23,3 +23,7 @@
     transition: opacity 0.5s ease; /* Transición suave */
   }
   
+.animated-text{
+  color: var(--color);
+
+}

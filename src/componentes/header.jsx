@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon,faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,9 +7,17 @@ function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('darkTheme') === 'true';
+    setDarkTheme(savedTheme);
+    document.body.classList.toggle('dark-theme-variables', savedTheme);
+}, []);
+
   const toggleTheme = () => {
-    setDarkTheme(!darkTheme);
-    document.body.classList.toggle('dark-theme-variables');
+    const newTheme = !darkTheme;
+    setDarkTheme(newTheme);
+    document.body.classList.toggle('dark-theme-variables',newTheme);
+    localStorage.setItem('darkTheme',newTheme)
   };
 
   const toggleMenu = () => {
@@ -24,10 +32,15 @@ function Header() {
     <div className="contenedor-header">
       <header>
         <div className="logo">
-          <a href="#">Victor</a>
+          <a href="/">Victor</a>
           <div className="theme-toggler" onClick={toggleTheme}>
-          <FontAwesomeIcon icon={faSun} className={!darkTheme ? 'active' : ''} />
+            <span>
+            <FontAwesomeIcon icon={faSun} className={!darkTheme ? 'active' : ''} />
+            </span>
+            <span>
             <FontAwesomeIcon icon={faMoon} className={darkTheme ? 'active' : ''} />
+            </span>
+        
           </div>
         </div>
         <nav id="nav" className={menuVisible ? 'responsive' : ''}>
@@ -38,7 +51,6 @@ function Header() {
             <li><a href="#curriculum" onClick={seleccionar}>CURRICULUM</a></li>
             <li><a href="#portfolio" onClick={seleccionar}>PORTFOLIO</a></li>
             <li><a href="#contacto" onClick={seleccionar}>CONTACTO</a></li>
-            <li><a href="index-ingles.html">EN INGLES</a></li>
           </ul>
         </nav>
         <div className="nav-responsive" onClick={toggleMenu}>

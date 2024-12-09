@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.projects{
+    width: 100%;
+    background-color: var(--color-background-2);
+
+}
+
+.projects h1{
+    color: var(--color);
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+} 
+
+.slide-container{
+	/*max-width: 1120px;*/
+ 
+	width: 100%;
+	padding: 40px 10px;
+}
+.slide-content{
+	margin: 0 40px;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.cardl{
+	border-radius: 25px;
+    background-color: var(--color-background-2);
+    display: flex; /* Cambiado a flex */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    height: 80vh; /* Establece una altura mínima para la tarjeta */
+    margin: 45px;
+    width: 80%;
+    border-radius: 30px;
+    border-radius: 30px;
+}
+
+.card-content{
+	flex-grow: 1; /* Permite que este contenedor crezca y ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 4px;
+    background-color: var(--color-background-2);
+    border-left: 4px solid #1CB698;
+    border-right: 4px solid #1CB698;
+}
+
+.card-footerl {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    padding: 10px; /* Espaciado alrededor del botón */
+    background-color: var(--color-background-2);
+    margin-top: none;
+    border-left: 4px solid #1CB698;
+    border-right: 4px solid #1CB698;
+    border-bottom: 4px solid #1CB698;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+
+}
+.image-content{
+	position: relative;
+	border-radius: 20%;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.card-image{
+	position: relative;
+	height: 100%;
+	width: 100%;
+    border-radius: 10%;
+
+	top: 0; /* Alinea al borde superior */
+    left: 0; /* Alinea al borde izquierdo */
+	background: none;
+}
+
+.card-image .card-img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+    border-top: 4px solid #1CB698;
+    border-left: 4px solid #1CB698;
+    border-right: 4px solid #1CB698;
+}
+.name{
+	font-size: 18px;
+	font-weight: 500;
+    color: var(--color);
+    font-family: 'Righteous';
+
+}
+h1{
+  text-align: center;
+}
+
+.description{
+	font-size: 14px;
+    
+    font-family: 'Righteous';
+    color: var(--color);
+	text-align: justify;
+
+}
+
+.button{
+	border:none;
+	font-size: 16px;
+  font-family: 'Righteous';
+
+	color: var(--color);
+    padding: 8px 16px;
+    background-color: var(--color-background-2);
+    border: 3px solid #1CB698;
+     border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+	background: #1CB698;
+  border: 3px solid #fff;
+
+}
+.swiper-wrapper{
+    width: 100px;
+}
+
+.swiper-navBtn{
+	size: 30px;
+	color: #fff;
+	background-color: #6e93f7;
+	border-radius: 40%;
+	transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+  color: #4070F4;
+  background-color: #fff;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 20px; /* Ajusta este valor para cambiar el tamaño de las flechas */
+    width: 30px; /* Ajusta el ancho del contenedor de la flecha */
+    height: 30px; /* Ajusta la altura del contenedor de la flecha */
+    display: flex; /* Asegúrate de que se muestre como un contenedor flex */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 15px;
+    background-color: none;
+    border-radius: 50%;
+    color: #1CB698;
+    font-weight: 900;
+    border: 3px solid #1CB698;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+   color: #fff;
+   background-color: #1CB698;
+   border: 2px solid #fff;
+
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: inherit; /* Asegúrate de que el tamaño de la flecha herede el tamaño del contenedor */
+}
+.swiper-button-next{
+    
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet {
+    bottom: -6px; /* Ajusta este valor para mover la paginación hacia arriba o hacia abajo */
+}
+.swiper-pagination-bullet{
+  background-color: #6eb9f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+

@@ -1,7 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect,useContext } from 'react';
+import { LanguageContext } from '../contexts/languageContext';
+
 
 
 function Skills() {
+  const { language,texts } = useContext(LanguageContext);
+  const {skills,techSkills,profskills,communication,teamWork,creativity,Dedication}= texts.skills[0][language] || texts.skills[0]['es']; 
+
   useEffect(() => {
     const handleScroll = () => {
       const skills = document.getElementById("skills");
@@ -28,10 +33,10 @@ function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="contenido-seccion">
-        <h2>Skills</h2>
+        <h2>{skills}</h2>
         <div className="fila">
           <div className="col">
-            <h3>Technical Skills</h3>
+            <h3>{techSkills}</h3>
             <div className="skill">
               <span>PHP</span>
               <div className="barra-skill">
@@ -41,18 +46,18 @@ function Skills() {
               </div>
             </div>
             <div className="skill">
-              <span>HTML & CSS</span>
+              <span>HTML,CSS & Javascript</span>
               <div className="barra-skill">
                 <div className="progreso">
-                  <span>60%</span>
+                  <span>80%</span>
                 </div>
               </div>
             </div>
             <div className="skill">
-              <span>Javascript</span>
+              <span>NODE JS</span>
               <div className="barra-skill">
                 <div className="progreso">
-                  <span>50%</span>
+                  <span>80%</span>
                 </div>
               </div>
             </div>
@@ -74,9 +79,9 @@ function Skills() {
             </div>
           </div>
           <div className="col">
-            <h3>Profesional Skills</h3>
+            <h3>{profskills}</h3>
             <div className="skill">
-              <span>Comunicacion</span>
+              <span>{communication}</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>80%</span>
@@ -84,7 +89,7 @@ function Skills() {
               </div>
             </div>
             <div className="skill">
-              <span>Trabajo en equipo</span>
+              <span>{teamWork}</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>70%</span>
@@ -92,7 +97,7 @@ function Skills() {
               </div>
             </div>
             <div className="skill">
-              <span>Creatividad</span>
+              <span>{creativity}</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>60%</span>
@@ -100,7 +105,7 @@ function Skills() {
               </div>
             </div>
             <div className="skill">
-              <span>Dedicacion</span>
+              <span>{Dedication}</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>99%</span>
