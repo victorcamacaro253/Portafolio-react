@@ -7,6 +7,7 @@ import proyecto4 from '../../assets/images/business-cloud-computing-1080x675.jpg
 import proyecto5 from '../../assets/images/responsive-web.webp';
 import proyecto6 from '../../assets/images/api_pic.jpg';
 import proyecto7 from '../../assets/images/backenddev.png';
+import proyecto8 from '../../assets/images/api.png';
 
 function Portfolio() {
   const { language,texts } = useContext(LanguageContext);
@@ -93,7 +94,7 @@ function Portfolio() {
           <div className="proyecto">
            
             <div className="hover-galeria">
-              <img src={proyecto6} alt="hover"  style={{ height: '255px' }} />
+              <img src={proyecto8} alt="hover"  style={{ height: '255px' }} />
               <div className="overlay">
                         <h3>{API}</h3>
                         <p>{APIP}</p>
