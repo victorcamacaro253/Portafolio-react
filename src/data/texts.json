@@ -94,28 +94,28 @@
               {
                 "title": "API REST con Express y MYSQL",
                 "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
-                "image": "assets/api.png",
+                "image": "../assets/api.png",
                 "button":"Ver mas",
                 "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
               },
               {
                 "title": "API REST Integrado con Supabase",
                 "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
-                "image": "/assets/api2.png",
+                "image": "../assets/api2.png",
                  "button":"Ver mas",
                  "link":"https://github.com/victorcamacaro253/api_supabase"
               },
               {
                 "title": "Oauth2.0 App ",
                 "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
-                "image": "assets/graphoauth2.0.png",
+                "image": "../assets/graphoauth2.0.png",
                  "button":"Ver mas",
                  "link":"https://github.com/victorcamacaro253/api_OAth2.0"
               },
               {
                 "title": "App de Pago con Stripe y  Paypal",
                 "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.", 
-                "image": "/assets/payment.png",
+                "image": "../assets/payment.png",
                 "button":"Ver mas",
                 "link":"https://github.com/victorcamacaro253/scanToPay"
               }
