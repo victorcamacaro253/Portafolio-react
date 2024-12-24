@@ -4,6 +4,10 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import '../projects.css';
 import { LanguageContext } from '../contexts/languageContext';
+import image1 from '../../assets/images/api.png'
+import image2 from '../../assets/images/api2.png'
+import image3 from '../../assets/images/graphoauth2.0.png'
+import image4 from '../../assets/images/payment.png'
 
 const Projects = () => {
   const { language, texts } = useContext(LanguageContext);
@@ -19,7 +23,15 @@ const Projects = () => {
   const projectCards = Array.isArray(projects.cards) ? projects.cards : [];
 
   // Asignar solo las imágenes a una variable
-  const projectImages = projectCards.map(card => card.image);
+  //const projectImages = projectCards.map(card => card.image);
+  
+
+const images=[
+  image1,
+  image2,
+  image3,
+  image4
+]
 
   return (
     <section className='projects'>
@@ -58,7 +70,7 @@ const Projects = () => {
                   <div className="image-content">
                     <span className="overlay"></span>
                     <div className="card-image">
-                      <img src={projectImages[index]} alt={card.title} className="card-img" />
+                      <img src={images[index]} alt={card.title} className="card-img" />
                     </div>
                   </div>
                   <div className="card-content">

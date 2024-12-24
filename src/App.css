@@ -147,19 +147,39 @@ background-color: #292a2e;
 
 
 /* seccion inicio */
-
-.inicio{
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-    url(../assets/images/fondo.jpg);
-    background-size: cover;
-    width: 100%; /* Cambiado a 100% */
-    height: auto; /* Cambiado a auto */
-    min-height: 100vh; /* Asegura que ocupe al menos la altura de la pantalla */
+.inicio {
+    position: relative; /* Asegúrate de que el contenedor sea relativo */
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
     color: var(--color);
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido */
-    padding: 20px; /* Agrega un poco de padding */
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.background-image {
+    position: absolute; /* Posiciona la imagen de fondo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+    opacity: 0.5 ; /* Opacidad inicial */
+}
+
+.background-image.fade {
+    opacity: 0; /* Opacidad al desvanecerse */
+}
+
+.contenido-banner {
+    position: relative; /* Asegúrate de que el contenido esté por encima de la imagen de fondo */
+    z-index: 1; /* Asegura que el contenido esté visible sobre la imagen de fondo */
+    text-align: center; /* Centra el texto */
 }
 
 .inicio .contenido-banner{
