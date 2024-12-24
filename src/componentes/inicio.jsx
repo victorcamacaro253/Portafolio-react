@@ -47,11 +47,11 @@ function Inicio() {
         </div>
         
         <div className="redes">
-          <a href="https://m.facebook.com/100000134262241"> <FontAwesomeIcon icon={faFacebook} /><p>victormanuel.camacaro.1</p></a>
-          <a href="https://mobile.twitter.com/victorcamacar19"><FontAwesomeIcon icon={faXTwitter} /><p>victorcamacar19</p></a>
-          <a href="https://github.com/victorcamacaro253"><FontAwesomeIcon icon={faGithub} /><p>victorcamacaro253</p></a>
-          <a href="https://www.linkedin.com/in/victor-camacaro-3634641a5"><FontAwesomeIcon icon={faLinkedin} /><p>victor-camacaro-3634641a5</p></a>
-          <a href="https://www.instagram.com/victorcamacaro1999/"><FontAwesomeIcon icon={faInstagram} /><p>victorcamacaro1999</p></a>
+          <a href="https://m.facebook.com/100000134262241"  className="social-icon"> <FontAwesomeIcon icon={faFacebook} /><p>victormanuel.camacaro.1</p></a>
+          <a href="https://mobile.twitter.com/victorcamacar19"  className="social-icon"><FontAwesomeIcon icon={faXTwitter} /><p>victorcamacar19</p></a>
+          <a href="https://github.com/victorcamacaro253"  className="social-icon"><FontAwesomeIcon icon={faGithub} /><p>victorcamacaro253</p></a>
+          <a href="https://www.linkedin.com/in/victor-camacaro-3634641a5"  className="social-icon"><FontAwesomeIcon icon={faLinkedin} /><p>victor-camacaro-3634641a5</p></a>
+          <a href="https://www.instagram.com/victorcamacaro1999/"  className="social-icon"><FontAwesomeIcon icon={faInstagram} /><p>victorcamacaro1999</p></a>
         </div>
       </div>
     </section>

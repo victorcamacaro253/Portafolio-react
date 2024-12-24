@@ -257,17 +257,40 @@ background-color: #292a2e;
     margin: 10px 5px;
     font-size: 20px;
     transition: .3s;
+    position: relative; 
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #1cb698;
+   padding-right: 350px;
+   padding-left: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 20px;
+   height: 50px;
+    border-radius: 3px;
+
 }
+
+
 
 .inicio .contenido-banner .redes a p {
     margin-top: -42px;
     margin-bottom: 10px;
     margin-left: 60px;
     white-space: nowrap;
+    transition: background-color 0.3s; /* Añadido para suavizar la transición */
+
 }
+/*
+.inicio .contenido-banner .redes a:hover p {
+    background-color: #1cb698;
+    color: white; 
+   padding-right: 280px;
+    border-radius: 5px;
+    border: 2px solid var(--color); 
+    
+}
+*/
 
 .inicio .contenedor-img{
     width: 30%;
