@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -23,8 +24,8 @@ const Projects = () => {
   const projectCards = Array.isArray(projects.cards) ? projects.cards : [];
 
   // Asignar solo las imágenes a una variable
-  //const projectImages = projectCards.map(card => card.image);
-  
+  const projectImages = projectCards.map(card => card.image);
+  console.log(projectImages)
 
 const images=[
   image1,
