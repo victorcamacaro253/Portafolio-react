@@ -10,6 +10,7 @@ import Projects from './componentes/projects';
 import withFadeIn from './componentes/withFadeIn'; // Import the HOC
 import './App.css';
 import './birthdateModal.css'; // Import the CSS for the birthday modal
+import image from './assets/images/victor_p3.jpg'
 
 const FadeInInicio = withFadeIn(Inicio, '0s',false); // Carga más rápido (0.3 segundos)
 const FadeInSobreMi = withFadeIn(SobreMi, '2.5s');
@@ -125,7 +126,7 @@ function Index() {
           <div className="ceo-profile">
             <div className="ceo-image-container">
               <img 
-                src="./assets/images/victor_p3.jpg"
+                src={image}
                 alt="Our CEO & Founder" 
                 className="ceo-image"
               />
