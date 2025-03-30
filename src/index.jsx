@@ -134,7 +134,7 @@ function Index() {
             </div>
 
             <div className="birthday-content">
-              <h2 className="gradient-text">Happy Birthdate  Victor!</h2>
+              <h2 className="gradient-text">Happy Birthday  Victor!</h2>
               <p className="subtitle">Celebrating Innovation Leadership</p>
 
               <div className="message-container">
