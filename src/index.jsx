@@ -42,7 +42,7 @@ function Index() {
   
     useEffect(() => {
     // FOR DEVELOPMENT ONLY - force show modal regardless of date
-    const forceShowForDev = true; // Set this to false when deploying
+    const forceShowForDev = false; // Set this to false when deploying
     
     const today = new Date();
     const isBirthday = today.getDate() === 30 && today.getMonth() === 2;
