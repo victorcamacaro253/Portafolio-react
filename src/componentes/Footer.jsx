@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from '../contexts/languageContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faGithub, faLinkedinIn, faInstagram,faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   const { language,texts } = useContext(LanguageContext);
@@ -19,7 +19,7 @@ function Footer() {
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a href="https://mobile.twitter.com/victorcamacar19">
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faXTwitter} />
         </a>
         <a href="https://github.com/victorcamacaro253">
           <FontAwesomeIcon icon={faGithub} />

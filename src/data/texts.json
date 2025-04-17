@@ -99,6 +99,13 @@
                 "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
               },
               {
+                "title": "API con NestJS y MySQL",
+                "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
+                "image": "../../assets/images/nest_api_1.png",
+                "button": "Ver mas",
+                "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js"
+              },
+              {
                 "title": "API REST Integrado con Supabase",
                 "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
                 "image": "../../assets/images/api2.png",
@@ -130,6 +137,13 @@
                 "image": "./assets/images/api.png",
                  "button":"See more",
                  "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
+              },
+              {
+                "title": "API with NestJS with MySQL",
+                "description": "Robust and modular REST API built with NestJS and MySQL, focused on scalability and best development practices.",
+                "image": "../../assets/images/nest_api_1.png",
+                "button": "See more",
+                "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js"
               },
               {
                 "title": "REST API Integrated with Supabase",
