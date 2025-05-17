@@ -31,7 +31,7 @@ function SobreMi() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../public/curriculum-vitae-VICTOR_en.pdf';
+    link.href = '../../public/curriculum-vitae-VICTOR_en.pdf';
     link.download = 'Victor_Camacaro_CV.pdf';
     link.click();
   };
