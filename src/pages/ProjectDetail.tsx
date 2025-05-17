@@ -8,7 +8,7 @@ import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
 
-interface ProjectDetailProps {
+/*interface ProjectDetailProps {
   id: number;
   title: string;
   description: string;
@@ -18,7 +18,7 @@ interface ProjectDetailProps {
   link: string;
   image: string;
   
-}
+}*/
 
 const ProjectDetail = () => {
   const { language, texts } = useContext(LanguageContext);
