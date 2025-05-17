@@ -10,6 +10,7 @@ import image2 from '../assets/images/api2.png';
 import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
+import { Link } from 'react-router-dom';
 
 interface ProjectCard {
   title: string;
@@ -24,8 +25,8 @@ const Projects = () => {
   const projects = projectData[language] || projectData['es'];
   const projectCards: ProjectCard[] = Array.isArray(projects.cards) ? projects.cards : [];
 
-  
- const images = [image1, image5, image2, image3, image4];
+
+  const images = [image1, image5, image2, image3, image4];
 
   return (
     <section id="projects" className="w-full bg-background-2 dark:bg-dark-background-2 py-16 px-4">
@@ -34,7 +35,7 @@ const Projects = () => {
           {projects.title}
           <span className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
         </h1>
-        
+
         <div className="swiper-container relative">
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
@@ -64,11 +65,11 @@ const Projects = () => {
             {projectCards.map((card, index) => (
               <SwiperSlide key={index}>
                 <div className="flex flex-col h-[550px] bg-background-2 dark:bg-dark-background-2 rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] hover:scale-[1.02]">
-                  
+
                   {/* Image Section - Fixed Height */}
                   <div className="relative h-68 overflow-hidden group">
-                    <img 
-                    src={images[index]} 
+                    <img
+                      src={images[index]}
                       alt={card.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -76,7 +77,7 @@ const Projects = () => {
                       <span className="text-white font-bold text-lg">{card.title}</span>
                     </div>
                   </div>
-                  
+
                   {/* Content Section - Flexible within fixed container */}
                   <div className="flex flex-col p-6 border-l-2 border-r-2 border-accent dark:border-accent-dark flex-grow">
                     <h2 className="text-xl font-righteous mb-3 text-text-light dark:text-text-dark">
@@ -88,17 +89,28 @@ const Projects = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   {/* Button Section - Fixed Height */}
+
                   <div className="p-4 border-l-2 border-r-2 border-b-2 border-accent dark:border-accent-dark rounded-b-3xl bg-gradient-to-r from-accent/10 to-accent/5 dark:from-accent-dark/10 dark:to-accent-dark/5">
-                    <a href={card.link} target="_blank" rel="noopener noreferrer" className="block w-full">
-                      <button className="w-full px-6 py-3 font-righteous text-text-light dark:text-text-dark border-2 border-accent dark:border-accent-dark rounded-lg hover:bg-accent hover:text-white dark:hover:bg-accent-dark transition-all duration-300 flex items-center justify-center gap-2">
-                        {card.button}
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                      </button>
-                    </a>
+                    <div className="flex gap-2">
+                      <Link
+                        to={`/project/${index}`}
+                        className="flex-1"
+                      >
+                        <button className="w-full px-6 py-3 font-righteous text-text-light dark:text-text-dark border-2 border-accent dark:border-accent-dark rounded-lg hover:bg-accent hover:text-white dark:hover:bg-accent-dark transition-all duration-300 flex items-center justify-center gap-2">
+                          {language === 'es' ? 'Ver detalles' : 'View details'}
+                        </button>
+                      </Link>
+                      <a href={card.link} target="_blank" rel="noopener noreferrer" className="flex-1">
+                        <button className="w-full px-6 py-3 font-righteous text-text-light dark:text-text-dark border-2 border-accent dark:border-accent-dark rounded-lg hover:bg-accent hover:text-white dark:hover:bg-accent-dark transition-all duration-300 flex items-center justify-center gap-2">
+                          {language === 'es' ? 'Ver código' : 'View code'}
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -108,7 +120,7 @@ const Projects = () => {
           {/* Navigation buttons */}
           <div className="swiper-button-next !w-12 !h-12 !text-accent dark:!text-accent-dark !border-2 !border-accent dark:!border-accent-dark !rounded-full after:!text-sm hover:!bg-accent hover:!text-white dark:hover:!bg-accent-dark !transition-all !duration-300 !shadow-lg"></div>
           <div className="swiper-button-prev !w-12 !h-12 !text-accent dark:!text-accent-dark !border-2 !border-accent dark:!border-accent-dark !rounded-full after:!text-sm hover:!bg-accent hover:!text-white dark:hover:!bg-accent-dark !transition-all !duration-300 !shadow-lg"></div>
-          
+
           <div className="swiper-pagination !relative !mt-8 flex justify-center gap-2"></div>
         </div>
       </div>

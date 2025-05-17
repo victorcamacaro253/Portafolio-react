@@ -1,315 +1,497 @@
 {
-    "footer":[
-     {
-        "es":{
-            "copyright":"© 2023 Victor Camacaro. Todos los derechos reservados."
+  "footer": [
+    {
+      "es": {
+        "copyright": "© 2023 Victor Camacaro. Todos los derechos reservados."
+      },
+      "en": {
+        "copyright": "© 2023 Victor Camacaro. All rights reserved."
+      }
+    }
+  ],
+  "inicio": [
+    {
+      "es": {
+        "carreer": "Ingeniero de Sistemas-Desarrollador de Software"
+      },
+      "en": {
+        "carreer": "Systems Engineer-Software Developer"
+      }
+    }
+  ],
+  "sobreMi": [
+    {
+      "es": {
+        "title": "Sobre mi",
+        "span": "Hola, Soy Victor Camacaro",
+        "presentation": "Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.",
+        "aboutme": "Conoce mi historia",
+        "PersonalData": "Datos Personales",
+        "birthdateWord": "Cumpleaños",
+        "birthdate": "30-03-1999",
+        "phoneWord": "Telefono",
+        "phoneNumber": "+58 4262553540",
+        "email": "victorcamacaro253@gmail.com",
+        "addressWord": "Direccion",
+        "address": "Barquisimeto, Venezuela",
+        "positionWord": "Cargo",
+        "position": "FREELANCER",
+        "interests": "Intereses",
+        "download": "Descargar CV"
+      },
+      "en": {
+        "title": "About me",
+        "span": "Hello, I'm Victor Camacaro",
+        "presentation": "a Systems Engineer with knowledge in Full Stack development, which enables me to manage projects in a comprehensive manner, covering both front-end and back-end. My solid academic background, complemented by practical experience, has provided me with key technical and analytical skills to offer innovative solutions in the technology sector. Committed to excellence, I strive to stay up-to-date and at the forefront in software development, as well as in the areas of networks, systems and technical support.",
+        "aboutme": "Know my story",
+        "PersonalData": "Personal Data",
+        "birthdateWord": "Birthdate",
+        "birthdate": "30-03-1999",
+        "phoneWord": "Phone",
+        "phoneNumber": "+58 4262553540",
+        "email": "victorcamacaro253@gmail.com",
+        "addressWord": "Address",
+        "address": "Barquisimeto, Venezuela",
+        "positionWord": "Position",
+        "position": "FREELANCER",
+        "interests": "Interests",
+        "download": "Download CV"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "es": {
+        "skills": "Habilidades",
+        "techSkills": "Habilidades Tenicas",
+        "profskills": "Habilidades Profesionales",
+        "communication": "Comunicacion",
+        "teamWork": "Trabajo en equipo",
+        "problemSolving": "Resolucion de problemas",
+        "creativity": "Creatividad",
+        "Dedication": "Dedicacion"
+      },
+      "en": {
+        "skills": "Skills",
+        "techSkills": "Technical Skills",
+        "profskills": "Professional Skills",
+        "communication": "Communication",
+        "teamWork": "Team Work",
+        "problemSolving": "Problem Solving",
+        "creativity": "Creativity",
+        "Dedication": "Dedication"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "es": {
+        "title": "Mis Proyectos",
+        "cards": [
+          {
+            "title": "API REST con Express y MYSQL",
+            "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
+            "detailedDescription": "Este proyecto es una API REST completa desarrollada con Node.js y Express.js que implementa un sistema robusto para la gestión de proyectos. La arquitectura sigue el patrón MVC con capas bien definidas para rutas, controladores, servicios y modelos.\n\nCaracterísticas técnicas incluyen autenticación JWT con refresh tokens, sistema de roles (admin, editor, usuario), validación de datos con express-validator, paginación avanzada y filtrado de resultados. La base de datos MySQL está optimizada con índices adecuados y relaciones bien estructuradas.\n\nEl proyecto incluye documentación Swagger integrada, manejo centralizado de errores, variables de entorno para diferentes ambientes (desarrollo, producción) y tests unitarios básicos. Implementé técnicas de seguridad como rate limiting, sanitización de inputs y protección contra SQL injection.",
 
-        },
-        "en":{
-            "copyright":"© 2023 Victor Camacaro. All rights reserved."
-        }
-     }
-    ],
-    "inicio":[
-        {
-            "es":{
-                "carreer": "Ingeniero de Sistemas-Desarrollador de Software"
-            },
-            "en":{
-                "carreer": "Systems Engineer-Software Developer"
-            }
-        }
-    ],
-    "sobreMi":[
-        {
-            "es":{
-                "title": "Sobre mi",
-                "span": "Hola, Soy Victor Camacaro",
-                "presentation": "Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.",
-                "aboutme":"Conoce mi historia",
-                "PersonalData":"Datos Personales",
-                "birthdateWord": "Cumpleaños",
-                "birthdate":"30-03-1999",
-                "phoneWord":"Telefono",
-                "phoneNumber": "+58 4262553540",
-                "email":"victorcamacaro253@gmail.com",
-                "addressWord": "Direccion",
-                "address": "Barquisimeto, Venezuela",
-                "positionWord": "Cargo",
-                "position": "FREELANCER",
-                "interests":"Intereses",
-                "download":"Descargar CV"
-            },
-            "en":{
-                "title": "About me",
-                "span": "Hello, I'm Victor Camacaro",
-                "presentation": "a Systems Engineer with knowledge in Full Stack development, which enables me to manage projects in a comprehensive manner, covering both front-end and back-end. My solid academic background, complemented by practical experience, has provided me with key technical and analytical skills to offer innovative solutions in the technology sector. Committed to excellence, I strive to stay up-to-date and at the forefront in software development, as well as in the areas of networks, systems and technical support.",
-                "aboutme":"Know my story",
-                "PersonalData":"Personal Data",
-                "birthdateWord": "Birthdate",
-                "birthdate":"30-03-1999",
-                "phoneWord":"Phone",
-                "phoneNumber": "+58 4262553540",
-                "email":"victorcamacaro253@gmail.com",
-                "addressWord": "Address",
-                "address": "Barquisimeto, Venezuela",
-                "positionWord": "Position",
-                "position": "FREELANCER",
-                "interests":"Interests",
-                "download":"Download CV"
-            }
-        }
-    ],
-
-    "skills":[
-        {
-            "es":{
-                "skills":"Habilidades",
-                "techSkills": "Habilidades Tenicas",
-                "profskills":"Habilidades Profesionales",
-                "communication": "Comunicacion",
-                "teamWork":"Trabajo en equipo",
-                "problemSolving": "Resolucion de problemas",
-                "creativity" : "Creatividad",
-                "Dedication": "Dedicacion"
-            },
-            "en":{
-                "skills":"Skills",
-                "techSkills": "Technical Skills",
-                "profskills":"Professional Skills",
-                "communication": "Communication",
-                "teamWork":"Team Work",
-                "problemSolving":"Problem Solving",
-                "creativity" : "Creativity",
-                "Dedication": "Dedication"
-            }
-        }
-    ],
-
-    "projects": [
-        {
-          "es": {
-            "title": "Mis Proyectos",
-            "cards": [
-              {
-                "title": "API REST con Express y MYSQL",
-                "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
-                "image": "../../assets/images/api.png",
-                "button":"Ver mas",
-                "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
-              },
-              {
-                "title": "API con NestJS y MySQL",
-                "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
-                "image": "../../assets/images/nest_api_1.png",
-                "button": "Ver mas",
-                "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js"
-              },
-              {
-                "title": "API REST Integrado con Supabase",
-                "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
-                "image": "../../assets/images/api2.png",
-                 "button":"Ver mas",
-                 "link":"https://github.com/victorcamacaro253/api_supabase"
-              },
-              {
-                "title": "Oauth2.0 App ",
-                "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
-                "image": "../../assets/images/graphoauth2.0.png",
-                 "button":"Ver mas",
-                 "link":"https://github.com/victorcamacaro253/api_OAth2.0"
-              },
-              {
-                "title": "App de Pago con Stripe y  Paypal",
-                "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.", 
-                "image": "../../assets/images/payment.png",
-                "button":"Ver mas",
-                "link":"https://github.com/victorcamacaro253/scanToPay"
-              }
+            "image": "../../assets/images/api.png",
+            "button": "Ver mas",
+            "link": "https://github.com/victorcamacaro253/apihechaenimaubar",
+            "features": [
+              "Autenticación JWT",
+              "Endpoints RESTful",
+              "Validación de datos",
+              "Sistema de roles y permisos",
+              "Documentación con Swagger"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "MySQL"
+            ],
+            "challenges": [
+              "Implementar autenticación segura",
+              "Optimizar consultas a la base de datos",
+              "Manejar relaciones complejas entre modelos"
             ]
           },
-          "en": {
-            "title": "My Projects",
-            "cards": [
-              {
-                "title": "REST API with Express and MYSQL",
-                "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
-                "image": "./assets/images/api.png",
-                 "button":"See more",
-                 "link":"https://github.com/victorcamacaro253/apihechaenimaubar"
-              },
-              {
-                "title": "API with NestJS with MySQL",
-                "description": "Robust and modular REST API built with NestJS and MySQL, focused on scalability and best development practices.",
-                "image": "../../assets/images/nest_api_1.png",
-                "button": "See more",
-                "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js"
-              },
-              {
-                "title": "REST API Integrated with Supabase",
-                "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
-                "image": "./assets/images/api2.png",
-                "button":"See more",
-                "link":"https://github.com/victorcamacaro253/api_supabase"
-              },
-              {
-                "title": "Oauth2.0 App ",
-                "description": "Application to handle user authentication via OAuth 2.0. It uses Passport.js to simplify integration with identity providers like Google and GitHub.",
-                "image": "../assets/images/graphoauth2.0.png",
-                "button":"See more",
-                "link":"https://github.com/victorcamacaro253/api_OAth2.0"
-              },
-              {
-                "title": "Payment App with Stripe and Paypal",
-                "description": "Developed in React and express to process payments with Stripe and PayPal.",
-                "image": "../../assets/images/payment.png",
-                "button":"See more",
-                "link":"https://github.com/victorcamacaro253/scanToPay"
-              }
+          {
+            "title": "API con NestJS y MySQL",
+            "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
+            "detailedDescription": "Esta API construida con NestJS representa mi evolución hacia frameworks más estructurados. Aproveché al máximo las características de TypeScript y la arquitectura modular de NestJS para crear un sistema altamente organizado.\n\nEl proyecto utiliza TypeORM para la conexión con MySQL, implementando el patrón Repository para acceso a datos. Desarrollé módulos independientes para cada dominio (auth, usuarios, proyectos), cada uno con sus servicios, controladores y entidades.\n\nIncluye características avanzadas como: decoradores personalizados, interceptores globales para manejo de errores, validación con class-validator, serialización con class-transformer y documentación automática con Swagger. Configuré un sistema completo de variables de entorno para diferentes ambientes y escribí tests unitarios con Jest.",
+
+            "image": "../../assets/images/nest_api_1.png",
+            "button": "Ver mas",
+            "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js",
+            "features": [
+              "Arquitectura modular",
+              "Inyección de dependencias",
+              "Validación de datos integrada",
+              "Documentación automática",
+              "Patrón Repository"
+            ],
+            "technologies": [
+              "NestJS",
+              "TypeScript",
+              "MySQL",
+              "TypeORM",
+              "Class-validator"
+            ],
+            "challenges": [
+              "Aprender el framework NestJS",
+              "Implementar TypeORM correctamente",
+              "Configurar módulos independientes"
+            ]
+          },
+          {
+            "title": "API REST Integrado con Supabase",
+            "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
+            "detailedDescription": "Este proyecto demuestra mi capacidad para integrar servicios en la nube. Desarrollé una API en Node.js que actúa como intermediario entre el cliente y Supabase, añadiendo lógica de negocio adicional.\n\nImplementé autenticación utilizando el sistema de Supabase Auth, con roles personalizados y políticas de seguridad a nivel de fila (RLS). La API gestiona el almacenamiento en Supabase Storage, incluyendo subida de archivos, generación de URLs firmadas y gestión de permisos.\n\nPara la base de datos, aproveché las capacidades de PostgreSQL en Supabase, implementando funciones almacenadas y triggers. La API también incluye endpoints para llamar a funciones serverless de Supabase y gestionar sus respuestas. Configuré un sistema de webhooks para notificaciones en tiempo real.",
+            "image": "../../assets/images/api2.png",
+            "button": "Ver mas",
+            "link": "https://github.com/victorcamacaro253/api_supabase",
+            "features": [
+              "Autenticación con Supabase",
+              "Almacenamiento en la nube",
+              "Base de datos en tiempo real",
+              "Funciones serverless",
+              "API Gateway"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "Supabase",
+              "PostgreSQL",
+              "JWT"
+            ],
+            "challenges": [
+              "Integración con Supabase Auth",
+              "Configurar permisos de fila",
+              "Optimizar consultas en tiempo real"
+            ]
+          },
+          {
+            "title": "Oauth2.0 App ",
+            "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
+            "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
+            "image": "../../assets/images/graphoauth2.0.png",
+            "button": "Ver mas",
+            "link": "https://github.com/victorcamacaro253/api_OAth2.0",
+            "features": [
+              "Autenticación con Google",
+              "Autenticación con GitHub",
+              "Sesiones persistentes",
+              "Protección de rutas",
+              "Gestión de perfiles"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "Passport.js",
+              "OAuth 2.0",
+              "Session Storage"
+            ],
+            "challenges": [
+              "Configurar múltiples proveedores OAuth",
+              "Manejar flujos de autenticación",
+              "Proteger rutas sensibles"
+            ]
+          },
+          {
+            "title": "App de Pago con Stripe y  Paypal",
+            "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.",
+            "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
+            "image": "../../assets/images/payment.png",
+            "button": "Ver mas",
+            "link": "https://github.com/victorcamacaro253/scanToPay",
+            "features": [
+              "Procesamiento de pagos con Stripe",
+              "Integración con PayPal",
+              "Carrito de compras",
+              "Historial de transacciones",
+              "Notificaciones por email"
+            ],
+            "technologies": [
+              "React",
+              "Node.js",
+              "Stripe API",
+              "PayPal SDK",
+              "MongoDB"
+            ],
+            "challenges": [
+              "Implementar dos pasarelas de pago",
+              "Manejar webhooks de pago",
+              "Proteger datos sensibles"
             ]
           }
-        }
-      ],
-
-    "curriculum":[
-        {
-            "es":{
-                "title": "Curriculum",
-                "education":"Educacion",
-                "experience":"Experiencia",
-                "projects":"Proyectos",
-                "certifications":"Certificaciones",
-                "languages":"Idiomas",
-                "carreer":"Ingenieria de Sistemas",
-                "university":"Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
-                "carreerDescription":"La ingenieria de sistemas es un campo interdisciplinario de la ingenieria que permite estudiar y comprender la realidad,con el proposito de implementar u optimiar sistemas complejos.",
-                "schoolDegree":"Bachiller en Ciencias",
-                "school":"Colegio Nuestra Señora del Rosario",
-                "schoolDegreeDescription":"El bachillerato en ciencias es una formación académica que se centra en las ciencias básicas, como la química, la física, la biología y las matemáticas. Se diferencia del bachillerato en ciencias de la salud, que se enfoca en ese campo específico.",
-                "frontDev":"Desarrollador Frontend",
-                "htmlCssJavascript":"HTML,CSS & JAVASCRIPT",
-                "htmlCssJavascriptYear":"2020 - Actualmente",
-                "frontDevDescription":"El front-end developer o desarrollador front-end se ha convertido en un perfil clave dentro del sector IT. Su principal función es la de traducir el diseño visual de una web a código HTML, CSS y JavaScript.Hablar de front-end developer es hablar de uno de los perfiles laborales más demandados a día de hoy que, además, tiene grandes perspectivas de futuro.Un desarrollador front-end es el programador que se encarga de que una web sea atractiva para el usuario y, al mismo tiempo, funcione correctamente.",
-                "systemDev":"Desarrollador de Sistemas",
-                "systemDevYear":"2020 - Actualmente",
-                "analysis":"Analisis & Diseño de sistemas",
-                "analysisDescription":"El análisis y diseño de sistemas es una disciplina dentro de la ingeniería de software y la informática que se enfoca en estudiar, entender y crear soluciones para satisfacer las necesidades de los usuarios a través del desarrollo de sistemas informáticos. Este proceso implica dos etapas clave: análisis y diseño, las cuales son fundamentales para construir software eficiente, efectivo y alineado con los objetivos del negocio.",
-                "BackDev":"Desarrollador Backend",
-                "nodejs":"Node JS",
-                "BackDevYear":"2020 - Present",
-                "backDevDescription":"El desarrollo backend se refiere a la parte del desarrollo de software que se encarga de la creación, implementación y gestión de los sistemas, bases de datos y servicios que operan en el servidor, y que son esenciales para el funcionamiento de aplicaciones web y móviles. Es el \"lado oculto\" o \"detrás de las cámaras\" de las aplicaciones, ya que los usuarios no interactúan directamente con el backend, pero depende de él para que el sistema funcione correctamente."
-
-
-
-            },
-            "en": {
-             "title": "Curriculum",
-             "education":"Education",
-             "experience":"Experience",
-             "projects":"Proyects",
-            "carreer":"Systems Engineering",
-            "university":"Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
-            "carreerDescription":"Systems engineering is an interdisciplinary field of engineering that allows the study and understanding reality, with the purpose of implementing or optimizing complex systems.",
-            "schoolDegree":"Bachelor of Science",
-            "school":"Colegio Nuestra Señora del Rosario",
-            "schoolDegreeDescription":"The Bachelor of Science is an academic training that focuses on basic sciences, such as chemistry, physics, biology and mathematics. It differs from the Bachelor of Health Sciences, which focuses on that specific field.",
-            "frontDev":"Frontend Developer",
-            "htmlCssJavascript":"HTML,CSS & JAVASCRIPT",
-            "htmlCssJavascriptYear":"2020 - Present",
-            "frontDevDescription":"The front-end developer has become a key profile within the IT sector. Their main function is to translate the visual design of a website into HTML, CSS and JavaScript code. Talking about a front-end developer is talking about one of the most in-demand job profiles today, which also has great prospects for the future. A front-end developer is the programmer who is responsible for making a website attractive to the user and, at the same time, functioning correctly.",
-            "systemDev":"Systems Developer",
-            "systemDevYear":"2020 - Present",
-            "analysis":"Analysis & Design of systems",
-            "analysisDescription":"Systems analysis and design is a discipline within software engineering and computer science that focuses on studying, understanding, and creating solutions to meet user needs through the development of computer systems. This process involves two key stages: analysis and design, which are essential to building efficient, effective software that is aligned with business objectives.",
-            "BackDev":"Backend Developer",
-            "nodejs":"Node JS",
-            "BackDevYear":"2020 - Present",
-            "backDevDescription":"Backend development refers to the part of software development that deals with the creation, implementation, and management of the systems, databases, and services that operate on the server, and that are essential for the functioning of web and mobile applications. It is the \"hidden side\" or \"behind the scenes\" of applications, since users do not directly interact with the backend, but depend on it for the system to function properly."
-
-            
-
-
-
-            }
-        }
-
-    ],
-
-    "Portfolio":[
-    {
-        "es":{
-        "network":"Redes",
-        "networkP":"Interconexion de Redes",
-        "backDev":"Desarrollo Backend",
-        "backDevP":"Desarrollo de Aplicaciones Backend",
-        "database":"Base de Datos",
-        "databaseP":"SQL & NoSQL",
-        "analysis":"Analisis de sistema",
-        "analysisP":"Desarrollo de Sistema",
-        "webDev":"Desarrollo Web",
-        "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
-        "API":"API",
-        "APIP":"Desarrollo de API"
-        },
-        "en":{
-            "network":"Networks",
-            "networkP":"Network Interconnection",
-            "backDev":"Backend development",
-            "backDevP":"Backend Application Development",
-            "database":"Database",
-            "databaseP":"SQL & NoSQL",
-            "analysis":"System Analysis",
-            "analysisP":"System development",
-            "webDev":"Web Development",
-            "webDevP":"HTML,CSS,JAVASCRIPT,PHP",
-            "API":"API",
-            "APIP":"API Development"
-        }
+        ]
+      },
+      "en": {
+        "title": "My Projects",
+        "cards": [
+          {
+            "title": "REST API with Express and MYSQL",
+            "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
+            "detailedDescription": "This project is a complete REST API developed with Node.js and Express.js that implements a robust system for project management. The architecture follows the MVC pattern with well-defined layers for routes, controllers, services, and models.\n\nTechnical features include JWT authentication with refresh tokens, role-based system (admin, editor, user), data validation with express-validator, advanced pagination and results filtering. The MySQL database is optimized with proper indexes and well-structured relationships.\n\nThe project includes integrated Swagger documentation, centralized error handling, environment variables for different environments (development, production) and basic unit tests. I implemented security techniques like rate limiting, input sanitization and SQL injection protection.",
+            "image": "./assets/images/api.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/apihechaenimaubar",
+            "features": [
+              "JWT Authentication",
+              "RESTful Endpoints",
+              "Data Validation",
+              "Role-based permissions",
+              "Swagger Documentation"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "MySQL",
+              "JWT"
+            ],
+            "challenges": [
+              "Implement Secure Authentication",
+              "Optimize Database Queries",
+              "Handle complex model relationships"
+            ]
+          },
+          {
+            "title": "API with NestJS with MySQL",
+            "description": "Robust and modular REST API built with NestJS and MySQL, focused on scalability and best development practices.",
+            "detailedDescription": "This API built with NestJS represents my evolution towards more structured frameworks. I fully leveraged TypeScript features and NestJS's modular architecture to create a highly organized system.\n\nThe project uses TypeORM for MySQL connection, implementing the Repository pattern for data access. I developed independent modules for each domain (auth, users, projects), each with its services, controllers and entities.\n\nIt includes advanced features like: custom decorators, global interceptors for error handling, validation with class-validator, serialization with class-transformer and automatic documentation with Swagger. I configured a complete environment variables system for different environments and wrote unit tests with Jest.",
+            "image": "../../assets/images/nest_api_1.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js",
+            "features": [
+              "Modular architecture",
+              "Dependency injection",
+              "Built-in validation",
+              "Auto documentation",
+              "Repository pattern"
+            ],
+            "technologies": [
+              "NestJS",
+              "TypeScript",
+              "MySQL",
+              "TypeORM",
+              "Class-validator"
+            ],
+            "challenges": [
+              "Learning NestJS framework",
+              "Properly implementing TypeORM",
+              "Configuring independent modules"
+            ]
+          },
+          {
+            "title": "REST API Integrated with Supabase",
+            "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
+            "detailedDescription": "This project demonstrates my ability to integrate cloud services. I developed a Node.js API that acts as intermediary between client and Supabase, adding additional business logic.\n\nI implemented authentication using Supabase Auth system, with custom roles and row-level security (RLS) policies. The API manages storage in Supabase Storage, including file uploads, signed URL generation and permission management.\n\nFor the database, I leveraged PostgreSQL capabilities in Supabase, implementing stored procedures and triggers. The API also includes endpoints to call Supabase serverless functions and manage their responses. I configured a webhooks system for real-time notifications.",
+            "image": "./assets/images/api2.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/api_supabase",
+            "features": [
+              "Supabase authentication",
+              "Cloud storage",
+              "Realtime database",
+              "Serverless functions",
+              "API Gateway"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "Supabase",
+              "PostgreSQL",
+              "JWT"
+            ],
+            "challenges": [
+              "Integrating Supabase Auth",
+              "Configuring row-level security",
+              "Optimizing realtime queries"
+            ]
+          },
+          {
+            "title": "Oauth2.0 App ",
+            "description": "Application to handle user authentication via OAuth 2.0. It uses Passport.js to simplify integration with identity providers like Google and GitHub.",
+            "detailedDescription": "This project implements a complete OAuth 2.0 authentication system using Passport.js. I configured strategies for multiple providers including Google, GitHub and local credentials.\n\nThe system includes: persistent sessions with Redis storage, user serialization/deserialization, route protection with middlewares, unified profile management and global logout system. I implemented a complete registration/login flow, including email verification and password recovery.\n\nFor enhanced security, I added CSRF protection, rate limiting on sensitive endpoints and input sanitization. The application also generates access/refresh tokens for API use and manages route-level permissions. It includes an admin panel to manage users and OAuth connections.",
+            "image": "../assets/images/graphoauth2.0.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/api_OAth2.0",
+            "features": [
+              "Google authentication",
+              "GitHub authentication",
+              "Persistent sessions",
+              "Route protection",
+              "Profile management"
+            ],
+            "technologies": [
+              "Node.js",
+              "Express",
+              "Passport.js",
+              "OAuth 2.0",
+              "Session Storage"
+            ],
+            "challenges": [
+              "Configuring multiple OAuth providers",
+              "Handling auth flows",
+              "Securing sensitive routes"
+            ]
+          },
+          {
+            "title": "Payment App with Stripe and Paypal",
+            "description": "Developed in React and express to process payments with Stripe and PayPal.",
+            "detailedDescription": "This full-stack project (React + Node.js) implements a complete payment processing system. I developed integration with both payment gateways (Stripe and PayPal) allowing users to choose their preferred method.\n\nThe system includes: persistent shopping cart, transaction history, recurring subscriptions, promotional discounts and email notifications. I implemented webhooks to handle async events like successful payments, refunds and cancellations.\n\nFor Stripe, I configured Payment Intents for SCA (Strong Customer Authentication) and managed different payment states. For PayPal, I implemented both the classic flow and the new smart buttons system. The application includes an admin dashboard to manage orders, process refunds and generate reports.",
+            "image": "../../assets/images/payment.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/scanToPay",
+            "features": [
+              "Stripe payment processing",
+              "PayPal integration",
+              "Shopping cart",
+              "Transaction history",
+              "Email notifications"
+            ],
+            "technologies": [
+              "React",
+              "Node.js",
+              "Stripe API",
+              "PayPal SDK",
+              "MongoDB"
+            ],
+            "challenges": [
+              "Implementing two payment gateways",
+              "Handling payment webhooks",
+              "Securing sensitive data"
+            ]
+          }
+        ]
+      }
     }
-    ],
-
-    "contact":[
-        {
-            "es":{
-           "title":"Contacto",
-           "description":"Si deseas contactarme no dudes en hacerlo por cualquiera de los siguientes medios.",
-           "message":"Enviar Mensaje",
-           "name":"Tu nombre",
-           "phoneNumber":"Numero de Telefono",
-           "email":"Correo Electronico",
-           "subject":"Tema",
-           "message2":"Mensaje"
-            },
-            "en": {
-                "title": "Contact",
-                "description":"If you wish to contact me, please do not hesitate to do so by any of the following means.",
-                "message":"Send",
-                "name":"Your name",
-                "phoneNumber":"Phone number",
-                "email":"Email",
-                "subject":"Subject",
-                "message2":"Message"
-            }
-        }
-    ],
-    
-    "aboutme":[
-        {
-            "es":{
-                "title": "Conoce mi Historia",
-                "paragraph1": "Nací en Carora, estado Lara, Venezuela, el 30 de marzo de 1999, hijo de Ana Álvarez, una dedicada profesora, y Víctor Camacaro, también profesor.Llegué al mundo en el hospital Dr. Pastor Oropeza a las 11:30 p.m., en el seno de una familia humilde, de bajos recursos, pero llena de amor.Aunque no tuvimos lujos, las ganas de superación de mi madre fueron el motor que nos impulsó a mejorar poco a poco nuestra situación económica.",
-                "paragrapgh2": "Mis primeros años estuvieron marcados por el amor y el esfuerzo de mi madre, quien trabajaba arduamente para asegurarse de que no me faltara lo esencial.Vivíamos en una casa prestada, hasta que, con mucho sacrificio, logramos adquirir nuestro propio hogar. En ese momento, la casa no era más que un rancho, pero ese mismo año nació mi hermana, Roxana Camacaro,         y con trabajo, dedicación y esfuerzo, fuimos transformando poco a poco ese rancho en un verdadero hogar.",
-                "paragraph3" : " Esta historia me recuerda una frase de Nelson Mandela: \"Siempre parece imposible hasta que se hace\". Nuestra vida ha sido un reflejo de esa verdad, demostrando que con determinación y esfuerzo, se puede construir algo grande a partir de lo más humilde.",
-                "title2":"Mi primeros años"
-            },
-            "en":{
-                "title": "Get to Know My Story",
-                "paragraph1":"I was born in Carora, Lara state, Venezuela, on March 30, 1999, son of Ana Álvarez, a dedicated teacher, and Víctor Camacaro, also a teacher. I came into the world at the Dr. Pastor Oropeza Hospital at 11:30 p.m., into a humble family,with few resources, but full of love. Although we did not have luxuries,my mother's desire to excel was the driving force that drove us to gradually improve our economic situation.",
-               "paragraph2":"My early years were marked by the love and effort of my mother, who worked hard to make sure I never lacked the essentials.We lived in a borrowed house until, with much sacrifice, we managed to acquire our own home. At that time, the house was nothing more than a shack, but that same year my sister, Roxana Camacaro, was born, and with work, dedication and effort, we gradually transformed that shack into a real home.",
-               "paragraph3": "This story reminds me of a quote from Nelson Mandela:  \"It always seems impossible until it is done.\" Our life has been a reflection of that truth, proving that with determination and effort, something great can be built from the most humble things.",
-               "title2":"My first years"
-              
-            }
-        }
-    ]
-  }
+  ],
+  "curriculum": [
+    {
+      "es": {
+        "title": "Curriculum",
+        "education": "Educacion",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "certifications": "Certificaciones",
+        "languages": "Idiomas",
+        "carreer": "Ingenieria de Sistemas",
+        "university": "Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
+        "carreerDescription": "La ingenieria de sistemas es un campo interdisciplinario de la ingenieria que permite estudiar y comprender la realidad,con el proposito de implementar u optimiar sistemas complejos.",
+        "schoolDegree": "Bachiller en Ciencias",
+        "school": "Colegio Nuestra Señora del Rosario",
+        "schoolDegreeDescription": "El bachillerato en ciencias es una formación académica que se centra en las ciencias básicas, como la química, la física, la biología y las matemáticas. Se diferencia del bachillerato en ciencias de la salud, que se enfoca en ese campo específico.",
+        "frontDev": "Desarrollador Frontend",
+        "htmlCssJavascript": "HTML,CSS & JAVASCRIPT",
+        "htmlCssJavascriptYear": "2020 - Actualmente",
+        "frontDevDescription": "El front-end developer o desarrollador front-end se ha convertido en un perfil clave dentro del sector IT. Su principal función es la de traducir el diseño visual de una web a código HTML, CSS y JavaScript.Hablar de front-end developer es hablar de uno de los perfiles laborales más demandados a día de hoy que, además, tiene grandes perspectivas de futuro.Un desarrollador front-end es el programador que se encarga de que una web sea atractiva para el usuario y, al mismo tiempo, funcione correctamente.",
+        "systemDev": "Desarrollador de Sistemas",
+        "systemDevYear": "2020 - Actualmente",
+        "analysis": "Analisis & Diseño de sistemas",
+        "analysisDescription": "El análisis y diseño de sistemas es una disciplina dentro de la ingeniería de software y la informática que se enfoca en estudiar, entender y crear soluciones para satisfacer las necesidades de los usuarios a través del desarrollo de sistemas informáticos. Este proceso implica dos etapas clave: análisis y diseño, las cuales son fundamentales para construir software eficiente, efectivo y alineado con los objetivos del negocio.",
+        "BackDev": "Desarrollador Backend",
+        "nodejs": "Node JS",
+        "BackDevYear": "2020 - Present",
+        "backDevDescription": "El desarrollo backend se refiere a la parte del desarrollo de software que se encarga de la creación, implementación y gestión de los sistemas, bases de datos y servicios que operan en el servidor, y que son esenciales para el funcionamiento de aplicaciones web y móviles. Es el \"lado oculto\" o \"detrás de las cámaras\" de las aplicaciones, ya que los usuarios no interactúan directamente con el backend, pero depende de él para que el sistema funcione correctamente."
+      },
+      "en": {
+        "title": "Curriculum",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Proyects",
+        "carreer": "Systems Engineering",
+        "university": "Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA)",
+        "carreerDescription": "Systems engineering is an interdisciplinary field of engineering that allows the study and understanding reality, with the purpose of implementing or optimizing complex systems.",
+        "schoolDegree": "Bachelor of Science",
+        "school": "Colegio Nuestra Señora del Rosario",
+        "schoolDegreeDescription": "The Bachelor of Science is an academic training that focuses on basic sciences, such as chemistry, physics, biology and mathematics. It differs from the Bachelor of Health Sciences, which focuses on that specific field.",
+        "frontDev": "Frontend Developer",
+        "htmlCssJavascript": "HTML,CSS & JAVASCRIPT",
+        "htmlCssJavascriptYear": "2020 - Present",
+        "frontDevDescription": "The front-end developer has become a key profile within the IT sector. Their main function is to translate the visual design of a website into HTML, CSS and JavaScript code. Talking about a front-end developer is talking about one of the most in-demand job profiles today, which also has great prospects for the future. A front-end developer is the programmer who is responsible for making a website attractive to the user and, at the same time, functioning correctly.",
+        "systemDev": "Systems Developer",
+        "systemDevYear": "2020 - Present",
+        "analysis": "Analysis & Design of systems",
+        "analysisDescription": "Systems analysis and design is a discipline within software engineering and computer science that focuses on studying, understanding, and creating solutions to meet user needs through the development of computer systems. This process involves two key stages: analysis and design, which are essential to building efficient, effective software that is aligned with business objectives.",
+        "BackDev": "Backend Developer",
+        "nodejs": "Node JS",
+        "BackDevYear": "2020 - Present",
+        "backDevDescription": "Backend development refers to the part of software development that deals with the creation, implementation, and management of the systems, databases, and services that operate on the server, and that are essential for the functioning of web and mobile applications. It is the \"hidden side\" or \"behind the scenes\" of applications, since users do not directly interact with the backend, but depend on it for the system to function properly."
+      }
+    }
+  ],
+  "Portfolio": [
+    {
+      "es": {
+        "network": "Redes",
+        "networkP": "Interconexion de Redes",
+        "backDev": "Desarrollo Backend",
+        "backDevP": "Desarrollo de Aplicaciones Backend",
+        "database": "Base de Datos",
+        "databaseP": "SQL & NoSQL",
+        "analysis": "Analisis de sistema",
+        "analysisP": "Desarrollo de Sistema",
+        "webDev": "Desarrollo Web",
+        "webDevP": "HTML,CSS,JAVASCRIPT,PHP",
+        "API": "API",
+        "APIP": "Desarrollo de API"
+      },
+      "en": {
+        "network": "Networks",
+        "networkP": "Network Interconnection",
+        "backDev": "Backend development",
+        "backDevP": "Backend Application Development",
+        "database": "Database",
+        "databaseP": "SQL & NoSQL",
+        "analysis": "System Analysis",
+        "analysisP": "System development",
+        "webDev": "Web Development",
+        "webDevP": "HTML,CSS,JAVASCRIPT,PHP",
+        "API": "API",
+        "APIP": "API Development"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "es": {
+        "title": "Contacto",
+        "description": "Si deseas contactarme no dudes en hacerlo por cualquiera de los siguientes medios.",
+        "message": "Enviar Mensaje",
+        "name": "Tu nombre",
+        "phoneNumber": "Numero de Telefono",
+        "email": "Correo Electronico",
+        "subject": "Tema",
+        "message2": "Mensaje"
+      },
+      "en": {
+        "title": "Contact",
+        "description": "If you wish to contact me, please do not hesitate to do so by any of the following means.",
+        "message": "Send",
+        "name": "Your name",
+        "phoneNumber": "Phone number",
+        "email": "Email",
+        "subject": "Subject",
+        "message2": "Message"
+      }
+    }
+  ],
+  "aboutme": [
+    {
+      "es": {
+        "title": "Conoce mi Historia",
+        "paragraph1": "Nací en Carora, estado Lara, Venezuela, el 30 de marzo de 1999, hijo de Ana Álvarez, una dedicada profesora, y Víctor Camacaro, también profesor.Llegué al mundo en el hospital Dr. Pastor Oropeza a las 11:30 p.m., en el seno de una familia humilde, de bajos recursos, pero llena de amor.Aunque no tuvimos lujos, las ganas de superación de mi madre fueron el motor que nos impulsó a mejorar poco a poco nuestra situación económica.",
+        "paragrapgh2": "Mis primeros años estuvieron marcados por el amor y el esfuerzo de mi madre, quien trabajaba arduamente para asegurarse de que no me faltara lo esencial.Vivíamos en una casa prestada, hasta que, con mucho sacrificio, logramos adquirir nuestro propio hogar. En ese momento, la casa no era más que un rancho, pero ese mismo año nació mi hermana, Roxana Camacaro,         y con trabajo, dedicación y esfuerzo, fuimos transformando poco a poco ese rancho en un verdadero hogar.",
+        "paragraph3": " Esta historia me recuerda una frase de Nelson Mandela: \"Siempre parece imposible hasta que se hace\". Nuestra vida ha sido un reflejo de esa verdad, demostrando que con determinación y esfuerzo, se puede construir algo grande a partir de lo más humilde.",
+        "title2": "Mi primeros años"
+      },
+      "en": {
+        "title": "Get to Know My Story",
+        "paragraph1": "I was born in Carora, Lara state, Venezuela, on March 30, 1999, son of Ana Álvarez, a dedicated teacher, and Víctor Camacaro, also a teacher. I came into the world at the Dr. Pastor Oropeza Hospital at 11:30 p.m., into a humble family,with few resources, but full of love. Although we did not have luxuries,my mother's desire to excel was the driving force that drove us to gradually improve our economic situation.",
+        "paragraph2": "My early years were marked by the love and effort of my mother, who worked hard to make sure I never lacked the essentials.We lived in a borrowed house until, with much sacrifice, we managed to acquire our own home. At that time, the house was nothing more than a shack, but that same year my sister, Roxana Camacaro, was born, and with work, dedication and effort, we gradually transformed that shack into a real home.",
+        "paragraph3": "This story reminds me of a quote from Nelson Mandela:  \"It always seems impossible until it is done.\" Our life has been a reflection of that truth, proving that with determination and effort, something great can be built from the most humble things.",
+        "title2": "My first years"
+      }
+    }
+  ]
+}
