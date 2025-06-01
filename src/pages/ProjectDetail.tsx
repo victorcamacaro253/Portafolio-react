@@ -18,7 +18,7 @@ import appImage7 from '../assets/images/appImage7.jpg';
 import appImage8 from '../assets/images/appImage8.jpg';
 import appImage9 from '../assets/images/appImage9.jpg';
 import appImage10 from '../assets/images/appImage10.jpg';
-import appImage11 from '../assets/images/apppImage11.jpg';
+import appImage11 from '../assets/images/screen11.jpg';
 import appImage12 from '../assets/images/appImage12.jpg';
 import logoCinebook from '../assets/images/logo-cinebook1.jpg';
 
