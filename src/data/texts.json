@@ -92,7 +92,6 @@
             "title": "API REST con Express y MYSQL",
             "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
             "detailedDescription": "Este proyecto es una API REST completa desarrollada con Node.js y Express.js que implementa un sistema robusto para la gestión de proyectos. La arquitectura sigue el patrón MVC con capas bien definidas para rutas, controladores, servicios y modelos.\n\nCaracterísticas técnicas incluyen autenticación JWT con refresh tokens, sistema de roles (admin, editor, usuario), validación de datos con express-validator, paginación avanzada y filtrado de resultados. La base de datos MySQL está optimizada con índices adecuados y relaciones bien estructuradas.\n\nEl proyecto incluye documentación Swagger integrada, manejo centralizado de errores, variables de entorno para diferentes ambientes (desarrollo, producción) y tests unitarios básicos. Implementé técnicas de seguridad como rate limiting, sanitización de inputs y protección contra SQL injection.",
-
             "image": "../../assets/images/api.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/apihechaenimaubar",
@@ -118,7 +117,6 @@
             "title": "API con NestJS y MySQL",
             "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
             "detailedDescription": "Esta API construida con NestJS representa mi evolución hacia frameworks más estructurados. Aproveché al máximo las características de TypeScript y la arquitectura modular de NestJS para crear un sistema altamente organizado.\n\nEl proyecto utiliza TypeORM para la conexión con MySQL, implementando el patrón Repository para acceso a datos. Desarrollé módulos independientes para cada dominio (auth, usuarios, proyectos), cada uno con sus servicios, controladores y entidades.\n\nIncluye características avanzadas como: decoradores personalizados, interceptores globales para manejo de errores, validación con class-validator, serialización con class-transformer y documentación automática con Swagger. Configuré un sistema completo de variables de entorno para diferentes ambientes y escribí tests unitarios con Jest.",
-
             "image": "../../assets/images/nest_api_1.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js",
@@ -222,6 +220,59 @@
               "Manejar webhooks de pago",
               "Proteger datos sensibles"
             ]
+          },
+          {
+            "title": "App de Reserva de Cine",
+            "description": "Aplicación móvil completa para reservar entradas de cine con selección de películas, horarios, asientos y pago integrado, desarrollada con React Native.",
+            "detailedDescription": "CineBook es una aplicación móvil desarrollada con React Native que ofrece una solución completa para la reserva de entradas de cine. La aplicación proporciona:\n\nExperiencia del Usuario:\n- Catálogo de películas con filtros por género, rating y fecha de estreno\n- Sistema de reservas en tiempo real con selección visual de asientos\n- Integración con Google Maps para ubicación de cines cercanos\n- Pasarela de pagos segura con Stripe\n- Gestión de combos de comida/bebida\n- Autenticación segura con JWT\n\nTecnologías Clave:\n- Frontend: React Native con Expo\n- Estado Global: Redux Toolkit\n- Navegación: React Navigation\n- Autenticación: JWT con refresh tokens\n- Pagos: Integración con Stripe SDK\n- Geolocalización: Google Maps API para React Native\n\nCaracterísticas Técnicas:\n- Arquitectura modular y escalable\n- Optimización de rendimiento para dispositivos móviles\n- Animaciones fluidas para la selección de asientos\n- Sincronización en tiempo real mediante sockets\n- Diseño responsive para diferentes tamaños de pantalla",
+            "gallery": [
+              "../../assets/images/movie-app1.png",
+              "../../assets/images/movie-app2.png",
+              "../../assets/images/movie-app3.png",
+              "../../assets/images/movie-app4.png"
+            ],
+            "button": "Ver más",
+            "link": "https://github.com/victorcamacaro253/cinema_booking_app",
+            "features": [
+              "Reserva de asientos en tiempo real con actualización instantánea",
+              "Autenticación segura con JWT y refresh tokens",
+              "Integración nativa con Stripe para pagos móviles",
+              "Geolocalización de cines cercanos con Google Maps",
+              "Sistema de favoritos y recomendaciones personalizadas",
+              "Historial detallado de reservas y compras",
+              "Notificaciones push para recordatorios y ofertas",
+              "Soporte para modo offline con sincronización posterior"
+            ],
+            "technologies": [
+              "React Native",
+              "Expo",
+              "Redux Toolkit",
+              "React Navigation",
+              "JWT",
+              "Stripe SDK",
+              "Google Maps API",
+              "Socket.io",
+              "Formik"
+             
+            ],
+            "imageTitle": "Galería de Screenshots - Interfaz de Usuario",
+            "challenges": [
+              "Implementar selección de asientos con animaciones fluidas en React Native",
+              "Optimizar el rendimiento para dispositivos de gama baja",
+              "Gestionar estados complejos en una aplicación móvil offline-first",
+              "Integrar múltiples SDKs nativos (Stripe, Google Maps)",
+              "Mantener la sincronización en tiempo real entre usuarios",
+              "Implementar navegación fluida con gestos táctiles",
+              "Adaptar la interfaz a diferentes tamaños de pantalla",
+              "Manejar autenticación segura en el entorno móvil"
+            ],
+            "technicalDetails": {
+              "architecture": "Arquitectura modular con separación clara de componentes",
+              "stateManagement": "Redux Toolkit para estado global + Context API para estados locales",
+              "navigation": "React Navigation con stack y bottom tabs",
+              "performance": "Optimización con memoization y reducción de re-renders",
+              "testing": "Jest para unit testing + Detox para testing E2E"
+            }
           }
         ]
       },
@@ -353,14 +404,66 @@
               "React",
               "Node.js",
               "Stripe API",
-              "PayPal SDK",
-              "MongoDB"
+              "PayPal SDK"
             ],
             "challenges": [
               "Implementing two payment gateways",
               "Handling payment webhooks",
               "Securing sensitive data"
             ]
+          },
+          {
+            "title": "Movie Booking App",
+            "description": "Complete mobile application for booking movie tickets with film selection, showtimes, seat picking and integrated payment, built with React Native.",
+            "detailedDescription": "CineBook is a mobile application developed with React Native that provides a complete solution for movie ticket booking. The app offers:\n\nUser Experience:\n- Movie catalog with filters by genre, rating and release date\n- Real-time booking system with visual seat selection\n- Google Maps integration for locating nearby theaters\n- Secure payment gateway with Stripe\n- Food/drink combo management\n- Secure authentication with JWT\n\nKey Technologies:\n- Frontend: React Native with Expo\n- State Management: Redux Toolkit\n- Navigation: React Navigation\n- Authentication: JWT with refresh tokens\n- Payments: Stripe SDK integration\n- Geolocation: Google Maps API for React Native\n\nTechnical Features:\n- Modular and scalable architecture\n- Performance optimization for mobile devices\n- Smooth animations for seat selection\n- Real-time synchronization using sockets\n- Responsive design for different screen sizes",
+            "gallery": [
+              "../../assets/images/movie-app1.png",
+              "../../assets/images/movie-app2.png",
+              "../../assets/images/movie-app3.png",
+              "../../assets/images/movie-app4.png"
+            ],
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/cinema_booking_app",
+            "features": [
+              "Real-time seat booking with instant updates",
+              "Secure authentication with JWT and refresh tokens",
+              "Native Stripe integration for mobile payments",
+              "Nearby theater geolocation with Google Maps",
+              "Favorites system and personalized recommendations",
+              "Detailed booking and purchase history",
+              "Push notifications for reminders and offers",
+              "Offline support with background synchronization"
+            ],
+            "technologies": [
+              "React Native",
+              "Expo",
+              "Redux Toolkit",
+              "React Navigation",
+              "JWT",
+              "Stripe SDK",
+              "Google Maps API",
+              "Socket.io",
+              "Formik"
+              
+            ],
+            "imageTitle": "UI Screenshots Gallery - Mobile Interface",
+            "challenges": [
+              "Implementing seat selection with smooth animations in React Native",
+              "Optimizing performance for low-end devices",
+              "Managing complex states in an offline-first mobile app",
+              "Integrating multiple native SDKs (Stripe, Google Maps)",
+              "Maintaining real-time synchronization between users",
+              "Implementing fluid touch gesture navigation",
+              "Adapting UI for different screen sizes",
+              "Handling secure authentication in mobile environment"
+            ],
+            "technicalDetails": {
+              "architecture": "Modular architecture with clear component separation",
+              "stateManagement": "Redux Toolkit for global state + Context API for local state",
+              "navigation": "React Navigation with stack and bottom tabs",
+              "performance": "Optimization with memoization and reduced re-renders",
+              "testing": "Jest for unit testing + Detox for E2E testing"
+            }
           }
         ]
       }
