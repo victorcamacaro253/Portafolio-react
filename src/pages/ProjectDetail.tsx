@@ -7,7 +7,7 @@ import image2 from '../assets/images/api2.png';
 import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
-import heroSection1 from '../assets/images/Herosection.jpg';
+import heroSection1 from '../assets/images/headerhero.jpg';
 import appImage1 from '../assets/images/appImage1.jpg';
 import appImage2 from '../assets/images/appImage2.jpg';
 import appImage3 from '../assets/images/appImage3.jpg';
