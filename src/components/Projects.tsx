@@ -10,7 +10,7 @@ import image2 from '../assets/images/api2.png';
 import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
-import herosection from '../assets/images/Herosection2.jpg';
+import herosection from '../assets/images/cinebookheader.jpg';
 
 
 
