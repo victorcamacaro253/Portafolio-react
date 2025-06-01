@@ -218,53 +218,61 @@ const ProjectDetail = () => {
           
       </div>
 
-         {/* Image Modal */}
-    {isModalOpen && (
-      <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-        <button 
-          className="absolute top-4 right-4 text-white text-4xl hover:text-accent dark:hover:text-accent-dark transition-colors"
-          onClick={() => setIsModalOpen(false)}
-        >
-          &times;
-        </button>
-        
-        <div className="relative max-w-6xl w-full max-h-screen">
-          <img
-            src={selectedImage}
-            alt={`${project.title} screenshot ${selectedImageIndex + 1}`}
-            className="max-h-[90vh] mx-auto object-contain"
-          />
-          
-          {images[index].length > 1 && (
-            <div className="flex justify-between mt-4">
-              <button
-                onClick={() => {
-                  const newIndex = (selectedImageIndex - 1 + images[index].length - 1) % (images[index].length - 1);
-                  setSelectedImage(images[index][newIndex + 1]);
-                  setSelectedImageIndex(newIndex);
-                }}
-                className="px-4 py-2 bg-accent dark:bg-accent-dark text-white rounded hover:bg-opacity-80 transition-all"
-              >
-                {language === 'es' ? 'Anterior' : 'Previous'}
-              </button>
-              <span className="text-white self-center">
-                {selectedImageIndex + 1} / {images[index].length - 1}
-              </span>
-              <button
-                onClick={() => {
-                  const newIndex = (selectedImageIndex + 1) % (images[index].length - 1);
-                  setSelectedImage(images[index][newIndex + 1]);
-                  setSelectedImageIndex(newIndex);
-                }}
-                className="px-4 py-2 bg-accent dark:bg-accent-dark text-white rounded hover:bg-opacity-80 transition-all"
-              >
-                {language === 'es' ? 'Siguiente' : 'Next'}
-              </button>
+      {/* Image Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          {/* Close Button - Larger and fixed position */}
+          <button
+            className="fixed top-6 right-6 text-white text-5xl md:text-4xl hover:text-accent dark:hover:text-accent-dark transition-colors z-50"
+            onClick={() => setIsModalOpen(false)}
+            aria-label="Close modal"
+          >
+            &times;
+          </button>
+
+          <div className="relative w-full h-full flex flex-col justify-center items-center">
+            {/* Image Container */}
+            <div className="w-full max-w-6xl max-h-[80vh] flex items-center justify-center">
+              <img
+                src={selectedImage}
+                alt={`${project.title} screenshot ${selectedImageIndex + 1}`}
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
-          )}
+
+            {/* Navigation Controls - Improved for mobile */}
+            {images[index].length > 1 && (
+              <div className="w-full max-w-6xl mt-4 flex justify-between items-center px-4">
+                <button
+                  onClick={() => {
+                    const newIndex = (selectedImageIndex - 1 + images[index].length - 1) % (images[index].length - 1);
+                    setSelectedImage(images[index][newIndex + 1]);
+                    setSelectedImageIndex(newIndex);
+                  }}
+                  className="px-6 py-3 md:px-4 md:py-2 bg-accent dark:bg-accent-dark text-white rounded-lg hover:bg-opacity-80 transition-all text-lg md:text-base"
+                >
+                  {language === 'es' ? 'Anterior' : 'Previous'}
+                </button>
+
+                <span className="text-white text-lg md:text-base mx-4">
+                  {selectedImageIndex + 1} / {images[index].length - 1}
+                </span>
+
+                <button
+                  onClick={() => {
+                    const newIndex = (selectedImageIndex + 1) % (images[index].length - 1);
+                    setSelectedImage(images[index][newIndex + 1]);
+                    setSelectedImageIndex(newIndex);
+                  }}
+                  className="px-6 py-3 md:px-4 md:py-2 bg-accent dark:bg-accent-dark text-white rounded-lg hover:bg-opacity-80 transition-all text-lg md:text-base"
+                >
+                  {language === 'es' ? 'Siguiente' : 'Next'}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    )}
+      )}
     </section>
   );
 };
