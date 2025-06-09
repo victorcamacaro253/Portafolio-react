@@ -24,7 +24,7 @@
       "es": {
         "title": "Sobre mi",
         "span": "Hola, Soy Victor Camacaro",
-        "presentation": "Ingeniero de Sistemas con conocimiento en desarrollo Full Stack, lo que me capacita para gestionar proyectos de manera integral, abarcando tanto front-end como back-end. Mi sólida formación académica, complementada con experiencia práctica, me ha provisto de competencias técnicas y analíticas clave para ofrecer soluciones innovadoras en el sector tecnológico. Comprometido con la excelencia, me esfuerzo por mantenerme actualizado y a la vanguardia en el desarrollo de software, así como en áreas de redes, sistemas y soporte técnico.",
+"presentation": "Desarrollador Full-Stack apasionado y orientado a resultados, con una sólida base en ingeniería de software, tecnologías web y diseño de sistemas. Me especializo en la creación de aplicaciones web escalables y APIs utilizando Express.js, TypeScript y React Native, con un profundo conocimiento de bases de datos SQL y MongoDB.\n\nComo Ingeniero de Sistemas, aporto un sólido conocimiento de la computación en la nube, los principios de ciberseguridad y la arquitectura integral de sistemas, desde la lógica del backend hasta las interfaces intuitivas del frontend. He diseñado e implementado con éxito sistemas completos, liderado el desarrollo de APIs e integrado tecnologías modernas para ofrecer soluciones digitales robustas.\n\n💡 Me apasiona resolver problemas complejos, fomentar el aprendizaje continuo y colaborar en proyectos de impacto que impulsan la innovación.",
         "aboutme": "Conoce mi historia",
         "PersonalData": "Datos Personales",
         "birthdateWord": "Cumpleaños",
@@ -42,7 +42,7 @@
       "en": {
         "title": "About me",
         "span": "Hello, I'm Victor Camacaro",
-        "presentation": "a Systems Engineer with knowledge in Full Stack development, which enables me to manage projects in a comprehensive manner, covering both front-end and back-end. My solid academic background, complemented by practical experience, has provided me with key technical and analytical skills to offer innovative solutions in the technology sector. Committed to excellence, I strive to stay up-to-date and at the forefront in software development, as well as in the areas of networks, systems and technical support.",
+       "presentation": "Passionate and results-driven Full-Stack Developer with a strong foundation in software engineering, web technologies, and system design. I specialize in building scalable web applications and APIs using Express.js, TypeScript, and React Native, with deep expertise in SQL and MongoDB databases.\n\nAs a Systems Engineer, I bring a solid understanding of cloud computing, cybersecurity principles, and full system architecture — from backend logic to intuitive front-end interfaces. I’ve successfully designed and deployed complete systems, led API development, and integrated modern technologies to deliver robust digital solutions.\n\n💡 I thrive on solving complex problems, embracing continuous learning, and collaborating on impactful projects that push innovation forward.",
         "aboutme": "Know my story",
         "PersonalData": "Personal Data",
         "birthdateWord": "Birthdate",

@@ -54,7 +54,7 @@ function SobreMi() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-lg md:text-xl mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">
             <span className="text-accent font-righteous dark:text-dark-accent font-bold text-2xl">{span}</span>
-            <span className='font-righteous block mt-4'>{presentation}</span> 
+            <span className='font-righteous block mt-4 whitespace-pre-line justify-normal'>{presentation}</span> 
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
