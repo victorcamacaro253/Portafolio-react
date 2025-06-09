@@ -42,7 +42,7 @@ function Curriculum() {
                   <h4 className="text-xl font-bold mb-1 text-text-light dark:text-text-dark">{carreer}</h4>
                   <span className="block text-accent text-lg font-bold mb-1">{university}</span>
                   <span className="block text-gray-400 dark:text-gray-500 text-sm mb-3 font-mono">2024</span>
-                  <p className="text-text-light dark:text-text-dark leading-relaxed">{carreerDescription}</p>
+                  <p className="text-text-light dark:text-text-dark leading-relaxed text-justify">{carreerDescription}</p>
                 </div>
               </div>
               
@@ -54,7 +54,7 @@ function Curriculum() {
                   <h4 className="text-xl font-bold mb-1 text-text-light dark:text-text-dark">{schoolDegree}</h4>
                   <span className="block text-accent text-lg font-bold mb-1">{school}</span>
                   <span className="block text-gray-400 dark:text-gray-500 text-sm mb-3 font-mono">2017</span>
-                  <p className="text-text-light dark:text-text-dark leading-relaxed">{schoolDegreeDescription}</p>
+                  <p className="text-text-light dark:text-text-dark leading-relaxed text-justify">{schoolDegreeDescription}</p>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ function Curriculum() {
                   <h4 className="text-xl font-bold mb-1 text-text-light dark:text-text-dark">{frontDev}</h4>
                   <span className="block text-accent text-lg font-bold mb-1">{htmlCssJavascript}</span>
                   <span className="block text-gray-400 dark:text-gray-500 text-sm mb-3 font-mono">{htmlCssJavascriptYear}</span>
-                  <p className="text-text-light dark:text-text-dark leading-relaxed">{frontDevDescription}</p>
+                    <p className="text-text-light dark:text-text-dark leading-relaxed text-justify">{frontDevDescription}</p>
                 </div>
               </div>
               
@@ -90,7 +90,7 @@ function Curriculum() {
                   <h4 className="text-xl font-bold mb-1 text-text-light dark:text-text-dark">{BackDev}</h4>
                   <span className="block text-accent text-lg font-bold mb-1">{nodejs}</span>
                   <span className="block text-gray-400 dark:text-gray-500 text-sm mb-3 font-mono">{BackDevYear}</span>
-                  <p className="text-text-light dark:text-text-dark leading-relaxed">{backDevDescription}</p>
+                  <p className="text-text-light dark:text-text-dark leading-relaxed text-justify">{backDevDescription}</p>
                 </div>
               </div>
               
@@ -102,7 +102,7 @@ function Curriculum() {
                   <h4 className="text-xl font-bold mb-1 text-text-light dark:text-text-dark">{systemDev}</h4>
                   <span className="block text-accent text-lg font-bold mb-1">{analysis}</span>
                   <span className="block text-gray-400 dark:text-gray-500 text-sm mb-3 font-mono">{systemDevYear}</span>
-                  <p className="text-text-light dark:text-text-dark leading-relaxed">{analysisDescription}</p>
+                  <p className="text-text-light dark:text-text-dark leading-relaxed text-justify">{analysisDescription}</p>
                 </div>
               </div>
             </div>
