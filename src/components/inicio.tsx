@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
-import perfil from '../assets/images/perfil.jpg';
+import perfil from '../assets/images/victor_bk.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faXTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
