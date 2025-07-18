@@ -22,6 +22,58 @@ export interface Texts {
   Portfolio?: any;
   contact?: any;
   aboutme?: any;
+    websites?: Array<{
+    es: {
+      title: string;
+      viewDetails: string;
+      visit: string;
+      descriptionTitle: string;
+      objective?: string;
+      intendedFor?: string;
+      featureTitle?: string;
+      TechnicalTitle?: string;
+      TechnologyTitle?: string;
+      QuickLinks?: string;
+      cards: Array<{
+        title: string;
+        description: string;
+        detailedDescription: string;
+        objective?: string;
+        intendedFor?: string;
+        url: string;
+        github: string;
+        gallery?: string[];
+        technologies: string[];
+        features: string[];
+        challenges: string[];
+      }>;
+    };
+    en: {
+      title: string;
+      viewDetails: string;
+      visit: string;
+      descriptionTitle: string;
+      objective?: string;
+      intendedFor?: string;
+      featureTitle?: string;
+      TechnicalTitle?: string;
+      TechnologyTitle?: string;
+      QuickLinks?: string;
+      cards: Array<{
+        title: string;
+        description: string;
+        detailedDescription: string;
+        objective?: string;
+        intendedFor?: string;
+        url: string;
+        github: string;
+        gallery?: string[];
+        technologies: string[];
+        features: string[];
+        challenges: string[];
+      }>;
+    };
+  }>;
 }
 
   

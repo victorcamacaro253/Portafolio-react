@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Aboutme from './pages/aboutMe';
 import ProjectDetail from './pages/ProjectDetail';
 import LanguageProvider from './context/languageContext';
+import Websites from './pages/Websites';
+import WebsiteDetail from './pages/WebsiteDetail';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
             <Route path="/" element={<Index />} />
             <Route path="/aboutme" element={<Aboutme />} />
             <Route path="/project/:id" element={<ProjectDetail />} />
+             <Route path="/websites" element={<Websites />} />
+             <Route path="/websites/:index" element={<WebsiteDetail />} />
+
         
           </Routes>
         </main>

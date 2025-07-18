@@ -47,7 +47,7 @@ function Inicio() {
       
       {/* Content banner */}
       <div 
-        className="relative z-10 p-6 md:p-8 bg-white/90 dark:bg-dark-background-1/90 backdrop-blur-sm max-w-6xl w-full mx-auto text-center rounded-3xl border-4 border-accent dark:border-dark-accent flex flex-col md:flex-row items-center gap-8 shadow-2xl hover:shadow-accent/20 transition-all duration-500"
+        className="relative z-10 p-6 lg:mt-6 mt-16 md:p-8 bg-white/90 dark:bg-dark-background-1/90 backdrop-blur-sm max-w-6xl w-full mx-auto text-center rounded-3xl border-4 border-accent dark:border-dark-accent flex flex-col md:flex-row items-center gap-8 shadow-2xl hover:shadow-accent/20 transition-all duration-500"
       >
         {/* Profile image */}
         <div className="w-full md:w-1/3 flex justify-center">

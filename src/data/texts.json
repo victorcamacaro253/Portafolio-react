@@ -24,7 +24,7 @@
       "es": {
         "title": "Sobre mi",
         "span": "Hola, Soy Victor Camacaro",
-"presentation": "Desarrollador Full-Stack apasionado y orientado a resultados, con una sólida base en ingeniería de software, tecnologías web y diseño de sistemas. Me especializo en la creación de aplicaciones web escalables y APIs utilizando Express.js, TypeScript y React Native, con un profundo conocimiento de bases de datos SQL y MongoDB.\n\nComo Ingeniero de Sistemas, aporto un sólido conocimiento de la computación en la nube, los principios de ciberseguridad y la arquitectura integral de sistemas, desde la lógica del backend hasta las interfaces intuitivas del frontend. He diseñado e implementado con éxito sistemas completos, liderado el desarrollo de APIs e integrado tecnologías modernas para ofrecer soluciones digitales robustas.\n\n💡 Me apasiona resolver problemas complejos, fomentar el aprendizaje continuo y colaborar en proyectos de impacto que impulsan la innovación.",
+        "presentation": "Desarrollador Full-Stack apasionado y orientado a resultados, con una sólida base en ingeniería de software, tecnologías web y diseño de sistemas. Me especializo en la creación de aplicaciones web escalables y APIs utilizando Express.js, TypeScript y React Native, con un profundo conocimiento de bases de datos SQL y MongoDB.\n\nComo Ingeniero de Sistemas, aporto un sólido conocimiento de la computación en la nube, los principios de ciberseguridad y la arquitectura integral de sistemas, desde la lógica del backend hasta las interfaces intuitivas del frontend. He diseñado e implementado con éxito sistemas completos, liderado el desarrollo de APIs e integrado tecnologías modernas para ofrecer soluciones digitales robustas.\n\n💡 Me apasiona resolver problemas complejos, fomentar el aprendizaje continuo y colaborar en proyectos de impacto que impulsan la innovación.",
         "aboutme": "Conoce mi historia",
         "PersonalData": "Datos Personales",
         "birthdateWord": "Cumpleaños",
@@ -42,7 +42,7 @@
       "en": {
         "title": "About me",
         "span": "Hello, I'm Victor Camacaro",
-       "presentation": "Passionate and results-driven Full-Stack Developer with a strong foundation in software engineering, web technologies, and system design. I specialize in building scalable web applications and APIs using Express.js, TypeScript, and React Native, with deep expertise in SQL and MongoDB databases.\n\nAs a Systems Engineer, I bring a solid understanding of cloud computing, cybersecurity principles, and full system architecture — from backend logic to intuitive front-end interfaces. I’ve successfully designed and deployed complete systems, led API development, and integrated modern technologies to deliver robust digital solutions.\n\n💡 I thrive on solving complex problems, embracing continuous learning, and collaborating on impactful projects that push innovation forward.",
+        "presentation": "Passionate and results-driven Full-Stack Developer with a strong foundation in software engineering, web technologies, and system design. I specialize in building scalable web applications and APIs using Express.js, TypeScript, and React Native, with deep expertise in SQL and MongoDB databases.\n\nAs a Systems Engineer, I bring a solid understanding of cloud computing, cybersecurity principles, and full system architecture — from backend logic to intuitive front-end interfaces. I’ve successfully designed and deployed complete systems, led API development, and integrated modern technologies to deliver robust digital solutions.\n\n💡 I thrive on solving complex problems, embracing continuous learning, and collaborating on impactful projects that push innovation forward.",
         "aboutme": "Know my story",
         "PersonalData": "Personal Data",
         "birthdateWord": "Birthdate",
@@ -253,7 +253,6 @@
               "Google Maps API",
               "Socket.io",
               "Formik"
-             
             ],
             "imageTitle": "Galería de Screenshots - Interfaz de Usuario",
             "challenges": [
@@ -444,7 +443,6 @@
               "Google Maps API",
               "Socket.io",
               "Formik"
-              
             ],
             "imageTitle": "UI Screenshots Gallery - Mobile Interface",
             "challenges": [
@@ -464,6 +462,135 @@
               "performance": "Optimization with memoization and reduced re-renders",
               "testing": "Jest for unit testing + Detox for E2E testing"
             }
+          }
+        ]
+      }
+    }
+  ],
+  "websites": [
+    {
+      "es": {
+        "title": "Mis Sitios Web",
+      
+        "viewDetails": "Ver detalles",
+        "visit": "Visitar sitio",
+        "descriptionTitle": "Descripcion del Proyecto",
+        "objective": "Objetivo",
+        "intendedFor": "Dirigido a",
+        "featureTitle": "Caracteristicas Principales",
+        "TechnologyTitle": "Tecnologías utilizadas",
+        "QuickLinks": "Enlaces rápidos",
+        "TechnicalTitle": "Desafíos técnicos",
+        "gallery": [
+          "/images/medicare.png",
+          "/assets/images/medicare-2.png",
+          "../assets/images/medicare-3.png",
+          "../assets/images/medicare-4.png"
+        ],
+        "cards": [
+          {
+            "title": "Sistema Integral de Gestión Médica (Medicare)",
+              "index":"medicare",
+            "description": "Plataforma web para optimizar la administración y operación de centros médicos, clínicas y hospitales con módulos para pacientes, doctores y administradores.",
+            "detailedDescription": "Medicare es un sistema web integral diseñado para mejorar la gestión operativa y clínica de centros médicos, hospitales y clínicas. El sistema permite centralizar la administración de pacientes, doctores, citas médicas, departamentos y recursos hospitalarios, facilitando una comunicación eficiente entre los distintos actores involucrados. Cuenta con un área pública informativa y un área privada gestionada por roles (paciente, doctor, administrador).",
+            "objective": "Brindar una solución digital intuitiva y funcional que permita a los centros médicos agilizar sus procesos internos, desde la programación de citas hasta la gestión de personal médico y recursos físicos, mejorando así la experiencia tanto del paciente como del personal sanitario.",
+            "intendedFor": "Centros médicos pequeños y medianos, hospitales públicos y privados, clínicas especializadas y profesionales de la salud que requieran una herramienta de gestión digital.",
+            "url": "https://medicare-sistema.com ",
+            "logo": "url",
+            "github": "https://github.com/victorcamacaro253/medicare-system ",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "Material UI",
+              "NestJS",
+              "JWT",
+              "MySQL",
+              "TypeORM",
+              "Node.js",
+              "Swagger",
+              "Git",
+              "GitHub"
+            ],
+            "features": [
+              "Sitio informativo con servicios, especialidades, noticias y galería multimedia",
+              "Registro e inicio de sesión seguro con autenticación JWT",
+              "Módulo de pacientes para agendar citas y ver reportes médicos",
+              "Panel de doctores para gestionar pacientes y citas asignadas",
+              "Panel completo de administrador con control total de usuarios, doctores, pacientes, departamentos, cuartos, camas, turnos, roles y más",
+              "Sistema seguro mediante autenticación JWT y contraseñas encriptadas",
+              "Arquitectura escalable basada en NestJS (Backend) y React (Frontend)"
+            ],
+            "challenges": [
+              "Implementar autenticación segura con JWT y protección de rutas por rol",
+              "Diseñar una arquitectura escalable para múltiples módulos y roles",
+              "Gestionar relaciones complejas en la base de datos MySQL",
+              "Crear interfaces intuitivas y responsivas para todos los roles"
+            ]
+           
+          }
+        ]
+      },
+      "en": {
+        "title": "My Websites",
+       
+        "viewDetails": "View details",
+        "visit": "Visit site",
+        "descriptionTitle": "Project Description",
+        "objective": "Objective",
+        "intendedFor": "Intended for",
+        "featureTitle": "Key Features",
+        "TechnologyTitle": "Technologies Used",
+        "QuickLinks": "Quick Links",
+        "TechnicalTitle": "Technical Challenges",
+          "gallery": [
+            "/images/medicare.png",
+            "/assets/images/medicare-2.png",
+            "../assets/images/medicare-3.png",
+            "../assets/images/medicare-4.png"
+          ],
+        "cards": [
+          {
+            "title": "Integral Medical Management System (Medicare)",
+             "index":"medicare",
+            "description": "Web platform designed to optimize the administration and operation of medical centers, clinics, and hospitals with modules for patients, doctors, and administrators.",
+            "detailedDescription": "Medicare is an integral web system designed to improve the operational and clinical management of medical centers, hospitals, and clinics. The system allows centralization of patient administration, doctors, medical appointments, departments, and hospital resources, facilitating efficient communication between the various stakeholders. It includes a public information area and a private area managed by roles (patient, doctor, administrator).",
+            "objective": "To provide an intuitive and functional digital solution that enables medical centers to streamline their internal processes, from appointment scheduling to medical staff and clinical resource management, improving the experience for both patients and healthcare personnel.",
+            "intendedFor": "Small and medium-sized medical centers, public and private hospitals, specialized clinics, and healthcare professionals who require a digital management tool.",
+            "url": "https://medicare-sistema.com ",
+            "logo": "url",
+            "github": "https://github.com/victorcamacaro253/medicare-system ",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "Material UI",
+              "NestJS",
+              "JWT",
+              "MySQL",
+              "TypeORM",
+              "Node.js",
+              "Swagger",
+              "Git",
+              "GitHub"
+            ],
+            "features": [
+              "Informational site with services, specialties, news, and multimedia gallery",
+              "Secure user registration and login with JWT authentication",
+              "Patient module to schedule appointments and view medical reports",
+              "Doctor dashboard to manage assigned patients and appointments",
+              "Full administrator dashboard with complete control over users, doctors, patients, departments, rooms, beds, shifts, roles, and more",
+              "Secure system through JWT authentication and encrypted passwords",
+              "Scalable architecture based on NestJS (Backend) and React (Frontend)"
+            ],
+            "challenges": [
+              "Implementing secure authentication with JWT and role-based route protection",
+              "Designing a scalable architecture for multiple modules and roles",
+              "Managing complex relationships in the MySQL database",
+              "Creating intuitive and responsive interfaces for all roles"
+            ]
           }
         ]
       }
