@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import perfil from '../assets/images/victor_bk.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faXTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faXTwitter, faGithub, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { LanguageContext } from '../context/languageContext';
 import image1 from '../assets/images/deploy.png';
@@ -78,7 +78,9 @@ function Inicio() {
             { icon: faGithub, url: "https://github.com/victorcamacaro253", text: "victorcamacaro253" },
             { icon: faXTwitter, url: "https://mobile.twitter.com/victorcamacar19", text: "@victorcamacar19" },
             { icon: faInstagram, url: "https://www.instagram.com/victorcamacaro1999/", text: "victorcamacaro1999" },
-            { icon: faFacebook, url: "https://m.facebook.com/100000134262241", text: "victor.camacaro" }
+            { icon: faTiktok, url: "https://www.tiktok.com/@victorcamacaro1999", text: "@victorcamacaro1999", label: "TikTok" },
+            { icon: faFacebook, url: "https://m.facebook.com/100000134262241", text: "victor.camacaro" },
+
           ].map((social, index) => (
             <a 
               key={index}

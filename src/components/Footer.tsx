@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from '../context/languageContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faGithub, faLinkedinIn, faInstagram, faXTwitter, faPaypal } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faGithub, faLinkedinIn, faInstagram, faXTwitter, faPaypal, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   const { language, texts } = useContext(LanguageContext);
@@ -13,7 +13,8 @@ function Footer() {
     { icon: faXTwitter, url: "https://mobile.twitter.com/victorcamacar19", label: "Twitter" },
     { icon: faGithub, url: "https://github.com/victorcamacaro253", label: "GitHub" },
     { icon: faLinkedinIn, url: "https://www.linkedin.com/in/victor-camacaro-3634641a5", label: "LinkedIn" },
-    { icon: faInstagram, url: "https://www.instagram.com/victorcamacaro1999/", label: "Instagram" }
+    { icon: faInstagram, url: "https://www.instagram.com/victorcamacaro1999/", label: "Instagram" },
+    { icon: faTiktok, url: "https://www.tiktok.com/@victorcamacaro1999", label: "TikTok" }
   ];
 
   // PayPal donation link - replace with your actual PayPal donation link

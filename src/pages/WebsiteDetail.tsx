@@ -12,7 +12,8 @@ import {
   faBullseye,
   faChevronLeft,
   faChevronRight,
-  faImages
+  faImages,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons';
 
 // Import website images
@@ -51,7 +52,8 @@ const WebsiteDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { language, texts } = useContext(LanguageContext);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+const [isModalOpen, setIsModalOpen] = useState(false);
+const [modalImageIndex, setModalImageIndex] = useState(0);
   const websiteData = (texts.websites?.[0] ?? {}) as WebsiteDataByLanguage;
   const websites = websiteData[language] || websiteData['es'] || {};
   const websiteCards: WebsiteCard[] = Array.isArray(websites.cards) ? websites.cards : [];
@@ -65,6 +67,41 @@ const WebsiteDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = (index: number) => {
+  setModalImageIndex(index);
+  setIsModalOpen(true);
+};
+
+const closeModal = () => {
+  setIsModalOpen(false);
+};
+
+
+const nextModalImage = () => {
+  if (website.gallery && website.gallery.length > 0) {
+    setModalImageIndex((prev) => (prev + 1) % website.gallery!.length);
+  }
+};
+
+const prevModalImage = () => {
+  if (website.gallery && website.gallery.length > 0) {
+    setModalImageIndex((prev) => (prev - 1 + (website.gallery ? website.gallery.length : 0)) % (website.gallery ? website.gallery.length : 1));
+  }
+};
+
+const handleKeyDown = (e: KeyboardEvent) => {
+  if (!isModalOpen) return;
+  
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'ArrowRight') nextModalImage();
+  if (e.key === 'ArrowLeft') prevModalImage();
+};
+
+useEffect(() => {
+  document.addEventListener('keydown', handleKeyDown);
+  return () => document.removeEventListener('keydown', handleKeyDown);
+}, [isModalOpen]);
 
   // Carousel functions
   const nextImage = () => {
@@ -332,70 +369,133 @@ const WebsiteDetail = () => {
         </div>
       </div>
       {/* Image Gallery Carousel */}
-      {websites.gallery && websites.gallery.length > 0 && (
-        <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
-            <FontAwesomeIcon icon={faImages} className="text-accent dark:text-dark-accent" />
-            Gallery
-          </h2>
+{website.gallery && website.gallery.length > 0 && (
+  <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+    <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
+      <FontAwesomeIcon icon={faImages} className="text-accent dark:text-dark-accent" />
+      Gallery
+    </h2>
 
-          <div className="relative">
-            {/* Main Image */}
-            <div className="relative overflow-hidden rounded-lg mb-4">
+    <div className="relative">
+      {/* Main Image */}
+      <div className="relative overflow-hidden rounded-lg mb-4">
+        <img
+          src={website.gallery[currentImageIndex]}
+          alt={`${website.title} - Image ${currentImageIndex + 1}`}
+          className="w-full h-96 object-fill transition-all duration-500 cursor-pointer hover:opacity-90"
+          onClick={() => openModal(currentImageIndex)}
+        />
+
+        {/* Navigation Arrows */}
+        {website.gallery.length > 1 && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
+            >
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </>
+        )}
+
+        {/* Image Counter */}
+        <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+          {currentImageIndex + 1} / {website.gallery.length}
+        </div>
+
+        {/* Click to expand hint */}
+        <div className="absolute top-4 left-4 bg-black/50 text-white px-2 py-1 rounded text-xs opacity-75">
+          Click to expand
+        </div>
+      </div>
+
+      {/* Thumbnail Navigation */}
+      {website.gallery.length > 1 && (
+        <div className="flex gap-2 overflow-x-auto pb-2">
+          {website.gallery.map((image, index) => (
+            <button
+              key={index}
+              onClick={() => goToImage(index)}
+              className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 cursor-pointer hover:opacity-80 ${index === currentImageIndex
+                ? 'border-accent dark:border-dark-accent'
+                : 'border-gray-300 dark:border-gray-600 hover:border-accent/50 dark:hover:border-dark-accent/50'
+                }`}
+            >
               <img
-                src={websites.gallery[currentImageIndex]}
-                alt={`${website.title} - Image ${currentImageIndex + 1}`}
-                className="w-full h-96 object-cover transition-all duration-500"
+                src={image}
+                alt={`Thumbnail ${index + 1}`}
+                className="w-full h-full object-fill"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  openModal(index);
+                }}
               />
-
-              {/* Navigation Arrows */}
-              {websites.gallery.length > 1 && (
-                <>
-                  <button
-                    onClick={prevImage}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
-                  >
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                  </button>
-                  <button
-                    onClick={nextImage}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
-                  >
-                    <FontAwesomeIcon icon={faChevronRight} />
-                  </button>
-                </>
-              )}
-
-              {/* Image Counter */}
-              <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                {currentImageIndex + 1} / {websites.gallery.length}
-              </div>
-            </div>
-
-            {/* Thumbnail Navigation */}
-            {websites.gallery.length > 1 && (
-              <div className="flex gap-2 overflow-x-auto pb-2">
-                {websites.gallery.map((image, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToImage(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 ${index === currentImageIndex
-                      ? 'border-accent dark:border-dark-accent'
-                      : 'border-gray-300 dark:border-gray-600 hover:border-accent/50 dark:hover:border-dark-accent/50'
-                      }`}
-                  >
-                    <img
-                      src={image}
-                      alt={`Thumbnail ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
+            </button>
+          ))}
+        </div>
       )}
+    </div>
+
+    {/* Modal */}
+    {isModalOpen && (
+      <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
+        {/* Close button */}
+        <button
+          onClick={closeModal}
+          className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl z-10 bg-black/50 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+
+        {/* Modal content */}
+        <div className="relative max-w-7xl max-h-full flex items-center justify-center">
+          {/* Modal image */}
+          <img
+            src={website.gallery[modalImageIndex]}
+            alt={`${website.title} - Image ${modalImageIndex + 1}`}
+            className="max-w-full max-h-full object-contain rounded-lg"
+          />
+
+          {/* Modal navigation arrows */}
+          {website.gallery.length > 1 && (
+            <>
+              <button
+                onClick={prevModalImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 text-xl"
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
+              <button
+                onClick={nextModalImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 text-xl"
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </>
+          )}
+
+          {/* Modal image counter */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+            {modalImageIndex + 1} / {website.gallery.length}
+          </div>
+        </div>
+
+        {/* Click outside to close */}
+        <div 
+          className="absolute inset-0 -z-10" 
+          onClick={closeModal}
+        ></div>
+      </div>
+    )}
+  </section>
+)}
+
     </div>
   );
 };

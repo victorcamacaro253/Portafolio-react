@@ -471,7 +471,6 @@
     {
       "es": {
         "title": "Mis Sitios Web",
-      
         "viewDetails": "Ver detalles",
         "visit": "Visitar sitio",
         "descriptionTitle": "Descripcion del Proyecto",
@@ -481,16 +480,10 @@
         "TechnologyTitle": "Tecnologías utilizadas",
         "QuickLinks": "Enlaces rápidos",
         "TechnicalTitle": "Desafíos técnicos",
-        "gallery": [
-          "/images/medicare.png",
-          "/assets/images/medicare-2.png",
-          "../assets/images/medicare-3.png",
-          "../assets/images/medicare-4.png"
-        ],
         "cards": [
           {
             "title": "Sistema Integral de Gestión Médica (Medicare)",
-              "index":"medicare",
+            "index": "medicare",
             "description": "Plataforma web para optimizar la administración y operación de centros médicos, clínicas y hospitales con módulos para pacientes, doctores y administradores.",
             "detailedDescription": "Medicare es un sistema web integral diseñado para mejorar la gestión operativa y clínica de centros médicos, hospitales y clínicas. El sistema permite centralizar la administración de pacientes, doctores, citas médicas, departamentos y recursos hospitalarios, facilitando una comunicación eficiente entre los distintos actores involucrados. Cuenta con un área pública informativa y un área privada gestionada por roles (paciente, doctor, administrador).",
             "objective": "Brindar una solución digital intuitiva y funcional que permita a los centros médicos agilizar sus procesos internos, desde la programación de citas hasta la gestión de personal médico y recursos físicos, mejorando así la experiencia tanto del paciente como del personal sanitario.",
@@ -527,14 +520,33 @@
               "Diseñar una arquitectura escalable para múltiples módulos y roles",
               "Gestionar relaciones complejas en la base de datos MySQL",
               "Crear interfaces intuitivas y responsivas para todos los roles"
+            ],
+            "gallery": [
+              "/images/medicare.png",
+              "/images/medicare-1.JPG",
+              "/images/medicare-2.JPG",
+              "/images/medicare-18.JPG",
+              "/images/medicare-3.JPG",
+              "/images/medicare-4.JPG",
+              "/images/medicare-5.JPG",
+              "/images/medicare-6.JPG",
+              "/images/medicare-7.JPG",
+              "/images/medicare-8.JPG",
+              "/images/medicare-9.JPG",
+              "/images/medicare-10.JPG",
+              "/images/medicare-11.JPG",
+              "/images/medicare-12.JPG",
+              "/images/medicare-13.JPG",
+              "/images/medicare-14.JPG",
+              "/images/medicare-15.JPG",
+              "/images/medicare-16.JPG",
+              "/images/medicare-17.JPG"
             ]
-           
           }
         ]
       },
       "en": {
         "title": "My Websites",
-       
         "viewDetails": "View details",
         "visit": "Visit site",
         "descriptionTitle": "Project Description",
@@ -544,16 +556,31 @@
         "TechnologyTitle": "Technologies Used",
         "QuickLinks": "Quick Links",
         "TechnicalTitle": "Technical Challenges",
-          "gallery": [
-            "/images/medicare.png",
-            "/assets/images/medicare-2.png",
-            "../assets/images/medicare-3.png",
-            "../assets/images/medicare-4.png"
-          ],
+        "gallery": [
+              "/images/medicare.png",
+              "/images/medicare-1.JPG",
+              "/images/medicare-2.JPG",
+              "/images/medicare-18.JPG",
+              "/images/medicare-3.JPG",
+              "/images/medicare-4.JPG",
+              "/images/medicare-5.JPG",
+              "/images/medicare-6.JPG",
+              "/images/medicare-7.JPG",
+              "/images/medicare-8.JPG",
+              "/images/medicare-9.JPG",
+              "/images/medicare-10.JPG",
+              "/images/medicare-11.JPG",
+              "/images/medicare-12.JPG",
+              "/images/medicare-13.JPG",
+              "/images/medicare-14.JPG",
+              "/images/medicare-15.JPG",
+              "/images/medicare-16.JPG",
+              "/images/medicare-17.JPG"
+            ],
         "cards": [
           {
             "title": "Integral Medical Management System (Medicare)",
-             "index":"medicare",
+            "index": "medicare",
             "description": "Web platform designed to optimize the administration and operation of medical centers, clinics, and hospitals with modules for patients, doctors, and administrators.",
             "detailedDescription": "Medicare is an integral web system designed to improve the operational and clinical management of medical centers, hospitals, and clinics. The system allows centralization of patient administration, doctors, medical appointments, departments, and hospital resources, facilitating efficient communication between the various stakeholders. It includes a public information area and a private area managed by roles (patient, doctor, administrator).",
             "objective": "To provide an intuitive and functional digital solution that enables medical centers to streamline their internal processes, from appointment scheduling to medical staff and clinical resource management, improving the experience for both patients and healthcare personnel.",
