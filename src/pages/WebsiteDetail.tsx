@@ -13,7 +13,8 @@ import {
   faChevronLeft,
   faChevronRight,
   faImages,
-  faTimes
+  faTimes,
+  faDownload
 } from '@fortawesome/free-solid-svg-icons';
 
 // Import website images
@@ -27,6 +28,7 @@ interface WebsiteCard {
   detailedDescription: string;
   objective?: string;
   intendedFor?: string;
+  documentUrl?: string; 
   url: string;
   github: string;
   technologies: string[];
@@ -307,42 +309,61 @@ useEffect(() => {
             </section>
 
             {/* Quick Actions */}
-            <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl font-righteous mb-4">
-                {websites.QuickLinks}
-              </h3>
-              <div className="space-y-3">
-                <a
-                  href={website.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 bg-accent/5 dark:bg-dark-accent/5 rounded-lg hover:bg-accent/10 dark:hover:bg-dark-accent/10 transition-colors group"
-                >
-                  <FontAwesomeIcon
-                    icon={faExternalLinkAlt}
-                    className="text-accent dark:text-dark-accent group-hover:scale-110 transition-transform"
-                  />
-                  <span className="text-gray-700 dark:text-gray-300">
-                    Visit website
-                  </span>
-                </a>
+            {/* Quick Actions */}
+<section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+  <h3 className="text-xl font-righteous mb-4">
+    {websites.QuickLinks}
+  </h3>
+  <div className="space-y-3">
+    <a
+      href={website.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-3 p-3 bg-accent/5 dark:bg-dark-accent/5 rounded-lg hover:bg-accent/10 dark:hover:bg-dark-accent/10 transition-colors group"
+    >
+      <FontAwesomeIcon
+        icon={faExternalLinkAlt}
+        className="text-accent dark:text-dark-accent group-hover:scale-110 transition-transform"
+      />
+      <span className="text-gray-700 dark:text-gray-300">
+        Visit website
+      </span>
+    </a>
 
-                <a
-                  href={website.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
-                >
-                  <FontAwesomeIcon
-                    icon={faCode}
-                    className="text-gray-600 dark:text-gray-300 group-hover:scale-110 transition-transform"
-                  />
-                  <span className="text-gray-700 dark:text-gray-300">
-                    View source code
-                  </span>
-                </a>
-              </div>
-            </section>
+    <a
+      href={website.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+    >
+      <FontAwesomeIcon
+        icon={faCode}
+        className="text-gray-600 dark:text-gray-300 group-hover:scale-110 transition-transform"
+      />
+      <span className="text-gray-700 dark:text-gray-300">
+        View source code
+      </span>
+    </a>
+
+    {/* Add this new download link */}
+    {website.documentUrl && (
+      <a
+        href={website.documentUrl}
+        download
+        className="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors group"
+      >
+        <FontAwesomeIcon
+          icon={faDownload}
+          className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"
+        />
+        <span className="text-gray-700 dark:text-gray-300">
+          Download documentation
+        </span>
+      </a>
+    )}
+  </div>
+</section>
+
 
             {/* Navigation */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
