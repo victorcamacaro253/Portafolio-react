@@ -12,6 +12,7 @@ import { faExternalLinkAlt, faCode } from '@fortawesome/free-solid-svg-icons';
 // Import website images
 
 import medicareImg from '../assets/images/medicare.png';
+import cineverseImg from '../assets/images/cineverse.jpg';
 
 
 interface WebsiteCard {
@@ -31,7 +32,7 @@ const Websites = () => {
   const websiteCards: WebsiteCard[] = Array.isArray(websites.cards) ? websites.cards : [];
 
   // Website images array
-  const images = [ medicareImg];
+  const images = [ medicareImg,cineverseImg];
 
   return (
     <section id="websites" className="w-full bg-background-1 dark:bg-dark-background-1 py-16 px-4">

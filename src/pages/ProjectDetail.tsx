@@ -7,6 +7,7 @@ import image2 from '../assets/images/api2.png';
 import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
+import image6 from '/images/api-box.png';
 import heroSection1 from '../assets/images/headerhero.jpg';
 import appImage1 from '../assets/images/appImage1.jpg';
 import appImage2 from '../assets/images/appImage2.jpg';
@@ -51,7 +52,9 @@ const ProjectDetail = () => {
     [image2],  // Single image for project 3
     [image3],  // Single image for project 4
     [image4],  // Single image for project 5
+     // Single image for project 6
     [heroSection1,appImage1, appImage2, appImage3, appImage4, appImage5, appImage6, appImage7, appImage8, appImage9, appImage10, appImage11, appImage12],  // Gallery for new project
+     [image6],
     [logoCinebook]
   ];
 

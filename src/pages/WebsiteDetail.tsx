@@ -20,12 +20,14 @@ import {
 // Import website images
 
 import medicareImg from '../assets/images/medicare.png';
+import cineverseImg from '../assets/images/cineverse.jpg';
 
 
 interface WebsiteCard {
   title: string;
   description: string;
   detailedDescription: string;
+  index ?: string | undefined;
   objective?: string;
   intendedFor?: string;
   documentUrl?: string; 
@@ -60,11 +62,19 @@ const [modalImageIndex, setModalImageIndex] = useState(0);
   const websites = websiteData[language] || websiteData['es'] || {};
   const websiteCards: WebsiteCard[] = Array.isArray(websites.cards) ? websites.cards : [];
 
-  const websiteIndex = parseInt(id || '0');
-  const website = websiteCards[websiteIndex];
+  //const websiteIndex = parseInt(id || '0');
+  //const website = websiteCards[websiteIndex];
+  const website = websiteCards.find(card => card.index === id);
 
-  const images = [medicareImg];
-  const websiteImage = images[websiteIndex];
+ // const images = [medicareImg];
+ // const websiteImage = images[websiteIndex];
+const images: Record<string, string> = {
+  medicare: medicareImg,
+  cineverse: cineverseImg,
+};
+
+
+  const websiteImage = website && website.index ? images[website.index] || medicareImg : medicareImg; // fallback por si falta
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -80,8 +90,28 @@ const closeModal = () => {
 };
 
 
+
+  if (!website) {
+    return (
+      <div className="min-h-screen bg-background-1 dark:bg-dark-background-1 flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-righteous text-text-light dark:text-text-dark mb-4">
+            Website not found
+          </h2>
+          <Link
+            to="/websites"
+            className="text-accent dark:text-dark-accent hover:underline"
+          >
+            Back to websites
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+
 const nextModalImage = () => {
-  if (website.gallery && website.gallery.length > 0) {
+  if (website?.gallery && website.gallery.length > 0) {
     setModalImageIndex((prev) => (prev + 1) % website.gallery!.length);
   }
 };
@@ -123,23 +153,6 @@ useEffect(() => {
   };
 
 
-  if (!website) {
-    return (
-      <div className="min-h-screen bg-background-1 dark:bg-dark-background-1 flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-2xl font-righteous text-text-light dark:text-text-dark mb-4">
-            Website not found
-          </h2>
-          <Link
-            to="/websites"
-            className="text-accent dark:text-dark-accent hover:underline"
-          >
-            Back to websites
-          </Link>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-background-1 mt-16 dark:bg-dark-background-1 text-text-light dark:text-text-dark">
@@ -372,10 +385,10 @@ useEffect(() => {
               </h3>
               <div className="space-y-2">
                 {websiteCards.map((otherWebsite, index) => (
-                  index !== websiteIndex && (
+                  otherWebsite.index !== website.index && (
                     <Link
                       key={index}
-                      to={`/website/${index}`}
+                      to={`/website/${otherWebsite.index}`}
                       className="block p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
                     >
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">

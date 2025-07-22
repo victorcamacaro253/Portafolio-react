@@ -11,6 +11,7 @@ import image3 from '../assets/images/graphoauth2.0.png';
 import image4 from '../assets/images/payment.png';
 import image5 from '../assets/images/nest_api_1.png';
 import herosection from '../assets/images/cinebookheader.jpg';
+import image6 from '/images/api-box.png';
 
 
 
@@ -30,7 +31,7 @@ const Projects = () => {
   const projectCards: ProjectCard[] = Array.isArray(projects.cards) ? projects.cards : [];
 
 
-  const images = [image1, image5, image2, image3, image4,herosection];
+  const images = [image1, image5, image2, image3, image4,herosection,image6];
 
   return (
     <section id="projects" className="w-full bg-background-2 dark:bg-dark-background-2 py-16 px-4">

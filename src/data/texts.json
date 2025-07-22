@@ -272,6 +272,44 @@
               "performance": "Optimización con memoization y reducción de re-renders",
               "testing": "Jest para unit testing + Detox para testing E2E"
             }
+          },
+          {
+            "title": "Box Office API",
+            "description": "API REST con NestJS que proporciona datos en tiempo real sobre taquilla de películas, rankings y análisis comparativos entre EE.UU. y mercado mundial.",
+            "detailedDescription": "Box Office API es una solución moderna y escalable desarrollada con NestJS para entusiastas del cine, desarrolladores y analistas de datos. Esta API REST ofrece acceso en tiempo real a información detallada sobre el rendimiento de películas en taquilla.\n\nCaracterísticas principales:\n- Top de películas del fin de semana (EE.UU.)\n- Historial de taquilla diaria para análisis de tendencias\n- Comparativas entre ingresos en EE.UU. y mercados internacionales\n- Integración sencilla con aplicaciones frontend, bots o dashboards\n- Documentación interactiva con Swagger UI para pruebas en vivo\n\nLa API incluye un sistema de caché automático para optimizar el rendimiento y reducir solicitudes innecesarias a las fuentes externas. Es ideal para crear newsletters de cine, bots de Discord/Telegram, dashboards analíticos o proyectos académicos sobre tendencias cinematográficas.\n\nDesarrollada con buenas prácticas: arquitectura modular, inyección de dependencias, validación de respuestas y manejo centralizado de errores. 100% open source y lista para integrarse en cualquier proyecto.",
+            "image": "/images/api-box.png",
+            "button": "Ver más",
+            "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
+            "features": [
+              "Top películas del fin de semana",
+              "Datos históricos de taquilla",
+              "Comparativas EE.UU. vs Mundial",
+              "Swagger UI integrado",
+              "Caché automático para alto rendimiento"
+            ],
+            "technologies": [
+              "NestJS",
+              "TypeScript",
+              "PostgreSQL",
+              "Redis",
+              "Swagger",
+              "Puppeteer",
+              "Axios"
+            ],
+            "challenges": [
+              "Extracción confiable de datos de fuentes web",
+              "Implementar sistema de caché eficiente",
+              "Mantener actualizados los endpoints automáticamente",
+              "Gestionar rate limiting de APIs externas",
+              "Optimizar tiempos de respuesta bajo carga"
+            ],
+            "technicalDetails": {
+              "architecture": "Arquitectura modular con servicios independientes para scraping y datos",
+              "caching": "Redis para caché temporal de respuestas y evitar sobrecarga",
+              "dataFetching": "Web scraping controlado + APIs públicas con validación cruzada",
+              "documentation": "Swagger UI disponible en /api-docs para pruebas interactivas",
+              "deployment": "Desplegada en Render con CI/CD desde GitHub"
+            }
           }
         ]
       },
@@ -462,6 +500,44 @@
               "performance": "Optimization with memoization and reduced re-renders",
               "testing": "Jest for unit testing + Detox for E2E testing"
             }
+          },
+          {
+            "title": "Box Office API",
+            "description": "REST API built with NestJS that provides real-time box office data, rankings, and comparative analysis between U.S. and global markets.",
+            "detailedDescription": "Box Office API is a modern and scalable solution developed with NestJS for movie enthusiasts, developers, and data analysts. This REST API offers real-time access to detailed information about movie performance at the box office.\n\nKey features:\n- Weekend top movies ranking (U.S.)\n- Historical daily box office data for trend analysis\n- Comparative insights between U.S. and international earnings\n- Easy integration with frontends, bots, or dashboards\n- Interactive documentation with Swagger UI for live testing\n\nThe API includes an automatic caching system using Redis to optimize performance and reduce unnecessary requests to external sources. It's perfect for building cinema newsletters, Discord/Telegram bots, analytical dashboards, or academic projects on film trends.\n\nBuilt with best practices: modular architecture, dependency injection, response validation, and centralized error handling. 100% open source and ready to integrate into any project.",
+            "image": "../../assets/images/box_office_api.png",
+            "button": "See more",
+            "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
+            "features": [
+              "Weekend top movies",
+              "Historical box office data",
+              "U.S. vs Worldwide comparisons",
+              "Integrated Swagger UI",
+              "Automatic caching for high performance"
+            ],
+            "technologies": [
+              "NestJS",
+              "TypeScript",
+              "PostgreSQL",
+              "Redis",
+              "Swagger",
+              "Puppeteer",
+              "Axios"
+            ],
+            "challenges": [
+              "Reliable data extraction from web sources",
+              "Implementing an efficient caching system",
+              "Keeping endpoints automatically updated",
+              "Managing rate limiting from external APIs",
+              "Optimizing response times under load"
+            ],
+            "technicalDetails": {
+              "architecture": "Modular architecture with independent services for scraping and data handling",
+              "caching": "Redis for temporary response caching to avoid overloading sources",
+              "dataFetching": "Controlled web scraping + public APIs with cross-validation",
+              "documentation": "Interactive Swagger UI available at /api-docs",
+              "deployment": "Deployed on Render with CI/CD from GitHub"
+            }
           }
         ]
       }
@@ -488,7 +564,7 @@
             "detailedDescription": "Medicare es un sistema web integral diseñado para mejorar la gestión operativa y clínica de centros médicos, hospitales y clínicas. El sistema permite centralizar la administración de pacientes, doctores, citas médicas, departamentos y recursos hospitalarios, facilitando una comunicación eficiente entre los distintos actores involucrados. Cuenta con un área pública informativa y un área privada gestionada por roles (paciente, doctor, administrador).",
             "objective": "Brindar una solución digital intuitiva y funcional que permita a los centros médicos agilizar sus procesos internos, desde la programación de citas hasta la gestión de personal médico y recursos físicos, mejorando así la experiencia tanto del paciente como del personal sanitario.",
             "intendedFor": "Centros médicos pequeños y medianos, hospitales públicos y privados, clínicas especializadas y profesionales de la salud que requieran una herramienta de gestión digital.",
-           "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
+            "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
             "url": "https://medicare-sistema.com ",
             "logo": "url",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
@@ -543,6 +619,69 @@
               "/images/medicare-16.JPG",
               "/images/medicare-17.JPG"
             ]
+          },
+          {
+            "title": "Cineverse - Tu universo cinematográfico",
+            "index": "cineverse",
+            "description": "Plataforma completa para cinéfilos que ofrece acceso a películas, series, noticias exclusivas y datos detallados sobre taquilla, presupuestos y rendimiento de producciones.",
+            "detailedDescription": "Cineverse es un ecosistema digital creado por un desarrollador y amante del cine para ofrecer una experiencia única al interactuar con el mundo del entretenimiento. Combina contenido audiovisual de alta calidad con datos exclusivos obtenidos mediante una API propia de web scraping, incluyendo taquilla en tiempo real, comparativas históricas, perfiles completos de actores y directores, y una sección de noticias siempre actualizada.",
+            "objective": "Crear una plataforma inmersiva y personalizada que conecte a los amantes del cine y las series con contenido relevante, datos profundos y noticias exclusivas, todo en un solo lugar.",
+            "intendedFor": "Cinéfilos, fanáticos de las series, entusiastas del entretenimiento y cualquier persona interesada en datos detallados sobre películas y producciones audiovisuales.",
+            "documentUrl": "",
+            "url": "https://cineverseonline.netlify.app ",
+            "logo": "images/cinverse.JPG",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "Axios",
+              "Web Scraping API",
+              "Netlify"
+            ],
+            "features": [
+              "Acceso a películas trending y próximos estrenos",
+              "Series con detalles de temporadas, episodios y elenco completo",
+              "Búsqueda inteligente por título, actor o director",
+              "Datos exclusivos de taquilla: diaria, semanal y global",
+              "Comparativas históricas entre películas exitosas (ej: Endgame vs Avatar)",
+              "Presupuestos, recaudaciones y cálculo de ROI de producciones",
+              "Perfiles detallados de actores y directores con biografías y filmografías",
+              "Datos curiosos y anécdotas del mundo del cine",
+              "Sección de noticias actualizada: estrenos, tráilers, festivales, detrás de cámaras",
+              "Renovaciones y cancelaciones de series en tiempo real",
+              "Interfaz personalizada con modo oscuro/claro y detección automática de idioma",
+              "Diseño 100% responsive para cualquier dispositivo"
+            ],
+            "challenges": [
+              "Desarrollo de una API personalizada mediante técnicas de web scraping ético",
+              "Gestión de grandes volúmenes de datos en tiempo real sin base de datos tradicional",
+              "Optimización del rendimiento en búsquedas complejas",
+              "Mantenimiento constante ante cambios en las fuentes externas de datos",
+              "Creación de una interfaz intuitiva que maneje múltiples tipos de contenido"
+            ],
+            "gallery": [
+              "/images/cineverse/cineverse.jpg",
+              "/images/cineverse/1.jpg",
+              "/images/cineverse/1-en.jpg",
+              "/images/cineverse/2.jpeg",
+              "/images/cineverse/2-en.jpeg",
+              "/images/cineverse/3.jpeg",
+              "/images/cineverse/3-en.jpeg",
+              "/images/cineverse/4.jpeg",
+              "/images/cineverse/4_en.jpeg",
+              "/images/cineverse/5.jpeg",
+              "/images/cineverse/6.jpeg",
+              "/images/cineverse/7.jpeg",
+              "/images/cineverse/8.jpeg",
+              "/images/cineverse/9.jpeg",
+              "/images/cineverse/10.jpeg",
+              "/images/cineverse/11.jpeg",
+              "/images/cineverse/12.jpeg",
+              "/images/cineverse/13.jpeg",
+              "/images/cineverse/14.jpeg"
+            ]
           }
         ]
       },
@@ -558,26 +697,26 @@
         "QuickLinks": "Quick Links",
         "TechnicalTitle": "Technical Challenges",
         "gallery": [
-              "/images/medicare.png",
-              "/images/medicare-1.JPG",
-              "/images/medicare-2.JPG",
-              "/images/medicare-18.JPG",
-              "/images/medicare-3.JPG",
-              "/images/medicare-4.JPG",
-              "/images/medicare-5.JPG",
-              "/images/medicare-6.JPG",
-              "/images/medicare-7.JPG",
-              "/images/medicare-8.JPG",
-              "/images/medicare-9.JPG",
-              "/images/medicare-10.JPG",
-              "/images/medicare-11.JPG",
-              "/images/medicare-12.JPG",
-              "/images/medicare-13.JPG",
-              "/images/medicare-14.JPG",
-              "/images/medicare-15.JPG",
-              "/images/medicare-16.JPG",
-              "/images/medicare-17.JPG"
-            ],
+          "/images/medicare.png",
+          "/images/medicare-1.JPG",
+          "/images/medicare-2.JPG",
+          "/images/medicare-18.JPG",
+          "/images/medicare-3.JPG",
+          "/images/medicare-4.JPG",
+          "/images/medicare-5.JPG",
+          "/images/medicare-6.JPG",
+          "/images/medicare-7.JPG",
+          "/images/medicare-8.JPG",
+          "/images/medicare-9.JPG",
+          "/images/medicare-10.JPG",
+          "/images/medicare-11.JPG",
+          "/images/medicare-12.JPG",
+          "/images/medicare-13.JPG",
+          "/images/medicare-14.JPG",
+          "/images/medicare-15.JPG",
+          "/images/medicare-16.JPG",
+          "/images/medicare-17.JPG"
+        ],
         "cards": [
           {
             "title": "Integral Medical Management System (Medicare)",
@@ -619,6 +758,69 @@
               "Designing a scalable architecture for multiple modules and roles",
               "Managing complex relationships in the MySQL database",
               "Creating intuitive and responsive interfaces for all roles"
+            ]
+          },
+          {
+            "title": "Cineverse - Your Cinematic Universe",
+            "index": "cineverse",
+            "description": "Complete platform for movie lovers offering access to films, series, exclusive news, and detailed data on box office, budgets, and production performance.",
+            "detailedDescription": "Cineverse is a digital ecosystem created by a developer and film enthusiast to deliver a unique experience when interacting with the entertainment world. It combines high-quality audiovisual content with exclusive data from a custom-built web scraping API, including real-time box office stats, historical comparisons, full profiles of actors and directors, and an always-updated news section.",
+            "objective": "To create an immersive and personalized platform that connects movie and series fans with relevant content, deep insights, and exclusive news — all in one place.",
+            "intendedFor": "Film enthusiasts, series fans, entertainment lovers, and anyone interested in detailed data about movies and audiovisual productions.",
+            "documentUrl": "",
+            "url": "https://cineverseonline.netlify.app ",
+            "logo": "url",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "Axios",
+              "Web Scraping API",
+              "Netlify"
+            ],
+            "features": [
+              "Access to trending movies and upcoming releases",
+              "TV series with season/episode details and full cast information",
+              "Smart search by title, actor, or director",
+              "Exclusive box office data: daily, weekly, and global",
+              "Historical comparisons between blockbuster films (e.g., Endgame vs Avatar)",
+              "Budgets, earnings, and ROI calculations for productions",
+              "Detailed profiles of actors and directors with bios and filmographies",
+              "Fun facts and behind-the-scenes trivia from the film industry",
+              "Up-to-date news section: premieres, trailers, festivals, behind-the-scenes",
+              "Real-time updates on series renewals and cancellations",
+              "Personalized interface with dark/light mode and automatic language detection",
+              "100% responsive design for any device"
+            ],
+            "challenges": [
+              "Developing a custom API using ethical web scraping techniques",
+              "Handling large volumes of real-time data without a traditional database",
+              "Optimizing performance for complex search queries",
+              "Maintaining stability amid changes in external data sources",
+              "Designing an intuitive interface that manages multiple content types seamlessly"
+            ],
+            "gallery": [
+              "/images/cineverse/cineverse.jpg",
+              "/images/cineverse/1.jpg",
+              "/images/cineverse/1-en.jpg",
+              "/images/cineverse/2.jpeg",
+              "/images/cineverse/2-en.jpeg",
+              "/images/cineverse/3.jpeg",
+              "/images/cineverse/3-en.jpeg",
+              "/images/cineverse/4.jpeg",
+              "/images/cineverse/4_en.jpeg",
+              "/images/cineverse/5.jpeg",
+              "/images/cineverse/6.jpeg",
+              "/images/cineverse/7.jpeg",
+              "/images/cineverse/8.jpeg",
+              "/images/cineverse/9.jpeg",
+              "/images/cineverse/10.jpeg",
+              "/images/cineverse/11.jpeg",
+              "/images/cineverse/12.jpeg",
+              "/images/cineverse/13.jpeg",
+              "/images/cineverse/14.jpeg"
             ]
           }
         ]
