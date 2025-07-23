@@ -7,6 +7,7 @@ import ProjectDetail from './pages/ProjectDetail';
 import LanguageProvider from './context/languageContext';
 import Websites from './pages/Websites';
 import WebsiteDetail from './pages/WebsiteDetail';
+import ProjectsPage from './pages/projectsPage';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/aboutme" element={<Aboutme />} />
-            <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} />
              <Route path="/websites" element={<Websites />} />
              <Route path="/websites/:id" element={<WebsiteDetail />} />
+            <Route path="/projects" element={<ProjectsPage />} />
 
         
           </Routes>

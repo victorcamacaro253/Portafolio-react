@@ -22,6 +22,7 @@ interface ProjectCard {
   description: string;
   link: string;
   button: string;
+  index: string;
 }
 
 const Projects = () => {
@@ -31,7 +32,7 @@ const Projects = () => {
   const projectCards: ProjectCard[] = Array.isArray(projects.cards) ? projects.cards : [];
 
 
-  const images = [image1, image5, image2, image3, image4,herosection,image6];
+  const images = [image1, image5, image2, image3, image4, herosection, image6];
 
   return (
     <section id="projects" className="w-full bg-background-2 dark:bg-dark-background-2 py-16 px-4">
@@ -100,7 +101,7 @@ const Projects = () => {
                   <div className="p-4 border-l-2 border-r-2 border-b-2 border-accent dark:border-accent-dark rounded-b-3xl bg-gradient-to-r from-accent/10 to-accent/5 dark:from-accent-dark/10 dark:to-accent-dark/5">
                     <div className="flex gap-2">
                       <Link
-                        to={`/project/${index}`}
+                        to={`/projects/${card.index}`}
                         className="flex-1"
                       >
                         <button className="w-full px-6 py-3 font-righteous text-text-light dark:text-text-dark border-2 border-accent dark:border-accent-dark rounded-lg hover:bg-accent hover:text-white dark:hover:bg-accent-dark transition-all duration-300 flex items-center justify-center gap-2">
@@ -127,6 +128,14 @@ const Projects = () => {
           <div className="swiper-button-prev !w-12 !h-12 !text-accent dark:!text-accent-dark !border-2 !border-accent dark:!border-accent-dark !rounded-full after:!text-sm hover:!bg-accent hover:!text-white dark:hover:!bg-accent-dark !transition-all !duration-300 !shadow-lg"></div>
 
           <div className="swiper-pagination !relative !mt-8 flex justify-center gap-2"></div>
+
+          <div className="mt-12 text-center">
+            <Link to="/projects" className="inline-block">
+              <button className="px-8 py-4 bg-accent dark:bg-accent-dark text-white font-righteous text-lg rounded-lg hover:bg-opacity-90 dark:hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                {language === 'es' ? 'Ver todos los proyectos' : 'View all projects'}
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ import appImage9 from '../assets/images/appImage9.jpg';
 import appImage10 from '../assets/images/appImage10.jpg';
 import appImage11 from '../assets/images/screen11.jpg';
 import appImage12 from '../assets/images/appImage12.jpg';
-import logoCinebook from '../assets/images/logo-cinebook1.jpg';
+//import logoCinebook from '../assets/images/logo-cinebook1.jpg';
 
 /*interface ProjectDetailProps {
   id: number;
@@ -46,26 +46,40 @@ const ProjectDetail = () => {
 
   // const images = [image1, image5, image2, image3, image4];
 
-  const images = [
-    [image1],  // Single image for project 1
-    [image5],  // Single image for project 2
-    [image2],  // Single image for project 3
-    [image3],  // Single image for project 4
-    [image4],  // Single image for project 5
-     // Single image for project 6
-    [heroSection1,appImage1, appImage2, appImage3, appImage4, appImage5, appImage6, appImage7, appImage8, appImage9, appImage10, appImage11, appImage12],  // Gallery for new project
-     [image6],
-    [logoCinebook]
-  ];
+  const projectImages: Record<string, string[]> = {
+  'api-express-mysql': [image1],
+  'api-nestjs-mysql': [image5],
+  'api-supabase': [image2],
+  'oauth2': [image3],
+  'payment-app': [image4],
+  'movie-booking-app': [
+    heroSection1,
+    appImage1,
+    appImage2,
+    appImage3,
+    appImage4,
+    appImage5,
+    appImage6,
+    appImage7,
+    appImage8,
+    appImage9,
+    appImage10,
+    appImage11,
+    appImage12
+  ],
+  'box-office-api': [image6],
+  // Añade más si hay otros
+};
 
-  const index = Number(id);
 
-  // Find the project by ID
-  const project = projects.cards[Number(id)];
+  const project = projects.cards.find((proj: any) => proj.index === id);
 
   if (!project) {
     return <div>Project not found</div>;
   }
+
+  
+const selectedImages = projectImages[project.index] || [image1]; // fallback
 
   return (
     <section className="w-full bg-background-2 dark:bg-dark-background-2 py-16 px-4 min-h-screen">
@@ -89,10 +103,10 @@ const ProjectDetail = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
             <img
-              src={images[index] && images[index][0] ? images[index][0] : ''}
-              alt={project.title}
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+  src={selectedImages[0]}
+  alt={project.title}
+  className="w-full h-auto rounded-lg shadow-lg"
+/>
           </div>
 
 
@@ -188,7 +202,7 @@ const ProjectDetail = () => {
         </div>
 
          {/* Thumbnail Gallery */}
-          {images[index].length > 1 && (
+          {selectedImages.length > 1 && (
             <div > 
             <div className="flex justify-center">
               <h2 className="text-4xl mt-10 mb-8 font-righteous text-text-light dark:text-text-dark border-b border-accent dark:border-accent-dark pb-2">
@@ -197,7 +211,7 @@ const ProjectDetail = () => {
             </div>
             <div className="grid grid-cols-3 gap-4 mt-5">
            
-              {images[index].slice(1).map((img, imgIndex) => (
+              {selectedImages.slice(1).map((img, imgIndex) => (
                 <button
                   key={imgIndex}
                   className="focus:outline-none"
@@ -244,12 +258,12 @@ const ProjectDetail = () => {
             </div>
 
             {/* Navigation Controls - Improved for mobile */}
-            {images[index].length > 1 && (
+            {selectedImage.length > 1 && (
               <div className="w-full max-w-6xl mt-4 flex justify-between items-center px-4">
                 <button
                   onClick={() => {
-                    const newIndex = (selectedImageIndex - 1 + images[index].length - 1) % (images[index].length - 1);
-                    setSelectedImage(images[index][newIndex + 1]);
+                    const newIndex = (selectedImageIndex - 1 + selectedImage.length - 1) % (selectedImage.length - 1);
+                    setSelectedImage(selectedImage[newIndex + 1]);
                     setSelectedImageIndex(newIndex);
                   }}
                   className="px-6 py-3 md:px-4 md:py-2 bg-accent dark:bg-accent-dark text-white rounded-lg hover:bg-opacity-80 transition-all text-lg md:text-base"
@@ -258,13 +272,13 @@ const ProjectDetail = () => {
                 </button>
 
                 <span className="text-white text-lg md:text-base mx-4">
-                  {selectedImageIndex + 1} / {images[index].length - 1}
+                  {selectedImageIndex + 1} /  {selectedImages.length - 1}
                 </span>
 
                 <button
                   onClick={() => {
-                    const newIndex = (selectedImageIndex + 1) % (images[index].length - 1);
-                    setSelectedImage(images[index][newIndex + 1]);
+                    const newIndex = (selectedImageIndex + 1) % (selectedImages.length - 1);
+                    setSelectedImage(selectedImages[newIndex + 1]);
                     setSelectedImageIndex(newIndex);
                   }}
                   className="px-6 py-3 md:px-4 md:py-2 bg-accent dark:bg-accent-dark text-white rounded-lg hover:bg-opacity-80 transition-all text-lg md:text-base"

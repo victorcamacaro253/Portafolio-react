@@ -90,6 +90,7 @@
         "cards": [
           {
             "title": "API REST con Express y MYSQL",
+            "index": "api-express-mysql",
             "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
             "detailedDescription": "Este proyecto es una API REST completa desarrollada con Node.js y Express.js que implementa un sistema robusto para la gestión de proyectos. La arquitectura sigue el patrón MVC con capas bien definidas para rutas, controladores, servicios y modelos.\n\nCaracterísticas técnicas incluyen autenticación JWT con refresh tokens, sistema de roles (admin, editor, usuario), validación de datos con express-validator, paginación avanzada y filtrado de resultados. La base de datos MySQL está optimizada con índices adecuados y relaciones bien estructuradas.\n\nEl proyecto incluye documentación Swagger integrada, manejo centralizado de errores, variables de entorno para diferentes ambientes (desarrollo, producción) y tests unitarios básicos. Implementé técnicas de seguridad como rate limiting, sanitización de inputs y protección contra SQL injection.",
             "image": "../../assets/images/api.png",
@@ -115,6 +116,7 @@
           },
           {
             "title": "API con NestJS y MySQL",
+            "index": "api-nestjs-mysql",
             "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
             "detailedDescription": "Esta API construida con NestJS representa mi evolución hacia frameworks más estructurados. Aproveché al máximo las características de TypeScript y la arquitectura modular de NestJS para crear un sistema altamente organizado.\n\nEl proyecto utiliza TypeORM para la conexión con MySQL, implementando el patrón Repository para acceso a datos. Desarrollé módulos independientes para cada dominio (auth, usuarios, proyectos), cada uno con sus servicios, controladores y entidades.\n\nIncluye características avanzadas como: decoradores personalizados, interceptores globales para manejo de errores, validación con class-validator, serialización con class-transformer y documentación automática con Swagger. Configuré un sistema completo de variables de entorno para diferentes ambientes y escribí tests unitarios con Jest.",
             "image": "../../assets/images/nest_api_1.png",
@@ -142,6 +144,7 @@
           },
           {
             "title": "API REST Integrado con Supabase",
+            "index": "api-supabase",
             "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
             "detailedDescription": "Este proyecto demuestra mi capacidad para integrar servicios en la nube. Desarrollé una API en Node.js que actúa como intermediario entre el cliente y Supabase, añadiendo lógica de negocio adicional.\n\nImplementé autenticación utilizando el sistema de Supabase Auth, con roles personalizados y políticas de seguridad a nivel de fila (RLS). La API gestiona el almacenamiento en Supabase Storage, incluyendo subida de archivos, generación de URLs firmadas y gestión de permisos.\n\nPara la base de datos, aproveché las capacidades de PostgreSQL en Supabase, implementando funciones almacenadas y triggers. La API también incluye endpoints para llamar a funciones serverless de Supabase y gestionar sus respuestas. Configuré un sistema de webhooks para notificaciones en tiempo real.",
             "image": "../../assets/images/api2.png",
@@ -169,6 +172,7 @@
           },
           {
             "title": "Oauth2.0 App ",
+            "index": "oauth2",
             "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
             "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
             "image": "../../assets/images/graphoauth2.0.png",
@@ -196,6 +200,7 @@
           },
           {
             "title": "App de Pago con Stripe y  Paypal",
+            "index": "payment-app",
             "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.",
             "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
             "image": "../../assets/images/payment.png",
@@ -223,6 +228,7 @@
           },
           {
             "title": "App de Reserva de Cine",
+            "index": "movie-booking-app",
             "description": "Aplicación móvil completa para reservar entradas de cine con selección de películas, horarios, asientos y pago integrado, desarrollada con React Native.",
             "detailedDescription": "CineBook es una aplicación móvil desarrollada con React Native que ofrece una solución completa para la reserva de entradas de cine. La aplicación proporciona:\n\nExperiencia del Usuario:\n- Catálogo de películas con filtros por género, rating y fecha de estreno\n- Sistema de reservas en tiempo real con selección visual de asientos\n- Integración con Google Maps para ubicación de cines cercanos\n- Pasarela de pagos segura con Stripe\n- Gestión de combos de comida/bebida\n- Autenticación segura con JWT\n\nTecnologías Clave:\n- Frontend: React Native con Expo\n- Estado Global: Redux Toolkit\n- Navegación: React Navigation\n- Autenticación: JWT con refresh tokens\n- Pagos: Integración con Stripe SDK\n- Geolocalización: Google Maps API para React Native\n\nCaracterísticas Técnicas:\n- Arquitectura modular y escalable\n- Optimización de rendimiento para dispositivos móviles\n- Animaciones fluidas para la selección de asientos\n- Sincronización en tiempo real mediante sockets\n- Diseño responsive para diferentes tamaños de pantalla",
             "gallery": [
@@ -275,6 +281,7 @@
           },
           {
             "title": "Box Office API",
+            "index": "box-office-api",
             "description": "API REST con NestJS que proporciona datos en tiempo real sobre taquilla de películas, rankings y análisis comparativos entre EE.UU. y mercado mundial.",
             "detailedDescription": "Box Office API es una solución moderna y escalable desarrollada con NestJS para entusiastas del cine, desarrolladores y analistas de datos. Esta API REST ofrece acceso en tiempo real a información detallada sobre el rendimiento de películas en taquilla.\n\nCaracterísticas principales:\n- Top de películas del fin de semana (EE.UU.)\n- Historial de taquilla diaria para análisis de tendencias\n- Comparativas entre ingresos en EE.UU. y mercados internacionales\n- Integración sencilla con aplicaciones frontend, bots o dashboards\n- Documentación interactiva con Swagger UI para pruebas en vivo\n\nLa API incluye un sistema de caché automático para optimizar el rendimiento y reducir solicitudes innecesarias a las fuentes externas. Es ideal para crear newsletters de cine, bots de Discord/Telegram, dashboards analíticos o proyectos académicos sobre tendencias cinematográficas.\n\nDesarrollada con buenas prácticas: arquitectura modular, inyección de dependencias, validación de respuestas y manejo centralizado de errores. 100% open source y lista para integrarse en cualquier proyecto.",
             "image": "/images/api-box.png",
@@ -318,6 +325,7 @@
         "cards": [
           {
             "title": "REST API with Express and MYSQL",
+            "index": "api-express-mysql",
             "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
             "detailedDescription": "This project is a complete REST API developed with Node.js and Express.js that implements a robust system for project management. The architecture follows the MVC pattern with well-defined layers for routes, controllers, services, and models.\n\nTechnical features include JWT authentication with refresh tokens, role-based system (admin, editor, user), data validation with express-validator, advanced pagination and results filtering. The MySQL database is optimized with proper indexes and well-structured relationships.\n\nThe project includes integrated Swagger documentation, centralized error handling, environment variables for different environments (development, production) and basic unit tests. I implemented security techniques like rate limiting, input sanitization and SQL injection protection.",
             "image": "./assets/images/api.png",
@@ -344,6 +352,7 @@
           },
           {
             "title": "API with NestJS with MySQL",
+            "index": "api-nestjs-mysql",
             "description": "Robust and modular REST API built with NestJS and MySQL, focused on scalability and best development practices.",
             "detailedDescription": "This API built with NestJS represents my evolution towards more structured frameworks. I fully leveraged TypeScript features and NestJS's modular architecture to create a highly organized system.\n\nThe project uses TypeORM for MySQL connection, implementing the Repository pattern for data access. I developed independent modules for each domain (auth, users, projects), each with its services, controllers and entities.\n\nIt includes advanced features like: custom decorators, global interceptors for error handling, validation with class-validator, serialization with class-transformer and automatic documentation with Swagger. I configured a complete environment variables system for different environments and wrote unit tests with Jest.",
             "image": "../../assets/images/nest_api_1.png",
@@ -371,6 +380,7 @@
           },
           {
             "title": "REST API Integrated with Supabase",
+            "index": "api-supabase",
             "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
             "detailedDescription": "This project demonstrates my ability to integrate cloud services. I developed a Node.js API that acts as intermediary between client and Supabase, adding additional business logic.\n\nI implemented authentication using Supabase Auth system, with custom roles and row-level security (RLS) policies. The API manages storage in Supabase Storage, including file uploads, signed URL generation and permission management.\n\nFor the database, I leveraged PostgreSQL capabilities in Supabase, implementing stored procedures and triggers. The API also includes endpoints to call Supabase serverless functions and manage their responses. I configured a webhooks system for real-time notifications.",
             "image": "./assets/images/api2.png",
@@ -398,6 +408,7 @@
           },
           {
             "title": "Oauth2.0 App ",
+            "index": "oauth2",
             "description": "Application to handle user authentication via OAuth 2.0. It uses Passport.js to simplify integration with identity providers like Google and GitHub.",
             "detailedDescription": "This project implements a complete OAuth 2.0 authentication system using Passport.js. I configured strategies for multiple providers including Google, GitHub and local credentials.\n\nThe system includes: persistent sessions with Redis storage, user serialization/deserialization, route protection with middlewares, unified profile management and global logout system. I implemented a complete registration/login flow, including email verification and password recovery.\n\nFor enhanced security, I added CSRF protection, rate limiting on sensitive endpoints and input sanitization. The application also generates access/refresh tokens for API use and manages route-level permissions. It includes an admin panel to manage users and OAuth connections.",
             "image": "../assets/images/graphoauth2.0.png",
@@ -425,6 +436,7 @@
           },
           {
             "title": "Payment App with Stripe and Paypal",
+            "index": "payment-app",
             "description": "Developed in React and express to process payments with Stripe and PayPal.",
             "detailedDescription": "This full-stack project (React + Node.js) implements a complete payment processing system. I developed integration with both payment gateways (Stripe and PayPal) allowing users to choose their preferred method.\n\nThe system includes: persistent shopping cart, transaction history, recurring subscriptions, promotional discounts and email notifications. I implemented webhooks to handle async events like successful payments, refunds and cancellations.\n\nFor Stripe, I configured Payment Intents for SCA (Strong Customer Authentication) and managed different payment states. For PayPal, I implemented both the classic flow and the new smart buttons system. The application includes an admin dashboard to manage orders, process refunds and generate reports.",
             "image": "../../assets/images/payment.png",
@@ -451,6 +463,7 @@
           },
           {
             "title": "Movie Booking App",
+            "index": "movie-booking-app",
             "description": "Complete mobile application for booking movie tickets with film selection, showtimes, seat picking and integrated payment, built with React Native.",
             "detailedDescription": "CineBook is a mobile application developed with React Native that provides a complete solution for movie ticket booking. The app offers:\n\nUser Experience:\n- Movie catalog with filters by genre, rating and release date\n- Real-time booking system with visual seat selection\n- Google Maps integration for locating nearby theaters\n- Secure payment gateway with Stripe\n- Food/drink combo management\n- Secure authentication with JWT\n\nKey Technologies:\n- Frontend: React Native with Expo\n- State Management: Redux Toolkit\n- Navigation: React Navigation\n- Authentication: JWT with refresh tokens\n- Payments: Stripe SDK integration\n- Geolocation: Google Maps API for React Native\n\nTechnical Features:\n- Modular and scalable architecture\n- Performance optimization for mobile devices\n- Smooth animations for seat selection\n- Real-time synchronization using sockets\n- Responsive design for different screen sizes",
             "gallery": [
@@ -503,6 +516,7 @@
           },
           {
             "title": "Box Office API",
+            "index": "box-office-api",
             "description": "REST API built with NestJS that provides real-time box office data, rankings, and comparative analysis between U.S. and global markets.",
             "detailedDescription": "Box Office API is a modern and scalable solution developed with NestJS for movie enthusiasts, developers, and data analysts. This REST API offers real-time access to detailed information about movie performance at the box office.\n\nKey features:\n- Weekend top movies ranking (U.S.)\n- Historical daily box office data for trend analysis\n- Comparative insights between U.S. and international earnings\n- Easy integration with frontends, bots, or dashboards\n- Interactive documentation with Swagger UI for live testing\n\nThe API includes an automatic caching system using Redis to optimize performance and reduce unnecessary requests to external sources. It's perfect for building cinema newsletters, Discord/Telegram bots, analytical dashboards, or academic projects on film trends.\n\nBuilt with best practices: modular architecture, dependency injection, response validation, and centralized error handling. 100% open source and ready to integrate into any project.",
             "image": "../../assets/images/box_office_api.png",
@@ -565,7 +579,7 @@
             "objective": "Brindar una solución digital intuitiva y funcional que permita a los centros médicos agilizar sus procesos internos, desde la programación de citas hasta la gestión de personal médico y recursos físicos, mejorando así la experiencia tanto del paciente como del personal sanitario.",
             "intendedFor": "Centros médicos pequeños y medianos, hospitales públicos y privados, clínicas especializadas y profesionales de la salud que requieran una herramienta de gestión digital.",
             "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
-            "observations":"El sitio web que esta disponible es una demostración de la parte informativa del sistema, la parte de administración y gestion de pacientes y doctores no está disponible en el sitio web.",
+            "observations": "El sitio web que esta disponible es una demostración de la parte informativa del sistema, la parte de administración y gestion de pacientes y doctores no está disponible en el sitio web.",
             "url": "https://medicare-websitedemo.netlify.app",
             "logo": "url",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
@@ -684,54 +698,53 @@
               "/images/cineverse/14.jpeg"
             ]
           },
-             {
-        "title": "Hacienda Villa Blanca - Empresa Ganadera",
-        "index": "villablanca",
-        "description": "Sitio web informativo para una empresa ganadera dedicada a la producción agrícola, ganadería de calidad, conservación ambiental y ecoturismo.",
-        "detailedDescription": "Hacienda Villa Blanca es una empresa ganadera dedicada a la producción agrícola sostenible, cría selectiva de ganado de alta calidad, conservación ambiental y ecoturismo. Este sitio web fue desarrollado para dar a conocer su historia, productos, proyectos de conservación, razas de ganado disponibles, tours guiados por la hacienda, talleres de agricultura sostenible, ferias y testimonios de trabajadores. Incluye un mapa de ubicación, sección de contacto con formulario y enlaces a redes sociales.",
-        "objective": "Crear una presencia digital atractiva y funcional que permita a Hacienda Villa Blanca mostrar sus actividades, productos y valores, facilitando la conexión con clientes, turistas y colaboradores interesados en la agricultura sostenible y la ganadería de calidad.",
-        "intendedFor": "Clientes interesados en ganado de calidad, turistas, instituciones ambientales, estudiantes, agricultores sostenibles y público en general interesado en ecoturismo y producción agrícola responsable.",
-        "documentUrl": "",
-        "url": "https://villablancaweb.netlify.app",
-        "logo": "images/villablanca-logo.png",
-        "github": "",
-        "technologies": [
-          "React",
-          "Vite",
-          "TypeScript",
-          "Tailwind CSS"
-        ],
-        "features": [
-          "Presentación de la historia y valores de la hacienda",
-          "Información detallada sobre producción agrícola y ganadería",
-          "Catálogo de razas de ganado con descripciones, características y precios",
-          "Sección de proyectos de conservación y sostenibilidad",
-          "Promoción de ecoturismo con tours guiados y actividades educativas",
-          "Talleres de agricultura sostenible y eventos como ferias",
-          "Testimonios de trabajadores y colaboradores",
-          "Mapa interactivo de la ubicación de la hacienda",
-          "Página de contacto con formulario de mensajes y enlaces a redes sociales",
-          "Diseño moderno, responsivo y accesible en cualquier dispositivo"
-        ],
-        "challenges": [
-          "Organizar múltiples tipos de contenido en una estructura clara y atractiva",
-          "Integrar un mapa interactivo con buena experiencia de usuario",
-          "Diseñar un catálogo de razas fácil de navegar y visualmente atractivo",
-          "Crear una experiencia de usuario coherente en dispositivos móviles y de escritorio",
-          "Optimizar el rendimiento del sitio con imágenes de alta calidad"
-        ],
-        "gallery": [
-          "/images/villa-blanca/villa-blanca.JPG",
-          "/images/villa-blanca/villa-blanca1.JPG",
-          "/images/villa-blanca/villa-blanca2.JPG",
-          "/images/villa-blanca/villa-blanca3.JPG",
-          "/images/villa-blanca/villa-blanca4.JPG",
-          "/images/villa-blanca/villa-blanca5.JPG",
-          "/images/villa-blanca/villa-blanca6.JPG",
-          "/images/villa-blanca/villa-blanca7.JPG"
-          
-        ]
-      }
+          {
+            "title": "Hacienda Villa Blanca - Empresa Ganadera",
+            "index": "villablanca",
+            "description": "Sitio web informativo para una empresa ganadera dedicada a la producción agrícola, ganadería de calidad, conservación ambiental y ecoturismo.",
+            "detailedDescription": "Hacienda Villa Blanca es una empresa ganadera dedicada a la producción agrícola sostenible, cría selectiva de ganado de alta calidad, conservación ambiental y ecoturismo. Este sitio web fue desarrollado para dar a conocer su historia, productos, proyectos de conservación, razas de ganado disponibles, tours guiados por la hacienda, talleres de agricultura sostenible, ferias y testimonios de trabajadores. Incluye un mapa de ubicación, sección de contacto con formulario y enlaces a redes sociales.",
+            "objective": "Crear una presencia digital atractiva y funcional que permita a Hacienda Villa Blanca mostrar sus actividades, productos y valores, facilitando la conexión con clientes, turistas y colaboradores interesados en la agricultura sostenible y la ganadería de calidad.",
+            "intendedFor": "Clientes interesados en ganado de calidad, turistas, instituciones ambientales, estudiantes, agricultores sostenibles y público en general interesado en ecoturismo y producción agrícola responsable.",
+            "documentUrl": "",
+            "url": "https://villablancaweb.netlify.app",
+            "logo": "images/villablanca-logo.png",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS"
+            ],
+            "features": [
+              "Presentación de la historia y valores de la hacienda",
+              "Información detallada sobre producción agrícola y ganadería",
+              "Catálogo de razas de ganado con descripciones, características y precios",
+              "Sección de proyectos de conservación y sostenibilidad",
+              "Promoción de ecoturismo con tours guiados y actividades educativas",
+              "Talleres de agricultura sostenible y eventos como ferias",
+              "Testimonios de trabajadores y colaboradores",
+              "Mapa interactivo de la ubicación de la hacienda",
+              "Página de contacto con formulario de mensajes y enlaces a redes sociales",
+              "Diseño moderno, responsivo y accesible en cualquier dispositivo"
+            ],
+            "challenges": [
+              "Organizar múltiples tipos de contenido en una estructura clara y atractiva",
+              "Integrar un mapa interactivo con buena experiencia de usuario",
+              "Diseñar un catálogo de razas fácil de navegar y visualmente atractivo",
+              "Crear una experiencia de usuario coherente en dispositivos móviles y de escritorio",
+              "Optimizar el rendimiento del sitio con imágenes de alta calidad"
+            ],
+            "gallery": [
+              "/images/villa-blanca/villa-blanca.JPG",
+              "/images/villa-blanca/villa-blanca1.JPG",
+              "/images/villa-blanca/villa-blanca2.JPG",
+              "/images/villa-blanca/villa-blanca3.JPG",
+              "/images/villa-blanca/villa-blanca4.JPG",
+              "/images/villa-blanca/villa-blanca5.JPG",
+              "/images/villa-blanca/villa-blanca6.JPG",
+              "/images/villa-blanca/villa-blanca7.JPG"
+            ]
+          }
         ]
       },
       "en": {
@@ -745,7 +758,6 @@
         "TechnologyTitle": "Technologies Used",
         "QuickLinks": "Quick Links",
         "TechnicalTitle": "Technical Challenges",
-        
         "cards": [
           {
             "title": "Integral Medical Management System (Medicare)",
@@ -755,7 +767,7 @@
             "objective": "To provide an intuitive and functional digital solution that enables medical centers to streamline their internal processes, from appointment scheduling to medical staff and clinical resource management, improving the experience for both patients and healthcare personnel.",
             "intendedFor": "Small and medium-sized medical centers, public and private hospitals, specialized clinics, and healthcare professionals who require a digital management tool.",
             "documentUrl": "/Comprehensive-Medica-Management-System.pdf",
-            "observations":"The website that is available is a demonstration of the informational part of the system; the administration and management part for patients and doctors is not available on the website.",
+            "observations": "The website that is available is a demonstration of the informational part of the system; the administration and management part for patients and doctors is not available on the website.",
             "url": "https://medicare-websitedemo.netlify.app",
             "logo": "url",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
@@ -853,54 +865,53 @@
               "/images/cineverse/14.jpeg"
             ]
           },
-            {
-        "title": "Hacienda Villa Blanca - Cattle Ranch",
-        "index": "villablanca",
-        "description": "Informational website for a cattle ranch focused on sustainable agriculture, high-quality livestock, conservation projects, and ecotourism.",
-        "detailedDescription": "Hacienda Villa Blanca is a cattle ranch dedicated to sustainable agricultural production, selective breeding of high-quality livestock, environmental conservation, and ecotourism. This website was developed to showcase its history, products, conservation projects, available cattle breeds, guided tours, sustainable farming workshops, fairs, and worker testimonials. It includes an interactive location map, a contact page with a message form, and links to social media.",
-        "objective": "To create an attractive and functional digital presence that allows Hacienda Villa Blanca to showcase its activities, products, and values, facilitating connections with customers, tourists, and collaborators interested in sustainable farming and quality livestock.",
-        "intendedFor": "Clients interested in quality livestock, tourists, environmental institutions, students, sustainable farmers, and the general public interested in ecotourism and responsible agricultural production.",
-        "documentUrl": "",
-        "url": "https://villablancaweb.netlify.app",
-        "logo": "images/villablanca-logo.png",
-        "github": "",
-        "technologies": [
-          "React",
-          "Vite",
-          "TypeScript",
-          "Tailwind CSS"
-        ],
-        "features": [
-          "Presentation of the ranch’s history and core values",
-          "Detailed information on agricultural and livestock production",
-          "Cattle breed catalog with descriptions, characteristics, and pricing",
-          "Conservation and sustainability projects section",
-          "Ecotourism promotion with guided tours and educational activities",
-          "Sustainable farming workshops and events such as fairs",
-          "Testimonials from workers and collaborators",
-          "Interactive map showing the ranch’s location",
-          "Contact page with message form and social media links",
-          "Modern, responsive, and accessible design for all devices"
-        ],
-        "challenges": [
-          "Organizing multiple content types into a clear and engaging structure",
-          "Integrating an interactive map with a smooth user experience",
-          "Designing an easy-to-navigate and visually appealing breed catalog",
-          "Ensuring a consistent user experience across mobile and desktop devices",
-          "Optimizing site performance with high-quality images"
-        ],
-        "gallery": [
-          "/images/villablanca/1.jpg",
-          "/images/villablanca/2.jpg",
-          "/images/villablanca/3.jpg",
-          "/images/villablanca/4.jpg",
-          "/images/villablanca/5.jpg",
-          "/images/villablanca/6.jpg",
-          "/images/villablanca/7.jpg",
-          "/images/villablanca/8.jpg"
-        ]
-      }
-   
+          {
+            "title": "Hacienda Villa Blanca - Cattle Ranch",
+            "index": "villablanca",
+            "description": "Informational website for a cattle ranch focused on sustainable agriculture, high-quality livestock, conservation projects, and ecotourism.",
+            "detailedDescription": "Hacienda Villa Blanca is a cattle ranch dedicated to sustainable agricultural production, selective breeding of high-quality livestock, environmental conservation, and ecotourism. This website was developed to showcase its history, products, conservation projects, available cattle breeds, guided tours, sustainable farming workshops, fairs, and worker testimonials. It includes an interactive location map, a contact page with a message form, and links to social media.",
+            "objective": "To create an attractive and functional digital presence that allows Hacienda Villa Blanca to showcase its activities, products, and values, facilitating connections with customers, tourists, and collaborators interested in sustainable farming and quality livestock.",
+            "intendedFor": "Clients interested in quality livestock, tourists, environmental institutions, students, sustainable farmers, and the general public interested in ecotourism and responsible agricultural production.",
+            "documentUrl": "",
+            "url": "https://villablancaweb.netlify.app",
+            "logo": "images/villablanca-logo.png",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS"
+            ],
+            "features": [
+              "Presentation of the ranch’s history and core values",
+              "Detailed information on agricultural and livestock production",
+              "Cattle breed catalog with descriptions, characteristics, and pricing",
+              "Conservation and sustainability projects section",
+              "Ecotourism promotion with guided tours and educational activities",
+              "Sustainable farming workshops and events such as fairs",
+              "Testimonials from workers and collaborators",
+              "Interactive map showing the ranch’s location",
+              "Contact page with message form and social media links",
+              "Modern, responsive, and accessible design for all devices"
+            ],
+            "challenges": [
+              "Organizing multiple content types into a clear and engaging structure",
+              "Integrating an interactive map with a smooth user experience",
+              "Designing an easy-to-navigate and visually appealing breed catalog",
+              "Ensuring a consistent user experience across mobile and desktop devices",
+              "Optimizing site performance with high-quality images"
+            ],
+            "gallery": [
+              "/images/villablanca/1.jpg",
+              "/images/villablanca/2.jpg",
+              "/images/villablanca/3.jpg",
+              "/images/villablanca/4.jpg",
+              "/images/villablanca/5.jpg",
+              "/images/villablanca/6.jpg",
+              "/images/villablanca/7.jpg",
+              "/images/villablanca/8.jpg"
+            ]
+          }
         ]
       }
     }
