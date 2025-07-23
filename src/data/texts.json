@@ -565,7 +565,7 @@
             "objective": "Brindar una solución digital intuitiva y funcional que permita a los centros médicos agilizar sus procesos internos, desde la programación de citas hasta la gestión de personal médico y recursos físicos, mejorando así la experiencia tanto del paciente como del personal sanitario.",
             "intendedFor": "Centros médicos pequeños y medianos, hospitales públicos y privados, clínicas especializadas y profesionales de la salud que requieran una herramienta de gestión digital.",
             "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
-            "url": "https://medicare-sistema.com ",
+            "url": "https://medicare-websitedemo.netlify.app",
             "logo": "url",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
@@ -682,7 +682,55 @@
               "/images/cineverse/13.jpeg",
               "/images/cineverse/14.jpeg"
             ]
-          }
+          },
+             {
+        "title": "Hacienda Villa Blanca - Empresa Ganadera",
+        "index": "villablanca",
+        "description": "Sitio web informativo para una empresa ganadera dedicada a la producción agrícola, ganadería de calidad, conservación ambiental y ecoturismo.",
+        "detailedDescription": "Hacienda Villa Blanca es una empresa ganadera dedicada a la producción agrícola sostenible, cría selectiva de ganado de alta calidad, conservación ambiental y ecoturismo. Este sitio web fue desarrollado para dar a conocer su historia, productos, proyectos de conservación, razas de ganado disponibles, tours guiados por la hacienda, talleres de agricultura sostenible, ferias y testimonios de trabajadores. Incluye un mapa de ubicación, sección de contacto con formulario y enlaces a redes sociales.",
+        "objective": "Crear una presencia digital atractiva y funcional que permita a Hacienda Villa Blanca mostrar sus actividades, productos y valores, facilitando la conexión con clientes, turistas y colaboradores interesados en la agricultura sostenible y la ganadería de calidad.",
+        "intendedFor": "Clientes interesados en ganado de calidad, turistas, instituciones ambientales, estudiantes, agricultores sostenibles y público en general interesado en ecoturismo y producción agrícola responsable.",
+        "documentUrl": "",
+        "url": "https://villablancaweb.netlify.app",
+        "logo": "images/villablanca-logo.png",
+        "github": "",
+        "technologies": [
+          "React",
+          "Vite",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "features": [
+          "Presentación de la historia y valores de la hacienda",
+          "Información detallada sobre producción agrícola y ganadería",
+          "Catálogo de razas de ganado con descripciones, características y precios",
+          "Sección de proyectos de conservación y sostenibilidad",
+          "Promoción de ecoturismo con tours guiados y actividades educativas",
+          "Talleres de agricultura sostenible y eventos como ferias",
+          "Testimonios de trabajadores y colaboradores",
+          "Mapa interactivo de la ubicación de la hacienda",
+          "Página de contacto con formulario de mensajes y enlaces a redes sociales",
+          "Diseño moderno, responsivo y accesible en cualquier dispositivo"
+        ],
+        "challenges": [
+          "Organizar múltiples tipos de contenido en una estructura clara y atractiva",
+          "Integrar un mapa interactivo con buena experiencia de usuario",
+          "Diseñar un catálogo de razas fácil de navegar y visualmente atractivo",
+          "Crear una experiencia de usuario coherente en dispositivos móviles y de escritorio",
+          "Optimizar el rendimiento del sitio con imágenes de alta calidad"
+        ],
+        "gallery": [
+          "/images/villa-blanca/villa-blanca.JPG",
+          "/images/villa-blanca/villa-blanca1.JPG",
+          "/images/villa-blanca/villa-blanca2.JPG",
+          "/images/villa-blanca/villa-blanca3.JPG",
+          "/images/villa-blanca/villa-blanca4.JPG",
+          "/images/villa-blanca/villa-blanca5.JPG",
+          "/images/villa-blanca/villa-blanca6.JPG",
+          "/images/villa-blanca/villa-blanca7.JPG"
+          
+        ]
+      }
         ]
       },
       "en": {
@@ -696,27 +744,7 @@
         "TechnologyTitle": "Technologies Used",
         "QuickLinks": "Quick Links",
         "TechnicalTitle": "Technical Challenges",
-        "gallery": [
-          "/images/medicare.png",
-          "/images/medicare-1.JPG",
-          "/images/medicare-2.JPG",
-          "/images/medicare-18.JPG",
-          "/images/medicare-3.JPG",
-          "/images/medicare-4.JPG",
-          "/images/medicare-5.JPG",
-          "/images/medicare-6.JPG",
-          "/images/medicare-7.JPG",
-          "/images/medicare-8.JPG",
-          "/images/medicare-9.JPG",
-          "/images/medicare-10.JPG",
-          "/images/medicare-11.JPG",
-          "/images/medicare-12.JPG",
-          "/images/medicare-13.JPG",
-          "/images/medicare-14.JPG",
-          "/images/medicare-15.JPG",
-          "/images/medicare-16.JPG",
-          "/images/medicare-17.JPG"
-        ],
+        
         "cards": [
           {
             "title": "Integral Medical Management System (Medicare)",
@@ -726,7 +754,7 @@
             "objective": "To provide an intuitive and functional digital solution that enables medical centers to streamline their internal processes, from appointment scheduling to medical staff and clinical resource management, improving the experience for both patients and healthcare personnel.",
             "intendedFor": "Small and medium-sized medical centers, public and private hospitals, specialized clinics, and healthcare professionals who require a digital management tool.",
             "documentUrl": "/Comprehensive-Medica-Management-System.pdf",
-            "url": "https://medicare-sistema.com ",
+            "url": "https://medicare-websitedemo.netlify.app",
             "logo": "url",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
@@ -822,7 +850,55 @@
               "/images/cineverse/13.jpeg",
               "/images/cineverse/14.jpeg"
             ]
-          }
+          },
+            {
+        "title": "Hacienda Villa Blanca - Cattle Ranch",
+        "index": "villablanca",
+        "description": "Informational website for a cattle ranch focused on sustainable agriculture, high-quality livestock, conservation projects, and ecotourism.",
+        "detailedDescription": "Hacienda Villa Blanca is a cattle ranch dedicated to sustainable agricultural production, selective breeding of high-quality livestock, environmental conservation, and ecotourism. This website was developed to showcase its history, products, conservation projects, available cattle breeds, guided tours, sustainable farming workshops, fairs, and worker testimonials. It includes an interactive location map, a contact page with a message form, and links to social media.",
+        "objective": "To create an attractive and functional digital presence that allows Hacienda Villa Blanca to showcase its activities, products, and values, facilitating connections with customers, tourists, and collaborators interested in sustainable farming and quality livestock.",
+        "intendedFor": "Clients interested in quality livestock, tourists, environmental institutions, students, sustainable farmers, and the general public interested in ecotourism and responsible agricultural production.",
+        "documentUrl": "",
+        "url": "https://villablancaweb.netlify.app",
+        "logo": "images/villablanca-logo.png",
+        "github": "",
+        "technologies": [
+          "React",
+          "Vite",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "features": [
+          "Presentation of the ranch’s history and core values",
+          "Detailed information on agricultural and livestock production",
+          "Cattle breed catalog with descriptions, characteristics, and pricing",
+          "Conservation and sustainability projects section",
+          "Ecotourism promotion with guided tours and educational activities",
+          "Sustainable farming workshops and events such as fairs",
+          "Testimonials from workers and collaborators",
+          "Interactive map showing the ranch’s location",
+          "Contact page with message form and social media links",
+          "Modern, responsive, and accessible design for all devices"
+        ],
+        "challenges": [
+          "Organizing multiple content types into a clear and engaging structure",
+          "Integrating an interactive map with a smooth user experience",
+          "Designing an easy-to-navigate and visually appealing breed catalog",
+          "Ensuring a consistent user experience across mobile and desktop devices",
+          "Optimizing site performance with high-quality images"
+        ],
+        "gallery": [
+          "/images/villablanca/1.jpg",
+          "/images/villablanca/2.jpg",
+          "/images/villablanca/3.jpg",
+          "/images/villablanca/4.jpg",
+          "/images/villablanca/5.jpg",
+          "/images/villablanca/6.jpg",
+          "/images/villablanca/7.jpg",
+          "/images/villablanca/8.jpg"
+        ]
+      }
+   
         ]
       }
     }

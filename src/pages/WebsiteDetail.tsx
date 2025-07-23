@@ -21,6 +21,7 @@ import {
 
 import medicareImg from '../assets/images/medicare.png';
 import cineverseImg from '../assets/images/cineverse.jpg';
+import villaBlancaImg from '../assets/images/img5.jpg';
 
 
 interface WebsiteCard {
@@ -71,10 +72,15 @@ const [modalImageIndex, setModalImageIndex] = useState(0);
 const images: Record<string, string> = {
   medicare: medicareImg,
   cineverse: cineverseImg,
+  villablanca: villaBlancaImg
 };
+
+console.log('images'  , images);
 
 
   const websiteImage = website && website.index ? images[website.index] || medicareImg : medicareImg; // fallback por si falta
+
+  console.log('websiteimages', websiteImage);
 
   useEffect(() => {
     window.scrollTo(0, 0);
