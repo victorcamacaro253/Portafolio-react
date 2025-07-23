@@ -57,23 +57,23 @@ const Header = () => {
         </div>
 
         <nav 
-          id="nav" 
-          className={`${menuVisible ? 'block' : 'hidden'} md:block absolute md:relative top-16 md:top-0 right-0 bg-background-3 dark:bg-dark-background-3 md:bg-transparent w-48 md:w-auto rounded-md shadow-md md:shadow-none transition-all duration-300`}
+  id="nav" 
+  className={`${menuVisible ? 'block' : 'hidden'} md:block absolute md:relative top-16 md:top-0 right-0 bg-background-3 dark:bg-dark-background-3 md:bg-transparent w-48 md:w-auto rounded-md shadow-md md:shadow-none transition-all duration-300`}
+>
+  <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 p-4 md:p-0">
+    {['inicio', 'Sobre mi', 'skills', 'Curriculum', 'Portfolio', 'Contacto'].map((item) => (
+      <li key={item}>
+        <a 
+          href={item === 'inicio' ? '/' : `#${item}`} 
+          onClick={seleccionar}
+          className="block text-gray-800 dark:text-white hover:text-accent dark:hover:text-dark-accent px-2 py-1 transition-colors duration-200 font-medium md:font-semibold text-sm md:text-base"
         >
-          <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 p-4 md:p-0">
-            {['inicio', 'Sobre mi', 'skills', 'Curriculum', 'Portfolio', 'Contacto'].map((item) => (
-              <li key={item}>
-                <a 
-                  href={`#${item}`} 
-                  onClick={seleccionar}
-                  className="block text-gray-800 dark:text-white hover:text-accent dark:hover:text-dark-accent px-2 py-1 transition-colors duration-200 font-medium md:font-semibold text-sm md:text-base"
-                >
-                  {item.toUpperCase()}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+          {item.toUpperCase()}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
 
         <div 
           className="md:hidden bg-accent text-white dark:bg-dark-accent dark:text-dark-text-default p-2 rounded-md cursor-pointer hover:opacity-80 transition-opacity"
