@@ -55,7 +55,7 @@ const AboutMe: React.FC = () => {
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-righteous text-center mb-12 relative">
                         {title}
-                        <span className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
+                        <span className="absolute bottom-0 top-16 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
                     </h2>
                     
                     <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
@@ -82,7 +82,7 @@ const AboutMe: React.FC = () => {
                                     {paragraph3}
                                 </p>
                             </div>
-                            <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-12 h-1 bg-accent">
+                            <div className="absolute -left-7 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-12 h-1 bg-accent">
                                 <div className="absolute -left-1 -top-1 w-3 h-3 rounded-full bg-accent"></div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const AboutMe: React.FC = () => {
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-righteous text-center mb-16 relative">
                         {title2}
-                        <span className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
+                        <span className="absolute bottom-1/2 top-16 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
                     </h2>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
