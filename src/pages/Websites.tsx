@@ -14,6 +14,7 @@ import { faExternalLinkAlt, faCode } from '@fortawesome/free-solid-svg-icons';
 import medicareImg from '../assets/images/medicare.png';
 import cineverseImg from '../assets/images/cineverse.jpg';
 import villaBlancaImg from '/images/villa-blanca/img5.jpg';
+import cinebookImg from '../assets/images/logo_cinebook.webp';
 
 
 interface WebsiteCard {
@@ -33,7 +34,7 @@ const Websites = () => {
   const websiteCards: WebsiteCard[] = Array.isArray(websites.cards) ? websites.cards : [];
 
   // Website images array
-  const images = [ medicareImg,cineverseImg,villaBlancaImg];
+  const images = [ medicareImg,cineverseImg,villaBlancaImg,cinebookImg];
 
   return (
     <section id="websites" className="w-full bg-background-1 dark:bg-dark-background-1 py-16 px-4">
