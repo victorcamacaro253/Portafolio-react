@@ -635,6 +635,7 @@
               "/images/medicare-17.JPG"
             ]
           },
+       
           {
             "title": "Cineverse - Tu universo cinematográfico",
             "index": "cineverse",
@@ -744,7 +745,71 @@
               "/images/villa-blanca/villa-blanca6.JPG",
               "/images/villa-blanca/villa-blanca7.JPG"
             ]
-          }
+          },
+                {
+        "title": "Sistema de Reserva de Películas Online-Cinebook",
+        "index": "moviebooking",
+        "description": "Plataforma completa para reserva de entradas de cine en múltiples ubicaciones, con autenticación de usuario, selección de asientos, procesamiento de pagos y módulos de gestión.",
+        "detailedDescription": "Este sistema de reserva de películas online permite a los usuarios ver las películas en cartelera y próximos estrenos en todas las sedes de cines del país. Los usuarios pueden ver las sedes con su información y horarios de funciones. Tras autenticarse, pueden seleccionar asientos para la función deseada en la sede elegida, proceder al pago con su método preferido y recibir los detalles de la reserva con un código QR. El sistema incluye módulos para gerentes de cada sede (para gestionar funciones, personal y estadísticas) y un módulo de administrador para gestionar todo el sistema (películas, usuarios, sedes, estadísticas generales). Los usuarios también pueden comprar golosinas para su función.",
+        "objective": "Crear una plataforma completa y fácil de usar para reserva de entradas de cine que optimice el proceso de reserva mientras proporciona herramientas de gestión integral para administradores de cines en diferentes niveles.",
+        "intendedFor": "Cadenas de cines que busquen una solución integrada de reservas, cinéfilos que deseen una forma conveniente de reservar entradas online, y administradores de cines que necesiten herramientas de gestión para sus sedes.",
+        "documentUrl": "",
+        "url": "",
+        "logo": "url",
+        "github": "",
+        "technologies": [
+          "React",
+          "Vite",
+          "TypeScript",
+          "MongoDB",
+          "NestJS",
+          "Node.js",
+          "JWT"
+        ],
+        "features": [
+          "Sistema de autenticación de usuarios con JWT seguro",
+          "Visualización de películas en cartelera y próximos estrenos en todas las sedes",
+          "Información detallada de cada sede con horarios de funciones",
+          "Interfaz interactiva para selección de asientos",
+          "Integración de múltiples métodos de pago",
+          "Confirmación de reserva con código QR",
+          "Perfil de usuario con historial de compras e información personal",
+          "Sistema de compra de golosinas para las funciones",
+          "Módulo de gerente de sede para gestionar funciones, personal y estadísticas de su sede",
+          "Módulo de administrador para gestionar películas, usuarios, sedes y ver estadísticas generales",
+          "Diseño responsive para todos los dispositivos"
+        ],
+        "challenges": [
+          "Implementar sistema de disponibilidad de asientos en tiempo real",
+          "Diseñar un sistema seguro de autenticación y procesamiento de pagos",
+          "Crear una interfaz intuitiva para selección de asientos",
+          "Gestionar relaciones complejas en MongoDB para funciones, asientos y reservas",
+          "Desarrollar control de acceso basado en roles para diferentes tipos de usuario (usuarios normales, gerentes de sede, administradores)",
+          "Implementar sistema de generación y validación de códigos QR",
+          "Garantizar consistencia de datos entre múltiples sedes de cines"
+        ],
+
+          "gallery": [
+              "/images/cinebook-sistem/logo_cinebook.webp",
+              "/images/cinebook-sistem/1.webp",
+              "/images/cinebook-sistem/2.webp",
+              "/images/cinebook-sistem/3.webp",
+              "/images/cinebook-sistem/4.webp",
+              "/images/cinebook-sistem/5.webp",
+              "/images/cinebook-sistem/6.webp",
+              "/images/cinebook-sistem/7.webp",
+              "/images/cinebook-sistem/8.webp",
+              "/images/cinebook-sistem/9.webp",
+              "/images/cinebook-sistem/10.webp",
+              "/images/cinebook-sistem/11.webp",
+              "/images/cinebook-sistem/12.webp",
+              "/images/cinebook-sistem/13.webp",
+              "/images/cinebook-sistem/14.webp",
+              
+              "/images/cinebook-sistem/16.webp",
+              "/images/cinebook-sistem/17.webp"
+            ]
+      }
         ]
       },
       "en": {
@@ -802,6 +867,7 @@
               "Creating intuitive and responsive interfaces for all roles"
             ]
           },
+          
           {
             "title": "Cineverse - Your Cinematic Universe",
             "index": "cineverse",
@@ -911,7 +977,70 @@
               "/images/villablanca/7.jpg",
               "/images/villablanca/8.jpg"
             ]
-          }
+          },
+            {
+        "title": "Online Movie Booking System-Cinebook",
+        "index": "moviebooking",
+        "description": "Comprehensive platform for movie ticket reservations across multiple cinema locations, with user authentication, seat selection, payment processing, and management modules.",
+        "detailedDescription": "This online movie booking system allows users to browse current and upcoming movies across all cinema locations in the country. Users can view cinema locations with their information and showtimes. After authentication, users can select seats for their desired showtime at their chosen cinema location, proceed to payment with their preferred method, and receive booking details with a QR code. The system includes modules for cinema branch managers to manage their specific location (showtimes, staff, statistics) and an admin module to manage the entire system (movies, users, cinema locations, general statistics). Users can also purchase snacks for their movie session.",
+        "objective": "To create a complete, user-friendly movie booking platform that streamlines the ticket reservation process while providing comprehensive management tools for cinema administrators at different levels.",
+        "intendedFor": "Cinema chains looking for an integrated booking solution, moviegoers who want a convenient way to book tickets online, and cinema administrators who need management tools for their locations.",
+        "documentUrl": "",
+        "url": "",
+        "logo": "url",
+        "github": "",
+        "technologies": [
+          "React",
+          "Vite",
+          "TypeScript",
+          "MongoDB",
+          "NestJS",
+          "Node.js",
+          "JWT"
+        ],
+        "features": [
+          "User authentication system with secure JWT implementation",
+          "Browse current movies and upcoming releases across all cinema locations",
+          "View cinema locations with detailed information and showtimes",
+          "Interactive seat selection interface",
+          "Multiple payment method integration",
+          "Booking confirmation with QR code",
+          "User profile with booking history and personal information",
+          "Snack purchasing system for movie sessions",
+          "Cinema branch manager module to manage showtimes, staff, and location statistics",
+          "Admin module to manage movies, users, cinema locations, and view general statistics",
+          "Responsive design for all devices"
+        ],
+        "challenges": [
+          "Implementing real-time seat availability and reservation system",
+          "Designing a secure authentication and payment processing system",
+          "Creating an intuitive seat selection interface",
+          "Managing complex relationships in MongoDB for showtimes, seats, and bookings",
+          "Developing role-based access control for different user types (regular users, branch managers, admins)",
+          "Implementing QR code generation and validation system",
+          "Ensuring data consistency across multiple cinema locations"
+        ],
+          "gallery": [
+              "/images/cinebook-sistem/logo_cinebook.webp",
+              "/images/cinebook-sistem/1.webp",
+              "/images/cinebook-sistem/2.webp",
+              "/images/cinebook-sistem/3.webp",
+              "/images/cinebook-sistem/4.webp",
+              "/images/cinebook-sistem/5.webp",
+              "/images/cinebook-sistem/6.webp",
+              "/images/cinebook-sistem/7.webp",
+              "/images/cinebook-sistem/8.webp",
+              "/images/cinebook-sistem/9.webp",
+              "/images/cinebook-sistem/10.webp",
+              "/images/cinebook-sistem/11.webp",
+              "/images/cinebook-sistem/12.webp",
+              "/images/cinebook-sistem/13.webp",
+              "/images/cinebook-sistem/14.webp",
+             
+              "/images/cinebook-sistem/16.webp",
+              "/images/cinebook-sistem/17.webp"
+            ]
+      }
         ]
       }
     }

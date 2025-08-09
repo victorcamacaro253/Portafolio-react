@@ -22,6 +22,7 @@ import {
 import medicareImg from '../assets/images/medicare.png';
 import cineverseImg from '../assets/images/cineverse.jpg';
 import villaBlancaImg from '../assets/images/img5.jpg';
+import cinebookImg from '../assets/images/logo_cinebook.webp';
 
 
 interface WebsiteCard {
@@ -74,7 +75,8 @@ const WebsiteDetail = () => {
   const images: Record<string, string> = {
     medicare: medicareImg,
     cineverse: cineverseImg,
-    villablanca: villaBlancaImg
+    villablanca: villaBlancaImg,
+    moviebooking: cinebookImg
   };
 
   console.log('images', images);
