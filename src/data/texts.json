@@ -107,7 +107,7 @@
             "index": "api-express-mysql",
             "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
             "detailedDescription": "Este proyecto es una API REST completa desarrollada con Node.js y Express.js que implementa un sistema robusto para la gestión de proyectos. La arquitectura sigue el patrón MVC con capas bien definidas para rutas, controladores, servicios y modelos.\n\nCaracterísticas técnicas incluyen autenticación JWT con refresh tokens, sistema de roles (admin, editor, usuario), validación de datos con express-validator, paginación avanzada y filtrado de resultados. La base de datos MySQL está optimizada con índices adecuados y relaciones bien estructuradas.\n\nEl proyecto incluye documentación Swagger integrada, manejo centralizado de errores, variables de entorno para diferentes ambientes (desarrollo, producción) y tests unitarios básicos. Implementé técnicas de seguridad como rate limiting, sanitización de inputs y protección contra SQL injection.",
-            "image": "../../assets/images/api.png",
+            "image": "/images/api.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/apihechaenimaubar",
             "features": [
@@ -133,7 +133,7 @@
             "index": "api-nestjs-mysql",
             "description": "API REST robusta y modular construida con NestJS y MySQL, enfocada en escalabilidad y buenas prácticas de desarrollo.",
             "detailedDescription": "Esta API construida con NestJS representa mi evolución hacia frameworks más estructurados. Aproveché al máximo las características de TypeScript y la arquitectura modular de NestJS para crear un sistema altamente organizado.\n\nEl proyecto utiliza TypeORM para la conexión con MySQL, implementando el patrón Repository para acceso a datos. Desarrollé módulos independientes para cada dominio (auth, usuarios, proyectos), cada uno con sus servicios, controladores y entidades.\n\nIncluye características avanzadas como: decoradores personalizados, interceptores globales para manejo de errores, validación con class-validator, serialización con class-transformer y documentación automática con Swagger. Configuré un sistema completo de variables de entorno para diferentes ambientes y escribí tests unitarios con Jest.",
-            "image": "../../assets/images/nest_api_1.png",
+            "image": "/images/nest_api_1.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js",
             "features": [
@@ -161,7 +161,7 @@
             "index": "api-supabase",
             "description": "Desarrollado en Node.js con Express, diseñado para gestionar proyectos de manera eficiente y segura.",
             "detailedDescription": "Este proyecto demuestra mi capacidad para integrar servicios en la nube. Desarrollé una API en Node.js que actúa como intermediario entre el cliente y Supabase, añadiendo lógica de negocio adicional.\n\nImplementé autenticación utilizando el sistema de Supabase Auth, con roles personalizados y políticas de seguridad a nivel de fila (RLS). La API gestiona el almacenamiento en Supabase Storage, incluyendo subida de archivos, generación de URLs firmadas y gestión de permisos.\n\nPara la base de datos, aproveché las capacidades de PostgreSQL en Supabase, implementando funciones almacenadas y triggers. La API también incluye endpoints para llamar a funciones serverless de Supabase y gestionar sus respuestas. Configuré un sistema de webhooks para notificaciones en tiempo real.",
-            "image": "../../assets/images/api2.png",
+            "image": "/images/api2.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/api_supabase",
             "features": [
@@ -189,7 +189,7 @@
             "index": "oauth2",
             "description": "Aplicación para manejar la autenticación de usuarios a través de OAuth 2.0. Emplea Passport.js para simplificar la integración con proveedores de identidad como Google y GitHub",
             "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
-            "image": "../../assets/images/graphoauth2.0.png",
+            "image": "/images/graphoauth2.0.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/api_OAth2.0",
             "features": [
@@ -217,7 +217,7 @@
             "index": "payment-app",
             "description": "Desarrollado en React y express para procesar pagos con Stripe y PayPal.",
             "detailedDescription": "Este proyecto implementa un sistema completo de autenticación OAuth 2.0 utilizando Passport.js. Configuré estrategias para múltiples proveedores incluyendo Google, GitHub y credenciales locales.\n\nEl sistema incluye: sesiones persistentes con almacenamiento en Redis, serialización/deserialización de usuarios, protección de rutas con middlewares, gestión de perfiles unificados y sistema de logout global. Implementé un flujo completo de registro/login, incluyendo verificación por email y recuperación de contraseña.\n\nPara mejorar la seguridad, añadí protección CSRF, rate limiting en endpoints sensibles y sanitización de inputs. La aplicación también genera tokens de acceso/refresh para uso en APIs y gestiona permisos a nivel de ruta. Incluye un panel de administración para gestionar usuarios y conexiones OAuth.",
-            "image": "../../assets/images/payment.png",
+            "image": "/images/payment.png",
             "button": "Ver mas",
             "link": "https://github.com/victorcamacaro253/scanToPay",
             "features": [
@@ -246,22 +246,22 @@
             "description": "Aplicación móvil completa para reservar entradas de cine con selección de películas, horarios, asientos y pago integrado, desarrollada con React Native.",
             "detailedDescription": "CineBook es una aplicación móvil desarrollada con React Native que ofrece una solución completa para la reserva de entradas de cine. La aplicación proporciona:\n\nExperiencia del Usuario:\n- Catálogo de películas con filtros por género, rating y fecha de estreno\n- Sistema de reservas en tiempo real con selección visual de asientos\n- Integración con Google Maps para ubicación de cines cercanos\n- Pasarela de pagos segura con Stripe\n- Gestión de combos de comida/bebida\n- Autenticación segura con JWT\n\nTecnologías Clave:\n- Frontend: React Native con Expo\n- Estado Global: Redux Toolkit\n- Navegación: React Navigation\n- Autenticación: JWT con refresh tokens\n- Pagos: Integración con Stripe SDK\n- Geolocalización: Google Maps API para React Native\n\nCaracterísticas Técnicas:\n- Arquitectura modular y escalable\n- Optimización de rendimiento para dispositivos móviles\n- Animaciones fluidas para la selección de asientos\n- Sincronización en tiempo real mediante sockets\n- Diseño responsive para diferentes tamaños de pantalla",
             "gallery": [
-               "/assets/images/cine-app/appImage1.jpg",
-                 "/assets/images/cine-app/headerhero.jpg",
-              "/assets/images/cine-app/logo-cinebook.JPG",
-              "/assets/images/cine-app/appImage2.jpg",
-              "/assets/images/cine-app/appImage3.jpg",
-              "/assets/images/cine-app/appImage4.jpg",
-              "/assets/images/cine-app/appImage5.jpg",
-               "/assets/images/cine-app/appImage6.jpg",
-              "/assets/images/cine-app/appImage7.jpg",
-              "/assets/images/cine-app/appImage8.jpg",
-               "/assets/images/cine-app/appImage9.jpg",
-              "/assets/images/cine-app/appImage10.jpg",
-               "/assets/images/cine-app/appImage12.jpg",
-              "/assets/images/cine-app/appImage13.jpg",
-              "/assets/images/cine-app/appImage14.jpg",
-               "/assets/images/cine-app/appImage15.jpg"
+               "/images/cine-app/appImage1.jpg",
+                 "/images/cine-app/headerhero.jpg",
+              "/images/cine-app/logo-cinebook.JPG",
+              "/images/cine-app/appImage2.jpg",
+              "/images/cine-app/appImage3.jpg",
+              "/images/cine-app/appImage4.jpg",
+              "/images/cine-app/appImage5.jpg",
+               "/images/cine-app/appImage6.jpg",
+              "/images/cine-app/appImage7.jpg",
+              "/images/cine-app/appImage8.jpg",
+               "/images/cine-app/appImage9.jpg",
+              "/images/cine-app/appImage10.jpg",
+               "/images/cine-app/appImage12.jpg",
+              "/images/cine-app/appImage13.jpg",
+              "/images/cine-app/appImage14.jpg",
+               "/images/cine-app/appImage15.jpg"
                
             ],
             "button": "Ver más",
@@ -311,7 +311,7 @@
             "index": "box-office-api",
             "description": "API REST con NestJS que proporciona datos en tiempo real sobre taquilla de películas, rankings y análisis comparativos entre EE.UU. y mercado mundial.",
             "detailedDescription": "Box Office API es una solución moderna y escalable desarrollada con NestJS para entusiastas del cine, desarrolladores y analistas de datos. Esta API REST ofrece acceso en tiempo real a información detallada sobre el rendimiento de películas en taquilla.\n\nCaracterísticas principales:\n- Top de películas del fin de semana (EE.UU.)\n- Historial de taquilla diaria para análisis de tendencias\n- Comparativas entre ingresos en EE.UU. y mercados internacionales\n- Integración sencilla con aplicaciones frontend, bots o dashboards\n- Documentación interactiva con Swagger UI para pruebas en vivo\n\nLa API incluye un sistema de caché automático para optimizar el rendimiento y reducir solicitudes innecesarias a las fuentes externas. Es ideal para crear newsletters de cine, bots de Discord/Telegram, dashboards analíticos o proyectos académicos sobre tendencias cinematográficas.\n\nDesarrollada con buenas prácticas: arquitectura modular, inyección de dependencias, validación de respuestas y manejo centralizado de errores. 100% open source y lista para integrarse en cualquier proyecto.",
-            "image": "assets/images/api-box.png",
+            "image": "/images/api-box.png",
             "button": "Ver más",
             "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
             "features": [
@@ -355,7 +355,7 @@
             "index": "api-express-mysql",
             "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
             "detailedDescription": "This project is a complete REST API developed with Node.js and Express.js that implements a robust system for project management. The architecture follows the MVC pattern with well-defined layers for routes, controllers, services, and models.\n\nTechnical features include JWT authentication with refresh tokens, role-based system (admin, editor, user), data validation with express-validator, advanced pagination and results filtering. The MySQL database is optimized with proper indexes and well-structured relationships.\n\nThe project includes integrated Swagger documentation, centralized error handling, environment variables for different environments (development, production) and basic unit tests. I implemented security techniques like rate limiting, input sanitization and SQL injection protection.",
-            "image": "./assets/images/api.png",
+            "image": "/images/api.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/apihechaenimaubar",
             "features": [
@@ -382,7 +382,7 @@
             "index": "api-nestjs-mysql",
             "description": "Robust and modular REST API built with NestJS and MySQL, focused on scalability and best development practices.",
             "detailedDescription": "This API built with NestJS represents my evolution towards more structured frameworks. I fully leveraged TypeScript features and NestJS's modular architecture to create a highly organized system.\n\nThe project uses TypeORM for MySQL connection, implementing the Repository pattern for data access. I developed independent modules for each domain (auth, users, projects), each with its services, controllers and entities.\n\nIt includes advanced features like: custom decorators, global interceptors for error handling, validation with class-validator, serialization with class-transformer and automatic documentation with Swagger. I configured a complete environment variables system for different environments and wrote unit tests with Jest.",
-            "image": "../../assets/images/nest_api_1.png",
+            "image": "/images/nest_api_1.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/Api_Rest_Nest_js",
             "features": [
@@ -410,7 +410,7 @@
             "index": "api-supabase",
             "description": "Developed in Node.js with Express, designed to manage projects efficiently and securely.",
             "detailedDescription": "This project demonstrates my ability to integrate cloud services. I developed a Node.js API that acts as intermediary between client and Supabase, adding additional business logic.\n\nI implemented authentication using Supabase Auth system, with custom roles and row-level security (RLS) policies. The API manages storage in Supabase Storage, including file uploads, signed URL generation and permission management.\n\nFor the database, I leveraged PostgreSQL capabilities in Supabase, implementing stored procedures and triggers. The API also includes endpoints to call Supabase serverless functions and manage their responses. I configured a webhooks system for real-time notifications.",
-            "image": "./assets/images/api2.png",
+            "image": "/images/api2.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/api_supabase",
             "features": [
@@ -438,7 +438,7 @@
             "index": "oauth2",
             "description": "Application to handle user authentication via OAuth 2.0. It uses Passport.js to simplify integration with identity providers like Google and GitHub.",
             "detailedDescription": "This project implements a complete OAuth 2.0 authentication system using Passport.js. I configured strategies for multiple providers including Google, GitHub and local credentials.\n\nThe system includes: persistent sessions with Redis storage, user serialization/deserialization, route protection with middlewares, unified profile management and global logout system. I implemented a complete registration/login flow, including email verification and password recovery.\n\nFor enhanced security, I added CSRF protection, rate limiting on sensitive endpoints and input sanitization. The application also generates access/refresh tokens for API use and manages route-level permissions. It includes an admin panel to manage users and OAuth connections.",
-            "image": "../assets/images/graphoauth2.0.png",
+            "image": "/images/graphoauth2.0.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/api_OAth2.0",
             "features": [
@@ -466,7 +466,7 @@
             "index": "payment-app",
             "description": "Developed in React and express to process payments with Stripe and PayPal.",
             "detailedDescription": "This full-stack project (React + Node.js) implements a complete payment processing system. I developed integration with both payment gateways (Stripe and PayPal) allowing users to choose their preferred method.\n\nThe system includes: persistent shopping cart, transaction history, recurring subscriptions, promotional discounts and email notifications. I implemented webhooks to handle async events like successful payments, refunds and cancellations.\n\nFor Stripe, I configured Payment Intents for SCA (Strong Customer Authentication) and managed different payment states. For PayPal, I implemented both the classic flow and the new smart buttons system. The application includes an admin dashboard to manage orders, process refunds and generate reports.",
-            "image": "../../assets/images/payment.png",
+            "image": "/images/payment.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/scanToPay",
             "features": [
@@ -494,22 +494,22 @@
             "description": "Complete mobile application for booking movie tickets with film selection, showtimes, seat picking and integrated payment, built with React Native.",
             "detailedDescription": "CineBook is a mobile application developed with React Native that provides a complete solution for movie ticket booking. The app offers:\n\nUser Experience:\n- Movie catalog with filters by genre, rating and release date\n- Real-time booking system with visual seat selection\n- Google Maps integration for locating nearby theaters\n- Secure payment gateway with Stripe\n- Food/drink combo management\n- Secure authentication with JWT\n\nKey Technologies:\n- Frontend: React Native with Expo\n- State Management: Redux Toolkit\n- Navigation: React Navigation\n- Authentication: JWT with refresh tokens\n- Payments: Stripe SDK integration\n- Geolocation: Google Maps API for React Native\n\nTechnical Features:\n- Modular and scalable architecture\n- Performance optimization for mobile devices\n- Smooth animations for seat selection\n- Real-time synchronization using sockets\n- Responsive design for different screen sizes",
             "gallery": [
-               "/assets/images/cine-app/appImage1.jpg",
-                 "/assets/images/cine-app/headerhero.jpg",
-              "/assets/images/cine-app/logo-cinebook.JPG",
-              "/assets/images/cine-app/appImage2.jpg",
-              "/assets/images/cine-app/appImage3.jpg",
-              "/assets/images/cine-app/appImage4.jpg",
-              "/assets/images/cine-app/appImage5.jpg",
-               "/assets/images/cine-app/appImage6.jpg",
-              "/assets/images/cine-app/appImage7.jpg",
-              "/assets/images/cine-app/appImage8.jpg",
-               "/assets/images/cine-app/appImage9.jpg",
-              "/assets/images/cine-app/appImage10.jpg",
-               "/assets/images/cine-app/appImage12.jpg",
-              "/assets/images/cine-app/appImage13.jpg",
-              "/assets/images/cine-app/appImage14.jpg",
-               "/assets/images/cine-app/appImage15.jpg"
+               "/images/cine-app/appImage1.jpg",
+                 "/images/cine-app/headerhero.jpg",
+              "/images/cine-app/logo-cinebook.JPG",
+              "/images/cine-app/appImage2.jpg",
+              "/images/cine-app/appImage3.jpg",
+              "/images/cine-app/appImage4.jpg",
+              "/images/cine-app/appImage5.jpg",
+               "/images/cine-app/appImage6.jpg",
+              "/images/cine-app/appImage7.jpg",
+              "/images/cine-app/appImage8.jpg",
+               "/images/cine-app/appImage9.jpg",
+              "/images/cine-app/appImage10.jpg",
+               "/images/cine-app/appImage12.jpg",
+              "/images/cine-app/appImage13.jpg",
+              "/images/cine-app/appImage14.jpg",
+               "/images/cine-app/appImage15.jpg"
                
             ],
             "button": "See more",
@@ -559,7 +559,7 @@
             "index": "box-office-api",
             "description": "REST API built with NestJS that provides real-time box office data, rankings, and comparative analysis between U.S. and global markets.",
             "detailedDescription": "Box Office API is a modern and scalable solution developed with NestJS for movie enthusiasts, developers, and data analysts. This REST API offers real-time access to detailed information about movie performance at the box office.\n\nKey features:\n- Weekend top movies ranking (U.S.)\n- Historical daily box office data for trend analysis\n- Comparative insights between U.S. and international earnings\n- Easy integration with frontends, bots, or dashboards\n- Interactive documentation with Swagger UI for live testing\n\nThe API includes an automatic caching system using Redis to optimize performance and reduce unnecessary requests to external sources. It's perfect for building cinema newsletters, Discord/Telegram bots, analytical dashboards, or academic projects on film trends.\n\nBuilt with best practices: modular architecture, dependency injection, response validation, and centralized error handling. 100% open source and ready to integrate into any project.",
-            "image": "/assets/images/api-box.png",
+            "image": "/images/api-box.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
             "features": [
@@ -621,7 +621,7 @@
             "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
             "observations": "El sitio web que esta disponible es una demostración de la parte informativa del sistema, la parte de administración y gestion de pacientes y doctores no está disponible en el sitio web.",
             "url": "https://medicare-websitedemo.netlify.app",
-            "logo": "/assets/images/medicare/medicare.png",
+            "logo": "/images/medicare/medicare.png",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
               "React",
@@ -654,25 +654,25 @@
               "Crear interfaces intuitivas y responsivas para todos los roles"
             ],
             "gallery": [
-              "/assets/images/medicare/medicare.png",
-              "/assets/images/medicare/medicare-1.JPG",
-              "/assets/images/medicare/medicare-2.JPG",
-              "/assets/images/medicare/medicare-18.JPG",
-              "/assets/images/medicare/medicare-3.JPG",
-              "/assets/images/medicare/medicare-4.JPG",
-              "/assets/images/medicare/medicare-5.JPG",
-              "/assets/images/medicare/medicare-6.JPG",
-              "/assets/images/medicare/medicare-7.JPG",
-              "/assets/images/medicare/medicare-8.JPG",
-              "/assets/images/medicare/medicare-9.JPG",
-              "/assets/images/medicare/medicare-10.JPG",
-              "/assets/images/medicare/medicare-11.JPG",
-              "/assets/images/medicare/medicare-12.JPG",
-              "/assets/images/medicare/medicare-13.JPG",
-              "/assets/images/medicare/medicare-14.JPG",
-              "/assets/images/medicare/medicare-15.JPG",
-              "/assets/images/medicare/medicare-16.JPG",
-              "/assets/images/medicare/medicare-17.JPG"
+              "/images/medicare/medicare.png",
+              "/images/medicare/medicare-1.JPG",
+              "/images/medicare/medicare-2.JPG",
+              "/images/medicare/medicare-18.JPG",
+              "/images/medicare/medicare-3.JPG",
+              "/images/medicare/medicare-4.JPG",
+              "/images/medicare/medicare-5.JPG",
+              "/images/medicare/medicare-6.JPG",
+              "/images/medicare/medicare-7.JPG",
+              "/images/medicare/medicare-8.JPG",
+              "/images/medicare/medicare-9.JPG",
+              "/images/medicare/medicare-10.JPG",
+              "/images/medicare/medicare-11.JPG",
+              "/images/medicare/medicare-12.JPG",
+              "/images/medicare/medicare-13.JPG",
+              "/images/medicare/medicare-14.JPG",
+              "/images/medicare/medicare-15.JPG",
+              "/images/medicare/medicare-16.JPG",
+              "/images/medicare/medicare-17.JPG"
             ]
           },
        
@@ -685,7 +685,7 @@
             "intendedFor": "Cinéfilos, fanáticos de las series, entusiastas del entretenimiento y cualquier persona interesada en datos detallados sobre películas y producciones audiovisuales.",
             "documentUrl": "",
             "url": "https://cineverseonline.netlify.app ",
-            "logo": "/assets/images/cineverse.JPG",
+            "logo": "/images/cineverse.JPG",
             "github": "",
             "technologies": [
               "React",
@@ -718,25 +718,25 @@
               "Creación de una interfaz intuitiva que maneje múltiples tipos de contenido"
             ],
             "gallery": [
-              "/assets/images/cineverse/cineverse.jpg",
-              "/assets/images/cineverse/1.jpg",
-              "/assets/images/cineverse/1-en.jpg",
-              "/assets/images/cineverse/2.jpeg",
-              "/assets/images/cineverse/2-en.jpeg",
-              "/assets/images/cineverse/3.jpeg",
-              "/assets/images/cineverse/3-en.jpeg",
-              "/assets/images/cineverse/4.jpeg",
-              "/assets/images/cineverse/4_en.jpeg",
-              "/assets/images/cineverse/5.jpeg",
-              "/assets/images/cineverse/6.jpeg",
-              "/assets/images/cineverse/7.jpeg",
-              "/assets/images/cineverse/8.jpeg",
-              "/assets/images/cineverse/9.jpeg",
-              "/assets/images/cineverse/10.jpeg",
-              "/assets/images/cineverse/11.jpeg",
-              "/assets/images/cineverse/12.jpeg",
-              "/assets/images/cineverse/13.jpeg",
-              "/assets/images/cineverse/14.jpeg"
+              "/images/cineverse/cineverse.jpg",
+              "/images/cineverse/1.jpg",
+              "/images/cineverse/1-en.jpg",
+              "/images/cineverse/2.jpeg",
+              "/images/cineverse/2-en.jpeg",
+              "/images/cineverse/3.jpeg",
+              "/images/cineverse/3-en.jpeg",
+              "/images/cineverse/4.jpeg",
+              "/images/cineverse/4_en.jpeg",
+              "/images/cineverse/5.jpeg",
+              "/images/cineverse/6.jpeg",
+              "/images/cineverse/7.jpeg",
+              "/images/cineverse/8.jpeg",
+              "/images/cineverse/9.jpeg",
+              "/images/cineverse/10.jpeg",
+              "/images/cineverse/11.jpeg",
+              "/images/cineverse/12.jpeg",
+              "/images/cineverse/13.jpeg",
+              "/images/cineverse/14.jpeg"
             ]
           },
           {
@@ -748,7 +748,7 @@
             "intendedFor": "Clientes interesados en ganado de calidad, turistas, instituciones ambientales, estudiantes, agricultores sostenibles y público en general interesado en ecoturismo y producción agrícola responsable.",
             "documentUrl": "",
             "url": "https://villablancaweb.netlify.app",
-            "logo": "/assets/images/villa-blanca/img5.jpg",
+            "logo": "/images/villa-blanca/img5.jpg",
             "github": "",
             "technologies": [
               "React",
@@ -776,14 +776,14 @@
               "Optimizar el rendimiento del sitio con imágenes de alta calidad"
             ],
             "gallery": [
-              "/assets/images/villa-blanca/villa-blanca.JPG",
-              "/assets/images/villa-blanca/villa-blanca1.JPG",
-              "/assets/images/villa-blanca/villa-blanca2.JPG",
-              "/assets/images/villa-blanca/villa-blanca3.JPG",
-              "/assets/images/villa-blanca/villa-blanca4.JPG",
-              "/assets/images/villa-blanca/villa-blanca5.JPG",
-              "/assets/images/villa-blanca/villa-blanca6.JPG",
-              "/assets/images/villa-blanca/villa-blanca7.JPG"
+              "/images/villa-blanca/villa-blanca.JPG",
+              "/images/villa-blanca/villa-blanca1.JPG",
+              "/images/villa-blanca/villa-blanca2.JPG",
+              "/images/villa-blanca/villa-blanca3.JPG",
+              "/images/villa-blanca/villa-blanca4.JPG",
+              "/images/villa-blanca/villa-blanca5.JPG",
+              "/images/villa-blanca/villa-blanca6.JPG",
+              "/images/villa-blanca/villa-blanca7.JPG"
             ]
           },
                 {
@@ -795,7 +795,7 @@
         "intendedFor": "Cadenas de cines que busquen una solución integrada de reservas, cinéfilos que deseen una forma conveniente de reservar entradas online, y administradores de cines que necesiten herramientas de gestión para sus sedes.",
         "documentUrl": "",
         "url": "",
-        "logo": "/assets/images/cinebook-sistem/logo_cinebook.webp",
+        "logo": "/images/cinebook-sistem/logo_cinebook.webp",
         "github": "",
         "technologies": [
           "React",
@@ -830,24 +830,24 @@
         ],
 
           "gallery": [
-              "/assets/images/cinebook-sistem/logo_cinebook.webp",
-              "/assets/images/cinebook-sistem/1.webp",
-              "/assets/images/cinebook-sistem/2.webp",
-              "/assets/images/cinebook-sistem/3.webp",
-              "/assets/images/cinebook-sistem/4.webp",
-              "/assets/images/cinebook-sistem/5.webp",
-              "/assets/images/cinebook-sistem/6.webp",
-              "/assets/images/cinebook-sistem/7.webp",
-              "/assets/images/cinebook-sistem/8.webp",
-              "/assets/images/cinebook-sistem/9.webp",
-              "/assets/images/cinebook-sistem/10.webp",
-              "/assets/images/cinebook-sistem/11.webp",
-              "/assets/images/cinebook-sistem/12.webp",
-              "/assets/images/cinebook-sistem/13.webp",
-              "/assets/images/cinebook-sistem/14.webp",
+              "/images/cinebook-sistem/logo_cinebook.webp",
+              "/images/cinebook-sistem/1.webp",
+              "/images/cinebook-sistem/2.webp",
+              "/images/cinebook-sistem/3.webp",
+              "/images/cinebook-sistem/4.webp",
+              "/images/cinebook-sistem/5.webp",
+              "/images/cinebook-sistem/6.webp",
+              "/images/cinebook-sistem/7.webp",
+              "/images/cinebook-sistem/8.webp",
+              "/images/cinebook-sistem/9.webp",
+              "/images/cinebook-sistem/10.webp",
+              "/images/cinebook-sistem/11.webp",
+              "/images/cinebook-sistem/12.webp",
+              "/images/cinebook-sistem/13.webp",
+              "/images/cinebook-sistem/14.webp",
               
-              "/assets/images/cinebook-sistem/16.webp",
-              "/assets/images/cinebook-sistem/17.webp"
+              "/images/cinebook-sistem/16.webp",
+              "/images/cinebook-sistem/17.webp"
             ]
       },
       
@@ -861,7 +861,7 @@
             "documentUrl": "",
             "observations": "El planificador de IA utiliza actualmente datos simulados (mock) para la demostración del flujo de usuario. La integración con APIs de IA en tiempo real y bases de datos dinámicas está en la hoja de ruta de desarrollo.",
             "url": "https://aventureate.com",
-            "logo": "/assets/images/aventureate/aventureate_logo.PNG",
+            "logo": "/images/aventureate/aventureate_logo.PNG",
             "github": "https://github.com/victorcamacaro253/aventureate",
             "technologies": [
               "React",
@@ -893,24 +893,24 @@
               "Asegurar la consistencia visual y funcional entre decenas de componentes y vistas anidadas"
             ],
             "gallery": [
-              "/assets/images/aventureate/aventureate1.webp",
-              "/assets/images/aventureate/aventureate2.webp",
-              "/assets/images/aventureate/aventureate3.webp",
-              "/assets/images/aventureate/aventureate4.webp",
-              "/assets/images/aventureate/aventureate5.webp",
-              "/assets/images/aventureate/aventureate6.webp",
-               "/assets/images/aventureate/aventureate7.webp",
-              "/assets/images/aventureate/aventureate8.webp",
-              "/assets/images/aventureate/aventureate9.webp",
-              "/assets/images/aventureate/aventureate10.webp",
-              "/assets/images/aventureate/aventureate11.webp",
-              "/assets/images/aventureate/aventureate12.webp",
-              "/assets/images/aventureate/aventureate13.webp",
-              "/assets/images/aventureate/aventureate14.webp",
-              "/assets/images/aventureate/aventureate15.webp",
-              "/assets/images/aventureate/aventureate16.webp",
-              "/assets/images/aventureate/aventureate17.webp",
-              "/assets/images/aventureate/aventureate18.webp"
+              "/images/aventureate/aventureate1.webp",
+              "/images/aventureate/aventureate2.webp",
+              "/images/aventureate/aventureate3.webp",
+              "/images/aventureate/aventureate4.webp",
+              "/images/aventureate/aventureate5.webp",
+              "/images/aventureate/aventureate6.webp",
+               "/images/aventureate/aventureate7.webp",
+              "/images/aventureate/aventureate8.webp",
+              "/images/aventureate/aventureate9.webp",
+              "/images/aventureate/aventureate10.webp",
+              "/images/aventureate/aventureate11.webp",
+              "/images/aventureate/aventureate12.webp",
+              "/images/aventureate/aventureate13.webp",
+              "/images/aventureate/aventureate14.webp",
+              "/images/aventureate/aventureate15.webp",
+              "/images/aventureate/aventureate16.webp",
+              "/images/aventureate/aventureate17.webp",
+              "/images/aventureate/aventureate18.webp"
             ]
           },
                     {
@@ -923,7 +923,7 @@
             "documentUrl": "",
             "observations": "El panel de administración incluye funcionalidades avanzadas como exportación de datos a Excel, cálculo automático de duración y costos de reserva, y gestión de estados (Pendiente, Pagado, Cancelado) con prevención de conflictos de fechas.",
             "url": "https://ideapu.com",
-            "logo": "/assets/images/ideapu/ideapu-logo.webp",
+            "logo": "/images/ideapu/ideapu-logo.webp",
             "github": "https://github.com/victorcamacaro253/ideapu",
             "technologies": [
               "React",
@@ -950,11 +950,11 @@
               "Asegurar un control de acceso robusto (RLS) y seguro para los diferentes roles de usuario en Supabase"
             ],
             "gallery": [
-              "/assets/images/creativa-publicidad/1.jpg",
-              "/assets/images/creativa-publicidad/2.jpg",
-              "/assets/images/creativa-publicidad/3.jpg",
-              "/assets/images/creativa-publicidad/4.jpg",
-              "/assets/images/creativa-publicidad/5.jpg"
+              "/images/creativa-publicidad/1.jpg",
+              "/images/creativa-publicidad/2.jpg",
+              "/images/creativa-publicidad/3.jpg",
+              "/images/creativa-publicidad/4.jpg",
+              "/images/creativa-publicidad/5.jpg"
             ]
           }
         ]
@@ -981,7 +981,7 @@
             "documentUrl": "/Comprehensive-Medica-Management-System.pdf",
             "observations": "The website that is available is a demonstration of the informational part of the system; the administration and management part for patients and doctors is not available on the website.",
             "url": "https://medicare-websitedemo.netlify.app",
-            "logo": "/assets/images/medicare/medicare.png",
+            "logo": "/images/medicare/medicare.png",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
               "React",
@@ -1024,7 +1024,7 @@
             "intendedFor": "Film enthusiasts, series fans, entertainment lovers, and anyone interested in detailed data about movies and audiovisual productions.",
             "documentUrl": "",
             "url": "https://cineverseonline.netlify.app ",
-            "logo": "/assets/images/cineverse.JPG",
+            "logo": "/images/cineverse.JPG",
             "github": "",
             "technologies": [
               "React",
@@ -1087,7 +1087,7 @@
             "intendedFor": "Clients interested in quality livestock, tourists, environmental institutions, students, sustainable farmers, and the general public interested in ecotourism and responsible agricultural production.",
             "documentUrl": "",
             "url": "https://villablancaweb.netlify.app",
-            "logo": "/assets/images/villa-blanca/img5.jpg",
+            "logo": "/images/villa-blanca/img5.jpg",
             "github": "",
             "technologies": [
               "React",
@@ -1134,7 +1134,7 @@
         "intendedFor": "Cinema chains looking for an integrated booking solution, moviegoers who want a convenient way to book tickets online, and cinema administrators who need management tools for their locations.",
         "documentUrl": "",
         "url": "",
-        "logo":  "/assets/images/cinebook-sistem/logo_cinebook.webp",
+        "logo":  "/images/cinebook-sistem/logo_cinebook.webp",
         "github": "",
         "technologies": [
           "React",
@@ -1198,7 +1198,7 @@
             "documentUrl": "",
             "observations": "The AI planner currently uses mock data to demonstrate the user flow. Integration with real-time AI APIs and dynamic databases is on the development roadmap.",
             "url": "https://aventureate.com",
-            "logo": "/assets/images/aventureate/aventureate_logo.PNG",
+            "logo": "/images/aventureate/aventureate_logo.PNG",
             "github": "https://github.com/victorcamacaro253/aventureate",
             "technologies": [
               "React",
@@ -1230,24 +1230,24 @@
               "Ensuring visual and functional consistency across dozens of nested components and views"
             ],
             "gallery": [
-                "/assets/images/aventureate/aventureate1.webp",
-              "/assets/images/aventureate/aventureate2.webp",
-              "/assets/images/aventureate/aventureate3.webp",
-              "/assets/images/aventureate/aventureate4.webp",
-              "/assets/images/aventureate/aventureate5.webp",
-              "/assets/images/aventureate/aventureate6.webp",
-               "/assets/images/aventureate/aventureate7.webp",
-              "/assets/images/aventureate/aventureate8.webp",
-              "/assets/images/aventureate/aventureate9.webp",
-              "/assets/images/aventureate/aventureate10.webp",
-              "/assets/images/aventureate/aventureate11.webp",
-              "/assets/images/aventureate/aventureate12.webp",
-              "/assets/images/aventureate/aventureate13.webp",
-              "/assets/images/aventureate/aventureate14.webp",
-              "/assets/images/aventureate/aventureate15.webp",
-              "/assets/images/aventureate/aventureate16.webp",
-              "/assets/images/aventureate/aventureate17.webp",
-              "/assets/images/aventureate/aventureate18.webp"
+                "/images/aventureate/aventureate1.webp",
+              "/images/aventureate/aventureate2.webp",
+              "/images/aventureate/aventureate3.webp",
+              "/images/aventureate/aventureate4.webp",
+              "/images/aventureate/aventureate5.webp",
+              "/images/aventureate/aventureate6.webp",
+               "/images/aventureate/aventureate7.webp",
+              "/images/aventureate/aventureate8.webp",
+              "/images/aventureate/aventureate9.webp",
+              "/images/aventureate/aventureate10.webp",
+              "/images/aventureate/aventureate11.webp",
+              "/images/aventureate/aventureate12.webp",
+              "/images/aventureate/aventureate13.webp",
+              "/images/aventureate/aventureate14.webp",
+              "/images/aventureate/aventureate15.webp",
+              "/images/aventureate/aventureate16.webp",
+              "/images/aventureate/aventureate17.webp",
+              "/images/aventureate/aventureate18.webp"
             ]
           },
                     {
@@ -1260,7 +1260,7 @@
             "documentUrl": "",
             "observations": "The admin panel includes advanced features such as Excel data export, automatic duration and cost calculation for reservations, and status management (Pending, Paid, Cancelled) with date conflict prevention.",
             "url": "https://ideapu.com",
-            "logo": "/assets/images/ideapu/ideapu-logo.webp",
+            "logo": "/images/ideapu/ideapu-logo.webp",
             "github": "https://github.com/victorcamacaro253/creativa-publicidad",
             "technologies": [
               "React",
@@ -1287,11 +1287,11 @@
               "Ensuring robust and secure access control (RLS) for different user roles in Supabase"
             ],
             "gallery": [
-              "/assets/images/creativa-publicidad/1.jpg",
-              "/assets/images/creativa-publicidad/2.jpg",
-              "/assets/images/creativa-publicidad/3.jpg",
-              "/assets/images/creativa-publicidad/4.jpg",
-              "/assets/images/creativa-publicidad/5.jpg"
+              "/images/creativa-publicidad/1.jpg",
+              "/images/creativa-publicidad/2.jpg",
+              "/images/creativa-publicidad/3.jpg",
+              "/images/creativa-publicidad/4.jpg",
+              "/images/creativa-publicidad/5.jpg"
             ]
           }
         ]
