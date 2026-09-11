@@ -24,7 +24,7 @@
       "es": {
         "title": "Sobre mi",
         "span": "Hola, Soy Victor Camacaro",
-        "presentation": "Desarrollador Full-Stack apasionado y orientado a resultados, con una sólida base en ingeniería de software, tecnologías web y diseño de sistemas. Me especializo en la creación de aplicaciones web escalables y APIs utilizando Express.js, TypeScript y React Native, con un profundo conocimiento de bases de datos SQL y MongoDB.\n\nComo Ingeniero de Sistemas, aporto un sólido conocimiento de la computación en la nube, los principios de ciberseguridad y la arquitectura integral de sistemas, desde la lógica del backend hasta las interfaces intuitivas del frontend. He diseñado e implementado con éxito sistemas completos, liderado el desarrollo de APIs e integrado tecnologías modernas para ofrecer soluciones digitales robustas.\n\n💡 Me apasiona resolver problemas complejos, fomentar el aprendizaje continuo y colaborar en proyectos de impacto que impulsan la innovación.",
+        "presentation": "Ingeniero de Sistemas y Desarrollador Full-Stack especializado en la intersección de la ingeniería de software, la inteligencia artificial aplicada y la robótica autónoma. Domino un stack moderno que abarca desde arquitecturas web escalables (TypeScript, React, Node.js) hasta pipelines de visión computacional y optimización avanzada (Python, OR-Tools, SimPy, YOLOv8).\n\nHe liderado el desarrollo de soluciones de alto impacto, como un Digital Twin de optimización portuaria (simulación de eventos discretos y renderizado 3D), un optimizador de logística de última milla con IA híbrida (Q-Learning y H3), y un sistema de percepción y navegación segura para robots autónomos. Este último fusiona detección multimodal (YOLOv8, MediaPipe), estimación de estado (Filtro de Kalman) y planificación por Campos Potenciales Artificiales (APF) para lograr evasiones matemáticamente óptimas y conscientes del contexto humano.\n\n💡 Mi enfoque va más allá del código: traduzco restricciones del mundo real (seguridad, sostenibilidad, SLA) en arquitecturas de software deterministas, modulares y escalables. Me apasiona resolver problemas de alta complejidad algorítmica y construir sistemas que transformen la toma de decisiones operativas.",
         "aboutme": "Conoce mi historia",
         "PersonalData": "Datos Personales",
         "birthdateWord": "Cumpleaños",
@@ -35,16 +35,14 @@
         "addressWord": "Direccion",
         "address": "Barquisimeto, Venezuela",
         "positionWord": "Cargo",
-        "position": "FREELANCER",
+        "position": "SENIOR FULL-STACK & AI SYSTEMS ENGINEER",
         "interests": "Intereses",
         "download": "Descargar CV"
       },
       "en": {
         "title": "About me",
         "span": "Hello, I'm Victor Camacaro",
-        "presentation": "Passionate and results-driven Full-Stack Developer with a strong foundation in software engineering, web technologies, and system design. I specialize in building scalable web applications and APIs using Express.js, TypeScript, and React Native, with deep expertise in SQL and MongoDB databases.\n\nAs a Systems Engineer, I bring a solid understanding of cloud computing, cybersecurity principles, and full system architecture — from backend logic to intuitive front-end interfaces. I’ve successfully designed and deployed complete systems, led API development, and integrated modern technologies to deliver robust digital solutions.\n\n💡 I thrive on solving complex problems, embracing continuous learning, and collaborating on impactful projects that push innovation forward.",
-        "aboutme": "Know my story",
-        "PersonalData": "Personal Data",
+        "presentation": "Systems Engineer and Full-Stack Developer specializing in the intersection of software engineering, applied AI, and autonomous robotics. I master a modern stack ranging from scalable web architectures (TypeScript, React, Node.js) to advanced computer vision pipelines and optimization (Python, OR-Tools, SimPy, YOLOv8).\n\nI have led the development of high-impact solutions, including a **Port Terminal Digital Twin** (discrete event simulation and 3D rendering), a **Last-Mile Delivery Optimizer** with hybrid AI (Q-Learning and H3), and a **Perception and Safe Navigation System for Autonomous Robots**. The latter fuses multimodal detection (YOLOv8, MediaPipe), state estimation (Kalman Filter), and Artificial Potential Fields (APF) path planning to achieve mathematically optimal, context-aware collision avoidance.\n\n💡 My approach goes beyond writing code: I translate real-world constraints (safety, sustainability, SLAs) into deterministic, modular, and scalable software architectures. I thrive on solving high-complexity algorithmic problems and building systems that transform operational decision-making.",
         "birthdateWord": "Birthdate",
         "birthdate": "30-03-1999",
         "phoneWord": "Phone",
@@ -53,36 +51,52 @@
         "addressWord": "Address",
         "address": "Barquisimeto, Venezuela",
         "positionWord": "Position",
-        "position": "FREELANCER",
+        "position": "SENIOR FULL-STACK & AI SYSTEMS ENGINEER",
         "interests": "Interests",
         "download": "Download CV"
       }
     }
   ],
-  "skills": [
-    {
-      "es": {
-        "skills": "Habilidades",
-        "techSkills": "Habilidades Tenicas",
-        "profskills": "Habilidades Profesionales",
-        "communication": "Comunicacion",
-        "teamWork": "Trabajo en equipo",
-        "problemSolving": "Resolucion de problemas",
-        "creativity": "Creatividad",
-        "Dedication": "Dedicacion"
-      },
-      "en": {
-        "skills": "Skills",
-        "techSkills": "Technical Skills",
-        "profskills": "Professional Skills",
-        "communication": "Communication",
-        "teamWork": "Team Work",
-        "problemSolving": "Problem Solving",
-        "creativity": "Creativity",
-        "Dedication": "Dedication"
-      }
-    }
-  ],
+ "skills": {
+  "es": {
+    "title": "Habilidades",
+    "techTitle": "Habilidades Técnicas",
+    "profTitle": "Habilidades Profesionales",
+    "technical": [
+      { "name": "IA & Optimización (OR-Tools, SimPy, ML)", "percentage": "90%" },
+      { "name": "TypeScript, React & Node.js", "percentage": "90%" },
+      { "name": "Visión Computacional (YOLOv8, OpenCV)", "percentage": "85%" },
+      { "name": "Bases de Datos (PostgreSQL, MongoDB)", "percentage": "85%" },
+      { "name": "Arquitectura de Sistemas & Cloud", "percentage": "80%" }
+    ],
+    "professional": [
+      { "name": "Resolución de Problemas Algorítmicos", "percentage": "95%" },
+      { "name": "Diseño de Arquitectura Escalable", "percentage": "90%" },
+      { "name": "Gestión Ágil de Proyectos", "percentage": "90%" },
+      { "name": "Comunicación Interfuncional", "percentage": "85%" },
+      { "name": "Aprendizaje Continuo y Adaptabilidad", "percentage": "95%" }
+    ]
+  },
+  "en": {
+    "title": "Skills",
+    "techTitle": "Technical Skills",
+    "profTitle": "Professional Skills",
+    "technical": [
+      { "name": "AI & Optimization (OR-Tools, SimPy, ML)", "percentage": "90%" },
+      { "name": "TypeScript, React & Node.js", "percentage": "90%" },
+      { "name": "Computer Vision (YOLOv8, OpenCV)", "percentage": "85%" },
+      { "name": "Databases (PostgreSQL, MongoDB)", "percentage": "85%" },
+      { "name": "System Architecture & Cloud", "percentage": "80%" }
+    ],
+    "professional": [
+      { "name": "Algorithmic Problem Solving", "percentage": "95%" },
+      { "name": "Scalable Architecture Design", "percentage": "90%" },
+      { "name": "Agile Project Management", "percentage": "90%" },
+      { "name": "Cross-functional Communication", "percentage": "85%" },
+      { "name": "Continuous Learning & Adaptability", "percentage": "95%" }
+    ]
+  }
+},
   "projects": [
     {
       "es": {
@@ -232,10 +246,23 @@
             "description": "Aplicación móvil completa para reservar entradas de cine con selección de películas, horarios, asientos y pago integrado, desarrollada con React Native.",
             "detailedDescription": "CineBook es una aplicación móvil desarrollada con React Native que ofrece una solución completa para la reserva de entradas de cine. La aplicación proporciona:\n\nExperiencia del Usuario:\n- Catálogo de películas con filtros por género, rating y fecha de estreno\n- Sistema de reservas en tiempo real con selección visual de asientos\n- Integración con Google Maps para ubicación de cines cercanos\n- Pasarela de pagos segura con Stripe\n- Gestión de combos de comida/bebida\n- Autenticación segura con JWT\n\nTecnologías Clave:\n- Frontend: React Native con Expo\n- Estado Global: Redux Toolkit\n- Navegación: React Navigation\n- Autenticación: JWT con refresh tokens\n- Pagos: Integración con Stripe SDK\n- Geolocalización: Google Maps API para React Native\n\nCaracterísticas Técnicas:\n- Arquitectura modular y escalable\n- Optimización de rendimiento para dispositivos móviles\n- Animaciones fluidas para la selección de asientos\n- Sincronización en tiempo real mediante sockets\n- Diseño responsive para diferentes tamaños de pantalla",
             "gallery": [
-              "../../assets/images/movie-app1.png",
-              "../../assets/images/movie-app2.png",
-              "../../assets/images/movie-app3.png",
-              "../../assets/images/movie-app4.png"
+               "/assets/images/cine-app/appImage1.jpg",
+                 "/assets/images/cine-app/headerhero.jpg",
+              "/assets/images/cine-app/logo-cinebook.JPG",
+              "/assets/images/cine-app/appImage2.jpg",
+              "/assets/images/cine-app/appImage3.jpg",
+              "/assets/images/cine-app/appImage4.jpg",
+              "/assets/images/cine-app/appImage5.jpg",
+               "/assets/images/cine-app/appImage6.jpg",
+              "/assets/images/cine-app/appImage7.jpg",
+              "/assets/images/cine-app/appImage8.jpg",
+               "/assets/images/cine-app/appImage9.jpg",
+              "/assets/images/cine-app/appImage10.jpg",
+               "/assets/images/cine-app/appImage12.jpg",
+              "/assets/images/cine-app/appImage13.jpg",
+              "/assets/images/cine-app/appImage14.jpg",
+               "/assets/images/cine-app/appImage15.jpg"
+               
             ],
             "button": "Ver más",
             "link": "https://github.com/victorcamacaro253/cinema_booking_app",
@@ -284,7 +311,7 @@
             "index": "box-office-api",
             "description": "API REST con NestJS que proporciona datos en tiempo real sobre taquilla de películas, rankings y análisis comparativos entre EE.UU. y mercado mundial.",
             "detailedDescription": "Box Office API es una solución moderna y escalable desarrollada con NestJS para entusiastas del cine, desarrolladores y analistas de datos. Esta API REST ofrece acceso en tiempo real a información detallada sobre el rendimiento de películas en taquilla.\n\nCaracterísticas principales:\n- Top de películas del fin de semana (EE.UU.)\n- Historial de taquilla diaria para análisis de tendencias\n- Comparativas entre ingresos en EE.UU. y mercados internacionales\n- Integración sencilla con aplicaciones frontend, bots o dashboards\n- Documentación interactiva con Swagger UI para pruebas en vivo\n\nLa API incluye un sistema de caché automático para optimizar el rendimiento y reducir solicitudes innecesarias a las fuentes externas. Es ideal para crear newsletters de cine, bots de Discord/Telegram, dashboards analíticos o proyectos académicos sobre tendencias cinematográficas.\n\nDesarrollada con buenas prácticas: arquitectura modular, inyección de dependencias, validación de respuestas y manejo centralizado de errores. 100% open source y lista para integrarse en cualquier proyecto.",
-            "image": "/images/api-box.png",
+            "image": "assets/images/api-box.png",
             "button": "Ver más",
             "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
             "features": [
@@ -581,7 +608,7 @@
             "documentUrl": "/Sistema-Integral-de-Gestión-Médica-Medicare.pdf",
             "observations": "El sitio web que esta disponible es una demostración de la parte informativa del sistema, la parte de administración y gestion de pacientes y doctores no está disponible en el sitio web.",
             "url": "https://medicare-websitedemo.netlify.app",
-            "logo": "url",
+            "logo": "/assets/images/medicare/medicare.png",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
               "React",
@@ -614,25 +641,25 @@
               "Crear interfaces intuitivas y responsivas para todos los roles"
             ],
             "gallery": [
-              "/images/medicare.png",
-              "/images/medicare-1.JPG",
-              "/images/medicare-2.JPG",
-              "/images/medicare-18.JPG",
-              "/images/medicare-3.JPG",
-              "/images/medicare-4.JPG",
-              "/images/medicare-5.JPG",
-              "/images/medicare-6.JPG",
-              "/images/medicare-7.JPG",
-              "/images/medicare-8.JPG",
-              "/images/medicare-9.JPG",
-              "/images/medicare-10.JPG",
-              "/images/medicare-11.JPG",
-              "/images/medicare-12.JPG",
-              "/images/medicare-13.JPG",
-              "/images/medicare-14.JPG",
-              "/images/medicare-15.JPG",
-              "/images/medicare-16.JPG",
-              "/images/medicare-17.JPG"
+              "/assets/images/medicare/medicare.png",
+              "/assets/images/medicare/medicare-1.JPG",
+              "/assets/images/medicare/medicare-2.JPG",
+              "/assets/images/medicare/medicare-18.JPG",
+              "/assets/images/medicare/medicare-3.JPG",
+              "/assets/images/medicare/medicare-4.JPG",
+              "/assets/images/medicare/medicare-5.JPG",
+              "/assets/images/medicare/medicare-6.JPG",
+              "/assets/images/medicare/medicare-7.JPG",
+              "/assets/images/medicare/medicare-8.JPG",
+              "/assets/images/medicare/medicare-9.JPG",
+              "/assets/images/medicare/medicare-10.JPG",
+              "/assets/images/medicare/medicare-11.JPG",
+              "/assets/images/medicare/medicare-12.JPG",
+              "/assets/images/medicare/medicare-13.JPG",
+              "/assets/images/medicare/medicare-14.JPG",
+              "/assets/images/medicare/medicare-15.JPG",
+              "/assets/images/medicare/medicare-16.JPG",
+              "/assets/images/medicare/medicare-17.JPG"
             ]
           },
        
@@ -645,7 +672,7 @@
             "intendedFor": "Cinéfilos, fanáticos de las series, entusiastas del entretenimiento y cualquier persona interesada en datos detallados sobre películas y producciones audiovisuales.",
             "documentUrl": "",
             "url": "https://cineverseonline.netlify.app ",
-            "logo": "images/cinverse.JPG",
+            "logo": "/assets/images/cineverse.JPG",
             "github": "",
             "technologies": [
               "React",
@@ -678,25 +705,25 @@
               "Creación de una interfaz intuitiva que maneje múltiples tipos de contenido"
             ],
             "gallery": [
-              "/images/cineverse/cineverse.jpg",
-              "/images/cineverse/1.jpg",
-              "/images/cineverse/1-en.jpg",
-              "/images/cineverse/2.jpeg",
-              "/images/cineverse/2-en.jpeg",
-              "/images/cineverse/3.jpeg",
-              "/images/cineverse/3-en.jpeg",
-              "/images/cineverse/4.jpeg",
-              "/images/cineverse/4_en.jpeg",
-              "/images/cineverse/5.jpeg",
-              "/images/cineverse/6.jpeg",
-              "/images/cineverse/7.jpeg",
-              "/images/cineverse/8.jpeg",
-              "/images/cineverse/9.jpeg",
-              "/images/cineverse/10.jpeg",
-              "/images/cineverse/11.jpeg",
-              "/images/cineverse/12.jpeg",
-              "/images/cineverse/13.jpeg",
-              "/images/cineverse/14.jpeg"
+              "/assets/images/cineverse/cineverse.jpg",
+              "/assets/images/cineverse/1.jpg",
+              "/assets/images/cineverse/1-en.jpg",
+              "/assets/images/cineverse/2.jpeg",
+              "/assets/images/cineverse/2-en.jpeg",
+              "/assets/images/cineverse/3.jpeg",
+              "/assets/images/cineverse/3-en.jpeg",
+              "/assets/images/cineverse/4.jpeg",
+              "/assets/images/cineverse/4_en.jpeg",
+              "/assets/images/cineverse/5.jpeg",
+              "/assets/images/cineverse/6.jpeg",
+              "/assets/images/cineverse/7.jpeg",
+              "/assets/images/cineverse/8.jpeg",
+              "/assets/images/cineverse/9.jpeg",
+              "/assets/images/cineverse/10.jpeg",
+              "/assets/images/cineverse/11.jpeg",
+              "/assets/images/cineverse/12.jpeg",
+              "/assets/images/cineverse/13.jpeg",
+              "/assets/images/cineverse/14.jpeg"
             ]
           },
           {
@@ -708,7 +735,7 @@
             "intendedFor": "Clientes interesados en ganado de calidad, turistas, instituciones ambientales, estudiantes, agricultores sostenibles y público en general interesado en ecoturismo y producción agrícola responsable.",
             "documentUrl": "",
             "url": "https://villablancaweb.netlify.app",
-            "logo": "images/villablanca-logo.png",
+            "logo": "/assets/images/villa-blanca/img5.jpg",
             "github": "",
             "technologies": [
               "React",
@@ -736,14 +763,14 @@
               "Optimizar el rendimiento del sitio con imágenes de alta calidad"
             ],
             "gallery": [
-              "/images/villa-blanca/villa-blanca.JPG",
-              "/images/villa-blanca/villa-blanca1.JPG",
-              "/images/villa-blanca/villa-blanca2.JPG",
-              "/images/villa-blanca/villa-blanca3.JPG",
-              "/images/villa-blanca/villa-blanca4.JPG",
-              "/images/villa-blanca/villa-blanca5.JPG",
-              "/images/villa-blanca/villa-blanca6.JPG",
-              "/images/villa-blanca/villa-blanca7.JPG"
+              "/assets/images/villa-blanca/villa-blanca.JPG",
+              "/assets/images/villa-blanca/villa-blanca1.JPG",
+              "/assets/images/villa-blanca/villa-blanca2.JPG",
+              "/assets/images/villa-blanca/villa-blanca3.JPG",
+              "/assets/images/villa-blanca/villa-blanca4.JPG",
+              "/assets/images/villa-blanca/villa-blanca5.JPG",
+              "/assets/images/villa-blanca/villa-blanca6.JPG",
+              "/assets/images/villa-blanca/villa-blanca7.JPG"
             ]
           },
                 {
@@ -755,7 +782,7 @@
         "intendedFor": "Cadenas de cines que busquen una solución integrada de reservas, cinéfilos que deseen una forma conveniente de reservar entradas online, y administradores de cines que necesiten herramientas de gestión para sus sedes.",
         "documentUrl": "",
         "url": "",
-        "logo": "url",
+        "logo": "/assets/images/cinebook-sistem/logo_cinebook.webp",
         "github": "",
         "technologies": [
           "React",
@@ -790,24 +817,24 @@
         ],
 
           "gallery": [
-              "/images/cinebook-sistem/logo_cinebook.webp",
-              "/images/cinebook-sistem/1.webp",
-              "/images/cinebook-sistem/2.webp",
-              "/images/cinebook-sistem/3.webp",
-              "/images/cinebook-sistem/4.webp",
-              "/images/cinebook-sistem/5.webp",
-              "/images/cinebook-sistem/6.webp",
-              "/images/cinebook-sistem/7.webp",
-              "/images/cinebook-sistem/8.webp",
-              "/images/cinebook-sistem/9.webp",
-              "/images/cinebook-sistem/10.webp",
-              "/images/cinebook-sistem/11.webp",
-              "/images/cinebook-sistem/12.webp",
-              "/images/cinebook-sistem/13.webp",
-              "/images/cinebook-sistem/14.webp",
+              "/assets/images/cinebook-sistem/logo_cinebook.webp",
+              "/assets/images/cinebook-sistem/1.webp",
+              "/assets/images/cinebook-sistem/2.webp",
+              "/assets/images/cinebook-sistem/3.webp",
+              "/assets/images/cinebook-sistem/4.webp",
+              "/assets/images/cinebook-sistem/5.webp",
+              "/assets/images/cinebook-sistem/6.webp",
+              "/assets/images/cinebook-sistem/7.webp",
+              "/assets/images/cinebook-sistem/8.webp",
+              "/assets/images/cinebook-sistem/9.webp",
+              "/assets/images/cinebook-sistem/10.webp",
+              "/assets/images/cinebook-sistem/11.webp",
+              "/assets/images/cinebook-sistem/12.webp",
+              "/assets/images/cinebook-sistem/13.webp",
+              "/assets/images/cinebook-sistem/14.webp",
               
-              "/images/cinebook-sistem/16.webp",
-              "/images/cinebook-sistem/17.webp"
+              "/assets/images/cinebook-sistem/16.webp",
+              "/assets/images/cinebook-sistem/17.webp"
             ]
       }
         ]
@@ -1100,37 +1127,37 @@
     }
   ],
   "Portfolio": [
-    {
-      "es": {
-        "network": "Redes",
-        "networkP": "Interconexion de Redes",
-        "backDev": "Desarrollo Backend",
-        "backDevP": "Desarrollo de Aplicaciones Backend",
-        "database": "Base de Datos",
-        "databaseP": "SQL & NoSQL",
-        "analysis": "Analisis de sistema",
-        "analysisP": "Desarrollo de Sistema",
-        "webDev": "Desarrollo Web",
-        "webDevP": "HTML,CSS,JAVASCRIPT,PHP",
-        "API": "API",
-        "APIP": "Desarrollo de API"
-      },
-      "en": {
-        "network": "Networks",
-        "networkP": "Network Interconnection",
-        "backDev": "Backend development",
-        "backDevP": "Backend Application Development",
-        "database": "Database",
-        "databaseP": "SQL & NoSQL",
-        "analysis": "System Analysis",
-        "analysisP": "System development",
-        "webDev": "Web Development",
-        "webDevP": "HTML,CSS,JAVASCRIPT,PHP",
-        "API": "API",
-        "APIP": "API Development"
-      }
+  {
+    "es": {
+      "aiOptimization": "IA & Optimización Algorítmica",
+      "aiOptimizationP": "Resolución de problemas complejos con OR-Tools , SimPy, Machine Learning y Q-Learning.",
+      "fullStackViz": "Desarrollo Full-Stack & Visualización 3D",
+      "fullStackVizP": "Arquitecturas escalables con React, TypeScript, Node.js, Three.js y dashboards en Streamlit.",
+      "computerVision": "Visión Computacional & Robótica",
+      "computerVisionP": "Percepción multimodal (YOLOv8, MediaPipe), Filtro de Kalman y planificación de trayectorias APF.",
+      "dataEngineering": "Ingeniería de Datos & Bases de Datos",
+      "dataEngineeringP": "Diseño de esquemas eficientes en PostgreSQL, MongoDB y modelado de grafos con NetworkX.",
+      "systemArchitecture": "Arquitectura de Sistemas & Cloud",
+      "systemArchitectureP": "Diseño de software modular, desacoplado (HAL, inyección de dependencias) y listo para producción.",
+      "digitalTwins": "Gemelos Digitales & Simulación",
+      "digitalTwinsP": "Modelado de eventos discretos y entornos 3D interactivos para la toma de decisiones operativas."
+    },
+    "en": {
+      "aiOptimization": "AI & Algorithmic Optimization",
+      "aiOptimizationP": "Solving complex problems using OR-Tools (CP-SAT), SimPy, Machine Learning, and Q-Learning.",
+      "fullStackViz": "Full-Stack Development & 3D Visualization",
+      "fullStackVizP": "Scalable architectures built with React, TypeScript, Node.js, Three.js, and Streamlit dashboards.",
+      "computerVision": "Computer Vision & Robotics",
+      "computerVisionP": "Multimodal perception (YOLOv8, MediaPipe), Kalman Filter, and APF path planning.",
+      "dataEngineering": "Data Engineering & Databases",
+      "dataEngineeringP": "Efficient schema design in PostgreSQL, MongoDB, and graph modeling with NetworkX.",
+      "systemArchitecture": "System Architecture & Cloud",
+      "systemArchitectureP": "Design of modular, decoupled (HAL, dependency injection), and production-ready software.",
+      "digitalTwins": "Digital Twins & Simulation",
+      "digitalTwinsP": "Discrete event modeling and interactive 3D environments for operational decision-making."
     }
-  ],
+  }
+],
   "contact": [
     {
       "es": {

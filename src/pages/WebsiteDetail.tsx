@@ -17,19 +17,11 @@ import {
   faDownload
 } from '@fortawesome/free-solid-svg-icons';
 
-// Import website images
-
-import medicareImg from '../assets/images/medicare.png';
-import cineverseImg from '../assets/images/cineverse.jpg';
-import villaBlancaImg from '../assets/images/img5.jpg';
-import cinebookImg from '../assets/images/logo_cinebook.webp';
-
-
 interface WebsiteCard {
   title: string;
   description: string;
   detailedDescription: string;
-  index?: string | undefined;
+  index?: string;
   objective?: string;
   intendedFor?: string;
   documentUrl?: string;
@@ -38,7 +30,8 @@ interface WebsiteCard {
   technologies: string[];
   features: string[];
   challenges: string[];
-  observations?: string
+  observations?: string;
+  logo?: string;
   gallery?: string[];
 }
 
@@ -47,11 +40,11 @@ type WebsiteDataByLanguage = {
     cards: WebsiteCard[];
     descriptionTitle?: string;
     objective?: string;
+    intendedFor?: string;
     featureTitle?: string;
     TechnicalTitle?: string;
     TechnologyTitle?: string;
     QuickLinks?: string;
-    gallery?: string[];
     [key: string]: any;
   };
 };
@@ -59,37 +52,43 @@ type WebsiteDataByLanguage = {
 const WebsiteDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { language, texts } = useContext(LanguageContext);
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
-  const websiteData = (texts.websites?.[0] ?? {}) as WebsiteDataByLanguage;
+
+  // ✅ Acceso seguro a los datos
+  const websiteData = (texts?.websites?.[0] ?? {}) as WebsiteDataByLanguage;
   const websites = websiteData[language] || websiteData['es'] || {};
   const websiteCards: WebsiteCard[] = Array.isArray(websites.cards) ? websites.cards : [];
-
-  //const websiteIndex = parseInt(id || '0');
-  //const website = websiteCards[websiteIndex];
   const website = websiteCards.find(card => card.index === id);
 
-  // const images = [medicareImg];
-  // const websiteImage = images[websiteIndex];
-  const images: Record<string, string> = {
-    medicare: medicareImg,
-    cineverse: cineverseImg,
-    villablanca: villaBlancaImg,
-    moviebooking: cinebookImg
-  };
-
-  console.log('images', images);
-
-
-  const websiteImage = website && website.index ? images[website.index] || medicareImg : medicareImg; // fallback por si falta
-
-  console.log('websiteimages', websiteImage);
+  // ✅ Resolución dinámica de imágenes (sin imports hardcodeados)
+  const mainImage = website?.logo || (website?.gallery && website.gallery[0]) || '/images/default-website.jpg';
+  const galleryImages = website?.gallery || [];
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]); // Scroll al cambiar de proyecto
 
+  // ✅ Funciones del Carrusel
+  const nextImage = () => {
+    if (galleryImages.length > 0) {
+      setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (galleryImages.length > 0) {
+      setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    }
+  };
+
+  const goToImage = (index: number) => {
+    setCurrentImageIndex(index);
+  };
+
+  // ✅ Funciones del Modal
   const openModal = (index: number) => {
     setModalImageIndex(index);
     setIsModalOpen(true);
@@ -99,8 +98,32 @@ const WebsiteDetail = () => {
     setIsModalOpen(false);
   };
 
+  const nextModalImage = () => {
+    if (galleryImages.length > 0) {
+      setModalImageIndex((prev) => (prev + 1) % galleryImages.length);
+    }
+  };
 
+  const prevModalImage = () => {
+    if (galleryImages.length > 0) {
+      setModalImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    }
+  };
 
+  // ✅ Navegación por teclado en el modal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!isModalOpen) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowRight') nextModalImage();
+      if (e.key === 'ArrowLeft') prevModalImage();
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isModalOpen, galleryImages.length]);
+
+  // ✅ Fallback elegante si no se encuentra el sitio web
   if (!website) {
     return (
       <div className="min-h-screen bg-background-1 dark:bg-dark-background-1 flex items-center justify-center">
@@ -108,73 +131,25 @@ const WebsiteDetail = () => {
           <h2 className="text-2xl font-righteous text-text-light dark:text-text-dark mb-4">
             Website not found
           </h2>
-          <Link
-            to="/websites"
-            className="text-accent dark:text-dark-accent hover:underline"
-          >
-            Back to websites
+          <Link to="/websites" className="text-accent dark:text-accent-dark hover:underline">
+            ← Back to websites
           </Link>
         </div>
       </div>
     );
   }
 
-
-  const nextModalImage = () => {
-    if (website?.gallery && website.gallery.length > 0) {
-      setModalImageIndex((prev) => (prev + 1) % website.gallery!.length);
-    }
-  };
-
-  const prevModalImage = () => {
-    if (website.gallery && website.gallery.length > 0) {
-      setModalImageIndex((prev) => (prev - 1 + (website.gallery ? website.gallery.length : 0)) % (website.gallery ? website.gallery.length : 1));
-    }
-  };
-
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (!isModalOpen) return;
-
-    if (e.key === 'Escape') closeModal();
-    if (e.key === 'ArrowRight') nextModalImage();
-    if (e.key === 'ArrowLeft') prevModalImage();
-  };
-
-  useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [isModalOpen]);
-
-  // Carousel functions
-  const nextImage = () => {
-    if (website?.gallery) {
-      setCurrentImageIndex((prev) => (prev + 1) % website.gallery!.length);
-    }
-  };
-
-  const prevImage = () => {
-    if (website?.gallery) {
-      setCurrentImageIndex((prev) => (prev - 1 + website.gallery!.length) % website.gallery!.length);
-    }
-  };
-
-  const goToImage = (index: number) => {
-    setCurrentImageIndex(index);
-  };
-
-
-
   return (
-    <div className="min-h-screen bg-background-1 mt-16 dark:bg-dark-background-1 text-text-light dark:text-text-dark">
+    <div className="min-h-screen bg-background-1 dark:bg-dark-background-1 text-text-light dark:text-text-dark">
       {/* Header */}
       <div className="bg-white dark:bg-dark-background-2 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="max-w-7xl mt-14 mx-auto px-4 py-6">
           <Link
             to="/websites"
-            className="inline-flex items-center gap-2 text-accent dark:text-dark-accent hover:text-accent/80 dark:hover:text-dark-accent/80 transition-colors mb-4"
+            className="inline-flex items-center gap-2 text-accent dark:text-accent-dark hover:text-accent/80 dark:hover:text-accent-dark/80 transition-colors mb-4"
           >
             <FontAwesomeIcon icon={faArrowLeft} />
-            Back to websites
+            {language === 'es' ? 'Volver a sitios web' : 'Back to websites'}
           </Link>
 
           <div className="flex flex-col lg:flex-row gap-8 items-start">
@@ -187,34 +162,41 @@ const WebsiteDetail = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <a
-                  href={website.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent dark:bg-dark-accent text-white rounded-lg hover:bg-accent/80 dark:hover:bg-dark-accent/80 transition-all duration-300 font-medium"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                  Visit website
-                </a>
+                {website.url && (
+                  <a
+                    href={website.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent dark:bg-accent-dark text-white rounded-lg hover:bg-accent/80 dark:hover:bg-accent-dark/80 transition-all duration-300 font-medium"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    {websites.visit || 'Visit website'}
+                  </a>
+                )}
 
-                <a
-                  href={website.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-accent dark:border-dark-accent text-accent dark:text-dark-accent rounded-lg hover:bg-accent hover:text-white dark:hover:bg-dark-accent transition-all duration-300 font-medium"
-                >
-                  <FontAwesomeIcon icon={faCode} />
-                  View code
-                </a>
+                {website.github && (
+                  <a
+                    href={website.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-accent dark:border-accent-dark text-accent dark:text-accent-dark rounded-lg hover:bg-accent hover:text-white dark:hover:bg-accent-dark transition-all duration-300 font-medium"
+                  >
+                    <FontAwesomeIcon icon={faCode} />
+                    {language === 'es' ? 'Ver código' : 'View code'}
+                  </a>
+                )}
               </div>
             </div>
 
             <div className="w-full lg:w-1/3">
               <div className="relative group">
                 <img
-                  src={websiteImage}
+                  src={mainImage}
                   alt={website.title}
-                  className="w-full h-64 object-fill rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://via.placeholder.com/600x400?text=Website+Preview';
+                  }}
                 />
                 <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-2">
                   <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
@@ -222,17 +204,15 @@ const WebsiteDetail = () => {
                 </div>
               </div>
             </div>
-
           </div>
+
           {website.observations && (
-            <div className="mt-6 p-4 bg-yellow-100 dark:bg-yellow-900 border-l-4 border-yellow-400 text-yellow-800 dark:text-yellow-200 rounded">
+            <div className="mt-6 p-4 bg-yellow-100 dark:bg-yellow-900/30 border-l-4 border-yellow-400 text-yellow-800 dark:text-yellow-200 rounded">
               <strong>Nota:</strong> {website.observations}
             </div>
           )}
         </div>
       </div>
-
-
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -242,8 +222,8 @@ const WebsiteDetail = () => {
             {/* Description */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
               <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faLightbulb} className="text-accent dark:text-dark-accent" />
-                {websites.descriptionTitle}
+                <FontAwesomeIcon icon={faLightbulb} className="text-accent" />
+                {websites.descriptionTitle || 'Descripción'}
               </h2>
               <div className="prose dark:prose-invert max-w-none">
                 {website.detailedDescription.split('\n\n').map((paragraph, index) => (
@@ -260,8 +240,8 @@ const WebsiteDetail = () => {
                 {website.objective && (
                   <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                     <h3 className="text-xl font-righteous mb-4 flex items-center gap-2">
-                      <FontAwesomeIcon icon={faBullseye} className="text-accent dark:text-dark-accent" />
-                      {websites.objective}
+                      <FontAwesomeIcon icon={faBullseye} className="text-accent" />
+                      {websites.objective || 'Objetivo'}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                       {website.objective}
@@ -272,8 +252,8 @@ const WebsiteDetail = () => {
                 {website.intendedFor && (
                   <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                     <h3 className="text-xl font-righteous mb-4 flex items-center gap-2">
-                      <FontAwesomeIcon icon={faUsers} className="text-accent dark:text-dark-accent" />
-                      {websites.intendedFor}
+                      <FontAwesomeIcon icon={faUsers} className="text-accent" />
+                      {websites.intendedFor || 'Dirigido a'}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                       {website.intendedFor}
@@ -286,16 +266,13 @@ const WebsiteDetail = () => {
             {/* Features */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
               <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faCheckCircle} className="text-accent dark:text-dark-accent" />
-                {websites.featureTitle}
+                <FontAwesomeIcon icon={faCheckCircle} className="text-accent" />
+                {websites.featureTitle || 'Características Principales'}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {website.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 dark:bg-dark-background-1 rounded-lg">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-green-500 mt-1 flex-shrink-0"
-                    />
+                    <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1 flex-shrink-0" />
                     <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                   </div>
                 ))}
@@ -305,7 +282,7 @@ const WebsiteDetail = () => {
             {/* Challenges */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
               <h2 className="text-2xl font-righteous mb-6">
-                {websites.TechnicalTitle}
+                {websites.TechnicalTitle || 'Desafíos Técnicos'}
               </h2>
               <div className="space-y-3">
                 {website.challenges.map((challenge, index) => (
@@ -323,13 +300,13 @@ const WebsiteDetail = () => {
             {/* Technologies */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-righteous mb-4">
-                {websites.TechnologyTitle}
+                {websites.TechnologyTitle || 'Tecnologías'}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {website.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-3 py-2 bg-accent/10 dark:bg-dark-accent/10 text-accent dark:text-dark-accent text-sm rounded-full border border-accent/20 dark:border-dark-accent/20 font-medium"
+                    className="px-3 py-2 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark text-sm rounded-full border border-accent/20 dark:border-accent-dark/20 font-medium"
                   >
                     {tech}
                   </span>
@@ -338,66 +315,52 @@ const WebsiteDetail = () => {
             </section>
 
             {/* Quick Actions */}
-            {/* Quick Actions */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-righteous mb-4">
-                {websites.QuickLinks}
+                {websites.QuickLinks || 'Enlaces rápidos'}
               </h3>
               <div className="space-y-3">
-                <a
-                  href={website.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 bg-accent/5 dark:bg-dark-accent/5 rounded-lg hover:bg-accent/10 dark:hover:bg-dark-accent/10 transition-colors group"
-                >
-                  <FontAwesomeIcon
-                    icon={faExternalLinkAlt}
-                    className="text-accent dark:text-dark-accent group-hover:scale-110 transition-transform"
-                  />
-                  <span className="text-gray-700 dark:text-gray-300">
-                    Visit website
-                  </span>
-                </a>
+                {website.url && (
+                  <a
+                    href={website.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-accent/5 dark:bg-accent-dark/5 rounded-lg hover:bg-accent/10 dark:hover:bg-accent-dark/10 transition-colors group"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-accent dark:text-accent-dark group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-700 dark:text-gray-300">{websites.visit || 'Visit website'}</span>
+                  </a>
+                )}
 
-                <a
-                  href={website.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
-                >
-                  <FontAwesomeIcon
-                    icon={faCode}
-                    className="text-gray-600 dark:text-gray-300 group-hover:scale-110 transition-transform"
-                  />
-                  <span className="text-gray-700 dark:text-gray-300">
-                    View source code
-                  </span>
-                </a>
+                {website.github && (
+                  <a
+                    href={website.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+                  >
+                    <FontAwesomeIcon icon={faCode} className="text-gray-600 dark:text-gray-300 group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-700 dark:text-gray-300">View source code</span>
+                  </a>
+                )}
 
-                {/* Add this new download link */}
                 {website.documentUrl && (
                   <a
                     href={website.documentUrl}
                     download
                     className="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors group"
                   >
-                    <FontAwesomeIcon
-                      icon={faDownload}
-                      className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"
-                    />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Download documentation
-                    </span>
+                    <FontAwesomeIcon icon={faDownload} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-700 dark:text-gray-300">Download documentation</span>
                   </a>
                 )}
               </div>
             </section>
 
-
             {/* Navigation */}
             <section className="bg-white dark:bg-dark-background-2 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-righteous mb-4">
-                Other Websites
+                {language === 'es' ? 'Otros Sitios Web' : 'Other Websites'}
               </h3>
               <div className="space-y-2">
                 {websiteCards.map((otherWebsite, index) => (
@@ -418,134 +381,142 @@ const WebsiteDetail = () => {
           </div>
         </div>
       </div>
-      {/* Image Gallery Carousel */}
-      {website.gallery && website.gallery.length > 0 && (
-        <section className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
-            <FontAwesomeIcon icon={faImages} className="text-accent dark:text-dark-accent" />
-            Gallery
-          </h2>
 
-          <div className="relative">
-            {/* Main Image */}
-            <div className="relative overflow-hidden rounded-lg mb-4">
-              <img
-                src={website.gallery[currentImageIndex]}
-                alt={`${website.title} - Image ${currentImageIndex + 1}`}
-                className="w-full h-96 object-fill transition-all duration-500 cursor-pointer hover:opacity-90"
-                onClick={() => openModal(currentImageIndex)}
-              />
+      {/* Image Gallery Carousel (Solo si hay galería) */}
+      {galleryImages.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 pb-16">
+          <div className="bg-white dark:bg-dark-background-2 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+            <h2 className="text-2xl font-righteous mb-6 flex items-center gap-3">
+              <FontAwesomeIcon icon={faImages} className="text-accent" />
+              {language === 'es' ? 'Galería' : 'Gallery'}
+            </h2>
 
-              {/* Navigation Arrows */}
-              {website.gallery.length > 1 && (
-                <>
-                  <button
-                    onClick={prevImage}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
-                  >
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                  </button>
-                  <button
-                    onClick={nextImage}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300"
-                  >
-                    <FontAwesomeIcon icon={faChevronRight} />
-                  </button>
-                </>
-              )}
-
-              {/* Image Counter */}
-              <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                {currentImageIndex + 1} / {website.gallery.length}
-              </div>
-
-              {/* Click to expand hint */}
-              <div className="absolute top-4 left-4 bg-black/50 text-white px-2 py-1 rounded text-xs opacity-75">
-                Click to expand
-              </div>
-            </div>
-
-            {/* Thumbnail Navigation */}
-            {website.gallery.length > 1 && (
-              <div className="flex gap-2 overflow-x-auto pb-2">
-                {website.gallery.map((image, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToImage(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 cursor-pointer hover:opacity-80 ${index === currentImageIndex
-                      ? 'border-accent dark:border-dark-accent'
-                      : 'border-gray-300 dark:border-gray-600 hover:border-accent/50 dark:hover:border-dark-accent/50'
-                      }`}
-                  >
-                    <img
-                      src={image}
-                      alt={`Thumbnail ${index + 1}`}
-                      className="w-full h-full object-fill"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        openModal(index);
-                      }}
-                    />
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Modal */}
-          {isModalOpen && (
-            <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
-              {/* Close button */}
-              <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl z-10 bg-black/50 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
-              >
-                <FontAwesomeIcon icon={faTimes} />
-              </button>
-
-              {/* Modal content */}
-              <div className="relative max-w-7xl max-h-full flex items-center justify-center">
-                {/* Modal image */}
+            <div className="relative">
+              {/* Main Image */}
+              <div className="relative overflow-hidden rounded-lg mb-4 bg-gray-100 dark:bg-gray-800">
                 <img
-                  src={website.gallery[modalImageIndex]}
-                  alt={`${website.title} - Image ${modalImageIndex + 1}`}
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  src={galleryImages[currentImageIndex]}
+                  alt={`${website.title} - Image ${currentImageIndex + 1}`}
+                  className="w-full h-96 object-contain transition-all duration-500 cursor-pointer hover:opacity-90"
+                  onClick={() => openModal(currentImageIndex)}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x600?text=Image+Not+Found';
+                  }}
                 />
 
-                {/* Modal navigation arrows */}
-                {website.gallery.length > 1 && (
+                {/* Navigation Arrows */}
+                {galleryImages.length > 1 && (
                   <>
                     <button
-                      onClick={prevModalImage}
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 text-xl"
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
                     >
                       <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                     <button
-                      onClick={nextModalImage}
-                      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 text-xl"
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
                     >
                       <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                   </>
                 )}
 
-                {/* Modal image counter */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
-                  {modalImageIndex + 1} / {website.gallery.length}
+                {/* Image Counter */}
+                <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                  {currentImageIndex + 1} / {galleryImages.length}
+                </div>
+
+                {/* Click to expand hint */}
+                <div className="absolute top-4 left-4 bg-black/50 text-white px-2 py-1 rounded text-xs opacity-75">
+                  {language === 'es' ? 'Clic para ampliar' : 'Click to expand'}
                 </div>
               </div>
 
-              {/* Click outside to close */}
-              <div
-                className="absolute inset-0 -z-10"
-                onClick={closeModal}
-              ></div>
+              {/* Thumbnail Navigation */}
+              {galleryImages.length > 1 && (
+                <div className="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
+                  {galleryImages.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToImage(index)}
+                      className={`flex-shrink-0 w-24 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 cursor-pointer hover:opacity-80 ${
+                        index === currentImageIndex
+                          ? 'border-accent dark:border-accent-dark'
+                          : 'border-gray-300 dark:border-gray-600 hover:border-accent/50 dark:hover:border-accent-dark/50'
+                      }`}
+                    >
+                      <img
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = 'https://via.placeholder.com/100x100?text=Err';
+                        }}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </section>
       )}
 
+      {/* Modal */}
+      {isModalOpen && galleryImages.length > 0 && (
+        <div 
+          className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
+          onClick={closeModal}
+        >
+          {/* Close button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              closeModal();
+            }}
+            className="absolute top-4 right-4 text-white hover:text-accent text-3xl z-10 bg-black/50 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300"
+          >
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+
+          {/* Modal content */}
+          <div 
+            className="relative max-w-7xl max-h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal image */}
+            <img
+              src={galleryImages[modalImageIndex]}
+              alt={`${website.title} - Image ${modalImageIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+            />
+
+            {/* Modal navigation arrows */}
+            {galleryImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevModalImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full transition-all duration-300 text-xl"
+                >
+                  <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+                <button
+                  onClick={nextModalImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full transition-all duration-300 text-xl"
+                >
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+              </>
+            )}
+
+            {/* Modal image counter */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
+              {modalImageIndex + 1} / {galleryImages.length}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
