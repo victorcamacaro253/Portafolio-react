@@ -42,7 +42,7 @@
       "en": {
         "title": "About me",
         "span": "Hello, I'm Victor Camacaro",
-        "presentation": "Systems Engineer and Full-Stack Developer specializing in the intersection of software engineering, applied AI, and autonomous robotics. I master a modern stack ranging from scalable web architectures (TypeScript, React, Node.js) to advanced computer vision pipelines and optimization (Python, OR-Tools, SimPy, YOLOv8).\n\nI have led the development of high-impact solutions, including a **Port Terminal Digital Twin** (discrete event simulation and 3D rendering), a **Last-Mile Delivery Optimizer** with hybrid AI (Q-Learning and H3), and a **Perception and Safe Navigation System for Autonomous Robots**. The latter fuses multimodal detection (YOLOv8, MediaPipe), state estimation (Kalman Filter), and Artificial Potential Fields (APF) path planning to achieve mathematically optimal, context-aware collision avoidance.\n\n💡 My approach goes beyond writing code: I translate real-world constraints (safety, sustainability, SLAs) into deterministic, modular, and scalable software architectures. I thrive on solving high-complexity algorithmic problems and building systems that transform operational decision-making.",
+        "presentation": "Systems Engineer and Full-Stack Developer specializing in the intersection of software engineering, applied AI, and autonomous robotics. I master a modern stack ranging from scalable web architectures (TypeScript, React, Node.js) to advanced computer vision pipelines and optimization (Python, OR-Tools, SimPy, YOLOv8).\n\nI have led the development of high-impact solutions, including a Port Terminal Digital Twin (discrete event simulation and 3D rendering), a Last-Mile Delivery Optimizer with hybrid AI (Q-Learning and H3), and a Perception and Safe Navigation System for Autonomous Robots. The latter fuses multimodal detection (YOLOv8, MediaPipe), state estimation (Kalman Filter), and Artificial Potential Fields (APF) path planning to achieve mathematically optimal, context-aware collision avoidance.\n\n💡 My approach goes beyond writing code: I translate real-world constraints (safety, sustainability, SLAs) into deterministic, modular, and scalable software architectures. I thrive on solving high-complexity algorithmic problems and building systems that transform operational decision-making.",
         "birthdateWord": "Birthdate",
         "birthdate": "30-03-1999",
         "phoneWord": "Phone",
@@ -494,10 +494,23 @@
             "description": "Complete mobile application for booking movie tickets with film selection, showtimes, seat picking and integrated payment, built with React Native.",
             "detailedDescription": "CineBook is a mobile application developed with React Native that provides a complete solution for movie ticket booking. The app offers:\n\nUser Experience:\n- Movie catalog with filters by genre, rating and release date\n- Real-time booking system with visual seat selection\n- Google Maps integration for locating nearby theaters\n- Secure payment gateway with Stripe\n- Food/drink combo management\n- Secure authentication with JWT\n\nKey Technologies:\n- Frontend: React Native with Expo\n- State Management: Redux Toolkit\n- Navigation: React Navigation\n- Authentication: JWT with refresh tokens\n- Payments: Stripe SDK integration\n- Geolocation: Google Maps API for React Native\n\nTechnical Features:\n- Modular and scalable architecture\n- Performance optimization for mobile devices\n- Smooth animations for seat selection\n- Real-time synchronization using sockets\n- Responsive design for different screen sizes",
             "gallery": [
-              "../../assets/images/movie-app1.png",
-              "../../assets/images/movie-app2.png",
-              "../../assets/images/movie-app3.png",
-              "../../assets/images/movie-app4.png"
+               "/assets/images/cine-app/appImage1.jpg",
+                 "/assets/images/cine-app/headerhero.jpg",
+              "/assets/images/cine-app/logo-cinebook.JPG",
+              "/assets/images/cine-app/appImage2.jpg",
+              "/assets/images/cine-app/appImage3.jpg",
+              "/assets/images/cine-app/appImage4.jpg",
+              "/assets/images/cine-app/appImage5.jpg",
+               "/assets/images/cine-app/appImage6.jpg",
+              "/assets/images/cine-app/appImage7.jpg",
+              "/assets/images/cine-app/appImage8.jpg",
+               "/assets/images/cine-app/appImage9.jpg",
+              "/assets/images/cine-app/appImage10.jpg",
+               "/assets/images/cine-app/appImage12.jpg",
+              "/assets/images/cine-app/appImage13.jpg",
+              "/assets/images/cine-app/appImage14.jpg",
+               "/assets/images/cine-app/appImage15.jpg"
+               
             ],
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/cinema_booking_app",
@@ -546,7 +559,7 @@
             "index": "box-office-api",
             "description": "REST API built with NestJS that provides real-time box office data, rankings, and comparative analysis between U.S. and global markets.",
             "detailedDescription": "Box Office API is a modern and scalable solution developed with NestJS for movie enthusiasts, developers, and data analysts. This REST API offers real-time access to detailed information about movie performance at the box office.\n\nKey features:\n- Weekend top movies ranking (U.S.)\n- Historical daily box office data for trend analysis\n- Comparative insights between U.S. and international earnings\n- Easy integration with frontends, bots, or dashboards\n- Interactive documentation with Swagger UI for live testing\n\nThe API includes an automatic caching system using Redis to optimize performance and reduce unnecessary requests to external sources. It's perfect for building cinema newsletters, Discord/Telegram bots, analytical dashboards, or academic projects on film trends.\n\nBuilt with best practices: modular architecture, dependency injection, response validation, and centralized error handling. 100% open source and ready to integrate into any project.",
-            "image": "../../assets/images/box_office_api.png",
+            "image": "/assets/images/api-box.png",
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/box-office-scrape-api",
             "features": [
@@ -836,7 +849,114 @@
               "/assets/images/cinebook-sistem/16.webp",
               "/assets/images/cinebook-sistem/17.webp"
             ]
-      }
+      },
+      
+                {
+            "title": "Aventureate - Plataforma Integral de Viajes y Turismo",
+            "index": "aventureate",
+            "description": "Plataforma web integral de descubrimiento y planificación de viajes, con mapas interactivos, guías de destinos, rutas turísticas, gastronomía y un planificador de itinerarios impulsado por Inteligencia Artificial.",
+            "detailedDescription": "Aventureate es un ecosistema digital completo diseñado para transformar la manera en que las personas descubren y planifican sus viajes. La plataforma combina mapas interactivos con Google Maps, guías detalladas de países y ciudades, rutas turísticas curadas, directorios de gastronomía y experiencias locales. Su característica más destacada es un Planificador de Itinerarios con IA que genera viajes personalizados paso a paso según el presupuesto, duración, estilo de viaje e intereses del usuario. Desarrollado con una arquitectura moderna y escalable, ofrece una experiencia de usuario fluida, responsiva y visualmente atractiva.",
+            "objective": "Centralizar toda la información necesaria para planificar un viaje en una sola plataforma intuitiva, eliminando la fragmentación de información y ofreciendo herramientas avanzadas (como la IA y mapas interactivos) para crear experiencias de viaje personalizadas, seguras y memorables.",
+            "intendedFor": "Viajeros independientes, familias, mochileros, agentes de turismo y cualquier persona que busque descubrir nuevos destinos, planificar rutas optimizadas o encontrar experiencias gastronómicas y culturales auténticas en cualquier parte del mundo.",
+            "documentUrl": "",
+            "observations": "El planificador de IA utiliza actualmente datos simulados (mock) para la demostración del flujo de usuario. La integración con APIs de IA en tiempo real y bases de datos dinámicas está en la hoja de ruta de desarrollo.",
+            "url": "https://aventureate.com",
+            "logo": "/assets/images/aventureate/aventureate_logo.PNG",
+            "github": "https://github.com/victorcamacaro253/aventureate",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "React Router",
+              "Google Maps API",
+              "Swiper",
+              "Lucide React",
+              "FontAwesome",
+              "JSON Data Modeling"
+            ],
+            "features": [
+              "Mapas interactivos con Google Maps y cálculo de rutas en tiempo real",
+              "Guías detalladas de países y ciudades con clima, cultura y transporte",
+              "Catálogo de rutas turísticas y tours mundiales con filtros avanzados",
+              "Directorio de gastronomía y restaurantes con menús, precios y reseñas",
+              "Planificador de viajes con Inteligencia Artificial (IA) en 6 pasos",
+              "Sistema de filtrado y búsqueda por intereses, presupuesto y dificultad",
+              "Diseño 100% responsivo con modo oscuro y animaciones fluidas",
+              "Arquitectura modular y escalable preparada para integración con backend"
+            ],
+            "challenges": [
+              "Gestionar y estructurar grandes volúmenes de datos JSON de forma eficiente y tipada",
+              "Integrar la API de Google Maps con marcadores personalizados, clusters y rutas dinámicas",
+              "Diseñar un flujo de usuario (UX) intuitivo para el planificador de IA de múltiples pasos",
+              "Mantener el rendimiento y la velocidad de carga con múltiples carruseles de imágenes y mapas",
+              "Asegurar la consistencia visual y funcional entre decenas de componentes y vistas anidadas"
+            ],
+            "gallery": [
+              "/assets/images/aventureate/aventureate1.webp",
+              "/assets/images/aventureate/aventureate2.webp",
+              "/assets/images/aventureate/aventureate3.webp",
+              "/assets/images/aventureate/aventureate4.webp",
+              "/assets/images/aventureate/aventureate5.webp",
+              "/assets/images/aventureate/aventureate6.webp",
+               "/assets/images/aventureate/aventureate7.webp",
+              "/assets/images/aventureate/aventureate8.webp",
+              "/assets/images/aventureate/aventureate9.webp",
+              "/assets/images/aventureate/aventureate10.webp",
+              "/assets/images/aventureate/aventureate11.webp",
+              "/assets/images/aventureate/aventureate12.webp",
+              "/assets/images/aventureate/aventureate13.webp",
+              "/assets/images/aventureate/aventureate14.webp",
+              "/assets/images/aventureate/aventureate15.webp",
+              "/assets/images/aventureate/aventureate16.webp",
+              "/assets/images/aventureate/aventureate17.webp",
+              "/assets/images/aventureate/aventureate18.webp"
+            ]
+          },
+                    {
+            "title": "IDEAPU - Gestión de Vallas Publicitarias",
+            "index": "ideapu",
+            "description": "Plataforma web integral para la gestión, visualización y reserva de vallas publicitarias, con catálogo interactivo, mapa de ubicaciones y panel de administración completo.",
+            "detailedDescription": "IDEAPU es una solución digital completa diseñada para optimizar el alquiler de espacios publicitarios exteriores. El sistema ofrece un catálogo público con filtros avanzados (ubicación, tamaño, precio), un mapa interactivo para visualizar la disponibilidad de las vallas en tiempo real, y un robusto panel de administración. Este panel permite gestionar el inventario, clientes, reservas (con cálculo automático de precios por días/meses) y control de usuarios con roles, todo respaldado por una base de datos en Supabase.",
+            "objective": "Digitalizar y agilizar el proceso de comercialización de vallas publicitarias, facilitando a los clientes la búsqueda de ubicaciones estratégicas y proporcionando a los administradores una herramienta centralizada para controlar el inventario, las finanzas y los clientes.",
+            "intendedFor": "Agencias de publicidad, empresas que buscan espacios publicitarios exteriores, y administradores de redes de vallas que requieren una gestión operativa eficiente, segura y profesional.",
+            "documentUrl": "",
+            "observations": "El panel de administración incluye funcionalidades avanzadas como exportación de datos a Excel, cálculo automático de duración y costos de reserva, y gestión de estados (Pendiente, Pagado, Cancelado) con prevención de conflictos de fechas.",
+            "url": "https://ideapu.com",
+            "logo": "/assets/images/ideapu/ideapu-logo.webp",
+            "github": "https://github.com/victorcamacaro253/ideapu",
+            "technologies": [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Supabase",
+              "React Router",
+              "React Leaflet",
+              "Lucide React",
+              "date-fns"
+            ],
+            "features": [
+              "Catálogo público de vallas con filtros avanzados (ciudad, tamaño, precio, disponibilidad)",
+              "Mapa interactivo con marcadores dinámicos de disponibilidad (verde/rojo)",
+              "Panel de administración completo con autenticación segura y roles de usuario",
+              "Gestión de reservas con cálculo automático de costos (instalación + mensualidad)",
+              "Exportación de datos de reservas y clientes a formato Excel",
+              "Diseño 100% responsivo y optimizado para todos los dispositivos"
+            ],
+            "challenges": [
+              "Implementar la lógica de cálculo de precios y duración de reservas basada en rangos de fechas dinámicos",
+              "Integrar mapas interactivos con marcadores que reflejen el estado de disponibilidad en tiempo real",
+              "Diseñar un flujo de administración de reservas que prevenga conflictos de fechas (overbooking)",
+              "Asegurar un control de acceso robusto (RLS) y seguro para los diferentes roles de usuario en Supabase"
+            ],
+            "gallery": [
+              "/assets/images/creativa-publicidad/1.jpg",
+              "/assets/images/creativa-publicidad/2.jpg",
+              "/assets/images/creativa-publicidad/3.jpg",
+              "/assets/images/creativa-publicidad/4.jpg",
+              "/assets/images/creativa-publicidad/5.jpg"
+            ]
+          }
         ]
       },
       "en": {
@@ -861,7 +981,7 @@
             "documentUrl": "/Comprehensive-Medica-Management-System.pdf",
             "observations": "The website that is available is a demonstration of the informational part of the system; the administration and management part for patients and doctors is not available on the website.",
             "url": "https://medicare-websitedemo.netlify.app",
-            "logo": "url",
+            "logo": "/assets/images/medicare/medicare.png",
             "github": "https://github.com/victorcamacaro253/medicare-system ",
             "technologies": [
               "React",
@@ -904,7 +1024,7 @@
             "intendedFor": "Film enthusiasts, series fans, entertainment lovers, and anyone interested in detailed data about movies and audiovisual productions.",
             "documentUrl": "",
             "url": "https://cineverseonline.netlify.app ",
-            "logo": "url",
+            "logo": "/assets/images/cineverse.JPG",
             "github": "",
             "technologies": [
               "React",
@@ -967,7 +1087,7 @@
             "intendedFor": "Clients interested in quality livestock, tourists, environmental institutions, students, sustainable farmers, and the general public interested in ecotourism and responsible agricultural production.",
             "documentUrl": "",
             "url": "https://villablancaweb.netlify.app",
-            "logo": "images/villablanca-logo.png",
+            "logo": "/assets/images/villa-blanca/img5.jpg",
             "github": "",
             "technologies": [
               "React",
@@ -1014,7 +1134,7 @@
         "intendedFor": "Cinema chains looking for an integrated booking solution, moviegoers who want a convenient way to book tickets online, and cinema administrators who need management tools for their locations.",
         "documentUrl": "",
         "url": "",
-        "logo": "url",
+        "logo":  "/assets/images/cinebook-sistem/logo_cinebook.webp",
         "github": "",
         "technologies": [
           "React",
@@ -1067,7 +1187,113 @@
               "/images/cinebook-sistem/16.webp",
               "/images/cinebook-sistem/17.webp"
             ]
-      }
+      },
+                {
+            "title": "Aventureate - Comprehensive Travel & Tourism Platform",
+            "index": "aventureate",
+            "description": "Comprehensive web platform for travel discovery and planning, featuring interactive maps, destination guides, tourist routes, gastronomy, and an AI-powered itinerary planner.",
+            "detailedDescription": "Aventureate is a complete digital ecosystem designed to transform the way people discover and plan their trips. The platform combines interactive Google Maps, detailed country and city guides, curated tourist routes, gastronomy directories, and local experiences. Its standout feature is an AI-Powered Itinerary Planner that generates personalized, step-by-step trips based on the user's budget, duration, travel style, and interests. Built with a modern and scalable architecture, it delivers a smooth, responsive, and visually appealing user experience.",
+            "objective": "To centralize all the information needed to plan a trip into a single intuitive platform, eliminating information fragmentation and providing advanced tools (like AI and interactive maps) to create personalized, safe, and memorable travel experiences.",
+            "intendedFor": "Independent travelers, families, backpackers, tourism agents, and anyone looking to discover new destinations, plan optimized routes, or find authentic gastronomic and cultural experiences anywhere in the world.",
+            "documentUrl": "",
+            "observations": "The AI planner currently uses mock data to demonstrate the user flow. Integration with real-time AI APIs and dynamic databases is on the development roadmap.",
+            "url": "https://aventureate.com",
+            "logo": "/assets/images/aventureate/aventureate_logo.PNG",
+            "github": "https://github.com/victorcamacaro253/aventureate",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Tailwind CSS",
+              "React Router",
+              "Google Maps API",
+              "Swiper",
+              "Lucide React",
+              "FontAwesome",
+              "JSON Data Modeling"
+            ],
+            "features": [
+              "Interactive maps with Google Maps and real-time route calculation",
+              "Detailed country and city guides with weather, culture, and transport info",
+              "Catalog of tourist routes and world tours with advanced filtering",
+              "Gastronomy and restaurant directory with menus, prices, and reviews",
+              "6-step AI-powered travel itinerary planner",
+              "Search and filtering system by interests, budget, and difficulty",
+              "100% responsive design with dark mode and smooth animations",
+              "Modular and scalable architecture ready for backend integration"
+            ],
+            "challenges": [
+              "Efficiently managing and structuring large volumes of typed JSON data",
+              "Integrating Google Maps API with custom markers, clusters, and dynamic routes",
+              "Designing an intuitive UX flow for the multi-step AI trip planner",
+              "Maintaining performance and load speed with multiple image carousels and maps",
+              "Ensuring visual and functional consistency across dozens of nested components and views"
+            ],
+            "gallery": [
+                "/assets/images/aventureate/aventureate1.webp",
+              "/assets/images/aventureate/aventureate2.webp",
+              "/assets/images/aventureate/aventureate3.webp",
+              "/assets/images/aventureate/aventureate4.webp",
+              "/assets/images/aventureate/aventureate5.webp",
+              "/assets/images/aventureate/aventureate6.webp",
+               "/assets/images/aventureate/aventureate7.webp",
+              "/assets/images/aventureate/aventureate8.webp",
+              "/assets/images/aventureate/aventureate9.webp",
+              "/assets/images/aventureate/aventureate10.webp",
+              "/assets/images/aventureate/aventureate11.webp",
+              "/assets/images/aventureate/aventureate12.webp",
+              "/assets/images/aventureate/aventureate13.webp",
+              "/assets/images/aventureate/aventureate14.webp",
+              "/assets/images/aventureate/aventureate15.webp",
+              "/assets/images/aventureate/aventureate16.webp",
+              "/assets/images/aventureate/aventureate17.webp",
+              "/assets/images/aventureate/aventureate18.webp"
+            ]
+          },
+                    {
+            "title": "IDEAPU - Billboard Management System",
+            "index": "ideapu",
+            "description": "Comprehensive web platform for the management, visualization, and reservation of billboards, featuring an interactive catalog, location map, and a complete admin dashboard.",
+            "detailedDescription": "IDEAPU is a complete digital solution designed to optimize the rental of outdoor advertising spaces. The system offers a public catalog with advanced filters (location, size, price), an interactive map to visualize billboard availability in real-time, and a robust administration panel. This panel allows managing inventory, clients, reservations (with automatic price calculation by days/months), and user role control, all backed by a Supabase database.",
+            "objective": "To digitize and streamline the commercialization process of billboards, making it easier for clients to find strategic locations and providing administrators with a centralized tool to control inventory, finances, and clients.",
+            "intendedFor": "Advertising agencies, companies seeking outdoor advertising spaces, and billboard network administrators who require efficient, secure, and professional operational management.",
+            "documentUrl": "",
+            "observations": "The admin panel includes advanced features such as Excel data export, automatic duration and cost calculation for reservations, and status management (Pending, Paid, Cancelled) with date conflict prevention.",
+            "url": "https://ideapu.com",
+            "logo": "/assets/images/ideapu/ideapu-logo.webp",
+            "github": "https://github.com/victorcamacaro253/creativa-publicidad",
+            "technologies": [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Supabase",
+              "React Router",
+              "React Leaflet",
+              "Lucide React",
+              "date-fns"
+            ],
+            "features": [
+              "Public billboard catalog with advanced filters (city, size, price, availability)",
+              "Interactive map with dynamic availability markers (green/red)",
+              "Complete admin dashboard with secure authentication and role-based access",
+              "Reservation management with automatic cost calculation (installation + monthly)",
+              "Excel data export for reservations and clients",
+              "100% responsive design optimized for all devices"
+            ],
+            "challenges": [
+              "Implementing date-range-based pricing and reservation duration logic",
+              "Integrating interactive maps with markers reflecting real-time availability status",
+              "Designing a reservation management flow that prevents date conflicts (overbooking)",
+              "Ensuring robust and secure access control (RLS) for different user roles in Supabase"
+            ],
+            "gallery": [
+              "/assets/images/creativa-publicidad/1.jpg",
+              "/assets/images/creativa-publicidad/2.jpg",
+              "/assets/images/creativa-publicidad/3.jpg",
+              "/assets/images/creativa-publicidad/4.jpg",
+              "/assets/images/creativa-publicidad/5.jpg"
+            ]
+          }
         ]
       }
     }
