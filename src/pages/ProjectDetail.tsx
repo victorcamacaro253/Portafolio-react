@@ -76,9 +76,7 @@ const ProjectDetail = () => {
               src={mainImage}
               alt={project.title}
               className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x600?text=Project+Image';
-              }}
+             
             />
           </div>
 
