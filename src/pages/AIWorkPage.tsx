@@ -8,7 +8,7 @@ import {
   faLightbulb, faChartLine, faCogs, faExpand,
   faArrowRight
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub as faGithubBrand } from '@fortawesome/free-brands-svg-icons';
+
 
 const AIWorkPage = () => {
   const { language, texts } = useContext(LanguageContext);

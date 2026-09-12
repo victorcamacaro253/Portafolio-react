@@ -1,13 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, faDatabase, faRobot, faBrain, 
-  faCube, faMapMarkedAlt, faChartLine,
-  faServer, faProjectDiagram, faEye
+   faDatabase, faRobot, faBrain, 
+  
 } from '@fortawesome/free-solid-svg-icons';
 import { 
-  faDocker, faJs, faReact, faNode, 
+   faReact, 
   faPython, faCloudflare, faAws, 
-  faGoogle, faGithub,
+   faGithub,
   faNodeJs
 } from '@fortawesome/free-brands-svg-icons';
 import typeScript from '../assets/images/ts-logo-512.png';
