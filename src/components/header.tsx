@@ -34,7 +34,7 @@ const Header = () => {
     { label: 'Sobre mí', href: '/#sobre-mi' },
     { label: 'Skills', href: '/#skills' },
     { label: 'Proyectos', href: '/projects' },
-    { label: 'IA & Optimización', href: '/ai-work' },
+    { label: 'IA & Optimización', href: '/ia' },
     { label: 'Contacto', href: '/#contacto' },
   ];
 
