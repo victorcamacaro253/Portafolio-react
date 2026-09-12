@@ -114,7 +114,7 @@ const AIProjectsSection = () => {
 
                 {/* CTA */}
                 <Link
-                  to="/ia"
+                  to={`/ia/${project.id}`}
                   className="inline-flex items-center gap-2 text-accent dark:text-accent-dark font-semibold hover:gap-3 transition-all group/link"
                 >
                   {language === 'es' ? 'Ver detalles completos' : 'View full details'}

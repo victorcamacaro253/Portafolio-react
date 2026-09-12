@@ -742,7 +742,7 @@
             "intendedFor": "Cinéfilos, fanáticos de las series, entusiastas del entretenimiento y cualquier persona interesada en datos detallados sobre películas y producciones audiovisuales.",
             "documentUrl": "",
             "url": "https://cineverseonline.netlify.app ",
-            "logo": "/images/cineverse.JPG",
+            "logo": "/images/cineverse/cineverse.jpg",
             "github": "",
             "technologies": [
               "React",
@@ -1373,6 +1373,17 @@
           "duration": "6 meses",
           "shortDescription": "Simulador de operaciones portuarias inspirado en PSA Singapore que combina 6 ramas de IA en una sola plataforma.",
           "fullDescription": "Sistema que modela operaciones de terminales de contenedores combinando optimización matemática (OR-Tools CP-SAT), heurísticas avanzadas (Large Neighborhood Search), simulación de eventos discretos (SimPy), Berth Allocation Problem dinámico, enrutamiento geoespacial (OSMnx + NetworkX) y visualización 3D profesional (Three.js + WebGL).",
+          "businessValue": [
+            "Maximiza la cantidad de barcos atendidos sin necesidad de construir nueva infraestructura física.",
+            "Reduce drásticamente los costos operativos y las multas por estadía (demurrage) de los barcos.",
+            "Mide y reduce la huella de carbono, asegurando el cumplimiento de normativas ambientales globales."
+          ],
+          "keyBenefits": [
+            "Reduce los tiempos de espera de los barcos, evitando multas por estadía.",
+            "Optimiza el uso de grúas y camiones, disminuyendo el desgaste y el consumo de combustible.",
+            "Previene cuellos de botella antes de que ocurran mediante simulación predictiva.",
+            "Cumplimiento de normativas ambientales al medir y reducir las emisiones de CO2 por contenedor."
+          ],
           "impact": [
             "22 barcos procesados en 3 olas dinámicas",
             "880 jobs procesados en 4 terminales reales",
@@ -1439,6 +1450,17 @@
           "duration": "4 meses",
           "shortDescription": "Simulador logístico inspirado en Amazon Robotics que combina A*, TSP, coordinación multi-agente y métricas de negocio.",
           "fullDescription": "Sistema que modela operaciones reales de fulfillment centers combinando algoritmos clásicos de IA (A* con espacio-tiempo, TSP), coordinación multi-agente con evitación de colisiones, gestión energética realista con estaciones de carga dedicadas, y una capa de métricas de negocio (KPIs, SLA, P&L) que traduce decisiones operativas en impacto financiero.",
+           "businessValue": [
+          "Garantiza que la inversión en robots de almacén sea rentable, evitando colisiones y agotamiento de baterías antes de comprar el hardware.",
+          "Asegura el cumplimiento de los tiempos de entrega (SLA), evitando penalizaciones con los clientes finales.",
+          "Proporciona claridad financiera total al traducir cada movimiento robótico en costos y ganancias reales."
+          ],
+         "keyBenefits": [
+          "Cero interrupciones por robots sin batería gracias a la recarga inteligente programada.",
+          "Garantía de cumplimiento de pedidos a tiempo, mejorando la satisfacción del cliente.",
+          "Cálculo claro del Retorno de Inversión (ROI) simulando costos operativos reales.",
+          "Reducción del desgaste de la flota al evitar rutas innecesarias o conflictivas."
+          ],
           "impact": [
             "Rutas conflict-free garantizadas matemáticamente",
             "Reasignación automática de paquetes huérfanos",
@@ -1502,6 +1524,17 @@
           "duration": "5 meses",
           "shortDescription": "Optimizador de última milla inspirado en Amazon que integra OR-Tools, ML, RL, H3 y teoría de grafos.",
           "fullDescription": "Sistema de optimización de rutas de última milla que combina 5 ramas de IA: Optimización Matemática (OR-Tools), Machine Learning Supervisado (Random Forest), Reinforcement Learning (Q-Learning), Indexación Geoespacial (H3 de Uber) y Teoría de Grafos (NetworkX). Modela 10 depósitos reales de Amazon en Los Ángeles con flota heterogénea (Rivian EDV, Ford Transit, Amazon Flex).",
+          "businessValue": [
+          "Permite realizar más entregas por día con menos vehículos y menor consumo de energía, adaptándose al tráfico en tiempo real.",
+          "Maximiza el uso de la flota eléctrica, asegurando que los vehículos nunca se queden sin batería en ruta.",
+          "Reduce significativamente los costos de combustible y mantenimiento mediante la consolidación inteligente de pedidos."
+          ],
+          "keyBenefits": [
+          "Reducción drástica de costos de combustible y mantenimiento de la flota.",
+          "Aumento del número de entregas exitosas por conductor por día.",
+          "Adaptación en tiempo real a cierres de vías o tráfico imprevisto.",
+          "Maximización del uso de vehículos eléctricos sin riesgo de quedarse sin batería."
+          ],
           "impact": [
             "100% On-Time Delivery en simulaciones",
             "~92% de rutas asignadas a vehículos eléctricos",
@@ -1529,7 +1562,7 @@
           ],
           "link": "https://github.com/victorcamacaro253/delivery-route-optimizer",
           "image": "/images/ia/last-mile-delivery-1.webp",
-            "context": {
+          "context": {
           "problem": "Los simuladores de VRP tradicionales ignoran restricciones del mundo real como la autonomía de vehículos eléctricos, el tráfico dinámico y la llegada de pedidos en tiempo real.",
           "solution": "Desarrollé un sistema híbrido que combina OR-Tools para la optimización base, con un agente de Q-Learning para despacho dinámico y un modelo de Random Forest para predecir tiempos de viaje reales."
         },
@@ -1566,6 +1599,17 @@
           "duration": "4 meses",
           "shortDescription": "Sistema de visión computacional para robots autónomos con conciencia situacional avanzada y evasión matemáticamente óptima.",
           "fullDescription": "Sistema de seguridad y navegación basado en visión computacional que posee conciencia situacional avanzada: estima profundidad monocular, analiza pose y gestos corporales humanos, diferencia entre personas, mascotas y obstáculos estáticos, y ejecuta maniobras de evasión fluidas mediante Campos Potenciales Artificiales (APF), todo orquestado mediante arquitectura concurrente y Hardware Abstraction Layer (HAL).",
+          "businessValue": [
+          "Hace que los robots autónomos sean seguros para operar alrededor de humanos sin necesidad de costosos sensores LIDAR.",
+          "Previene accidentes y responsabilidades legales al detectar gestos humanos, caídas o movimientos impredecibles.",
+          "Reduce drásticamente los costos de hardware al utilizar cámaras estándar y software de visión inteligente."
+          ],
+         "keyBenefits": [
+          "Reducción significativa de costos de hardware (usa cámaras en lugar de LIDAR costoso).",
+          "Prevención de accidentes y responsabilidades legales al entender el contexto humano.",
+          "Movimiento fluido y natural que no interrumpe el flujo de trabajo de las personas.",
+          "Funcionamiento confiable incluso en entornos dinámicos y con cambios de luz."
+          ],
           "impact": [
             "Evasiones fluidas sin mínimos locales",
             "Detección de 10 gestos corporales en tiempo real",
@@ -1641,6 +1685,17 @@
           "duration": "6 months",
           "shortDescription": "Port operations simulator inspired by PSA Singapore combining 6 branches of AI in a single platform.",
           "fullDescription": "System that models container terminal operations combining mathematical optimization (OR-Tools CP-SAT), advanced heuristics (Large Neighborhood Search), discrete event simulation (SimPy), dynamic Berth Allocation Problem, geospatial routing (OSMnx + NetworkX), and professional 3D visualization (Three.js + WebGL).",
+          "businessValue": [
+          "Maximizes the number of ships served without the need to build new physical infrastructure.",
+          "Drastically reduces operational costs and ship demurrage penalties.",
+          "Measures and reduces the carbon footprint, ensuring compliance with global environmental regulations."
+          ],
+          "keyBenefits": [
+          "Reduces ship waiting times, avoiding demurrage penalties.",
+          "Optimizes the use of cranes and trucks, reducing wear and fuel consumption.",
+          "Prevents bottlenecks before they occur through predictive simulation.",
+          "Ensures environmental compliance by measuring and reducing CO2 emissions per container."
+         ],
           "impact": [
             "22 ships processed in 3 dynamic waves",
             "880 jobs processed across 4 real terminals",
@@ -1706,6 +1761,17 @@
           "duration": "4 months",
           "shortDescription": "Logistics simulator inspired by Amazon Robotics combining A*, TSP, multi-agent coordination, and business metrics.",
           "fullDescription": "System that models real fulfillment center operations combining classical AI algorithms (space-time A*, TSP), multi-agent coordination with collision avoidance, realistic energy management with dedicated charging stations, and a business metrics layer (KPIs, SLA, P&L) that translates operational decisions into financial impact.",
+          "businessValue": [
+          "Ensures that the investment in warehouse robots is profitable by preventing collisions and battery depletion before purchasing hardware.",
+          "Guarantees delivery time compliance (SLA), avoiding penalties with end customers.",
+          "Provides total financial clarity by translating every robotic movement into real costs and profits."
+          ],
+          "keyBenefits": [
+          "Zero interruptions from out-of-battery robots thanks to smart scheduled recharging.",
+          "Guaranteed on-time order fulfillment, improving customer satisfaction.",
+          "Clear Return on Investment (ROI) calculation by simulating real operational costs.",
+          "Reduces fleet wear and tear by avoiding unnecessary or conflicting routes."
+          ],
           "impact": [
             "Mathematically guaranteed conflict-free routes",
             "Automatic orphan package reassignment",
@@ -1769,6 +1835,17 @@
           "duration": "5 months",
           "shortDescription": "Last-mile route optimizer inspired by Amazon integrating OR-Tools, ML, RL, H3, and graph theory.",
           "fullDescription": "Last-mile route optimization system combining 5 branches of AI: Mathematical Optimization (OR-Tools), Supervised Machine Learning (Random Forest), Reinforcement Learning (Q-Learning), Geospatial Indexing (Uber H3), and Graph Theory (NetworkX). Models 10 real Amazon delivery stations in Los Angeles with heterogeneous fleet (Rivian EDV, Ford Transit, Amazon Flex).",
+          "businessValue": [
+          "Enables more deliveries per day with fewer vehicles and lower energy consumption, adapting to real-time traffic.",
+          "Maximizes the use of the electric fleet, ensuring vehicles never run out of battery on route.",
+          "Significantly reduces fuel and maintenance costs through intelligent order consolidation."
+          ],
+          "keyBenefits": [
+          "Drastic reduction in fleet fuel and maintenance costs.",
+          "Increased number of successful deliveries per driver per day.",
+          "Real-time adaptation to road closures or unexpected traffic.",
+          "Maximized use of electric vehicles with zero risk of running out of battery."
+          ],
           "impact": [
             "100% On-Time Delivery in simulations",
             "~92% of routes assigned to electric vehicles",
@@ -1834,6 +1911,17 @@
           "duration": "4 months",
           "shortDescription": "Computer vision system for autonomous robots with advanced situational awareness and mathematically optimal evasion.",
           "fullDescription": "Computer vision-based safety and navigation system with advanced situational awareness: estimates monocular depth, analyzes human pose and body gestures, differentiates between people, pets, and static obstacles, and executes smooth evasion maneuvers using Artificial Potential Fields (APF), all orchestrated through concurrent architecture and Hardware Abstraction Layer (HAL).",
+          "businessValue": [
+          "Makes autonomous robots safe to operate around humans without the need for expensive LIDAR sensors.",
+          "Prevents accidents and legal liabilities by detecting human gestures, falls, or unpredictable movements.",
+          "Drastically reduces hardware costs by using standard cameras and intelligent vision software."
+           ],
+          "keyBenefits": [
+          "Significant reduction in hardware costs (uses cameras instead of expensive LIDAR).",
+          "Prevention of accidents and legal liabilities by understanding human context.",
+          "Smooth and natural movement that does not disrupt people's workflow.",
+          "Reliable operation even in dynamic environments and changing light conditions."
+           ],
           "impact": [
             "Smooth evasions without local minima",
             "Detection of 10 body gestures in real-time",

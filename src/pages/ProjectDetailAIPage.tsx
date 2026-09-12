@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faArrowLeft, faCheckCircle, faRocket,
   faLightbulb, faChartLine, faExclamationTriangle,
-  faLayerGroup, faImages
+  faLayerGroup, faImages, faCogs, faStar
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub as faGithubBrand } from '@fortawesome/free-brands-svg-icons';
 
@@ -28,14 +28,16 @@ const ProjectDetailPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background-1 dark:bg-dark-background-1">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4 text-text-light dark:text-text-dark">Proyecto no encontrado</h2>
+          <h2 className="text-2xl font-bold mb-4 text-text-light dark:text-text-dark">
+            {language === 'es' ? 'Proyecto no encontrado' : 'Project not found'}
+          </h2>
           <button onClick={() => navigate('/ai-work')} className="text-accent hover:underline">
-            ← Volver a proyectos de IA
+            ← {language === 'es' ? 'Volver a proyectos de IA' : 'Back to AI projects'}
           </button>
         </div>
       </div>
     );
-    }
+  }
 
   return (
     <div className="min-h-screen bg-background-1 dark:bg-dark-background-1 pt-20 pb-20">
@@ -55,7 +57,7 @@ const ProjectDetailPage = () => {
               <div className="inline-flex items-center gap-2 bg-accent/10 dark:bg-accent-dark/10 px-4 py-2 rounded-full mb-6">
                 <FontAwesomeIcon icon={faRocket} className="text-accent dark:text-accent-dark" />
                 <span className="text-sm font-semibold text-accent dark:text-accent-dark">
-                  {project.role || 'Lead Engineer'}
+                  {project.role || (language === 'es' ? 'Ingeniero Principal' : 'Lead Engineer')}
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl font-righteous mb-4 text-text-light dark:text-text-dark leading-tight">
@@ -65,13 +67,13 @@ const ProjectDetailPage = () => {
                 {project.subtitle}
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <div className="bg-white dark:bg-dark-background-2 px-4 py-2 rounded-lg shadow-sm">
+                <div className="bg-white dark:bg-dark-background-2 px-4 py-2 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
                   <span className="text-xs text-gray-500 uppercase">{language === 'es' ? 'Duración' : 'Duration'}</span>
                   <p className="font-bold text-text-light dark:text-text-dark">{project.duration || 'N/A'}</p>
                 </div>
-                <div className="bg-white dark:bg-dark-background-2 px-4 py-2 rounded-lg shadow-sm">
+                <div className="bg-white dark:bg-dark-background-2 px-4 py-2 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
                   <span className="text-xs text-gray-500 uppercase">{language === 'es' ? 'Stack Principal' : 'Main Stack'}</span>
-                  <p className="font-bold text-text-light dark:text-text-dark">{project.technologies.slice(0, 3).join(', ')}</p>
+                  <p className="font-bold text-text-light dark:text-text-dark">{project.technologies?.slice(0, 3).join(', ')}</p>
                 </div>
               </div>
               <a
@@ -100,7 +102,79 @@ const ProjectDetailPage = () => {
 
       <div className="max-w-5xl mx-auto px-4 py-16 space-y-20">
         
-        {/* 1. Contexto: Problema y Solución */}
+        {/* 1. Descripción y Tecnologías */}
+        <section className="grid md:grid-cols-3 gap-8">
+          <div className="md:col-span-2">
+            <h2 className="text-3xl font-righteous mb-6 text-text-light dark:text-text-dark flex items-center gap-3">
+              <FontAwesomeIcon icon={faLightbulb} className="text-accent" />
+              {language === 'es' ? 'Descripción del Proyecto' : 'Project Description'}
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+              {project.fullDescription || project.shortDescription}
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-righteous mb-4 text-text-light dark:text-text-dark flex items-center gap-2">
+              <FontAwesomeIcon icon={faCogs} className="text-accent" />
+              {language === 'es' ? 'Tecnologías' : 'Technologies'}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies?.map((tech: string, idx: number) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark text-sm font-medium rounded-full border border-accent/20 dark:border-accent-dark/20"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 2. Valor para el Negocio y Beneficios Clave */}
+        {(project.businessValue || project.keyBenefits) && (
+          <section className="space-y-10">
+            {/* Business Value */}
+            {project.businessValue && (
+              <div>
+                <h2 className="text-3xl font-righteous mb-6 text-text-light dark:text-text-dark flex items-center gap-3">
+                  <FontAwesomeIcon icon={faLightbulb} className="text-accent" />
+                  {language === 'es' ? 'Valor para el Negocio' : 'Business Value'}
+                </h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {project.businessValue.map((value: string, idx: number) => (
+                    <div key={idx} className="flex items-start gap-3 bg-gradient-to-r from-accent/5 to-accent-dark/5 dark:from-accent-dark/10 dark:to-accent/10 p-5 rounded-xl border border-accent/20 dark:border-accent-dark/20">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-accent dark:text-accent-dark mt-1 flex-shrink-0" />
+                      <span className="text-gray-700 dark:text-gray-300 font-medium leading-relaxed">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Key Benefits */}
+            {project.keyBenefits && (
+              <div>
+                <h2 className="text-3xl font-righteous mb-6 text-text-light dark:text-text-dark flex items-center gap-3">
+                  <FontAwesomeIcon icon={faStar} className="text-accent" />
+                  {language === 'es' ? 'Beneficios Clave' : 'Key Benefits'}
+                </h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {project.keyBenefits.map((benefit: string, idx: number) => (
+                    <div key={idx} className="flex items-start gap-3 bg-white dark:bg-dark-background-2 p-5 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:border-accent dark:hover:border-accent-dark transition-colors">
+                      <div className="bg-green-100 dark:bg-green-900/30 rounded-full p-2 flex-shrink-0 mt-1">
+                        <FontAwesomeIcon icon={faCheckCircle} className="text-green-600 dark:text-green-400" />
+                      </div>
+                      <span className="text-gray-700 dark:text-gray-300 font-medium leading-relaxed">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* 3. Contexto: Problema y Solución */}
         {project.context && (
           <section>
             <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
@@ -124,7 +198,27 @@ const ProjectDetailPage = () => {
           </section>
         )}
 
-        {/* 2. Arquitectura Técnica */}
+        {/* 4. Características Destacadas */}
+        {project.highlights && project.highlights.length > 0 && (
+          <section>
+            <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
+              <FontAwesomeIcon icon={faStar} className="text-accent" />
+              {language === 'es' ? 'Características Destacadas' : 'Key Highlights'}
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {project.highlights.map((highlight: string, idx: number) => (
+                <div key={idx} className="flex items-start gap-3 bg-white dark:bg-dark-background-2 p-5 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:border-accent dark:hover:border-accent-dark transition-colors">
+                  <div className="bg-accent/10 dark:bg-accent-dark/10 rounded-full p-2 flex-shrink-0 mt-1">
+                    <FontAwesomeIcon icon={faCheckCircle} className="text-accent dark:text-accent-dark" />
+                  </div>
+                  <span className="text-gray-700 dark:text-gray-300 font-medium leading-relaxed">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* 5. Arquitectura Técnica */}
         {project.architecture && (
           <section>
             <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
@@ -147,7 +241,7 @@ const ProjectDetailPage = () => {
           </section>
         )}
 
-        {/* 3. Desafíos Superados */}
+        {/* 6. Desafíos Superados */}
         {project.challenges && (
           <section>
             <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
@@ -170,23 +264,25 @@ const ProjectDetailPage = () => {
           </section>
         )}
 
-        {/* 4. Impacto y Métricas */}
-        <section>
-          <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
-            <FontAwesomeIcon icon={faChartLine} className="text-accent" />
-            {language === 'es' ? 'Impacto Medible' : 'Measurable Impact'}
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {project.impact.map((item: string, idx: number) => (
-              <div key={idx} className="bg-gradient-to-br from-accent/5 to-accent-dark/5 dark:from-accent-dark/10 dark:to-accent/10 p-6 rounded-2xl border border-accent/20 dark:border-accent-dark/20 text-center">
-                <FontAwesomeIcon icon={faCheckCircle} className="text-2xl text-accent dark:text-accent-dark mb-3" />
-                <p className="text-sm font-medium text-text-light dark:text-text-dark">{item}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* 7. Impacto y Métricas */}
+        {project.impact && (
+          <section>
+            <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
+              <FontAwesomeIcon icon={faChartLine} className="text-accent" />
+              {language === 'es' ? 'Impacto Medible' : 'Measurable Impact'}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {project.impact.map((item: string, idx: number) => (
+                <div key={idx} className="bg-gradient-to-br from-accent/5 to-accent-dark/5 dark:from-accent-dark/10 dark:to-accent/10 p-6 rounded-2xl border border-accent/20 dark:border-accent-dark/20 text-center flex flex-col items-center justify-center min-h-[120px]">
+                  <FontAwesomeIcon icon={faCheckCircle} className="text-2xl text-accent dark:text-accent-dark mb-3" />
+                  <p className="text-sm font-medium text-text-light dark:text-text-dark">{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
-        {/* 5. Galería (Opcional) */}
+        {/* 8. Galería (Opcional) */}
         {project.gallery && project.gallery.length > 0 && (
           <section>
             <h2 className="text-3xl font-righteous mb-8 text-text-light dark:text-text-dark flex items-center gap-3">
@@ -195,11 +291,11 @@ const ProjectDetailPage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {project.gallery.map((img: string, idx: number) => (
-                <div key={idx} className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 aspect-video bg-gray-100 dark:bg-gray-800">
+                <div key={idx} className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 aspect-video bg-gray-100 dark:bg-gray-800 group">
                   <img 
                     src={img} 
                     alt={`Gallery ${idx + 1}`} 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                   />
                 </div>

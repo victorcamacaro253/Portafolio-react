@@ -9,7 +9,7 @@ import Websites from './pages/Websites';
 import WebsiteDetail from './pages/WebsiteDetail';
 import ProjectsPage from './pages/projectsPage';
 import AIWorkPage from './pages/AIWorkPage';
-import ProjectDetailPage from './pages/ProjectDetailPage';
+import ProjectDetailPage from './pages/ProjectDetailAIPage';
 
 function App() {
   return (
