@@ -4,49 +4,49 @@ import proyecto1 from '../assets/images/datacenter.webp';
 //import proyecto2 from '../assets/images/php.png';
 import proyecto3 from '../assets/images/basededatos.jpg';
 import proyecto4 from '../assets/images/business-cloud-computing-1080x675.jpg';
-import proyecto5 from '../assets/images/responsive-web.webp';
+import proyecto5 from '/images/computer-vision-banner.png';
 //import proyecto6 from '../assets/images/api_pic.jpg';
-import proyecto7 from '../assets/images/backenddev.png';
+import proyecto7 from '/images/AI-vs-ML.webp';
 import proyecto8 from '../assets/images/api.png';
 
 function Portfolio() {
   const { language, texts } = useContext(LanguageContext);
   const { 
-    network, networkP, backDev, backDevP, 
-    database, databaseP, analysis, analysisP, 
-    webDev, webDevP, API, APIP 
+     
+     dataEngineering, digitalTwins, 
+    computerVision,systemArchitecture,fullStackVizP,aiOptimization 
   } = texts.Portfolio[0][language] || texts.Portfolio[0]['es'];
 
   const projects = [
     {
       image: proyecto1,
-      title: network,
-      description: networkP
+      title: systemArchitecture,
+      description: systemArchitecture
     },
     {
       image: proyecto7,
-      title: backDev,
-      description: backDevP
+      title: aiOptimization,
+      description: aiOptimization
     },
     {
       image: proyecto3,
-      title: database,
-      description: databaseP
+      title: dataEngineering,
+      description: dataEngineering
     },
     {
       image: proyecto4,
-      title: analysis,
-      description: analysisP
+      title: digitalTwins,
+      description: digitalTwins
     },
     {
       image: proyecto5,
-      title: webDev,
-      description: webDevP
+      title: computerVision,
+      description: computerVision
     },
     {
       image: proyecto8,
-      title: API,
-      description: APIP
+      title: fullStackVizP,
+      description: fullStackVizP
     }
   ];
 

@@ -24,7 +24,7 @@
       "es": {
         "title": "Sobre mi",
         "span": "Hola, Soy Victor Camacaro",
-        "presentation": "Ingeniero de Sistemas y Desarrollador Full-Stack especializado en la intersección de la ingeniería de software, la inteligencia artificial aplicada y la robótica autónoma. Domino un stack moderno que abarca desde arquitecturas web escalables (TypeScript, React, Node.js) hasta pipelines de visión computacional y optimización avanzada (Python, OR-Tools, SimPy, YOLOv8).\n\nHe liderado el desarrollo de soluciones de alto impacto, como un Digital Twin de optimización portuaria (simulación de eventos discretos y renderizado 3D), un optimizador de logística de última milla con IA híbrida (Q-Learning y H3), y un sistema de percepción y navegación segura para robots autónomos. Este último fusiona detección multimodal (YOLOv8, MediaPipe), estimación de estado (Filtro de Kalman) y planificación por Campos Potenciales Artificiales (APF) para lograr evasiones matemáticamente óptimas y conscientes del contexto humano.\n\n💡 Mi enfoque va más allá del código: traduzco restricciones del mundo real (seguridad, sostenibilidad, SLA) en arquitecturas de software deterministas, modulares y escalables. Me apasiona resolver problemas de alta complejidad algorítmica y construir sistemas que transformen la toma de decisiones operativas.",
+        "presentation": "Ingeniero de Sistemas y Desarrollador Full-Stack especializado en la intersección de la ingeniería de software, la inteligencia artificial aplicada y la robótica autónoma. Domino un stack moderno que abarca desde arquitecturas web escalables (TypeScript, React, Node.js) hasta pipelines de visión computacional y optimización avanzada.\n\nHe liderado el desarrollo de soluciones de alto impacto, como un Digital Twin de optimización portuaria, un optimizador de logística de última milla con IA híbrida, y un sistema de percepción y navegación segura para robots autónomos. Este último fusiona detección multimodal, estimación de estado y planificación por Campos Potenciales Artificiales (APF) para lograr evasiones matemáticamente óptimas y conscientes del contexto humano.\n\n💡 Mi enfoque va más allá del código: traduzco restricciones del mundo real (seguridad, sostenibilidad, SLA) en arquitecturas de software deterministas, modulares y escalables. Me apasiona resolver problemas de alta complejidad algorítmica y construir sistemas que transformen la toma de decisiones operativas.",
         "aboutme": "Conoce mi historia",
         "PersonalData": "Datos Personales",
         "birthdateWord": "Cumpleaños",
@@ -42,7 +42,7 @@
       "en": {
         "title": "About me",
         "span": "Hello, I'm Victor Camacaro",
-        "presentation": "Systems Engineer and Full-Stack Developer specializing in the intersection of software engineering, applied AI, and autonomous robotics. I master a modern stack ranging from scalable web architectures (TypeScript, React, Node.js) to advanced computer vision pipelines and optimization (Python, OR-Tools, SimPy, YOLOv8).\n\nI have led the development of high-impact solutions, including a Port Terminal Digital Twin (discrete event simulation and 3D rendering), a Last-Mile Delivery Optimizer with hybrid AI (Q-Learning and H3), and a Perception and Safe Navigation System for Autonomous Robots. The latter fuses multimodal detection (YOLOv8, MediaPipe), state estimation (Kalman Filter), and Artificial Potential Fields (APF) path planning to achieve mathematically optimal, context-aware collision avoidance.\n\n💡 My approach goes beyond writing code: I translate real-world constraints (safety, sustainability, SLAs) into deterministic, modular, and scalable software architectures. I thrive on solving high-complexity algorithmic problems and building systems that transform operational decision-making.",
+        "presentation": "Systems Engineer and Full-Stack Developer specializing in the intersection of software engineering, applied AI, and autonomous robotics. I master a modern stack ranging from scalable web architectures (TypeScript, React, Node.js) to advanced computer vision pipelines and optimization.\n\nI have led the development of high-impact solutions, including a Port Terminal Digital Twin, a Last-Mile Delivery Optimizer with hybrid AI, and a Perception and Safe Navigation System for Autonomous Robots. The latter fuses multimodal detection, state estimation, and Artificial Potential Fields (APF) path planning to achieve mathematically optimal, context-aware collision avoidance.\n\n💡 My approach goes beyond writing code: I translate real-world constraints (safety, sustainability, SLAs) into deterministic, modular, and scalable software architectures. I thrive on solving high-complexity algorithmic problems and building systems that transform operational decision-making.",
         "birthdateWord": "Birthdate",
         "birthdate": "30-03-1999",
         "phoneWord": "Phone",
@@ -57,46 +57,106 @@
       }
     }
   ],
- "skills": {
-  "es": {
-    "title": "Habilidades",
-    "techTitle": "Habilidades Técnicas",
-    "profTitle": "Habilidades Profesionales",
-    "technical": [
-      { "name": "IA & Optimización (OR-Tools, SimPy, ML)", "percentage": "90%" },
-      { "name": "TypeScript, React & Node.js", "percentage": "90%" },
-      { "name": "Visión Computacional (YOLOv8, OpenCV)", "percentage": "85%" },
-      { "name": "Bases de Datos (PostgreSQL, MongoDB)", "percentage": "85%" },
-      { "name": "Arquitectura de Sistemas & Cloud", "percentage": "80%" }
-    ],
-    "professional": [
-      { "name": "Resolución de Problemas Algorítmicos", "percentage": "95%" },
-      { "name": "Diseño de Arquitectura Escalable", "percentage": "90%" },
-      { "name": "Gestión Ágil de Proyectos", "percentage": "90%" },
-      { "name": "Comunicación Interfuncional", "percentage": "85%" },
-      { "name": "Aprendizaje Continuo y Adaptabilidad", "percentage": "95%" }
-    ]
+  "skills": {
+    "es": {
+      "title": "Habilidades",
+      "techTitle": "Habilidades Técnicas",
+      "profTitle": "Habilidades Profesionales",
+      "technical": [
+        {
+          "name": "IA & Optimización (OR-Tools, SimPy, ML)",
+          "percentage": "90%"
+        },
+        {
+          "name": "TypeScript, React & Node.js",
+          "percentage": "90%"
+        },
+        {
+          "name": "Visión Computacional (YOLOv8, OpenCV)",
+          "percentage": "85%"
+        },
+        {
+          "name": "Bases de Datos (PostgreSQL, MongoDB)",
+          "percentage": "85%"
+        },
+        {
+          "name": "Arquitectura de Sistemas & Cloud",
+          "percentage": "80%"
+        }
+      ],
+      "professional": [
+        {
+          "name": "Resolución de Problemas Algorítmicos",
+          "percentage": "95%"
+        },
+        {
+          "name": "Diseño de Arquitectura Escalable",
+          "percentage": "90%"
+        },
+        {
+          "name": "Gestión Ágil de Proyectos",
+          "percentage": "90%"
+        },
+        {
+          "name": "Comunicación Interfuncional",
+          "percentage": "85%"
+        },
+        {
+          "name": "Aprendizaje Continuo y Adaptabilidad",
+          "percentage": "95%"
+        }
+      ]
+    },
+    "en": {
+      "title": "Skills",
+      "techTitle": "Technical Skills",
+      "profTitle": "Professional Skills",
+      "technical": [
+        {
+          "name": "AI & Optimization (OR-Tools, SimPy, ML)",
+          "percentage": "90%"
+        },
+        {
+          "name": "TypeScript, React & Node.js",
+          "percentage": "90%"
+        },
+        {
+          "name": "Computer Vision (YOLOv8, OpenCV)",
+          "percentage": "85%"
+        },
+        {
+          "name": "Databases (PostgreSQL, MongoDB)",
+          "percentage": "85%"
+        },
+        {
+          "name": "System Architecture & Cloud",
+          "percentage": "80%"
+        }
+      ],
+      "professional": [
+        {
+          "name": "Algorithmic Problem Solving",
+          "percentage": "95%"
+        },
+        {
+          "name": "Scalable Architecture Design",
+          "percentage": "90%"
+        },
+        {
+          "name": "Agile Project Management",
+          "percentage": "90%"
+        },
+        {
+          "name": "Cross-functional Communication",
+          "percentage": "85%"
+        },
+        {
+          "name": "Continuous Learning & Adaptability",
+          "percentage": "95%"
+        }
+      ]
+    }
   },
-  "en": {
-    "title": "Skills",
-    "techTitle": "Technical Skills",
-    "profTitle": "Professional Skills",
-    "technical": [
-      { "name": "AI & Optimization (OR-Tools, SimPy, ML)", "percentage": "90%" },
-      { "name": "TypeScript, React & Node.js", "percentage": "90%" },
-      { "name": "Computer Vision (YOLOv8, OpenCV)", "percentage": "85%" },
-      { "name": "Databases (PostgreSQL, MongoDB)", "percentage": "85%" },
-      { "name": "System Architecture & Cloud", "percentage": "80%" }
-    ],
-    "professional": [
-      { "name": "Algorithmic Problem Solving", "percentage": "95%" },
-      { "name": "Scalable Architecture Design", "percentage": "90%" },
-      { "name": "Agile Project Management", "percentage": "90%" },
-      { "name": "Cross-functional Communication", "percentage": "85%" },
-      { "name": "Continuous Learning & Adaptability", "percentage": "95%" }
-    ]
-  }
-},
   "projects": [
     {
       "es": {
@@ -246,23 +306,22 @@
             "description": "Aplicación móvil completa para reservar entradas de cine con selección de películas, horarios, asientos y pago integrado, desarrollada con React Native.",
             "detailedDescription": "CineBook es una aplicación móvil desarrollada con React Native que ofrece una solución completa para la reserva de entradas de cine. La aplicación proporciona:\n\nExperiencia del Usuario:\n- Catálogo de películas con filtros por género, rating y fecha de estreno\n- Sistema de reservas en tiempo real con selección visual de asientos\n- Integración con Google Maps para ubicación de cines cercanos\n- Pasarela de pagos segura con Stripe\n- Gestión de combos de comida/bebida\n- Autenticación segura con JWT\n\nTecnologías Clave:\n- Frontend: React Native con Expo\n- Estado Global: Redux Toolkit\n- Navegación: React Navigation\n- Autenticación: JWT con refresh tokens\n- Pagos: Integración con Stripe SDK\n- Geolocalización: Google Maps API para React Native\n\nCaracterísticas Técnicas:\n- Arquitectura modular y escalable\n- Optimización de rendimiento para dispositivos móviles\n- Animaciones fluidas para la selección de asientos\n- Sincronización en tiempo real mediante sockets\n- Diseño responsive para diferentes tamaños de pantalla",
             "gallery": [
-               "/images/cine-app/appImage1.jpg",
-                 "/images/cine-app/headerhero.jpg",
+              "/images/cine-app/appImage1.jpg",
+              "/images/cine-app/headerhero.jpg",
               "/images/cine-app/logo-cinebook.JPG",
               "/images/cine-app/appImage2.jpg",
               "/images/cine-app/appImage3.jpg",
               "/images/cine-app/appImage4.jpg",
               "/images/cine-app/appImage5.jpg",
-               "/images/cine-app/appImage6.jpg",
+              "/images/cine-app/appImage6.jpg",
               "/images/cine-app/appImage7.jpg",
               "/images/cine-app/appImage8.jpg",
-               "/images/cine-app/appImage9.jpg",
+              "/images/cine-app/appImage9.jpg",
               "/images/cine-app/appImage10.jpg",
-               "/images/cine-app/appImage12.jpg",
+              "/images/cine-app/appImage12.jpg",
               "/images/cine-app/appImage13.jpg",
               "/images/cine-app/appImage14.jpg",
-               "/images/cine-app/appImage15.jpg"
-               
+              "/images/cine-app/appImage15.jpg"
             ],
             "button": "Ver más",
             "link": "https://github.com/victorcamacaro253/cinema_booking_app",
@@ -494,23 +553,22 @@
             "description": "Complete mobile application for booking movie tickets with film selection, showtimes, seat picking and integrated payment, built with React Native.",
             "detailedDescription": "CineBook is a mobile application developed with React Native that provides a complete solution for movie ticket booking. The app offers:\n\nUser Experience:\n- Movie catalog with filters by genre, rating and release date\n- Real-time booking system with visual seat selection\n- Google Maps integration for locating nearby theaters\n- Secure payment gateway with Stripe\n- Food/drink combo management\n- Secure authentication with JWT\n\nKey Technologies:\n- Frontend: React Native with Expo\n- State Management: Redux Toolkit\n- Navigation: React Navigation\n- Authentication: JWT with refresh tokens\n- Payments: Stripe SDK integration\n- Geolocation: Google Maps API for React Native\n\nTechnical Features:\n- Modular and scalable architecture\n- Performance optimization for mobile devices\n- Smooth animations for seat selection\n- Real-time synchronization using sockets\n- Responsive design for different screen sizes",
             "gallery": [
-               "/images/cine-app/appImage1.jpg",
-                 "/images/cine-app/headerhero.jpg",
+              "/images/cine-app/appImage1.jpg",
+              "/images/cine-app/headerhero.jpg",
               "/images/cine-app/logo-cinebook.JPG",
               "/images/cine-app/appImage2.jpg",
               "/images/cine-app/appImage3.jpg",
               "/images/cine-app/appImage4.jpg",
               "/images/cine-app/appImage5.jpg",
-               "/images/cine-app/appImage6.jpg",
+              "/images/cine-app/appImage6.jpg",
               "/images/cine-app/appImage7.jpg",
               "/images/cine-app/appImage8.jpg",
-               "/images/cine-app/appImage9.jpg",
+              "/images/cine-app/appImage9.jpg",
               "/images/cine-app/appImage10.jpg",
-               "/images/cine-app/appImage12.jpg",
+              "/images/cine-app/appImage12.jpg",
               "/images/cine-app/appImage13.jpg",
               "/images/cine-app/appImage14.jpg",
-               "/images/cine-app/appImage15.jpg"
-               
+              "/images/cine-app/appImage15.jpg"
             ],
             "button": "See more",
             "link": "https://github.com/victorcamacaro253/cinema_booking_app",
@@ -675,7 +733,6 @@
               "/images/medicare/medicare-17.JPG"
             ]
           },
-       
           {
             "title": "Cineverse - Tu universo cinematográfico",
             "index": "cineverse",
@@ -786,50 +843,49 @@
               "/images/villa-blanca/villa-blanca7.JPG"
             ]
           },
-                {
-        "title": "Sistema de Reserva de Películas Online-Cinebook",
-        "index": "moviebooking",
-        "description": "Plataforma completa para reserva de entradas de cine en múltiples ubicaciones, con autenticación de usuario, selección de asientos, procesamiento de pagos y módulos de gestión.",
-        "detailedDescription": "Este sistema de reserva de películas online permite a los usuarios ver las películas en cartelera y próximos estrenos en todas las sedes de cines del país. Los usuarios pueden ver las sedes con su información y horarios de funciones. Tras autenticarse, pueden seleccionar asientos para la función deseada en la sede elegida, proceder al pago con su método preferido y recibir los detalles de la reserva con un código QR. El sistema incluye módulos para gerentes de cada sede (para gestionar funciones, personal y estadísticas) y un módulo de administrador para gestionar todo el sistema (películas, usuarios, sedes, estadísticas generales). Los usuarios también pueden comprar golosinas para su función.",
-        "objective": "Crear una plataforma completa y fácil de usar para reserva de entradas de cine que optimice el proceso de reserva mientras proporciona herramientas de gestión integral para administradores de cines en diferentes niveles.",
-        "intendedFor": "Cadenas de cines que busquen una solución integrada de reservas, cinéfilos que deseen una forma conveniente de reservar entradas online, y administradores de cines que necesiten herramientas de gestión para sus sedes.",
-        "documentUrl": "",
-        "url": "",
-        "logo": "/images/cinebook-sistem/logo_cinebook.webp",
-        "github": "",
-        "technologies": [
-          "React",
-          "Vite",
-          "TypeScript",
-          "MongoDB",
-          "NestJS",
-          "Node.js",
-          "JWT"
-        ],
-        "features": [
-          "Sistema de autenticación de usuarios con JWT seguro",
-          "Visualización de películas en cartelera y próximos estrenos en todas las sedes",
-          "Información detallada de cada sede con horarios de funciones",
-          "Interfaz interactiva para selección de asientos",
-          "Integración de múltiples métodos de pago",
-          "Confirmación de reserva con código QR",
-          "Perfil de usuario con historial de compras e información personal",
-          "Sistema de compra de golosinas para las funciones",
-          "Módulo de gerente de sede para gestionar funciones, personal y estadísticas de su sede",
-          "Módulo de administrador para gestionar películas, usuarios, sedes y ver estadísticas generales",
-          "Diseño responsive para todos los dispositivos"
-        ],
-        "challenges": [
-          "Implementar sistema de disponibilidad de asientos en tiempo real",
-          "Diseñar un sistema seguro de autenticación y procesamiento de pagos",
-          "Crear una interfaz intuitiva para selección de asientos",
-          "Gestionar relaciones complejas en MongoDB para funciones, asientos y reservas",
-          "Desarrollar control de acceso basado en roles para diferentes tipos de usuario (usuarios normales, gerentes de sede, administradores)",
-          "Implementar sistema de generación y validación de códigos QR",
-          "Garantizar consistencia de datos entre múltiples sedes de cines"
-        ],
-
-          "gallery": [
+          {
+            "title": "Sistema de Reserva de Películas Online-Cinebook",
+            "index": "moviebooking",
+            "description": "Plataforma completa para reserva de entradas de cine en múltiples ubicaciones, con autenticación de usuario, selección de asientos, procesamiento de pagos y módulos de gestión.",
+            "detailedDescription": "Este sistema de reserva de películas online permite a los usuarios ver las películas en cartelera y próximos estrenos en todas las sedes de cines del país. Los usuarios pueden ver las sedes con su información y horarios de funciones. Tras autenticarse, pueden seleccionar asientos para la función deseada en la sede elegida, proceder al pago con su método preferido y recibir los detalles de la reserva con un código QR. El sistema incluye módulos para gerentes de cada sede (para gestionar funciones, personal y estadísticas) y un módulo de administrador para gestionar todo el sistema (películas, usuarios, sedes, estadísticas generales). Los usuarios también pueden comprar golosinas para su función.",
+            "objective": "Crear una plataforma completa y fácil de usar para reserva de entradas de cine que optimice el proceso de reserva mientras proporciona herramientas de gestión integral para administradores de cines en diferentes niveles.",
+            "intendedFor": "Cadenas de cines que busquen una solución integrada de reservas, cinéfilos que deseen una forma conveniente de reservar entradas online, y administradores de cines que necesiten herramientas de gestión para sus sedes.",
+            "documentUrl": "",
+            "url": "",
+            "logo": "/images/cinebook-sistem/logo_cinebook.webp",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "MongoDB",
+              "NestJS",
+              "Node.js",
+              "JWT"
+            ],
+            "features": [
+              "Sistema de autenticación de usuarios con JWT seguro",
+              "Visualización de películas en cartelera y próximos estrenos en todas las sedes",
+              "Información detallada de cada sede con horarios de funciones",
+              "Interfaz interactiva para selección de asientos",
+              "Integración de múltiples métodos de pago",
+              "Confirmación de reserva con código QR",
+              "Perfil de usuario con historial de compras e información personal",
+              "Sistema de compra de golosinas para las funciones",
+              "Módulo de gerente de sede para gestionar funciones, personal y estadísticas de su sede",
+              "Módulo de administrador para gestionar películas, usuarios, sedes y ver estadísticas generales",
+              "Diseño responsive para todos los dispositivos"
+            ],
+            "challenges": [
+              "Implementar sistema de disponibilidad de asientos en tiempo real",
+              "Diseñar un sistema seguro de autenticación y procesamiento de pagos",
+              "Crear una interfaz intuitiva para selección de asientos",
+              "Gestionar relaciones complejas en MongoDB para funciones, asientos y reservas",
+              "Desarrollar control de acceso basado en roles para diferentes tipos de usuario (usuarios normales, gerentes de sede, administradores)",
+              "Implementar sistema de generación y validación de códigos QR",
+              "Garantizar consistencia de datos entre múltiples sedes de cines"
+            ],
+            "gallery": [
               "/images/cinebook-sistem/logo_cinebook.webp",
               "/images/cinebook-sistem/1.webp",
               "/images/cinebook-sistem/2.webp",
@@ -845,13 +901,11 @@
               "/images/cinebook-sistem/12.webp",
               "/images/cinebook-sistem/13.webp",
               "/images/cinebook-sistem/14.webp",
-              
               "/images/cinebook-sistem/16.webp",
               "/images/cinebook-sistem/17.webp"
             ]
-      },
-      
-                {
+          },
+          {
             "title": "Aventureate - Plataforma Integral de Viajes y Turismo",
             "index": "aventureate",
             "description": "Plataforma web integral de descubrimiento y planificación de viajes, con mapas interactivos, guías de destinos, rutas turísticas, gastronomía y un planificador de itinerarios impulsado por Inteligencia Artificial.",
@@ -899,7 +953,7 @@
               "/images/aventureate/aventureate4.webp",
               "/images/aventureate/aventureate5.webp",
               "/images/aventureate/aventureate6.webp",
-               "/images/aventureate/aventureate7.webp",
+              "/images/aventureate/aventureate7.webp",
               "/images/aventureate/aventureate8.webp",
               "/images/aventureate/aventureate9.webp",
               "/images/aventureate/aventureate10.webp",
@@ -913,7 +967,7 @@
               "/images/aventureate/aventureate18.webp"
             ]
           },
-                    {
+          {
             "title": "IDEAPU - Gestión de Vallas Publicitarias",
             "index": "ideapu",
             "description": "Plataforma web integral para la gestión, visualización y reserva de vallas publicitarias, con catálogo interactivo, mapa de ubicaciones y panel de administración completo.",
@@ -950,11 +1004,14 @@
               "Asegurar un control de acceso robusto (RLS) y seguro para los diferentes roles de usuario en Supabase"
             ],
             "gallery": [
-              "/images/creativa-publicidad/1.jpg",
-              "/images/creativa-publicidad/2.jpg",
-              "/images/creativa-publicidad/3.jpg",
-              "/images/creativa-publicidad/4.jpg",
-              "/images/creativa-publicidad/5.jpg"
+              "/images/ideapu/ideapu1.webp",
+              "/images/ideapu/ideapu2.webp",
+              "/images/ideapu/ideapu3.webp",
+              "/images/ideapu/ideapu4.webp",
+              "/images/ideapu/ideapu5.webp",
+              "/images/ideapu/ideapu6.webp",
+              "/images/ideapu/ideapu7.webp",
+              "/images/ideapu/ideapu8.webp"
             ]
           }
         ]
@@ -1014,7 +1071,6 @@
               "Creating intuitive and responsive interfaces for all roles"
             ]
           },
-          
           {
             "title": "Cineverse - Your Cinematic Universe",
             "index": "cineverse",
@@ -1125,49 +1181,49 @@
               "/images/villablanca/8.jpg"
             ]
           },
-            {
-        "title": "Online Movie Booking System-Cinebook",
-        "index": "moviebooking",
-        "description": "Comprehensive platform for movie ticket reservations across multiple cinema locations, with user authentication, seat selection, payment processing, and management modules.",
-        "detailedDescription": "This online movie booking system allows users to browse current and upcoming movies across all cinema locations in the country. Users can view cinema locations with their information and showtimes. After authentication, users can select seats for their desired showtime at their chosen cinema location, proceed to payment with their preferred method, and receive booking details with a QR code. The system includes modules for cinema branch managers to manage their specific location (showtimes, staff, statistics) and an admin module to manage the entire system (movies, users, cinema locations, general statistics). Users can also purchase snacks for their movie session.",
-        "objective": "To create a complete, user-friendly movie booking platform that streamlines the ticket reservation process while providing comprehensive management tools for cinema administrators at different levels.",
-        "intendedFor": "Cinema chains looking for an integrated booking solution, moviegoers who want a convenient way to book tickets online, and cinema administrators who need management tools for their locations.",
-        "documentUrl": "",
-        "url": "",
-        "logo":  "/images/cinebook-sistem/logo_cinebook.webp",
-        "github": "",
-        "technologies": [
-          "React",
-          "Vite",
-          "TypeScript",
-          "MongoDB",
-          "NestJS",
-          "Node.js",
-          "JWT"
-        ],
-        "features": [
-          "User authentication system with secure JWT implementation",
-          "Browse current movies and upcoming releases across all cinema locations",
-          "View cinema locations with detailed information and showtimes",
-          "Interactive seat selection interface",
-          "Multiple payment method integration",
-          "Booking confirmation with QR code",
-          "User profile with booking history and personal information",
-          "Snack purchasing system for movie sessions",
-          "Cinema branch manager module to manage showtimes, staff, and location statistics",
-          "Admin module to manage movies, users, cinema locations, and view general statistics",
-          "Responsive design for all devices"
-        ],
-        "challenges": [
-          "Implementing real-time seat availability and reservation system",
-          "Designing a secure authentication and payment processing system",
-          "Creating an intuitive seat selection interface",
-          "Managing complex relationships in MongoDB for showtimes, seats, and bookings",
-          "Developing role-based access control for different user types (regular users, branch managers, admins)",
-          "Implementing QR code generation and validation system",
-          "Ensuring data consistency across multiple cinema locations"
-        ],
-          "gallery": [
+          {
+            "title": "Online Movie Booking System-Cinebook",
+            "index": "moviebooking",
+            "description": "Comprehensive platform for movie ticket reservations across multiple cinema locations, with user authentication, seat selection, payment processing, and management modules.",
+            "detailedDescription": "This online movie booking system allows users to browse current and upcoming movies across all cinema locations in the country. Users can view cinema locations with their information and showtimes. After authentication, users can select seats for their desired showtime at their chosen cinema location, proceed to payment with their preferred method, and receive booking details with a QR code. The system includes modules for cinema branch managers to manage their specific location (showtimes, staff, statistics) and an admin module to manage the entire system (movies, users, cinema locations, general statistics). Users can also purchase snacks for their movie session.",
+            "objective": "To create a complete, user-friendly movie booking platform that streamlines the ticket reservation process while providing comprehensive management tools for cinema administrators at different levels.",
+            "intendedFor": "Cinema chains looking for an integrated booking solution, moviegoers who want a convenient way to book tickets online, and cinema administrators who need management tools for their locations.",
+            "documentUrl": "",
+            "url": "",
+            "logo": "/images/cinebook-sistem/logo_cinebook.webp",
+            "github": "",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "MongoDB",
+              "NestJS",
+              "Node.js",
+              "JWT"
+            ],
+            "features": [
+              "User authentication system with secure JWT implementation",
+              "Browse current movies and upcoming releases across all cinema locations",
+              "View cinema locations with detailed information and showtimes",
+              "Interactive seat selection interface",
+              "Multiple payment method integration",
+              "Booking confirmation with QR code",
+              "User profile with booking history and personal information",
+              "Snack purchasing system for movie sessions",
+              "Cinema branch manager module to manage showtimes, staff, and location statistics",
+              "Admin module to manage movies, users, cinema locations, and view general statistics",
+              "Responsive design for all devices"
+            ],
+            "challenges": [
+              "Implementing real-time seat availability and reservation system",
+              "Designing a secure authentication and payment processing system",
+              "Creating an intuitive seat selection interface",
+              "Managing complex relationships in MongoDB for showtimes, seats, and bookings",
+              "Developing role-based access control for different user types (regular users, branch managers, admins)",
+              "Implementing QR code generation and validation system",
+              "Ensuring data consistency across multiple cinema locations"
+            ],
+            "gallery": [
               "/images/cinebook-sistem/logo_cinebook.webp",
               "/images/cinebook-sistem/1.webp",
               "/images/cinebook-sistem/2.webp",
@@ -1183,12 +1239,11 @@
               "/images/cinebook-sistem/12.webp",
               "/images/cinebook-sistem/13.webp",
               "/images/cinebook-sistem/14.webp",
-             
               "/images/cinebook-sistem/16.webp",
               "/images/cinebook-sistem/17.webp"
             ]
-      },
-                {
+          },
+          {
             "title": "Aventureate - Comprehensive Travel & Tourism Platform",
             "index": "aventureate",
             "description": "Comprehensive web platform for travel discovery and planning, featuring interactive maps, destination guides, tourist routes, gastronomy, and an AI-powered itinerary planner.",
@@ -1230,13 +1285,13 @@
               "Ensuring visual and functional consistency across dozens of nested components and views"
             ],
             "gallery": [
-                "/images/aventureate/aventureate1.webp",
+              "/images/aventureate/aventureate1.webp",
               "/images/aventureate/aventureate2.webp",
               "/images/aventureate/aventureate3.webp",
               "/images/aventureate/aventureate4.webp",
               "/images/aventureate/aventureate5.webp",
               "/images/aventureate/aventureate6.webp",
-               "/images/aventureate/aventureate7.webp",
+              "/images/aventureate/aventureate7.webp",
               "/images/aventureate/aventureate8.webp",
               "/images/aventureate/aventureate9.webp",
               "/images/aventureate/aventureate10.webp",
@@ -1250,7 +1305,7 @@
               "/images/aventureate/aventureate18.webp"
             ]
           },
-                    {
+          {
             "title": "IDEAPU - Billboard Management System",
             "index": "ideapu",
             "description": "Comprehensive web platform for the management, visualization, and reservation of billboards, featuring an interactive catalog, location map, and a complete admin dashboard.",
@@ -1287,17 +1342,558 @@
               "Ensuring robust and secure access control (RLS) for different user roles in Supabase"
             ],
             "gallery": [
-              "/images/creativa-publicidad/1.jpg",
-              "/images/creativa-publicidad/2.jpg",
-              "/images/creativa-publicidad/3.jpg",
-              "/images/creativa-publicidad/4.jpg",
-              "/images/creativa-publicidad/5.jpg"
+              "/images/ideapu/ideapu1.webp",
+              "/images/ideapu/ideapu2.webp",
+              "/images/ideapu/ideapu3.webp",
+              "/images/ideapu/ideapu4.webp",
+              "/images/ideapu/ideapu5.webp",
+              "/images/ideapu/ideapu6.webp",
+              "/images/ideapu/ideapu7.webp",
+              "/images/ideapu/ideapu8.webp"
             ]
           }
         ]
       }
     }
   ],
+  "aiProjects": {
+    "es": {
+      "sectionTitle": "Proyectos de IA & Optimización",
+      "sectionSubtitle": "Soluciones inteligentes que transforman operaciones complejas en sistemas eficientes",
+      "viewAll": "Ver todos los proyectos de IA",
+      "pageHeroTitle": "Mi Trabajo con Inteligencia Artificial",
+      "pageHeroSubtitle": "Combinando optimización matemática, aprendizaje automático y simulación para resolver problemas del mundo real",
+      "pageIntro": "A lo largo de mi carrera, he desarrollado sistemas que van más allá del desarrollo web tradicional. Estos proyectos combinan investigación de operaciones, machine learning, visión computacional y simulación de eventos discretos para crear soluciones que impactan directamente en la eficiencia operativa, la sostenibilidad ambiental y la toma de decisiones basada en datos.",
+      "projects": [
+        {
+          "id": "port-terminal-optimizer",
+          "title": "Optimizador Inteligente de Terminal Portuaria",
+          "subtitle": "Gemelo Digital de Optimización Portuaria Multi-Terminal",
+          "role": "Lead AI & Systems Engineer",
+          "duration": "6 meses",
+          "shortDescription": "Simulador de operaciones portuarias inspirado en PSA Singapore que combina 6 ramas de IA en una sola plataforma.",
+          "fullDescription": "Sistema que modela operaciones de terminales de contenedores combinando optimización matemática (OR-Tools CP-SAT), heurísticas avanzadas (Large Neighborhood Search), simulación de eventos discretos (SimPy), Berth Allocation Problem dinámico, enrutamiento geoespacial (OSMnx + NetworkX) y visualización 3D profesional (Three.js + WebGL).",
+          "impact": [
+            "22 barcos procesados en 3 olas dinámicas",
+            "880 jobs procesados en 4 terminales reales",
+            "85.71 kg CO2/TEU medidos con precisión",
+            "12.9% viajes vacíos con Trip Chaining (vs 50% baseline)",
+            "100% cumplimiento ETD en simulaciones"
+          ],
+          "technologies": [
+            "Python",
+            "OR-Tools",
+            "SimPy",
+            "Three.js",
+            "Streamlit",
+            "OSMnx",
+            "NetworkX",
+            "Leaflet"
+          ],
+          "highlights": [
+            "BAP dinámico con ciclo de zarpe y liberación del 50% de capacidad",
+            "Balanceo multi-terminal con Large Neighborhood Search",
+            "CP-SAT + heurística híbrida para ≤60 y >60 jobs",
+            "Trip Chaining inteligente que reduce viajes vacíos del 50% al 12.9%",
+            "Priorización IMO para contenedores peligrosos y refrigerados",
+            "Digital Twin 3D con geografía realista de Singapur"
+          ],
+          "link": "https://github.com/victorcamacaro253/port-terminal-optimizer",
+          "image": "/images/ia/port-optimizer.webp",
+           "context": {
+          "problem": "Los simuladores académicos tradicionales se enfocan exclusivamente en minimizar makespan o distancia, ignorando las restricciones del mundo real que determinan si una operación portuaria es viable (saturación de terminales, priorización de contenedores peligrosos, emisiones de CO2).",
+          "solution": "Desarrollé una arquitectura de 6 capas desacopladas que separa el motor de optimización (OR-Tools) de la capa de simulación (SimPy), permitiendo evaluar tanto la planificación óptima como la ejecución realista con colas y recursos compartidos."
+        },
+        "architecture": [
+          { "layer": "Optimización", "tech": "OR-Tools CP-SAT", "desc": "Programación de grúas y estiba con restricciones de no-cruce." },
+          { "layer": "Simulación", "tech": "SimPy", "desc": "Modelado de flujo Gate → Yard → Quay con tiempos estocásticos." },
+          { "layer": "Geoespacial", "tech": "OSMnx + NetworkX", "desc": "Cálculo de rutas reales sobre el grafo de calles de Singapur." },
+          { "layer": "Visualización", "tech": "Three.js + Streamlit", "desc": "Digital Twin 3D interactivo con navegación completa." }
+        ],
+          "challenges": [
+          {
+            "title": "Error de Escala en Coordenadas 3D",
+            "solution": "Reorganizar la geografía 3D con la ciudad al norte (z = -450), terminales en línea costera (z = 0) y agua al sur (z = 350), replicando la geografía real de Singapur."
+          },
+          {
+            "title": "CP Solver Fail con Time Windows",
+            "solution": "Aumentar el horizonte de tiempo a 1440 min (24h) y agregar slack de 600 min para permitir esperas, configurando ventanas individuales por barco."
+          },
+          {
+            "title": "Desbalance en Multi-Terminal",
+            "solution": "Implementar LNS que normaliza la carga por capacidad relativa y agrega restricciones de especialización, logrando un desbalance excelente del 20%."
+          }
+        ],
+        "gallery": [
+          "/images/ai-projects/port-1.jpg",
+          "/images/ai-projects/port-2.jpg",
+          "/images/ai-projects/port-3.jpg"
+        ]
+      
+        },
+        {
+          "id": "multi-robot-warehouse",
+          "title": "Simulador de Almacén Multi-Robot",
+          "subtitle": "Simulador de Almacén Multi-Robot con Gestión Energética",
+          "role": "Lead Robotics & AI Engineer",
+          "duration": "4 meses",
+          "shortDescription": "Simulador logístico inspirado en Amazon Robotics que combina A*, TSP, coordinación multi-agente y métricas de negocio.",
+          "fullDescription": "Sistema que modela operaciones reales de fulfillment centers combinando algoritmos clásicos de IA (A* con espacio-tiempo, TSP), coordinación multi-agente con evitación de colisiones, gestión energética realista con estaciones de carga dedicadas, y una capa de métricas de negocio (KPIs, SLA, P&L) que traduce decisiones operativas en impacto financiero.",
+          "impact": [
+            "Rutas conflict-free garantizadas matemáticamente",
+            "Reasignación automática de paquetes huérfanos",
+            "SLA tiers diferenciados (Prime Now, Standard, Economy)",
+            "P&L integrado con penalizaciones y costos operativos",
+            "Utilización óptima de flota (70-85%)"
+          ],
+          "technologies": [
+            "Python",
+            "Tkinter",
+            "A*",
+            "TSP",
+            "Space-Time Reservation",
+            "Energy-Aware Assignment"
+          ],
+          "highlights": [
+            "A* con espacio-tiempo y reservation tables para evitar colisiones",
+            "TSP por fuerza bruta optimizado para ≤4 paquetes",
+            "Sistema de batería con consumo variable según velocidad",
+            "Reasignación automática de paquetes cuando un robot va a cargar",
+            "Energy-Aware Task Assignment que nunca asigna tareas imposibles",
+            "Replanificación dinámica selectiva (solo robots afectados)"
+          ],
+          "link": "https://github.com/victorcamacaro253/multi-robot-warehouse",
+          "image": "/images/ia/Multi-Robot-Warehouse.webp",
+           "context": {
+          "problem": "Los simuladores académicos tradicionales se enfocan exclusivamente en la eficiencia algorítmica (minimizar distancia), ignorando las restricciones de negocio que determinan si una operación es rentable (energía, SLA, costos).",
+          "solution": "Integré una capa de métricas de negocio (P&L, SLA) directamente en el motor de simulación, junto con un sistema de gestión energética realista y reasignación dinámica de tareas."
+        },
+        "architecture": [
+          { "layer": "Planificación", "tech": "A* Espacio-Tiempo", "desc": "Rutas conflict-free usando reservation tables." },
+          { "layer": "Optimización", "tech": "TSP Fuerza Bruta", "desc": "Orden óptimo de recogida para ≤4 paquetes." },
+          { "layer": "Coordinación", "tech": "Energy-Aware Assignment", "desc": "Asignación de tareas basada en batería y distancia." },
+          { "layer": "Negocio", "tech": "KPIs & P&L", "desc": "Traducción de pasos de simulación a impacto financiero." }
+        ],
+          "challenges": [
+          {
+            "title": "Desacople de Logs entre Capas",
+            "solution": "Inyección de dependencias mediante log_callback para mantener el core agnóstico a la UI."
+          },
+          {
+            "title": "Robots yendo a la misma estación",
+            "solution": "Implementación de balanceo por congestión con penalización de costo virtual."
+          },
+          {
+            "title": "Bug de Orden en finish_execution",
+            "solution": "Reordenar la generación del reporte ejecutivo antes de cualquier reset de datos."
+          }
+        ],
+        "gallery": [
+          "/images/ai-projects/warehouse-1.jpg",
+          "/images/ai-projects/warehouse-2.jpg",
+          "/images/ai-projects/warehouse-3.jpg"
+        ]
+        },
+        {
+          "id": "delivery-route-optimizer",
+          "title": "Optimizador de Rutas de Entrega",
+          "subtitle": "Last-Mile Logistics con IA Híbrida y Flota Eléctrica",
+          "role": "Lead Logistics AI Engineer",
+          "duration": "5 meses",
+          "shortDescription": "Optimizador de última milla inspirado en Amazon que integra OR-Tools, ML, RL, H3 y teoría de grafos.",
+          "fullDescription": "Sistema de optimización de rutas de última milla que combina 5 ramas de IA: Optimización Matemática (OR-Tools), Machine Learning Supervisado (Random Forest), Reinforcement Learning (Q-Learning), Indexación Geoespacial (H3 de Uber) y Teoría de Grafos (NetworkX). Modela 10 depósitos reales de Amazon en Los Ángeles con flota heterogénea (Rivian EDV, Ford Transit, Amazon Flex).",
+          "impact": [
+            "100% On-Time Delivery en simulaciones",
+            "~92% de rutas asignadas a vehículos eléctricos",
+            "~100 kg de CO2 evitados por simulación",
+            "~47% reducción de viajes con Batch Picking",
+            "Agente RL que aprende a priorizar Prime Now sobre Economy"
+          ],
+          "technologies": [
+            "Python",
+            "OR-Tools",
+            "Random Forest",
+            "Q-Learning",
+            "Uber H3",
+            "NetworkX",
+            "OSMnx",
+            "Streamlit"
+          ],
+          "highlights": [
+            "E-VRP con restricciones de autonomía eléctrica (Rivian 240km)",
+            "Predicción de tráfico con Random Forest (R² > 0.93)",
+            "Agente Q-Learning que aprende a despachar en tiempo real",
+            "Indexación H3 hexagonal sin huecos ni superposiciones",
+            "Batch Picking que consolida órdenes por proximidad",
+            "Re-enrutamiento en vivo ante incidentes viales"
+          ],
+          "link": "https://github.com/victorcamacaro253/delivery-route-optimizer",
+          "image": "/images/ia/last-mile-delivery-1.webp",
+            "context": {
+          "problem": "Los simuladores de VRP tradicionales ignoran restricciones del mundo real como la autonomía de vehículos eléctricos, el tráfico dinámico y la llegada de pedidos en tiempo real.",
+          "solution": "Desarrollé un sistema híbrido que combina OR-Tools para la optimización base, con un agente de Q-Learning para despacho dinámico y un modelo de Random Forest para predecir tiempos de viaje reales."
+        },
+        "architecture": [
+          { "layer": "Optimización", "tech": "OR-Tools E-VRP", "desc": "Enrutamiento con restricciones de autonomía eléctrica." },
+          { "layer": "Predicción", "tech": "Random Forest", "desc": "Modelo de ML para predecir tiempos de viaje con tráfico." },
+          { "layer": "Despacho", "tech": "Q-Learning", "desc": "Agente de RL para asignar pedidos en tiempo real." },
+          { "layer": "Geoespacial", "tech": "Uber H3 + NetworkX", "desc": "Indexación hexagonal y cálculo de rutas reales." }
+        ],
+         "challenges": [
+          {
+            "title": "Error de Índice en _extract_solution",
+            "solution": "Crear un mapeo node_to_matrix_idx para convertir IDs de grafo a índices de matriz secuenciales."
+          },
+          {
+            "title": "CP Solver Fail en Time Windows",
+            "solution": "Aumentar el horizonte de tiempo a 1440 min y agregar slack de 600 min."
+          },
+          {
+            "title": "Balance de Flota Eléctrica vs Combustión",
+            "solution": "Ampliar turnos de Rivian y agregar incentivo de costo ($0.10/km vs $0.48/km) para priorizar EVs."
+          }
+        ],  "gallery": [
+          "/images/ai-projects/delivery-1.jpg",
+          "/images/ai-projects/delivery-2.jpg",
+          "/images/ai-projects/delivery-3.jpg"
+        ]
+        },
+        {
+          "id": "safe-navigation-robot",
+          "title": "Sistema de Navegación Segura para Robot",
+          "subtitle": "Percepción Multimodal y Planificación por Campos Potenciales",
+          "role": "Lead Computer Vision Engineer",
+          "duration": "4 meses",
+          "shortDescription": "Sistema de visión computacional para robots autónomos con conciencia situacional avanzada y evasión matemáticamente óptima.",
+          "fullDescription": "Sistema de seguridad y navegación basado en visión computacional que posee conciencia situacional avanzada: estima profundidad monocular, analiza pose y gestos corporales humanos, diferencia entre personas, mascotas y obstáculos estáticos, y ejecuta maniobras de evasión fluidas mediante Campos Potenciales Artificiales (APF), todo orquestado mediante arquitectura concurrente y Hardware Abstraction Layer (HAL).",
+          "impact": [
+            "Evasiones fluidas sin mínimos locales",
+            "Detección de 10 gestos corporales en tiempo real",
+            "Latencia controlada con threading independiente",
+            "Abstracción total del hardware (HAL)",
+            "Predicción de trayectorias independiente del FPS"
+          ],
+          "technologies": [
+            "Python",
+            "YOLOv8",
+            "ByteTrack",
+            "MediaPipe",
+            "Kalman Filter",
+            "OpenCV",
+            "APF",
+            "Threading"
+          ],
+          "highlights": [
+            "YOLOv8 + ByteTrack para detección y tracking con IDs persistentes",
+            "Filtro de Kalman de 4 dimensiones para suavizar coordenadas",
+            "Estimación de profundidad monocular híbrida",
+            "MediaPipe Pose para análisis de 33 landmarks corporales",
+            "Campos Potenciales Artificiales con resolución de mínimos locales",
+            "Evaluación de riesgo multiclase con supervisor de seguridad"
+          ],
+          "link": "https://github.com/victorcamacaro253/safe-navigation-robot",
+          "image": "/images/ia/delivery-robot.webp",
+           "context": {
+          "problem": "Los sensores tradicionales (LIDAR, ultrasonido) tienen puntos ciegos, son costosos o no distinguen la intención de un objeto, y los sistemas basados en reglas (if/else) fallan ante escenarios no programados.",
+          "solution": "Implementé un pipeline de visión multimodal (YOLOv8 + MediaPipe) con Filtro de Kalman para suavizar el ruido, y Campos Potenciales Artificiales para generar evasiones matemáticamente óptimas y continuas."
+        },
+        "architecture": [
+          { "layer": "Percepción", "tech": "YOLOv8 + ByteTrack", "desc": "Detección y tracking con IDs persistentes." },
+          { "layer": "Estado", "tech": "Filtro de Kalman", "desc": "Suavizado de coordenadas y estimación de velocidad." },
+          { "layer": "Contexto", "tech": "MediaPipe Pose", "desc": "Análisis de 33 landmarks para detectar gestos y caídas." },
+          { "layer": "Control", "tech": "Campos Potenciales (APF)", "desc": "Fuerzas atractivas/repulsivas con resolución de mínimos locales." }
+        ],
+         "challenges": [
+          {
+            "title": "Fuga de Memoria en el Tracker",
+            "solution": "Implementación de un garbage collector basado en tiempo que destruye estados de IDs no vistos en 1.5s."
+          },
+          {
+            "title": "Bug del Tensor de PyTorch",
+            "solution": "Conversión explícita de track_id a entero nativo (int) para evitar recreación de claves de diccionario."
+          },
+          {
+            "title": "Resolución de Mínimos Locales",
+            "solution": "Implementación de un detector de bloqueo central que inyecta una fuerza tangencial matemática (vórtice) para rodear obstáculos."
+          }
+        ],
+        "gallery": [
+          "/images/ai-projects/safe-1.jpg",
+          "/images/ai-projects/safe-2.jpg",
+          "/images/ai-projects/safe-3.jpg"
+        ]
+        }
+      ]
+    },
+    "en": {
+      "sectionTitle": "AI & Optimization Projects",
+      "sectionSubtitle": "Intelligent solutions that transform complex operations into efficient systems",
+      "viewAll": "View all AI projects",
+      "pageHeroTitle": "My Work with Artificial Intelligence",
+      "pageHeroSubtitle": "Combining mathematical optimization, machine learning, and simulation to solve real-world problems",
+      "pageIntro": "Throughout my career, I have developed systems that go beyond traditional web development. These projects combine operations research, machine learning, computer vision, and discrete event simulation to create solutions that directly impact operational efficiency, environmental sustainability, and data-driven decision making.",
+      "projects": [
+        {
+          "id": "port-terminal-optimizer",
+          "title": "Smart Port Terminal Optimizer",
+          "subtitle": "Multi-Terminal Port Optimization Digital Twin",
+          "role": "Lead AI & Systems Engineer",
+          "duration": "6 months",
+          "shortDescription": "Port operations simulator inspired by PSA Singapore combining 6 branches of AI in a single platform.",
+          "fullDescription": "System that models container terminal operations combining mathematical optimization (OR-Tools CP-SAT), advanced heuristics (Large Neighborhood Search), discrete event simulation (SimPy), dynamic Berth Allocation Problem, geospatial routing (OSMnx + NetworkX), and professional 3D visualization (Three.js + WebGL).",
+          "impact": [
+            "22 ships processed in 3 dynamic waves",
+            "880 jobs processed across 4 real terminals",
+            "85.71 kg CO2/TEU measured precisely",
+            "12.9% empty trips with Trip Chaining (vs 50% baseline)",
+            "100% ETD compliance in simulations"
+          ],
+          "technologies": [
+            "Python",
+            "OR-Tools",
+            "SimPy",
+            "Three.js",
+            "Streamlit",
+            "OSMnx",
+            "NetworkX",
+            "Leaflet"
+          ],
+          "highlights": [
+            "Dynamic BAP with sailing cycle and 50% capacity release",
+            "Multi-terminal balancing with Large Neighborhood Search",
+            "CP-SAT + hybrid heuristic for ≤60 and >60 jobs",
+            "Smart Trip Chaining reducing empty trips from 50% to 12.9%",
+            "IMO prioritization for hazardous and refrigerated containers",
+            "3D Digital Twin with realistic Singapore geography"
+          ],
+          "link": "https://github.com/victorcamacaro253/port-terminal-optimizer",
+          "image": "/images/ia/port-optimizer.webp",
+           "context": {
+          "problem": "Traditional academic simulators focus exclusively on minimizing makespan or distance, ignoring real-world constraints that determine if a port operation is viable (terminal saturation, hazardous container prioritization, CO2 emissions).",
+          "solution": "I developed a 6-layer decoupled architecture that separates the optimization engine (OR-Tools) from the simulation layer (SimPy), allowing evaluation of both optimal planning and realistic execution with queues and shared resources."
+        },
+        "architecture": [
+          { "layer": "Optimization", "tech": "OR-Tools CP-SAT", "desc": "Crane and stowage scheduling with no-crossing constraints." },
+          { "layer": "Simulation", "tech": "SimPy", "desc": "Gate → Yard → Quay flow modeling with stochastic times." },
+          { "layer": "Geospatial", "tech": "OSMnx + NetworkX", "desc": "Real route calculation over Singapore's street graph." },
+          { "layer": "Visualization", "tech": "Three.js + Streamlit", "desc": "Interactive 3D Digital Twin with full navigation." }
+        ],
+        "challenges": [
+          {
+            "title": "3D Coordinate Scaling Error",
+            "solution": "Reorganize 3D geography with the city to the north (z = -450), terminals on the coastline (z = 0), and water to the south (z = 350), replicating Singapore's real geography."
+          },
+          {
+            "title": "CP Solver Fail with Time Windows",
+            "solution": "Increase the time horizon to 1440 min (24h) and add 600 min slack to allow waiting, configuring individual windows per ship."
+          },
+          {
+            "title": "Multi-Terminal Imbalance",
+            "solution": "Implement LNS that normalizes load by relative capacity and adds specialization constraints, achieving an excellent 20% imbalance."
+          }
+        ],
+          "gallery": [
+          "/images/ai-projects/port-1.jpg",
+          "/images/ai-projects/port-2.jpg",
+          "/images/ai-projects/port-3.jpg"
+        ]
+        },
+        {
+          "id": "multi-robot-warehouse",
+          "title": "Multi-Robot Warehouse Simulator",
+          "subtitle": "Energy-Aware Multi-Robot Warehouse Simulator",
+          "role": "Lead Robotics & AI Engineer",
+          "duration": "4 months",
+          "shortDescription": "Logistics simulator inspired by Amazon Robotics combining A*, TSP, multi-agent coordination, and business metrics.",
+          "fullDescription": "System that models real fulfillment center operations combining classical AI algorithms (space-time A*, TSP), multi-agent coordination with collision avoidance, realistic energy management with dedicated charging stations, and a business metrics layer (KPIs, SLA, P&L) that translates operational decisions into financial impact.",
+          "impact": [
+            "Mathematically guaranteed conflict-free routes",
+            "Automatic orphan package reassignment",
+            "Differentiated SLA tiers (Prime Now, Standard, Economy)",
+            "Integrated P&L with penalties and operational costs",
+            "Optimal fleet utilization (70-85%)"
+          ],
+          "technologies": [
+            "Python",
+            "Tkinter",
+            "A*",
+            "TSP",
+            "Space-Time Reservation",
+            "Energy-Aware Assignment"
+          ],
+          "highlights": [
+            "Space-time A* with reservation tables to avoid collisions",
+            "Brute-force TSP optimized for ≤4 packages",
+            "Battery system with variable consumption by speed",
+            "Automatic package reassignment when a robot goes to charge",
+            "Energy-Aware Task Assignment that never assigns impossible tasks",
+            "Selective dynamic replanning (only affected robots)"
+          ],
+          "link": "https://github.com/victorcamacaro253/multi-robot-warehouse",
+          "image": "/images/ia/Multi-Robot-Warehouse.webp",
+           "context": {
+          "problem": "Traditional academic simulators focus exclusively on algorithmic efficiency (minimizing distance), ignoring business constraints that determine if an operation is profitable (energy, SLA, costs).",
+          "solution": "I integrated a business metrics layer (P&L, SLA) directly into the simulation engine, along with a realistic energy management system and dynamic task reassignment."
+        },
+        "architecture": [
+          { "layer": "Planning", "tech": "Space-Time A*", "desc": "Conflict-free routes using reservation tables." },
+          { "layer": "Optimization", "tech": "Brute-Force TSP", "desc": "Optimal pickup order for ≤4 packages." },
+          { "layer": "Coordination", "tech": "Energy-Aware Assignment", "desc": "Task assignment based on battery and distance." },
+          { "layer": "Business", "tech": "KPIs & P&L", "desc": "Translation of simulation steps into financial impact." }
+        ],
+         "challenges": [
+          {
+            "title": "Log Decoupling Between Layers",
+            "solution": "Dependency injection via log_callback to keep the core UI-agnostic."
+          },
+          {
+            "title": "Robots Going to the Same Station",
+            "solution": "Implementation of congestion balancing with virtual cost penalization."
+          },
+          {
+            "title": "Order Bug in finish_execution",
+            "solution": "Reorder executive report generation before any data reset."
+          }
+        ],
+         "gallery": [
+          "/images/ai-projects/warehouse-1.jpg",
+          "/images/ai-projects/warehouse-2.jpg",
+          "/images/ai-projects/warehouse-3.jpg"
+        ]
+        },
+        {
+          "id": "delivery-route-optimizer",
+          "title": "Delivery Route Optimizer",
+          "subtitle": "Last-Mile Logistics with Hybrid AI and Electric Fleet",
+          "role": "Lead Logistics AI Engineer",
+          "duration": "5 months",
+          "shortDescription": "Last-mile route optimizer inspired by Amazon integrating OR-Tools, ML, RL, H3, and graph theory.",
+          "fullDescription": "Last-mile route optimization system combining 5 branches of AI: Mathematical Optimization (OR-Tools), Supervised Machine Learning (Random Forest), Reinforcement Learning (Q-Learning), Geospatial Indexing (Uber H3), and Graph Theory (NetworkX). Models 10 real Amazon delivery stations in Los Angeles with heterogeneous fleet (Rivian EDV, Ford Transit, Amazon Flex).",
+          "impact": [
+            "100% On-Time Delivery in simulations",
+            "~92% of routes assigned to electric vehicles",
+            "~100 kg CO2 avoided per simulation",
+            "~47% trip reduction with Batch Picking",
+            "RL agent that learns to prioritize Prime Now over Economy"
+          ],
+          "technologies": [
+            "Python",
+            "OR-Tools",
+            "Random Forest",
+            "Q-Learning",
+            "Uber H3",
+            "NetworkX",
+            "OSMnx",
+            "Streamlit"
+          ],
+          "highlights": [
+            "E-VRP with electric vehicle autonomy constraints (Rivian 240km)",
+            "Traffic prediction with Random Forest (R² > 0.93)",
+            "Q-Learning agent that learns to dispatch in real-time",
+            "Hexagonal H3 indexing without gaps or overlaps",
+            "Batch Picking consolidating orders by proximity",
+            "Live re-routing in response to traffic incidents"
+          ],
+          "link": "https://github.com/victorcamacaro253/delivery-route-optimizer",
+          "image": "/images/ia/last-mile-delivery-1.webp",
+           "context": {
+          "problem": "Traditional VRP simulators ignore real-world constraints like electric vehicle autonomy, dynamic traffic, and real-time order arrivals.",
+          "solution": "I developed a hybrid system combining OR-Tools for base optimization, a Q-Learning agent for dynamic dispatch, and a Random Forest model to predict real travel times."
+        },
+        "architecture": [
+          { "layer": "Optimization", "tech": "OR-Tools E-VRP", "desc": "Routing with electric vehicle autonomy constraints." },
+          { "layer": "Prediction", "tech": "Random Forest", "desc": "ML model to predict travel times with traffic." },
+          { "layer": "Dispatch", "tech": "Q-Learning", "desc": "RL agent to assign orders in real-time." },
+          { "layer": "Geospatial", "tech": "Uber H3 + NetworkX", "desc": "Hexagonal indexing and real route calculation." }
+        ],
+        "challenges": [
+          {
+            "title": "Index Error in _extract_solution",
+            "solution": "Create a node_to_matrix_idx mapping to convert graph IDs to sequential matrix indices."
+          },
+          {
+            "title": "CP Solver Fail in Time Windows",
+            "solution": "Increase time horizon to 1440 min and add 600 min slack."
+          },
+          {
+            "title": "Electric vs Combustion Fleet Balance",
+            "solution": "Expand Rivian shifts and add cost incentive ($0.10/km vs $0.48/km) to prioritize EVs."
+          }
+        ],
+         "gallery": [
+          "/images/ai-projects/delivery-1.jpg",
+          "/images/ai-projects/delivery-2.jpg",
+          "/images/ai-projects/delivery-3.jpg"
+        ]
+        },
+        {
+          "id": "safe-navigation-robot",
+          "title": "Safe Navigation Robot System",
+          "subtitle": "Multimodal Perception and Potential Fields Planning",
+          "role": "Lead Computer Vision Engineer",
+          "duration": "4 months",
+          "shortDescription": "Computer vision system for autonomous robots with advanced situational awareness and mathematically optimal evasion.",
+          "fullDescription": "Computer vision-based safety and navigation system with advanced situational awareness: estimates monocular depth, analyzes human pose and body gestures, differentiates between people, pets, and static obstacles, and executes smooth evasion maneuvers using Artificial Potential Fields (APF), all orchestrated through concurrent architecture and Hardware Abstraction Layer (HAL).",
+          "impact": [
+            "Smooth evasions without local minima",
+            "Detection of 10 body gestures in real-time",
+            "Latency controlled with independent threading",
+            "Total hardware abstraction (HAL)",
+            "FPS-independent trajectory prediction"
+          ],
+          "technologies": [
+            "Python",
+            "YOLOv8",
+            "ByteTrack",
+            "MediaPipe",
+            "Kalman Filter",
+            "OpenCV",
+            "APF",
+            "Threading"
+          ],
+          "highlights": [
+            "YOLOv8 + ByteTrack for detection and tracking with persistent IDs",
+            "4-dimensional Kalman Filter to smooth coordinates",
+            "Hybrid monocular depth estimation",
+            "MediaPipe Pose for analysis of 33 body landmarks",
+            "Artificial Potential Fields with local minima resolution",
+            "Multi-class risk evaluation with safety supervisor"
+          ],
+          "link": "https://github.com/victorcamacaro253/safe-navigation-robot",
+          "image": "/images/ia/delivery-robot.webp",
+          "context": {
+          "problem": "Traditional sensors (LIDAR, ultrasound) have blind spots, are expensive, or cannot distinguish object intent, and rule-based systems (if/else) fail in unprogrammed scenarios.",
+          "solution": "I implemented a multimodal vision pipeline (YOLOv8 + MediaPipe) with a Kalman Filter to smooth noise, and Artificial Potential Fields to generate mathematically optimal and continuous evasions."
+        },
+        "architecture": [
+          { "layer": "Perception", "tech": "YOLOv8 + ByteTrack", "desc": "Detection and tracking with persistent IDs." },
+          { "layer": "State", "tech": "Kalman Filter", "desc": "Coordinate smoothing and velocity estimation." },
+          { "layer": "Context", "tech": "MediaPipe Pose", "desc": "Analysis of 33 landmarks to detect gestures and falls." },
+          { "layer": "Control", "tech": "Artificial Potential Fields", "desc": "Attractive/repulsive forces with local minima resolution." }
+        ],
+         "challenges": [
+          {
+            "title": "Memory Leak in Tracker",
+            "solution": "Implementation of a time-based garbage collector that destroys states of IDs not seen in 1.5s."
+          },
+          {
+            "title": "PyTorch Tensor Bug",
+            "solution": "Explicit conversion of track_id to native integer (int) to prevent dictionary key recreation."
+          },
+          {
+            "title": "Local Minima Resolution",
+            "solution": "Implementation of a central blockage detector that injects a mathematical tangential force (vortex) to bypass obstacles."
+          }
+        ],
+         "gallery": [
+          "/images/ai-projects/safe-1.jpg",
+          "/images/ai-projects/safe-2.jpg",
+          "/images/ai-projects/safe-3.jpg"
+        ]
+        }
+      ]
+    }
+  },
   "curriculum": [
     {
       "es": {
@@ -1353,37 +1949,37 @@
     }
   ],
   "Portfolio": [
-  {
-    "es": {
-      "aiOptimization": "IA & Optimización Algorítmica",
-      "aiOptimizationP": "Resolución de problemas complejos con OR-Tools , SimPy, Machine Learning y Q-Learning.",
-      "fullStackViz": "Desarrollo Full-Stack & Visualización 3D",
-      "fullStackVizP": "Arquitecturas escalables con React, TypeScript, Node.js, Three.js y dashboards en Streamlit.",
-      "computerVision": "Visión Computacional & Robótica",
-      "computerVisionP": "Percepción multimodal (YOLOv8, MediaPipe), Filtro de Kalman y planificación de trayectorias APF.",
-      "dataEngineering": "Ingeniería de Datos & Bases de Datos",
-      "dataEngineeringP": "Diseño de esquemas eficientes en PostgreSQL, MongoDB y modelado de grafos con NetworkX.",
-      "systemArchitecture": "Arquitectura de Sistemas & Cloud",
-      "systemArchitectureP": "Diseño de software modular, desacoplado (HAL, inyección de dependencias) y listo para producción.",
-      "digitalTwins": "Gemelos Digitales & Simulación",
-      "digitalTwinsP": "Modelado de eventos discretos y entornos 3D interactivos para la toma de decisiones operativas."
-    },
-    "en": {
-      "aiOptimization": "AI & Algorithmic Optimization",
-      "aiOptimizationP": "Solving complex problems using OR-Tools (CP-SAT), SimPy, Machine Learning, and Q-Learning.",
-      "fullStackViz": "Full-Stack Development & 3D Visualization",
-      "fullStackVizP": "Scalable architectures built with React, TypeScript, Node.js, Three.js, and Streamlit dashboards.",
-      "computerVision": "Computer Vision & Robotics",
-      "computerVisionP": "Multimodal perception (YOLOv8, MediaPipe), Kalman Filter, and APF path planning.",
-      "dataEngineering": "Data Engineering & Databases",
-      "dataEngineeringP": "Efficient schema design in PostgreSQL, MongoDB, and graph modeling with NetworkX.",
-      "systemArchitecture": "System Architecture & Cloud",
-      "systemArchitectureP": "Design of modular, decoupled (HAL, dependency injection), and production-ready software.",
-      "digitalTwins": "Digital Twins & Simulation",
-      "digitalTwinsP": "Discrete event modeling and interactive 3D environments for operational decision-making."
+    {
+      "es": {
+        "aiOptimization": "IA & Optimización Algorítmica",
+        "aiOptimizationP": "Resolución de problemas complejos con OR-Tools , SimPy, Machine Learning y Q-Learning.",
+        "fullStackViz": "Desarrollo Full-Stack & Visualización 3D",
+        "fullStackVizP": "Arquitecturas escalables con React, TypeScript, Node.js, Three.js y dashboards en Streamlit.",
+        "computerVision": "Visión Computacional & Robótica",
+        "computerVisionP": "Percepción multimodal (YOLOv8, MediaPipe), Filtro de Kalman y planificación de trayectorias APF.",
+        "dataEngineering": "Ingeniería de Datos & Bases de Datos",
+        "dataEngineeringP": "Diseño de esquemas eficientes en PostgreSQL, MongoDB y modelado de grafos con NetworkX.",
+        "systemArchitecture": "Arquitectura de Sistemas & Cloud",
+        "systemArchitectureP": "Diseño de software modular, desacoplado (HAL, inyección de dependencias) y listo para producción.",
+        "digitalTwins": "Gemelos Digitales & Simulación",
+        "digitalTwinsP": "Modelado de eventos discretos y entornos 3D interactivos para la toma de decisiones operativas."
+      },
+      "en": {
+        "aiOptimization": "AI & Algorithmic Optimization",
+        "aiOptimizationP": "Solving complex problems using OR-Tools (CP-SAT), SimPy, Machine Learning, and Q-Learning.",
+        "fullStackViz": "Full-Stack Development & 3D Visualization",
+        "fullStackVizP": "Scalable architectures built with React, TypeScript, Node.js, Three.js, and Streamlit dashboards.",
+        "computerVision": "Computer Vision & Robotics",
+        "computerVisionP": "Multimodal perception (YOLOv8, MediaPipe), Kalman Filter, and APF path planning.",
+        "dataEngineering": "Data Engineering & Databases",
+        "dataEngineeringP": "Efficient schema design in PostgreSQL, MongoDB, and graph modeling with NetworkX.",
+        "systemArchitecture": "System Architecture & Cloud",
+        "systemArchitectureP": "Design of modular, decoupled (HAL, dependency injection), and production-ready software.",
+        "digitalTwins": "Digital Twins & Simulation",
+        "digitalTwinsP": "Discrete event modeling and interactive 3D environments for operational decision-making."
+      }
     }
-  }
-],
+  ],
   "contact": [
     {
       "es": {

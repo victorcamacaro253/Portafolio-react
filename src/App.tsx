@@ -8,6 +8,8 @@ import LanguageProvider from './context/languageContext';
 import Websites from './pages/Websites';
 import WebsiteDetail from './pages/WebsiteDetail';
 import ProjectsPage from './pages/projectsPage';
+import AIWorkPage from './pages/AIWorkPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
              <Route path="/websites" element={<Websites />} />
              <Route path="/websites/:id" element={<WebsiteDetail />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/ia" element={<AIWorkPage />} />
+            <Route path="/ia/:id" element={<ProjectDetailPage />} />
 
         
           </Routes>

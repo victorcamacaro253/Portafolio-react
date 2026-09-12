@@ -7,8 +7,10 @@ import Curriculum from '../components/Curriculum';
 import Portfolio from '../components/Portfolio';
 import Contacto from '../components/Contacto';
 import Projects from '../components//Projects';
+import AIProjectsSection from '../components/AIProjectsSection';
 import withFadeIn from '../components/withFadeIn';
 
+  
 const FadeInInicio = withFadeIn(Inicio, '0s', false);
 const FadeInSobreMi = withFadeIn(SobreMi, '2.5s');
 const FadeInProjects = withFadeIn(Projects, '2.5s');
@@ -16,6 +18,7 @@ const FadeInSkills = withFadeIn(Skills, '2.5s');
 const FadeInCurriculum = withFadeIn(Curriculum, '2.5s');
 const FadeInPortfolio = withFadeIn(Portfolio, '2.5s');
 const FadeInContacto = withFadeIn(Contacto, '2.5s');
+const FadeInAIProjectsSection = withFadeIn(AIProjectsSection, '2.5s');
 
 function Index() {
  
@@ -44,6 +47,7 @@ function Index() {
         <FadeInInicio />
         <FadeInSobreMi />
         <FadeInProjects />
+        <FadeInAIProjectsSection />
         <FadeInSkills />
         <FadeInCurriculum />
         <FadeInPortfolio />
