@@ -101,7 +101,7 @@ const Projects = () => {
             }}
             className="mySwiper pb-12"
           >
-            {allCards.map((card, index) => (
+            {allCards.map((card) => (
               <SwiperSlide key={`${card.type}-${card.index}`}>
                 <div className="flex flex-col h-[550px] bg-background-2 dark:bg-dark-background-2 rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] hover:scale-[1.02]">
 
